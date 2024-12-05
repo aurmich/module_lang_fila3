@@ -67,8 +67,13 @@ return [
                 'label' => 'creator.name',
             ],
         ],
+<<<<<<< HEAD
         'isActive' => [
             'label' => 'isActive',
+=======
+        'file' => [
+            'label' => 'file',
+>>>>>>> 1166e9bc47383858b14fdcf4716ee2dd3df26964
         ],
     ],
     'actions' => [
@@ -89,6 +94,12 @@ return [
         ],
         'createAnother' => [
             'label' => 'createAnother',
+        ],
+        'request' => [
+            'label' => 'request',
+        ],
+        'login' => [
+            'label' => 'login',
         ],
     ],
 ];
