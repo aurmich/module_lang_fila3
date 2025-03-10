@@ -193,7 +193,6 @@ class Post extends Model
                     ->where($post_table.'.guid', '!=', $post_type)
                     ->orderBy($table.'.updated_at', 'desc')
                     ->with('post')
-                    ;
 
         return $rows;
     }
