@@ -66,8 +66,6 @@ docker
 
 
 *.lock
-bashscripts
-*.lock
 
 .git-rewrite
 uploads
