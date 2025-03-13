@@ -28,12 +28,16 @@ while IFS= read -r line; do
             if ! git subtree pull --prefix="$current_path" "$current_url" "$branch" --squash; then
                 echo "⚠️  Errore in git subtree pull, tentando con fetch + merge..."
                 git fetch "$current_url" "$branch"
+<<<<<<< HEAD
                 if ! git merge -s subtree -Xsubtree="$current_path" FETCH_HEAD --allow-unrelated-histories; then
                     echo "⚠️  Errore in git merge, tentando con git rm + git subtree add..."
                     git rm -r --cached "$current_path" 
                     git commit -am "Remove $current_path"
                     git subtree add --prefix="$current_path" "$current_url" "$branch" --squash
                 fi
+=======
+                git merge -s subtree -Xsubtree="$current_path" FETCH_HEAD --allow-unrelated-histories
+>>>>>>> origin/dev
             fi
         else
             echo "➕ Aggiunta del subtree..."
@@ -42,6 +46,10 @@ while IFS= read -r line; do
 
         echo "⬆️  Pushing delle modifiche locali nel subtree remoto..."
         git subtree push --prefix="$current_path" "$current_url" "$branch"
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/dev
     fi
 done < "$CONFIG_FILE"
 
