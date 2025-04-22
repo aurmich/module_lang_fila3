@@ -58,6 +58,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function register(): void
     {
         parent::register();
+<<<<<<< HEAD
+=======
+        // $this->registerLang();
+>>>>>>> f0c9bb8 (.)
     }
 
     /**
@@ -67,25 +71,48 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      */
     public function registerLang(): void
     {
+<<<<<<< HEAD
         /** @var array<string, array<string, string|null>> $locales */
         $locales = config('laravellocalization.supportedLocales');
         
         if (! is_array($locales)) {
+=======
+        /** @var array<string, array<string, string>>|null $locales */
+        $locales = config('laravellocalization.supportedLocales');
+        
+        if (! \is_array($locales)) {
+>>>>>>> f0c9bb8 (.)
             $locales = ['it' => ['name' => 'it'], 'en' => ['name' => 'en']];
         }
         
         /** @var array<string> $langs */
         $langs = array_keys($locales);
 
+<<<<<<< HEAD
+=======
+        /*
+        if (! \is_array($langs)) {
+            throw new \Exception('[.__LINE__.]['.class_basename(self::class).']');
+        }
+        \getRouteParameters();
+        */
+>>>>>>> f0c9bb8 (.)
         $n = 1;
         if (inAdmin()) {
             $n = 3;
         }
 
+<<<<<<< HEAD
         if (in_array(request()->segment($n), $langs, false)) {
             /** @var string|null $lang */
             $lang = request()->segment($n);
             if ($lang !== null) {
+=======
+        if (\in_array(request()->segment($n), $langs, false)) {
+            /** @var string|null $lang */
+            $lang = request()->segment($n);
+            if (null !== $lang) {
+>>>>>>> f0c9bb8 (.)
                 app()->setLocale($lang);
             }
         }
