@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [
     {
         "name": "lang.change",
@@ -15,6 +14,3 @@
         "ns": "Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"
     }
 ]
-=======
-[{"name":"lang.change","class":"Lang\\Change","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Change"},{"name":"lang.switcher","class":"Lang\\Switcher","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}]
->>>>>>> f0c9bb8 (.)
