@@ -92,24 +92,11 @@ use Spatie\Sluggable\SlugOptions;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
  * @mixin \Eloquent
- * @mixin Eloquent
- * @mixin Eloquent
  */
 class Post extends Model
 {
     use HasFactory;
     use HasSlug;
-    use Updater;
-    use Cachable;
-
-    // use Cachable;
-    use Updater;
-
-    /*
-    public function getUrlAttribute($value) {
-
-    }
-    */
     use Updater;
     use Cachable;
 
@@ -130,8 +117,6 @@ class Post extends Model
     /** @var int */
     protected $perPage = 30;
 
-    // use Searchable;
-    // use Searchable;
     /** @var string */
     protected $connection = 'lang';
 
@@ -180,22 +165,6 @@ class Post extends Model
         'related_count',
         'relatedrev_count',
     ];
-    ];
-
-    /** @var list<string> */
-    protected $appends = [];
-
-    /** @var string */
-    protected $primaryKey = 'id';
-
-    /** @var string */
-    protected $keyType = 'string';
-
-    /*
-    public function getRouteKeyName() {
-        return inAdmin() ? 'guid' : 'post_id';
-    }
-    */
 
     /**
      * Get the options for generating the slug.
@@ -262,36 +231,6 @@ class Post extends Model
     {
         return null;
     }
-    // -------- relationship ------
-    /**
-     * @return MorphTo
-     */
-    public function linkable()
-    {
-        return $this->morphTo('post');
-    }
-
-    /* deprecated
-    public function archive() {
-        $lang = $this->lang;
-        $post_type = $this->post_type;
-        $obj = $this->getLinkedModel();
-        $table = $obj->getTable();
-        $post_table = with(new Post())->getTable();
-        $rows = $obj->join($post_table, $post_table.'.post_id', $table.'.post_id')
-                    ->where('lang', $lang)
-                    ->where($post_table.'.post_type', $post_type)
-                    ->where($post_table.'.guid', '!=', $post_type)
-                    ->orderBy($table.'.updated_at', 'desc')
-                    ->with('post')
-                    ;
-
-        return $rows;
-    }
-    */
-
-    // end function
-    // -------------- MUTATORS ------------------
 
     public function setTitleAttribute(string $value): void
     {
@@ -300,9 +239,6 @@ class Post extends Model
     }
 
     /**
-     * Undocumented function.
-     * ---.
-     * Undocumented function.
      * ---.
      */
     public function getTitleAttribute(?string $value): ?string
@@ -313,28 +249,15 @@ class Post extends Model
 
         if (! empty($this->attributes['post_type'])) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
-            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
-                ? $this->attributes['post_type'] : '';
-            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
-                ? (string) $this->attributes['post_id'] : '';
-                ? (string) $this->attributes['post_id'] : '';
-                ? is_string($this) ? $this : (string) $this->attributes['post_id'] : '';
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
                 ? (string) $this->attributes['post_id'] : '';
-            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
-                ? $this->attributes['post_type'] : '';
-            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
-                ? (string)$this->attributes['post_id'] : '';
             $value = $postType . ' ' . $postId;
         } else {
             // Assicuriamoci che post_type e post_id siano stringhe
             $postType = is_string($this->post_type) ? $this->post_type : '';
             $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
-            $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
-            $postId = is_scalar($this->post_id) ? is_string($this) ? $this : (string) $this->post_id : '';
-            $postId = is_scalar($this->post_id) ? (string)$this->post_id : '';
             $value = $postType . ' ' . $postId;
         }
 
@@ -356,24 +279,10 @@ class Post extends Model
         $value = $this->title;
         if ('' === $value) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
-            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
-                ? $this->attributes['post_type'] : '';
-            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
-                ? (string) $this->attributes['post_id'] : '';
-            $value = $postType . ' ' . $postId;
-        }
-                ? (string) $this->attributes['post_id'] : '';
-            $value = $postType . ' ' . $postId;
-        }
-                ? is_string($this) ? $this : (string) $this->attributes['post_id'] : '';
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
                 ? (string) $this->attributes['post_id'] : '';
-            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
-                ? $this->attributes['post_type'] : '';
-            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
-                ? (string)$this->attributes['post_id'] : '';
             $value = $postType . ' ' . $postId;
         }
         if (null === $value) {
@@ -414,7 +323,4 @@ class Post extends Model
             'published_at' => 'datetime',
         ];
     }
-}// end class
-}
-}// end class
 }

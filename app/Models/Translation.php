@@ -25,8 +25,8 @@ use Illuminate\Support\Facades\DB;
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string      $namespace
- * @property string      $group
+ * @property string $namespace
+ * @property string $group
  * @property string|null $item
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newModelQuery()
