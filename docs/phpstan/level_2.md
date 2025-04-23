@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 # Rapporto PHPStan Livello 2 per il modulo Lang
 
 Data analisi: 2025-04-15 22:01:51
@@ -24,4 +31,11 @@ Trovati 1 errori al livello 2.
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
+<<<<<<< HEAD
 aurmich/dev
+=======
+<<<<<<< HEAD
+=======
+aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
