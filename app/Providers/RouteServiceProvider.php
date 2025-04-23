@@ -70,38 +70,15 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     {
         /** @var array<string, array<string, string|null>> $locales */
         $locales = config('laravellocalization.supportedLocales');
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         if (! is_array($locales)) {
-<<<<<<< HEAD
-            $locales = ['it' => ['name' => 'it'], 'en' => ['name' => 'en']];
-        }
-
-=======
-        
-=======
-
->>>>>>> d41c7aa (fix: auto resolve conflict)
-        if (! is_array($locales)) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 958f691 (.)
         /** @var array<string, array<string, string>>|null $locales */
         $locales = config('laravellocalization.supportedLocales');
         
         if (! \is_array($locales)) {
             $locales = ['it' => ['name' => 'it'], 'en' => ['name' => 'en']];
         }
-<<<<<<< HEAD
-        
->>>>>>> 158bf09 (.)
-=======
 
->>>>>>> d41c7aa (fix: auto resolve conflict)
         /** @var array<string> $langs */
         $langs = array_keys($locales);
 

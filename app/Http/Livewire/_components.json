@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-[
-    {
-        "name": "lang.change",
-        "class": "Lang\\Change",
-        "module": null,
-        "path": null,
-        "ns": "Modules\\Lang\\Http\\Livewire\\Lang\\Change"
-    },
-    {
-        "name": "lang.switcher",
-        "class": "Lang\\Switcher",
-        "module": null,
-        "path": null,
-        "ns": "Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"
-    }
-]
-=======
-[{"name":"lang.change","class":"Lang\\Change","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Change"},{"name":"lang.switcher","class":"Lang\\Switcher","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}]
->>>>>>> 158bf09 (.)
-=======
-=======
->>>>>>> d41c7aa (fix: auto resolve conflict)
-=======
->>>>>>> 958f691 (.)
 [{"name":"lang.change","class":"Lang\\Change","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Change"},{"name":"lang.switcher","class":"Lang\\Switcher","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}]
 [
     {
@@ -44,14 +16,3 @@
     }
 ]
 [{"name":"lang.change","class":"Lang\\Change","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Change"},{"name":"lang.switcher","class":"Lang\\Switcher","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}]
-<<<<<<< HEAD
->>>>>>> f0c9bb8 (.)
->>>>>>> cc26d67 (fix: auto resolve conflict)
-<<<<<<< HEAD
->>>>>>> 6ab7db0 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 8a2fcfb (.)
->>>>>>> d41c7aa (fix: auto resolve conflict)
-=======
->>>>>>> 958f691 (.)
