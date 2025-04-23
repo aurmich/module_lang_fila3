@@ -94,10 +94,13 @@ use Spatie\Sluggable\SlugOptions;
  * @mixin \Eloquent
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @mixin Eloquent
 >>>>>>> 158bf09 (.)
 =======
+=======
+>>>>>>> d41c7aa (fix: auto resolve conflict)
  * @mixin Eloquent
 =======
 <<<<<<< HEAD
@@ -105,7 +108,12 @@ use Spatie\Sluggable\SlugOptions;
  * @mixin Eloquent
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
  */
 class Post extends Model
 {
@@ -113,10 +121,13 @@ class Post extends Model
     use HasSlug;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     use Updater;
     use Cachable;
 =======
 =======
+=======
+>>>>>>> d41c7aa (fix: auto resolve conflict)
 =======
 <<<<<<< HEAD
     use Updater;
@@ -140,7 +151,14 @@ class Post extends Model
 =======
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+    use Updater;
+    use Cachable;
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
 
     final public const SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
 
@@ -161,10 +179,13 @@ class Post extends Model
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // use Searchable;
 >>>>>>> 158bf09 (.)
 =======
+=======
+>>>>>>> d41c7aa (fix: auto resolve conflict)
     // use Searchable;
 =======
 <<<<<<< HEAD
@@ -172,7 +193,12 @@ class Post extends Model
     // use Searchable;
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
     /** @var string */
     protected $connection = 'lang';
 
@@ -193,10 +219,17 @@ class Post extends Model
         'image_resize_src', // buffer
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
         'category_id', 'image', 'content',
         'published', 'created_by', 'updated_by',
     ];
@@ -227,6 +260,7 @@ class Post extends Model
         'related_count',
         'relatedrev_count',
     ];
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -255,7 +289,12 @@ class Post extends Model
 =======
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
 
     /**
      * Get the options for generating the slug.
@@ -269,10 +308,17 @@ class Post extends Model
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
     /**
      * Get the owning commentable model.
      */
@@ -328,6 +374,7 @@ class Post extends Model
     {
         return null;
     }
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -373,7 +420,12 @@ class Post extends Model
 =======
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
 
     public function setTitleAttribute(string $value): void
     {
@@ -384,11 +436,14 @@ class Post extends Model
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * ---.
 =======
      * Undocumented function.
 >>>>>>> 158bf09 (.)
 =======
+=======
+>>>>>>> d41c7aa (fix: auto resolve conflict)
      * Undocumented function.
 =======
 <<<<<<< HEAD
@@ -397,7 +452,13 @@ class Post extends Model
      * Undocumented function.
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+     * ---.
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
      */
     public function getTitleAttribute(?string $value): ?string
     {
@@ -409,6 +470,7 @@ class Post extends Model
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
@@ -416,6 +478,8 @@ class Post extends Model
 =======
 =======
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+>>>>>>> d41c7aa (fix: auto resolve conflict)
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
@@ -433,10 +497,13 @@ class Post extends Model
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8a2fcfb (.)
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
                 ? (string) $this->attributes['post_id'] : '';
+<<<<<<< HEAD
 =======
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
@@ -444,13 +511,18 @@ class Post extends Model
                 ? (string)$this->attributes['post_id'] : '';
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
             $value = $postType . ' ' . $postId;
         } else {
             // Assicuriamoci che post_type e post_id siano stringhe
             $postType = is_string($this->post_type) ? $this->post_type : '';
-<<<<<<< HEAD
             $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -469,7 +541,12 @@ class Post extends Model
             $postId = is_scalar($this->post_id) ? (string)$this->post_id : '';
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
             $value = $postType . ' ' . $postId;
         }
 
@@ -493,6 +570,7 @@ class Post extends Model
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
@@ -502,6 +580,8 @@ class Post extends Model
 =======
 =======
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+>>>>>>> d41c7aa (fix: auto resolve conflict)
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
@@ -518,10 +598,13 @@ class Post extends Model
                 ? is_string($this) ? $this : (string) $this->attributes['post_id'] : '';
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8a2fcfb (.)
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
                 ? (string) $this->attributes['post_id'] : '';
+<<<<<<< HEAD
 =======
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
@@ -529,6 +612,8 @@ class Post extends Model
                 ? (string)$this->attributes['post_id'] : '';
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+>>>>>>> 8a2fcfb (.)
             $value = $postType . ' ' . $postId;
         }
 >>>>>>> 158bf09 (.)
@@ -584,11 +669,14 @@ class Post extends Model
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }// end class
 >>>>>>> 158bf09 (.)
 =======
+=======
+>>>>>>> d41c7aa (fix: auto resolve conflict)
 }// end class
 =======
 <<<<<<< HEAD
@@ -597,4 +685,10 @@ class Post extends Model
 }// end class
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+}
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)

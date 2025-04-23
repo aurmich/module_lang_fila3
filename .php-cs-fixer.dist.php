@@ -11,17 +11,26 @@ $finder = PhpCsFixer\Finder::create()
     ->ignoreVCS(true)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 158bf09 (.)
 =======
+=======
+>>>>>>> d41c7aa (fix: auto resolve conflict)
 =======
 <<<<<<< HEAD
 =======
 ;
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+;
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
 
 $config = new PhpCsFixer\Config();
 
@@ -51,16 +60,25 @@ $config
     ->setFinder($finder)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 158bf09 (.)
 =======
+=======
+>>>>>>> d41c7aa (fix: auto resolve conflict)
 =======
 <<<<<<< HEAD
 =======
 ;
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+<<<<<<< HEAD
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+=======
+;
+>>>>>>> 8a2fcfb (.)
+>>>>>>> d41c7aa (fix: auto resolve conflict)
 
 return $config;
