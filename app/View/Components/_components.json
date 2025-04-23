@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 [
     {
         "name": "flag",
@@ -8,6 +11,9 @@
         "ns": "Modules\\Lang\\View\\Components\\Flag"
     }
 ]
+<<<<<<< HEAD
 =======
 []
+>>>>>>> aurmich/dev
+=======
 >>>>>>> aurmich/dev
