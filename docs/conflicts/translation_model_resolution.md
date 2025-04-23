@@ -1,3 +1,34 @@
+# Risoluzione Conflitto nel Modello Translation
+
+## Panoramica
+
+Questo documento descrive la risoluzione del conflitto git nel file `app/Models/Translation.php` del modulo Lang, che implementa il modello per la gestione delle traduzioni nell'applicazione.
+
+## Analisi del Conflitto
+
+Il file presenta diversi conflitti che richiedono attenzione:
+
+1. **Importazioni duplicate**:
+   - `Illuminate\Support\Facades\DB` è importato due volte
+   - Sia `DB` (alias globale) che `Illuminate\Support\Facades\DB` sono importati, creando ambiguità
+
+2. **Proprietà duplicate nella documentazione PHPDoc**:
+   - Le proprietà `namespace` e `group` sono duplicate tre volte ciascuna
+   - Diverse formattazioni di spazi e allineamenti nelle proprietà
+
+3. **Implementazione del metodo `scopeSelectDistinctGroup`**:
+   - Tre implementazioni diverse usando:
+     - `DB::getDriverName()` e `DB::raw`
+     - `\DB::getDriverName()` e `\DB::raw`
+     - Conflitto nelle istruzioni di return
+
+## Soluzione Implementata
+
+La soluzione consiste nell'eliminare le duplicazioni e standardizzare il codice secondo le convenzioni del progetto:
+
+### Codice Corretto
+
+```php
 <?php
 
 declare(strict_types=1);
@@ -113,3 +144,38 @@ class Translation extends BaseModel
     }
     */
 }
+```
+
+## Dettagli delle Modifiche
+
+1. **Correzione delle importazioni**:
+   - Rimozione dell'importazione duplicata di `Illuminate\Support\Facades\DB`
+   - Rimozione dell'uso diretto di `DB` come alias globale
+
+2. **Pulizia della documentazione PHPDoc**:
+   - Rimozione delle proprietà duplicate
+   - Standardizzazione della formattazione delle annotazioni delle proprietà
+
+3. **Correzione del metodo `scopeSelectDistinctGroup`**:
+   - Utilizzo coerente di `DB::getDriverName()` (con il namespace importato)
+   - Una singola istruzione return
+
+## Impatto della Modifica
+
+La correzione:
+
+1. Migliora la leggibilità e la manutenibilità del codice
+2. Elimina potenziali ambiguità e inconsistenze
+3. Segue le best practice di Laravel riguardo all'uso delle Facades
+4. Mantiene la funzionalità originale del modello
+
+## Note sull'Implementazione
+
+Per garantire la coerenza con il resto del progetto, abbiamo seguito queste linee guida:
+- Utilizzo di import espliciti invece di alias globali
+- Mantenimento della formattazione e dell'allineamento nel PHPDoc
+- Utilizzo coerente del facade DB con il namespace importato
+
+## Collegamento con la Documentazione Principale
+
+Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../docs/logs/conflict_resolution_progress.md). 

@@ -58,16 +58,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function register(): void
     {
         parent::register();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
         // $this->registerLang();
->>>>>>> f0c9bb8 (.)
->>>>>>> cc26d67 (fix: auto resolve conflict)
-=======
->>>>>>> 8a2fcfb (.)
     }
 
     /**
@@ -77,19 +68,13 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      */
     public function registerLang(): void
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> cc26d67 (fix: auto resolve conflict)
-=======
->>>>>>> 8a2fcfb (.)
         /** @var array<string, array<string, string|null>> $locales */
         $locales = config('laravellocalization.supportedLocales');
 <<<<<<< HEAD
 <<<<<<< HEAD
 
         if (! is_array($locales)) {
+<<<<<<< HEAD
             $locales = ['it' => ['name' => 'it'], 'en' => ['name' => 'en']];
         }
 
@@ -103,14 +88,12 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 958f691 (.)
         /** @var array<string, array<string, string>>|null $locales */
         $locales = config('laravellocalization.supportedLocales');
         
         if (! \is_array($locales)) {
->>>>>>> f0c9bb8 (.)
->>>>>>> cc26d67 (fix: auto resolve conflict)
-=======
->>>>>>> 8a2fcfb (.)
             $locales = ['it' => ['name' => 'it'], 'en' => ['name' => 'en']];
         }
 <<<<<<< HEAD
@@ -122,49 +105,25 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         /** @var array<string> $langs */
         $langs = array_keys($locales);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
         /*
         if (! \is_array($langs)) {
             throw new \Exception('[.__LINE__.]['.class_basename(self::class).']');
         }
         \getRouteParameters();
         */
->>>>>>> f0c9bb8 (.)
->>>>>>> cc26d67 (fix: auto resolve conflict)
-=======
->>>>>>> 8a2fcfb (.)
         $n = 1;
         if (inAdmin()) {
             $n = 3;
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> cc26d67 (fix: auto resolve conflict)
-=======
->>>>>>> 8a2fcfb (.)
         if (in_array(request()->segment($n), $langs, false)) {
             /** @var string|null $lang */
             $lang = request()->segment($n);
             if ($lang !== null) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
         if (\in_array(request()->segment($n), $langs, false)) {
             /** @var string|null $lang */
             $lang = request()->segment($n);
             if (null !== $lang) {
->>>>>>> f0c9bb8 (.)
->>>>>>> cc26d67 (fix: auto resolve conflict)
-=======
->>>>>>> 8a2fcfb (.)
                 app()->setLocale($lang);
             }
         }

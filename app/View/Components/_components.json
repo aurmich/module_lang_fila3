@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 []
 =======
@@ -13,6 +14,9 @@
 =======
 >>>>>>> 8a2fcfb (.)
 >>>>>>> d41c7aa (fix: auto resolve conflict)
+=======
+[]
+>>>>>>> 958f691 (.)
 [
     {
         "name": "flag",
@@ -22,9 +26,8 @@
         "ns": "Modules\\Lang\\View\\Components\\Flag"
     }
 ]
-<<<<<<< HEAD
-=======
 []
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 158bf09 (.)
 =======
@@ -36,3 +39,5 @@
 =======
 >>>>>>> 8a2fcfb (.)
 >>>>>>> d41c7aa (fix: auto resolve conflict)
+=======
+>>>>>>> 958f691 (.)

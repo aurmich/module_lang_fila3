@@ -16,6 +16,7 @@ class LangField implements CastsAttributes
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string        $key
 =======
      * @param string $key
@@ -23,12 +24,12 @@ class LangField implements CastsAttributes
 =======
 =======
 >>>>>>> d41c7aa (fix: auto resolve conflict)
-     * @param string $key
 =======
-<<<<<<< HEAD
+>>>>>>> 958f691 (.)
      * @param string $key
-=======
+     * @param string $key
      * @param string        $key
+<<<<<<< HEAD
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
 <<<<<<< HEAD
@@ -38,6 +39,9 @@ class LangField implements CastsAttributes
      * @param string        $key
 >>>>>>> 8a2fcfb (.)
 >>>>>>> d41c7aa (fix: auto resolve conflict)
+=======
+     * @param string        $key
+>>>>>>> 958f691 (.)
      * @param array         $attributes
      */
     public function get($model, $key, $value, $attributes)
@@ -52,6 +56,7 @@ class LangField implements CastsAttributes
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string        $key
      * @param array         $attributes
      * @param string        $key
@@ -64,10 +69,13 @@ class LangField implements CastsAttributes
 <<<<<<< HEAD
 >>>>>>> cc26d67 (fix: auto resolve conflict)
 >>>>>>> 6ab7db0 (fix: auto resolve conflict)
+=======
+>>>>>>> 958f691 (.)
      * @param string $key
      * @param array         $attributes
      * @param string $key
      * @param string $value
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 158bf09 (.)
 =======
@@ -76,10 +84,13 @@ class LangField implements CastsAttributes
 =======
 =======
 >>>>>>> 8a2fcfb (.)
+=======
+>>>>>>> 958f691 (.)
      * @param string        $key
      * @param array         $attributes
      * @param string        $key
      * @param string        $value
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
@@ -89,6 +100,8 @@ class LangField implements CastsAttributes
 =======
 >>>>>>> 8a2fcfb (.)
 >>>>>>> d41c7aa (fix: auto resolve conflict)
+=======
+>>>>>>> 958f691 (.)
      */
     public function set($model, $key, $value, $attributes): array
     {
