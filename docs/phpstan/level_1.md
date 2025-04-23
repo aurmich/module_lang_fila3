@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rapporto PHPStan Livello 1 per il modulo Lang
 
 Data analisi: 2025-04-15 22:01:44
@@ -23,3 +24,16 @@ Trovati 1 errori al livello 1.
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
+=======
+# PHPStan Report - Livello 1
+
+## Errori rilevati
+
+## Soluzioni proposte
+
+> TODO: descrivere soluzioni architetturali e funzionali
+
+## Collegamenti
+
+- Torna all'indice principale: [Indice Report PHPStan Moduli](/docs/phpstan_modules_index.md)
+>>>>>>> aurmich/dev
