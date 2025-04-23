@@ -1,25 +1,11 @@
-# Rapporto PHPStan Livello 1 per il modulo Lang
+# PHPStan Report - Livello 1
 
-Data analisi: 2025-04-15 22:01:44
+## Errori rilevati
 
-## Riepilogo
+## Soluzioni proposte
 
-Trovati 1 errori al livello 1.
+> TODO: descrivere soluzioni architetturali e funzionali
 
-## Errori e suggerimenti
+## Collegamenti
 
-### File: `/var/www/html/saluteora/laravel/Modules/Lang/app/Models/Post.php`
-
-#### Linea 101: Class Modules\Lang\Models\Post uses unknown trait GeneaLabs\LaravelModelCaching\Traits\Cachable.
-
-**Suggerimento generale**: Rivedi il codice per assicurarti che:
-- Tutte le classi/interfacce utilizzate siano importate correttamente
-- I tipi siano dichiarati e utilizzati in modo coerente
-- Le variabili siano inizializzate prima dell'uso
-- I nomi di metodi e proprietà siano corretti
-
-## Risorse utili
-
-- [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
-- [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
-- [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
+- Torna all'indice principale: [Indice Report PHPStan Moduli](/docs/phpstan_modules_index.md)
