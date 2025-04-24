@@ -2,9 +2,19 @@
 <<<<<<< HEAD
 =======
 
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+
 >>>>>>> aurmich/dev
 =======
 
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 # Rapporto PHPStan Livello 2 per il modulo Lang
 
@@ -35,7 +45,17 @@ Trovati 1 errori al livello 2.
 <<<<<<< HEAD
 =======
 aurmich/dev
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+aurmich/dev
 >>>>>>> aurmich/dev
 =======
 aurmich/dev
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
