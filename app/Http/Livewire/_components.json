@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 43bce85 (.)
 [
     {
         "name": "lang.change",
@@ -19,6 +22,7 @@
         "ns": "Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ]
 =======
 [{"name":"lang.change","class":"Lang\\Change","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Change"},{"name":"lang.switcher","class":"Lang\\Switcher","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}]
@@ -29,3 +33,6 @@
 =======
 ]
 >>>>>>> aurmich/dev
+=======
+]
+>>>>>>> 43bce85 (.)
