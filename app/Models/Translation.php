@@ -13,8 +13,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\Xot\Traits\Updater;
+=======
+>>>>>>> aurmich/dev
 
 /**
  * Modules\Lang\Models\Translation.
@@ -55,15 +58,21 @@ use Modules\Xot\Traits\Updater;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class Translation extends Model
 {
     use HasFactory;
     use Updater;
 
+=======
+class Translation extends BaseModel
+{
+>>>>>>> aurmich/dev
     final public const STATUS_SAVED = 0;
 
     final public const STATUS_CHANGED = 1;
 
+<<<<<<< HEAD
     /**
      * @var string
      */
@@ -87,6 +96,19 @@ class Translation extends Model
     ];
 
     // protected $guarded = ['id', 'created_at', 'updated_at'];
+=======
+    protected $fillable = [
+        'id',
+        'lang',
+        'value',
+        'namespace',
+        'group',
+        'item',
+    ];
+
+    // protected $table = 'ltm_translations';
+    protected $guarded = ['id', 'created_at', 'updated_at'];
+>>>>>>> aurmich/dev
 
     /**
      * Undocumented function.
@@ -129,6 +151,7 @@ class Translation extends Model
         return parent::getConnectionName();
     }
     */
+<<<<<<< HEAD
 
     /**
      * Ottiene il valore tradotto.
@@ -153,4 +176,6 @@ class Translation extends Model
         $this->text = $translations;
         $this->save();
     }
+=======
+>>>>>>> aurmich/dev
 }
