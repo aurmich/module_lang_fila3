@@ -29,13 +29,7 @@ use Webmozart\Assert\Assert;
 class LangServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Lang';
-<<<<<<< HEAD
     protected string $module_dir = __DIR__;
-=======
-
-    protected string $module_dir = __DIR__;
-
->>>>>>> aurmich/dev
     protected string $module_ns = __NAMESPACE__;
 
     public function boot(): void
