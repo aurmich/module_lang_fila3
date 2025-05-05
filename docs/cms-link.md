@@ -28,3 +28,10 @@ Quando aggiungi nuovi componenti Filament nel modulo Cms, ricorda di:
 1. NON utilizzare mai `->label()` direttamente
 2. Aggiungere le traduzioni appropriate nei file di lingua
 3. Mantenere aggiornata la documentazione in entrambi i moduli
+
+## Collegamenti tra versioni di cms-link.md
+* [cms-link.md](laravel/Modules/Xot/docs/cms-link.md)
+* [cms-link.md](laravel/Modules/User/docs/cms-link.md)
+* [cms-link.md](laravel/Modules/UI/docs/cms-link.md)
+* [cms-link.md](laravel/Modules/Lang/docs/cms-link.md)
+

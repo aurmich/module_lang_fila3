@@ -71,6 +71,8 @@ class LangServiceProvider extends XotBaseServiceProvider
                 }
                 $component->validationMessages($typedMessages);
             }
+            $component = app(AutoLabelAction::class)->execute($component,'placeholder');
+            $component = app(AutoLabelAction::class)->execute($component,'helperText');
 
             return $component;
         });
