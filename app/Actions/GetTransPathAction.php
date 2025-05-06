@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Str;
+use Webmozart\Assert\Assert;
 use Nwidart\Modules\Facades\Module;
 use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
+use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 
 class GetTransPathAction
 {
@@ -33,10 +34,11 @@ class GetTransPathAction
             $module_path = Str::of($module_path)->beforeLast('/')->toString();
         }
         $lang = app()->getLocale();
-        $relativePath = config('modules.paths.generator.lang.path');
+        //$relativePath = config('modules.paths.generator.lang.path');
 
         // Utilizziamo module_path e verifichiamo che restituisca una stringa
-        $lang_path = module_path($ns, $relativePath);
+        //$lang_path = module_path($ns, $relativePath);
+        $lang_path = app(GetModulePathByGeneratorAction::class)->execute($ns, 'lang');
         Assert::string($lang_path, 'Il percorso del modulo deve essere una stringa');
 
         $file_name = $piece[0] ?? '';
