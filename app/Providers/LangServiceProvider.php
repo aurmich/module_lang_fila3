@@ -29,23 +29,16 @@ use Webmozart\Assert\Assert;
 class LangServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Lang';
-<<<<<<< HEAD
-    protected string $module_dir = __DIR__;
-=======
 
     protected string $module_dir = __DIR__;
 
->>>>>>> 25935b6 (.)
     protected string $module_ns = __NAMESPACE__;
 
     public function boot(): void
     {
         parent::boot();
-<<<<<<< HEAD
-=======
         // BladeService::registerComponents($this->module_dir.'/../View/Components', 'Modules\\Lang');
         // $this->registerTranslator();
->>>>>>> 25935b6 (.)
         $this->translatableComponents();
         $this->registerFilamentLabel();
     }
@@ -53,11 +46,8 @@ class LangServiceProvider extends XotBaseServiceProvider
     public function register(): void
     {
         parent::register();
-<<<<<<< HEAD
-=======
         // --dalla doc in register ... ma non funziona, funziona in boot
         // $this->registerTranslator();
->>>>>>> 25935b6 (.)
     }
 
     protected function translatableComponents(): void
@@ -79,10 +69,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             Assert::isInstanceOf($component, Field::class);
             $validationMessages = __('user::validation');
             if (is_array($validationMessages)) {
-<<<<<<< HEAD
-=======
                 // Convertiamo l'array generico in un array<string, string> per soddisfare il tipo richiesto
->>>>>>> 25935b6 (.)
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
                     if (is_string($key) && (is_string($value) || $value instanceof \Closure)) {
@@ -91,21 +78,13 @@ class LangServiceProvider extends XotBaseServiceProvider
                 }
                 $component->validationMessages($typedMessages);
             }
-<<<<<<< HEAD
-            $component = app(AutoLabelAction::class)->execute($component,'placeholder');
-            $component = app(AutoLabelAction::class)->execute($component,'helperText');
-=======
->>>>>>> 25935b6 (.)
 
             return $component;
         });
 
         BaseFilter::configureUsing(function (BaseFilter $component) {
             $component = app(AutoLabelAction::class)->execute($component);
-<<<<<<< HEAD
-=======
 
->>>>>>> 25935b6 (.)
             return $component;
         });
 
@@ -116,22 +95,6 @@ class LangServiceProvider extends XotBaseServiceProvider
                 ->wrapHeader()
                 ->verticallyAlignStart()
                 ->grow();
-<<<<<<< HEAD
-
-            return $component;
-        });
-
-        Step::configureUsing(function (Step $component) {
-            $component = app(AutoLabelAction::class)->execute($component);
-            return $component;
-        });
-
-        Action::configureUsing(function (Action $component) {
-            $component = app(AutoLabelAction::class)->execute($component);
-            return $component;
-        });
-
-=======
             // ->wrap()
 
             return $component;
@@ -150,7 +113,6 @@ class LangServiceProvider extends XotBaseServiceProvider
             // ->translateLabel()
             return $component;
         });
->>>>>>> 25935b6 (.)
         TableAction::configureUsing(function (TableAction $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             if (method_exists($component, 'iconButton')) {
@@ -160,10 +122,6 @@ class LangServiceProvider extends XotBaseServiceProvider
                 $component->icon('heroicon-o-plus');
             }
 
-<<<<<<< HEAD
-            return $component;
-        });
-=======
             // ->translateLabel()
             return $component;
         });
@@ -176,7 +134,6 @@ class LangServiceProvider extends XotBaseServiceProvider
             return $component;
         });
         */
->>>>>>> 25935b6 (.)
     }
 
     public function registerTranslator(): void
@@ -184,20 +141,13 @@ class LangServiceProvider extends XotBaseServiceProvider
         $this->app->singleton('translator', function (Container $app): TranslatorService {
             $loader = $app['translation.loader'];
 
-<<<<<<< HEAD
-=======
             // When registering the translator component, we'll need to set the default
             // locale as well as the fallback locale. So, we'll grab the application
             // configuration so we can easily get both of these values from there.
->>>>>>> 25935b6 (.)
             Assert::string($locale = $app['config']['app.locale']);
             Assert::string($fallback_locale = $app['config']['app.fallback_locale']);
 
             $translatorService = new TranslatorService($loader, $locale);
-<<<<<<< HEAD
-            $translatorService->setFallback($fallback_locale);
-
-=======
 
             $translatorService->setFallback($fallback_locale);
 
@@ -206,7 +156,6 @@ class LangServiceProvider extends XotBaseServiceProvider
                 $trans->setTranslationManager($app['translation-manager']);
             }
             */
->>>>>>> 25935b6 (.)
             return $translatorService;
         });
     }

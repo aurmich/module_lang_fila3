@@ -20,11 +20,7 @@ class TranslatorService extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-<<<<<<< HEAD
-     * @param string $key
-=======
      * @param string      $key
->>>>>>> 25935b6 (.)
      * @param string|null $locale
      * @param bool        $fallback
      *
