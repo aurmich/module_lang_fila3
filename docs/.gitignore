@@ -8,3 +8,6 @@ npm-debug.log
 *.phar
 *.lock
 package-lock.json
+
+# Backup files
+*.bak
