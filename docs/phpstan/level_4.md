@@ -1,6 +1,26 @@
+<<<<<<< HEAD
+
+=======
 
 
+=======
 
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> b98e0ad (.)
+
+
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> b98e0ad (.)
 # Rapporto PHPStan Livello 4 per il modulo Lang
 
 Data analisi: 2025-04-15 22:02:02
@@ -34,9 +54,22 @@ Trovati 2 errori al livello 4.
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
+<<<<<<< HEAD
+aurmich/dev
+=======
+
+
+=======
+aurmich/dev
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> b98e0ad (.)
 aurmich/dev
 aurmich/dev
-aurmich/dev
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di level_4.md
 * [level_4.md](../../../Chart/docs/phpstan/level_4.md)
@@ -55,3 +88,10 @@ aurmich/dev
 * [level_4.md](../../../Patient/docs/phpstan/level_4.md)
 * [level_4.md](../../../Cms/docs/phpstan/level_4.md)
 
+=======
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> b98e0ad (.)
