@@ -17,7 +17,10 @@ use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Component;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 25935b6 (.)
 
 // Route::get('{path}', RedirectToPreferredLanguage::class)
 // ->where('path', '^(?!(en|de)).*');
@@ -41,9 +44,15 @@ class Switcher extends Component
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
             if (false !== $url) {
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
+<<<<<<< HEAD
                 if (!is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
                     $url = '/' . $key;
+=======
+                if (! is_string($url)) {
+                    // Se non è una stringa, utilizziamo una URL di fallback
+                    $url = '/'.$key;
+>>>>>>> 25935b6 (.)
                 } else {
                     $url = Str::of($url)->replace(url(''), '')->toString();
                 }

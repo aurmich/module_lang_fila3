@@ -90,6 +90,7 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 - [Torna a packages.md](../packages.md)
 - [Localizzazione](localization.md)
 - [Performance](performance.md) 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di translations.md
 * [translations.md](laravel/Modules/Chart/docs/translations.md)
@@ -110,3 +111,5 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 * [translations.md](laravel/Modules/Patient/docs/translations.md)
 * [translations.md](laravel/Modules/Cms/docs/translations.md)
 
+=======
+>>>>>>> 25935b6 (.)

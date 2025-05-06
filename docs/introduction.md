@@ -18,6 +18,7 @@ In questo modo, quando l'applicazione viene utilizzata in Italia, verrà visuali
 
 quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in francese, e così via.
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di introduction.md
 * [introduction.md](laravel/vendor/spatie/laravel-event-sourcing/docs/getting-familiar-with-event-sourcing/introduction.md)
@@ -27,3 +28,5 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 * [introduction.md](laravel/Modules/Lang/docs/introduction.md)
 * [introduction.md](laravel/Modules/Cms/docs/introduction.md)
 
+=======
+>>>>>>> 25935b6 (.)

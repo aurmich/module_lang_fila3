@@ -8,13 +8,20 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
+<<<<<<< HEAD
+=======
+use DB;
+>>>>>>> 25935b6 (.)
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\Xot\Traits\Updater;
+=======
+>>>>>>> 25935b6 (.)
 
 /**
  * Modules\Lang\Models\Translation.
@@ -27,8 +34,13 @@ use Modules\Xot\Traits\Updater;
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+<<<<<<< HEAD
  * @property string $namespace
  * @property string $group
+=======
+ * @property string      $namespace
+ * @property string      $group
+>>>>>>> 25935b6 (.)
  * @property string|null $item
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newModelQuery()
@@ -55,15 +67,21 @@ use Modules\Xot\Traits\Updater;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class Translation extends Model
 {
     use HasFactory;
     use Updater;
 
+=======
+class Translation extends BaseModel
+{
+>>>>>>> 25935b6 (.)
     final public const STATUS_SAVED = 0;
 
     final public const STATUS_CHANGED = 1;
 
+<<<<<<< HEAD
     /**
      * @var string
      */
@@ -87,6 +105,19 @@ class Translation extends Model
     ];
 
     // protected $guarded = ['id', 'created_at', 'updated_at'];
+=======
+    protected $fillable = [
+        'id',
+        'lang',
+        'value',
+        'namespace',
+        'group',
+        'item',
+    ];
+
+    // protected $table = 'ltm_translations';
+    protected $guarded = ['id', 'created_at', 'updated_at'];
+>>>>>>> 25935b6 (.)
 
     /**
      * Undocumented function.
@@ -107,12 +138,20 @@ class Translation extends Model
 
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder
     {
+<<<<<<< HEAD
         $select = match (DB::getDriverName()) {
+=======
+        $select = match (\DB::getDriverName()) {
+>>>>>>> 25935b6 (.)
             'mysql' => 'DISTINCT `group`',
             default => 'DISTINCT "group"',
         };
 
+<<<<<<< HEAD
         return $query->select(DB::raw($select));
+=======
+        return $query->select(\DB::raw($select));
+>>>>>>> 25935b6 (.)
     }
 
     /*
@@ -129,6 +168,7 @@ class Translation extends Model
         return parent::getConnectionName();
     }
     */
+<<<<<<< HEAD
 
     /**
      * Ottiene il valore tradotto.
@@ -153,4 +193,6 @@ class Translation extends Model
         $this->text = $translations;
         $this->save();
     }
+=======
+>>>>>>> 25935b6 (.)
 }

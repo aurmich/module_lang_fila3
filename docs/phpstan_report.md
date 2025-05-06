@@ -33,8 +33,12 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
 5. **Testing**:
    - Mantenere una buona copertura dei test
    - Testare i casi edge delle traduzioni
+<<<<<<< HEAD
    - Verificare il comportamento con lingue diverse 
 ## Collegamenti tra versioni di phpstan_report.md
 * [phpstan_report.md](laravel/Modules/Lang/docs/phpstan_report.md)
 * [phpstan_report.md](laravel/Modules/Media/docs/phpstan_report.md)
 
+=======
+   - Verificare il comportamento con lingue diverse 
+>>>>>>> 25935b6 (.)

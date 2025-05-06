@@ -55,6 +55,7 @@
 - [Traduzioni](packages/translations.md)
 - [SEO](packages/seo.md)
 - [Performance](packages/performance.md) 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di packages.md
 * [packages.md](laravel/Modules/Gdpr/docs/packages.md)
@@ -67,3 +68,5 @@
 * [packages.md](laravel/Modules/Media/docs/packages.md)
 * [packages.md](laravel/Modules/Tenant/docs/packages.md)
 
+=======
+>>>>>>> 25935b6 (.)

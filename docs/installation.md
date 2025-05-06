@@ -15,6 +15,7 @@ Per installare il bacchetto basta mettere il seguente comando nella linea di com
 composer require laraxot/module_lang
 
 php artisan module_lang:install
+<<<<<<< HEAD
 ```
 ## Collegamenti tra versioni di installation.md
 * [installation.md](laravel/Modules/Xot/docs/filament/installation.md)
@@ -25,3 +26,6 @@ php artisan module_lang:install
 * [installation.md](laravel/Modules/Cms/docs/installation.md)
 * [installation.md](laravel/Themes/One/docs/installation.md)
 
+=======
+```
+>>>>>>> 25935b6 (.)
