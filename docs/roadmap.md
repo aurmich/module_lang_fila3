@@ -175,7 +175,6 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 
 [⬅️ Torna alla Roadmap Principale](/docs/roadmap.md)
 
-<<<<<<< HEAD
 ## Funzionalità Future
 
 ### Translation Management
@@ -357,5 +356,3 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 
 ---
 
-=======
->>>>>>> b98e0ad (.)
