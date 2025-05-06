@@ -28,8 +28,8 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 - [module_lang.md](module_lang.md)
 
 ## Collegamenti tra versioni di PHPSTAN_LEVEL9_FIXES.md
-* [PHPSTAN_LEVEL9_FIXES.md](laravel/Modules/User/docs/PHPSTAN_LEVEL9_FIXES.md)
-* [PHPSTAN_LEVEL9_FIXES.md](laravel/Modules/Lang/docs/PHPSTAN_LEVEL9_FIXES.md)
+* [PHPSTAN_LEVEL9_FIXES.md](../../../User/docs/PHPSTAN_LEVEL9_FIXES.md)
+* [PHPSTAN_LEVEL9_FIXES.md](../../../Lang/docs/PHPSTAN_LEVEL9_FIXES.md)
 
 
 ## Collegamenti tra versioni di phpstan_level9_fixes.md
