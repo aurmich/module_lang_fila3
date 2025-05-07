@@ -86,13 +86,6 @@ Route::middleware([
 - [Torna a packages.md](../packages.md)
 - [Localizzazione](localization.md)
 - [Traduzioni](translations.md) 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-### Versione HEAD
-
->>>>>>> 2d6aed5 (.)
 ### Versione HEAD
 
 
@@ -112,14 +105,3 @@ Route::middleware([
 
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> 6115da2 (.)
-=======
-
-### Versione Alternativa
-
-
----
-
->>>>>>> 2d6aed5 (.)

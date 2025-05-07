@@ -472,13 +472,6 @@ tests/Unit
 - [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/docs/phpstan/)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-### Versione HEAD
-
->>>>>>> 2d6aed5 (.)
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
@@ -498,14 +491,3 @@ tests/Unit
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
 
-<<<<<<< HEAD
-=======
->>>>>>> 6115da2 (.)
-=======
-
-### Versione Alternativa
-
-
----
-
->>>>>>> 2d6aed5 (.)

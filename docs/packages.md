@@ -55,13 +55,6 @@
 - [Traduzioni](packages/translations.md)
 - [SEO](packages/seo.md)
 - [Performance](packages/performance.md) 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-### Versione HEAD
-
->>>>>>> 2d6aed5 (.)
 ### Versione HEAD
 
 
@@ -82,14 +75,3 @@
 
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> 6115da2 (.)
-=======
-
-### Versione Alternativa
-
-
----
-
->>>>>>> 2d6aed5 (.)

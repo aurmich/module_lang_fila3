@@ -211,13 +211,6 @@ Implementare:
          ->chunk(1000);
    }
    ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-### Versione HEAD
-
->>>>>>> 2d6aed5 (.)
 ### Versione HEAD
 
 
@@ -239,14 +232,3 @@ Implementare:
 
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> 6115da2 (.)
-=======
-
-### Versione Alternativa
-
-
----
-
->>>>>>> 2d6aed5 (.)

@@ -17,10 +17,6 @@ use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Component;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-<<<<<<< HEAD
-=======
-use Webmozart\Assert\Assert;
->>>>>>> 6115da2 (.)
 
 // Route::get('{path}', RedirectToPreferredLanguage::class)
 // ->where('path', '^(?!(en|de)).*');
@@ -40,20 +36,13 @@ class Change extends Component
         unset($langs[$this->lang]);
         $this->url = Request::getRequestUri();
         $langs = Arr::map($langs, function (array $item, string $key) {
+            // @phpstan-ignore staticMethod.notFound
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
             if (false !== $url) {
-<<<<<<< HEAD
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
-<<<<<<< HEAD
-=======
->>>>>>> c2674d9 (.)
                 if (! is_string($url)) {
-                    $url = '/'.$key;
-=======
-                if (!is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
-                    $url = '/' . $key;
->>>>>>> 6115da2 (.)
+                    $url = '/'.$key;
                 } else {
                     $url = Str::of($url)->replace(url(''), '')->toString();
                 }
