@@ -12,6 +12,7 @@ Data: Wed Apr 23 10:43:32 CEST 2025
 ## Collegamenti
 
 - [Report Generale](/docs/phpstan/README.md)
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
@@ -91,3 +92,5 @@ Data: Wed Apr 23 10:43:32 CEST 2025
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+=======
+>>>>>>> 6115da2 (.)
