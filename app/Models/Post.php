@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Eloquent;
 =======
 <<<<<<< HEAD
@@ -13,12 +14,12 @@ use Illuminate\Support\Str;
 use Eloquent;
 >>>>>>> origin/dev
 >>>>>>> 6115da2 (.)
+=======
+>>>>>>> 2d6aed5 (.)
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-// --- traits ---
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-// use Laravel\Scout\Searchable;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
 use Illuminate\Support\Str;
@@ -185,6 +186,7 @@ class Post extends Model
         'url', 'url_lang', // buffer
         'image_resize_src', // buffer
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 6115da2 (.)
@@ -209,21 +211,14 @@ class Post extends Model
 =======
         'category_id', 'image', 'content',
         'published', 'created_by', 'updated_by',
+=======
+>>>>>>> 2d6aed5 (.)
     ];
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'id' => 'integer',
-        'post_id' => 'integer',
-        'author_id' => 'integer',
-        'category_id' => 'integer',
-        'published' => 'integer',
-    ];
+    /** @var list<string> */
+    protected $appends = [];
 
+<<<<<<< HEAD
     /**
      * The accessors to append to the model's array form.
      *
@@ -239,6 +234,13 @@ class Post extends Model
     ];
 >>>>>>> origin/dev
 >>>>>>> 6115da2 (.)
+=======
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var string */
+    protected $keyType = 'string';
+>>>>>>> 2d6aed5 (.)
 
     /**
      * Get the options for generating the slug.
@@ -250,6 +252,7 @@ class Post extends Model
             ->saveSlugsTo('guid');
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -290,14 +293,18 @@ class Post extends Model
 <<<<<<< HEAD
 =======
 =======
+=======
+    // -------- relationship ------
+>>>>>>> 2d6aed5 (.)
     /**
-     * Get the owning commentable model.
+     * @return MorphTo
      */
-    public function post(): MorphTo
+    public function linkable()
     {
-        return $this->morphTo();
+        return $this->morphTo('post');
     }
 
+<<<<<<< HEAD
     /**
      * ---.
      */
@@ -347,6 +354,10 @@ class Post extends Model
     }
 >>>>>>> origin/dev
 >>>>>>> 6115da2 (.)
+=======
+    // end function
+    // -------------- MUTATORS ------------------
+>>>>>>> 2d6aed5 (.)
 
     public function setTitleAttribute(string $value): void
     {
@@ -503,7 +514,8 @@ class Post extends Model
     }
 
     /**
-     * @return array<string, string> */
+     * @return array<string, string>
+     */
     protected function casts(): array
     {
         return [
@@ -518,6 +530,7 @@ class Post extends Model
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }// end class
 =======
 <<<<<<< HEAD
@@ -526,3 +539,6 @@ class Post extends Model
 }
 >>>>>>> origin/dev
 >>>>>>> 6115da2 (.)
+=======
+}// end class
+>>>>>>> 2d6aed5 (.)

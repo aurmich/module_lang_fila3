@@ -14,6 +14,9 @@ class LangField implements CastsAttributes
      *
      * @param BaseModelLang $model
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6aed5 (.)
      * @param string        $key
 =======
      * @param string $key
@@ -30,6 +33,9 @@ class LangField implements CastsAttributes
      *
      * @param BaseModelLang $model
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6aed5 (.)
      * @param string        $key
      * @param array         $attributes
      * @param string        $key

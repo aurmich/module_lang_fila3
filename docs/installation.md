@@ -16,6 +16,12 @@ composer require laraxot/module_lang
 
 php artisan module_lang:install
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 2d6aed5 (.)
 ### Versione HEAD
 
 ```
@@ -35,6 +41,16 @@ php artisan module_lang:install
 
 ---
 
+<<<<<<< HEAD
 =======
 ```
 >>>>>>> 6115da2 (.)
+=======
+
+### Versione Alternativa
+
+```
+
+---
+
+>>>>>>> 2d6aed5 (.)

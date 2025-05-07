@@ -91,6 +91,12 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 - [Localizzazione](localization.md)
 - [Performance](performance.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 2d6aed5 (.)
 ### Versione HEAD
 
 
@@ -119,5 +125,14 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 6115da2 (.)
+=======
+
+### Versione Alternativa
+
+
+---
+
+>>>>>>> 2d6aed5 (.)

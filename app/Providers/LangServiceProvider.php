@@ -24,7 +24,8 @@ use Modules\Xot\Services\BladeService;
 use Webmozart\Assert\Assert;
 
 /**
- * ---.
+ * Class LangServiceProvider
+ * @package Modules\Lang\Providers
  */
 class LangServiceProvider extends XotBaseServiceProvider
 {

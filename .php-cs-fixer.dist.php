@@ -10,9 +10,13 @@ $finder = PhpCsFixer\Finder::create()
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 6115da2 (.)
+=======
+;
+>>>>>>> 2d6aed5 (.)
 
 $config = new PhpCsFixer\Config();
 
@@ -41,8 +45,12 @@ $config
     ])
     ->setFinder($finder)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> 6115da2 (.)
+=======
+;
+>>>>>>> 2d6aed5 (.)
 
 return $config;

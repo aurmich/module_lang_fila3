@@ -17,7 +17,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
      *
      * @var string
+<<<<<<< HEAD
 >>>>>>> 6115da2 (.)
+=======
+ 6115da2 (.)
+>>>>>>> 2d6aed5 (.)
      */
     protected string $moduleNamespace = 'Modules\Lang\Http\Controllers';
 
@@ -27,7 +31,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
      *
      * @var string
+<<<<<<< HEAD
 >>>>>>> 6115da2 (.)
+=======
+ 6115da2 (.)
+>>>>>>> 2d6aed5 (.)
      */
     protected string $module_dir = __DIR__;
 
@@ -37,7 +45,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
      *
      * @var string
+<<<<<<< HEAD
 >>>>>>> 6115da2 (.)
+=======
+ 6115da2 (.)
+>>>>>>> 2d6aed5 (.)
      */
     protected string $module_ns = __NAMESPACE__;
 
@@ -47,7 +59,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
      *
      * @var string
+<<<<<<< HEAD
 >>>>>>> 6115da2 (.)
+=======
+ 6115da2 (.)
+>>>>>>> 2d6aed5 (.)
      */
     public string $name = 'Lang';
 
@@ -57,7 +73,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
      *
      * @return void
+<<<<<<< HEAD
 >>>>>>> 6115da2 (.)
+=======
+ 6115da2 (.)
+>>>>>>> 2d6aed5 (.)
      */
     public function boot(): void
     {
@@ -71,20 +91,32 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
      *
      * @return void
+<<<<<<< HEAD
 >>>>>>> 6115da2 (.)
+=======
+ 6115da2 (.)
+>>>>>>> 2d6aed5 (.)
      */
     public function register(): void
     {
         parent::register();
 <<<<<<< HEAD
+<<<<<<< HEAD
         // $this->registerLang();
 =======
 >>>>>>> 6115da2 (.)
+=======
+        // $this->registerLang();
+ 6115da2 (.)
+>>>>>>> 2d6aed5 (.)
     }
 
     /**
      * Registra le impostazioni di lingua basate sulla configurazione.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6aed5 (.)
      */
     public function registerLang(): void
     {
@@ -104,7 +136,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         }
         \getRouteParameters();
         */
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2d6aed5 (.)
      *
      * @return void
      */
@@ -120,23 +155,37 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         /** @var array<string> $langs */
         $langs = array_keys($locales);
 
+<<<<<<< HEAD
 >>>>>>> 6115da2 (.)
+=======
+ 6115da2 (.)
+>>>>>>> 2d6aed5 (.)
         $n = 1;
         if (inAdmin()) {
             $n = 3;
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d6aed5 (.)
         if (\in_array(request()->segment($n), $langs, false)) {
             /** @var string|null $lang */
             $lang = request()->segment($n);
             if (null !== $lang) {
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2d6aed5 (.)
         if (in_array(request()->segment($n), $langs, false)) {
             /** @var string|null $lang */
             $lang = request()->segment($n);
             if ($lang !== null) {
+<<<<<<< HEAD
 >>>>>>> 6115da2 (.)
+=======
+ 6115da2 (.)
+>>>>>>> 2d6aed5 (.)
                 app()->setLocale($lang);
             }
         }

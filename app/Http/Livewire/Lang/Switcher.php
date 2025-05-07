@@ -45,10 +45,16 @@ class Switcher extends Component
             if (false !== $url) {
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (! is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
                     $url = '/'.$key;
 =======
+=======
+                if (! is_string($url)) {
+                    // Se non è una stringa, utilizziamo una URL di fallback
+                    $url = '/'.$key;
+>>>>>>> 2d6aed5 (.)
                 if (!is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
                     $url = '/' . $key;

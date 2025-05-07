@@ -34,6 +34,12 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
    - Mantenere una buona copertura dei test
    - Testare i casi edge delle traduzioni
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 2d6aed5 (.)
 ### Versione HEAD
 
    - Verificare il comportamento con lingue diverse 
@@ -48,6 +54,16 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
 
 ---
 
+<<<<<<< HEAD
 =======
    - Verificare il comportamento con lingue diverse 
 >>>>>>> 6115da2 (.)
+=======
+
+### Versione Alternativa
+
+   - Verificare il comportamento con lingue diverse 
+
+---
+
+>>>>>>> 2d6aed5 (.)

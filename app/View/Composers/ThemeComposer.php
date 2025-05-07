@@ -52,10 +52,14 @@ class ThemeComposer
             // Verifichiamo che regional sia una stringa o lo convertiamo in modo sicuro
             $regional = $item['regional'];
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! is_string($regional)) {
 =======
             if (!is_string($regional)) {
 >>>>>>> 6115da2 (.)
+=======
+            if (! is_string($regional)) {
+>>>>>>> 2d6aed5 (.)
                 $regional = '';
             }
             $regionalParts = explode('_', $regional);
@@ -77,10 +81,14 @@ class ThemeComposer
             // Verifichiamo che name sia una stringa o lo convertiamo in modo sicuro
             $name = $item['name'];
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! is_string($name)) {
 =======
             if (!is_string($name)) {
 >>>>>>> 6115da2 (.)
+=======
+            if (! is_string($name)) {
+>>>>>>> 2d6aed5 (.)
                 $name = $locale; // Fallback al codice locale
             }
 
@@ -148,6 +156,7 @@ class ThemeComposer
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
         $value = $lang->{$field};
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! is_string($value)) {
             return 'id' === $field ? $currentLocale : '';
         }
@@ -155,6 +164,10 @@ class ThemeComposer
 =======
         if (!is_string($value)) {
             return $field === 'id' ? $currentLocale : '';
+=======
+        if (! is_string($value)) {
+            return 'id' === $field ? $currentLocale : '';
+>>>>>>> 2d6aed5 (.)
         }
         
 >>>>>>> 6115da2 (.)

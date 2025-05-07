@@ -19,6 +19,12 @@ In questo modo, quando l'applicazione viene utilizzata in Italia, verrà visuali
 quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in francese, e così via.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 2d6aed5 (.)
 ### Versione HEAD
 
 
@@ -36,5 +42,14 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 6115da2 (.)
+=======
+
+### Versione Alternativa
+
+
+---
+
+>>>>>>> 2d6aed5 (.)

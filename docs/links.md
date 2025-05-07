@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 2d6aed5 (.)
 # Gestione delle Traduzioni in Laravel
 
 ## Pacchetti Raccomandati
@@ -36,7 +42,13 @@
 
 ### Formattazione Valuta
 ```php
+<<<<<<< HEAD
 =======
+=======
+
+### Versione Alternativa
+
+>>>>>>> 2d6aed5 (.)
 If you need to translate just the text and want to build your own UI - Spatie package is a good choice.
 If you need to translate the routes - Mcamara package
 If you need to translate just the text but don't want to build your UI - You can use Nikaia package or MohmmedAshraf package
@@ -53,7 +65,13 @@ https://github.com/mcamara/laravel-localization
 https://github.com/MohmmedAshraf/laravel-translations
 
 ~~~php
+<<<<<<< HEAD
 >>>>>>> 6115da2 (.)
+=======
+
+---
+
+>>>>>>> 2d6aed5 (.)
 if(! function_exists('formatCurrency')) {
     function formatCurrency($amount, $locale = 'en_US', $currency = 'USD')
     {
@@ -62,6 +80,12 @@ if(! function_exists('formatCurrency')) {
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 2d6aed5 (.)
 ```
 
 ### Middleware per Impostazione Locale
@@ -147,7 +171,13 @@ php artisan translations:import    # Importa traduzioni
 php artisan translations:export    # Esporta traduzioni
 php artisan translations:clean     # Pulisce le traduzioni non utilizzate
 ```
+<<<<<<< HEAD
 =======
+=======
+
+### Versione Alternativa
+
+>>>>>>> 2d6aed5 (.)
 ~~~
 
 file Http/Middleware/SetLocale.php
@@ -217,6 +247,9 @@ a nice administration
 outhebox/laravel-translations
 
 >>>>>>> 6115da2 (.)
+
+---
+
 
 
 
