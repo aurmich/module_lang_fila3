@@ -200,6 +200,33 @@ Questi middleware sono già configurati in SaluteOra e non è necessario modific
 }
 ```
 
+## Componenti Bandiera
+
+### Implementazione Corretta
+```blade
+{{-- Per icone semplici --}}
+<x-filament::icon
+    :icon="'ui-flags.' . $flagCode"
+    class="h-5 w-5 text-gray-500 dark:text-gray-400"
+    :label="$flagCode"
+    aria-hidden="true"
+/>
+
+{{-- Per pulsanti con icone --}}
+<x-filament::icon-button
+    :icon="'ui-flags.' . $flagCode"
+    class="h-5 w-5"
+    :label="$flagCode"
+    aria-hidden="true"
+/>
+```
+
+### Vantaggi
+1. **Coerenza**: Usa i componenti nativi di Filament
+2. **Tema Scuro**: Supporto automatico
+3. **Accessibilità**: Componenti ottimizzati
+4. **Manutenibilità**: Codice pulito e standardizzato
+
 ## Riferimenti
 
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)

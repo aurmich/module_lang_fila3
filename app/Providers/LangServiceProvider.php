@@ -17,6 +17,7 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\View;
+use Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Services\TranslatorService;
 use Modules\Xot\Providers\XotBaseServiceProvider;
@@ -46,6 +47,15 @@ class LangServiceProvider extends XotBaseServiceProvider
     public function register(): void
     {
         parent::register();
+
+        // Registra il service provider di laravel-localization
+        $this->app->register(LaravelLocalizationServiceProvider::class);
+
+        // Carica la configurazione di laravel-localization
+        $this->mergeConfigFrom(
+            __DIR__.'/../config/laravel-localization.php', 'laravel-localization'
+        );
+
         // --dalla doc in register ... ma non funziona, funziona in boot
         // $this->registerTranslator();
     }
@@ -64,7 +74,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerFilamentLabel(): void
     {
-   
+
         Field::configureUsing(function (Field $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             Assert::isInstanceOf($component, Field::class);
