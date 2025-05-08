@@ -17,25 +17,36 @@ Questo documento descrive le best practices per l'utilizzo delle chiavi di tradu
 Un errore comune è utilizzare stringhe in italiano come chiavi di traduzione:
 
 ```php
+<<<<<<< HEAD
 // ERRATO
+=======
+// ❌ ERRATO
+>>>>>>> 24b2438 (.)
 {{ __('Accedi') }}
 {{ __('Registrati') }}
 {{ __('Profilo') }}
 {{ __('Logout') }}
 ```
 
+<<<<<<< HEAD
 Questo approccio crea diversi problemi:
 1. **Ambiguità**: La stessa parola italiana potrebbe avere significati diversi in contesti diversi
 2. **Difficoltà di manutenzione**: Diventa difficile tracciare tutte le traduzioni
 3. **Inconsistenza**: Diverse parti dell'applicazione potrebbero usare chiavi diverse per lo stesso concetto
 4. **Problemi con altre lingue**: Quando si aggiunge una nuova lingua, è difficile sapere quali chiavi tradurre
 
+=======
+>>>>>>> 24b2438 (.)
 ### Soluzione Corretta
 
 Utilizzare sempre chiavi strutturate in inglese, seguendo una convenzione precisa:
 
 ```php
+<<<<<<< HEAD
 // CORRETTO
+=======
+// ✅ CORRETTO
+>>>>>>> 24b2438 (.)
 {{ __('auth.login') }}
 {{ __('auth.register') }}
 {{ __('user.profile') }}
@@ -66,6 +77,7 @@ I file di traduzione devono essere organizzati in modo gerarchico:
 // resources/lang/it/auth.php
 return [
     'login' => [
+<<<<<<< HEAD
         'title' => 'Accedi al tuo account',
         'email_label' => 'Indirizzo email',
         'password_label' => 'Password',
@@ -198,6 +210,29 @@ E per i pulsanti di login/registrazione:
         {{ __('auth.register.link') }}
     </x-filament::button>
 </div>
+=======
+        'title' => 'Accedi',
+        'button' => [
+            'label' => 'Accedi',
+            'tooltip' => 'Clicca per accedere'
+        ]
+    ],
+    'register' => [
+        'title' => 'Registrati',
+        'button' => [
+            'label' => 'Registrati',
+            'tooltip' => 'Clicca per registrarti'
+        ]
+    ],
+    'logout' => [
+        'title' => 'Esci',
+        'button' => [
+            'label' => 'Esci',
+            'tooltip' => 'Clicca per uscire'
+        ]
+    ]
+];
+>>>>>>> 24b2438 (.)
 ```
 
 ## Vantaggi dell'Approccio Strutturato

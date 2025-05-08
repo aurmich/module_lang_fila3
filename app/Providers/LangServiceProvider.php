@@ -64,6 +64,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerFilamentLabel(): void
     {
+   
         Field::configureUsing(function (Field $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             Assert::isInstanceOf($component, Field::class);
@@ -78,6 +79,9 @@ class LangServiceProvider extends XotBaseServiceProvider
                 }
                 $component->validationMessages($typedMessages);
             }
+            $component = app(AutoLabelAction::class)->execute($component,'placeholder');
+            $component = app(AutoLabelAction::class)->execute($component,'helperText');
+            $component = app(AutoLabelAction::class)->execute($component,'description');
 
             return $component;
         });
