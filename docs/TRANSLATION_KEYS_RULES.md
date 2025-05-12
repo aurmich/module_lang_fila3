@@ -1,11 +1,11 @@
 # Regole per le Chiavi di Traduzione in SaluteOra
 
 ## Collegamenti correlati
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](/laravel/Modules/User/docs/AUTH_PAGES_IMPLEMENTATION.md)
-- [Regole Traduzioni User](/laravel/Modules/User/docs/TRANSLATION_KEYS_RULES.md)
-- [Documentazione Lang](/laravel/Modules/Lang/docs/README.md)
+- [Documentazione centrale](./README.md)
+- [Collegamenti documentazione](./collegamenti-documentazione.md)
+- [Implementazione Auth Pages](../../User/docs/AUTH_PAGES_IMPLEMENTATION.md)
+- [Regole Traduzioni User](../../User/docs/TRANSLATION_KEYS_RULES.md)
+- [Documentazione Lang](./README.md)
 
 ## Regole Fondamentali per le Traduzioni
 
@@ -209,3 +209,9 @@ php artisan lang:sync
 ## Conclusione
 
 Seguire queste regole per le chiavi di traduzione è fondamentale per garantire la coerenza, la manutenibilità e l'internazionalizzazione dell'applicazione SaluteOra. L'utilizzo di chiavi standardizzate e strutturate gerarchicamente facilita la gestione delle traduzioni e migliora la qualità complessiva del codice.
+
+## [2024-07-07] Nota storica: correzione massiva Notify
+
+- Sono state applicate correzioni strutturali alle traduzioni del modulo Notify per allineamento a queste regole.
+- Vedi anche: [TRANSLATION_KEYS_RULES.md](../../../Notify/docs/TRANSLATION_KEYS_RULES.md) per dettagli, esempi e best practice specifiche.
+- Ogni nuova regola o convenzione va riportata sia qui che nella documentazione del modulo coinvolto.
