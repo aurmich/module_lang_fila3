@@ -2,7 +2,10 @@
     <button
         @click="open = !open"
         @click.away="open = false"
+<<<<<<< HEAD
         data-dropdown-toggle="dropdown-language"
+=======
+>>>>>>> 3b34696 (.)
         class="grid py-3 text-sm font-semibold transition rounded-lg place-items-center hover:bg-gray-100"
     >
         <div class="flex items-center space-x-1">
@@ -22,7 +25,10 @@
         x-transition:leave="transition ease-in duration-75"
         x-transition:leave-start="transform opacity-100 scale-100"
         x-transition:leave-end="transform opacity-0 scale-95"
+<<<<<<< HEAD
         id="dropdown-language"
+=======
+>>>>>>> 3b34696 (.)
         class="absolute z-[45] p-2 overflow-hidden text-sm border border-white rounded-lg bg-gray-50/85 backdrop-blur w-[240px] max-w-sm"
     >
         <ul>

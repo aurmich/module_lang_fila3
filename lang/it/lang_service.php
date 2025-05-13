@@ -8,12 +8,22 @@ return array (
       'label' => 'Data di creazione',
       'placeholder' => 'Seleziona data',
       'tooltip' => 'Data in cui è stato creato il record',
+<<<<<<< HEAD
+=======
+      'description' => 'created_at',
+      'helper_text' => 'created_at',
+>>>>>>> 3b34696 (.)
     ),
     'updated_at' => 
     array (
       'label' => 'Ultima modifica',
       'placeholder' => 'Seleziona data',
       'tooltip' => 'Data dell\'ultima modifica',
+<<<<<<< HEAD
+=======
+      'description' => 'updated_at',
+      'helper_text' => 'updated_at',
+>>>>>>> 3b34696 (.)
     ),
     'name' => 
     array (
@@ -79,6 +89,10 @@ return array (
     array (
       'label' => 'Attivo',
       'tooltip' => 'Indica se l\'elemento è attivo',
+<<<<<<< HEAD
+=======
+      'description' => 'isActive',
+>>>>>>> 3b34696 (.)
     ),
     'file' => 
     array (
@@ -270,6 +284,7 @@ return array (
     array (
       'label' => 'Data aggiudicazione',
     ),
+<<<<<<< HEAD
     'updated_by' => 
     array (
       'description' => 'updated_by',
@@ -283,6 +298,16 @@ return array (
       'helper_text' => 'created_by',
       'placeholder' => 'created_by',
       'label' => 'created_by',
+=======
+    'layout' => 
+    array (
+      'label' => 'layout',
+    ),
+    'view' => 
+    array (
+      'description' => 'view',
+      'helper_text' => 'view',
+>>>>>>> 3b34696 (.)
     ),
   ),
   'actions' => 
@@ -347,9 +372,15 @@ return array (
       'label' => 'Scarica esempio',
       'tooltip' => 'Scarica un file di esempio',
     ),
+<<<<<<< HEAD
     'copy_from_last_year_' => 
     array (
       'label' => 'copy_from_last_year_',
+=======
+    'export_xls' => 
+    array (
+      'label' => 'export_xls',
+>>>>>>> 3b34696 (.)
     ),
   ),
 );

@@ -445,7 +445,6 @@ class UserController extends Controller
 
 ---
 
-
 ## Notification System
 - Email Templates
 - SMS Templates
