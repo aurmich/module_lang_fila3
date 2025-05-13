@@ -285,6 +285,10 @@ return array (
       'description' => 'view',
       'helper_text' => 'view',
     ),
+    'updated_by' => 
+    array (
+      'description' => 'updated_by',
+    ),
   ),
   'actions' => 
   array (
@@ -351,6 +355,14 @@ return array (
     'export_xls' => 
     array (
       'label' => 'export_xls',
+    ),
+    'GeneratePDFProjectReportAction' => 
+    array (
+      'label' => 'GeneratePDFProjectReportAction',
+    ),
+    'copy_from_last_year_' => 
+    array (
+      'label' => 'copy_from_last_year_',
     ),
   ),
 );
