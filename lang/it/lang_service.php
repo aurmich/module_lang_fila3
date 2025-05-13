@@ -38,6 +38,8 @@ return array (
       'label' => 'Valore',
       'placeholder' => 'Inserisci un valore',
       'tooltip' => 'Valore singolo',
+      'description' => 'value',
+      'helper_text' => 'value',
     ),
     'email' => 
     array (
@@ -278,6 +280,9 @@ return array (
     'created_by' => 
     array (
       'description' => 'created_by',
+      'helper_text' => 'created_by',
+      'placeholder' => 'created_by',
+      'label' => 'created_by',
     ),
   ),
   'actions' => 
@@ -341,6 +346,10 @@ return array (
     array (
       'label' => 'Scarica esempio',
       'tooltip' => 'Scarica un file di esempio',
+    ),
+    'copy_from_last_year_' => 
+    array (
+      'label' => 'copy_from_last_year_',
     ),
   ),
 );
