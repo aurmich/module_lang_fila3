@@ -6,6 +6,7 @@
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila3.git
 
+<<<<<<< HEAD
 ### Versione HEAD
 
 ## Collegamenti ai Moduli
@@ -34,6 +35,8 @@
 
 ---
 
+=======
+>>>>>>> 2dbb0e7 (.)
 ## Service Providers
 1. `Modules\Lang\Providers\LangServiceProvider`
 2. `Modules\Lang\Providers\Filament\AdminPanelProvider`
@@ -146,6 +149,7 @@ composer format        # Formatta il codice
 - Tutorial e esempi
 
 ## Changelog
+<<<<<<< HEAD
 ### Versione HEAD
 
 Le modifiche vengono tracciate nel repository GitHub.
@@ -303,3 +307,6 @@ Le modifiche vengono tracciate nel repository GitHub.
 
 ---
 
+=======
+Le modifiche vengono tracciate nel repository GitHub. 
+>>>>>>> 2dbb0e7 (.)

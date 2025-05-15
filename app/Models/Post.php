@@ -92,12 +92,16 @@ use Spatie\Sluggable\SlugOptions;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @mixin Eloquent
+=======
+>>>>>>> 2dbb0e7 (.)
  */
 class Post extends Model
 {
     use HasFactory;
     use HasSlug;
+<<<<<<< HEAD
 
     // use Cachable;
     use Updater;
@@ -107,6 +111,10 @@ class Post extends Model
 
     }
     */
+=======
+    use Updater;
+    use Cachable;
+>>>>>>> 2dbb0e7 (.)
 
     final public const SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
 
@@ -125,7 +133,10 @@ class Post extends Model
     /** @var int */
     protected $perPage = 30;
 
+<<<<<<< HEAD
     // use Searchable;
+=======
+>>>>>>> 2dbb0e7 (.)
     /** @var string */
     protected $connection = 'lang';
 
@@ -144,6 +155,7 @@ class Post extends Model
         // ------ BUFFER ----
         'url', 'url_lang', // buffer
         'image_resize_src', // buffer
+<<<<<<< HEAD
     ];
 
     /** @var list<string> */
@@ -160,6 +172,38 @@ class Post extends Model
         return inAdmin() ? 'guid' : 'post_id';
     }
     */
+=======
+        'category_id', 'image', 'content',
+        'published', 'created_by', 'updated_by',
+    ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'id' => 'integer',
+        'post_id' => 'integer',
+        'author_id' => 'integer',
+        'category_id' => 'integer',
+        'published' => 'integer',
+    ];
+
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array<int, string>
+     */
+    protected $appends = [
+        'url',
+        'url_lang',
+        'image_resize_src',
+        'linked_count',
+        'related_count',
+        'relatedrev_count',
+    ];
+>>>>>>> 2dbb0e7 (.)
 
     /**
      * Get the options for generating the slug.
@@ -171,6 +215,7 @@ class Post extends Model
             ->saveSlugsTo('guid');
     }
 
+<<<<<<< HEAD
     // -------- relationship ------
     /**
      * @return MorphTo
@@ -201,6 +246,63 @@ class Post extends Model
 
     // end function
     // -------------- MUTATORS ------------------
+=======
+    /**
+     * Get the owning commentable model.
+     */
+    public function post(): MorphTo
+    {
+        return $this->morphTo();
+    }
+
+    /**
+     * ---.
+     */
+    public function getUrlAttribute(): ?string
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getUrlLangAttribute(): ?array
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getImageResizeSrcAttribute(): ?array
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getLinkedCountAttribute(): ?string
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getRelatedCountAttribute(): ?string
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getRelatedrevCountAttribute(): ?string
+    {
+        return null;
+    }
+>>>>>>> 2dbb0e7 (.)
 
     public function setTitleAttribute(string $value): void
     {
@@ -209,7 +311,11 @@ class Post extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Undocumented function.
+=======
+     * ---.
+>>>>>>> 2dbb0e7 (.)
      */
     public function getTitleAttribute(?string $value): ?string
     {
@@ -223,12 +329,20 @@ class Post extends Model
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
                 ? (string) $this->attributes['post_id'] : '';
+<<<<<<< HEAD
             $value = $postType.' '.$postId;
+=======
+            $value = $postType . ' ' . $postId;
+>>>>>>> 2dbb0e7 (.)
         } else {
             // Assicuriamoci che post_type e post_id siano stringhe
             $postType = is_string($this->post_type) ? $this->post_type : '';
             $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
+<<<<<<< HEAD
             $value = $postType.' '.$postId;
+=======
+            $value = $postType . ' ' . $postId;
+>>>>>>> 2dbb0e7 (.)
         }
 
         $this->title = $value;
@@ -253,7 +367,11 @@ class Post extends Model
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
                 ? (string) $this->attributes['post_id'] : '';
+<<<<<<< HEAD
             $value = $postType.' '.$postId;
+=======
+            $value = $postType . ' ' . $postId;
+>>>>>>> 2dbb0e7 (.)
         }
         if (null === $value) {
             $value = 'u-'.random_int(1, 1000);
@@ -293,4 +411,8 @@ class Post extends Model
             'published_at' => 'datetime',
         ];
     }
+<<<<<<< HEAD
 }// end class
+=======
+}
+>>>>>>> 2dbb0e7 (.)

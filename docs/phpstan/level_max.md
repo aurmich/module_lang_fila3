@@ -1,31 +1,22 @@
-<<<<<<< HEAD
+# Rapporto PHPStan Livello max per il modulo Lang
 
-
-=======
-
-=======
-
->>>>>>> aurmich/dev
-
-=======
-
->>>>>>> aurmich/dev
-=======
-
->>>>>>> aurmich/dev
-
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
-# Rapporto PHPStan Livello 7 per il modulo Lang
-
-Data analisi: 2025-04-15 22:02:20
+Data analisi: 2025-04-15 22:02:38
 
 ## Riepilogo
 
-Trovati 2 errori al livello 7.
+Trovati 3 errori al livello max.
 
 ## Errori e suggerimenti
+
+### File: `/var/www/html/saluteora/laravel/Modules/Lang/app/Actions/GetTransPathAction.php`
+
+#### Linea 39: Parameter #2 $path of function module_path expects string, mixed given.
+
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- Tutte le classi/interfacce utilizzate siano importate correttamente
+- I tipi siano dichiarati e utilizzati in modo coerente
+- Le variabili siano inizializzate prima dell'uso
+- I nomi di metodi e proprietà siano corretti
 
 ### File: `/var/www/html/saluteora/laravel/Modules/Lang/app/Models/Post.php`
 
@@ -50,35 +41,3 @@ Trovati 2 errori al livello 7.
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
-
-
-=======
-aurmich/dev
-=======
-
->>>>>>> aurmich/dev
-
-=======
-aurmich/dev
->>>>>>> aurmich/dev
-=======
-aurmich/dev
->>>>>>> aurmich/dev
-
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
-=======
-# PHPStan Report - Livello 7
-
-## Errori rilevati
-* /var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Lang/app/Models/Post.php: PHPDoc type array<int, string> of property Modules\Lang\Models\Post::$appends is not covariant with PHPDoc type list<string> of overridden property Illuminate\Database\Eloquent\Model::$appends. (line 160)
-
-## Soluzioni proposte
-
-> TODO: descrivere soluzioni architetturali e funzionali
-
-## Collegamenti
-
-- Torna all'indice principale: [Indice Report PHPStan Moduli](/docs/phpstan_modules_index.md)
->>>>>>> 2dbb0e7 (.)
