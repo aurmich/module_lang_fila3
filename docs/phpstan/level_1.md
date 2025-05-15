@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 
 
 =======
@@ -60,12 +59,3 @@ aurmich/dev
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
-=======
-# Analisi PHPStan Livello 1 per il modulo Lang
-
-Data: Wed Apr 23 21:22:32 CEST 2025
-
-## Nessun errore trovato
-
-Il modulo Lang ha superato l'analisi PHPStan al livello 1 senza errori.
->>>>>>> Stashed changes
