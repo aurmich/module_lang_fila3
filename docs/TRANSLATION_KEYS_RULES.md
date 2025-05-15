@@ -1,4 +1,4 @@
-# Regole per le Chiavi di Traduzione in SaluteOra
+# Regole per le Chiavi di Traduzione 
 
 ## Collegamenti correlati
 - [Documentazione centrale](./README.md)
@@ -11,7 +11,7 @@
 
 ### 1. Struttura delle Chiavi di Traduzione
 
-Le chiavi di traduzione in SaluteOra devono seguire una struttura gerarchica espansa:
+Le chiavi di traduzione  devono seguire una struttura gerarchica espansa:
 
 ```php
 // Corretto

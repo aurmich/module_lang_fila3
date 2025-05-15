@@ -1,4 +1,4 @@
-# Utilizzo di mcamara/laravel-localization in SaluteOra
+# Utilizzo di mcamara/laravel-localization 
 
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
@@ -8,7 +8,7 @@
 
 ## Panoramica
 
-Questo documento descrive come utilizzare correttamente il pacchetto `mcamara/laravel-localization` in SaluteOra per gestire la localizzazione delle URL e l'interfaccia multilingua.
+Questo documento descrive come utilizzare correttamente il pacchetto `mcamara/laravel-localization`  per gestire la localizzazione delle URL e l'interfaccia multilingua.
 
 ## Regole Fondamentali
 
@@ -27,7 +27,7 @@ Questo documento descrive come utilizzare correttamente il pacchetto `mcamara/la
 
 ## Configurazione
 
-Il pacchetto `mcamara/laravel-localization` è già configurato in SaluteOra. La configurazione si trova in:
+Il pacchetto `mcamara/laravel-localization` è già configurato . La configurazione si trova in:
 - `/var/www/html/saluteora/laravel/config/laravellocalization.php`
 
 Le lingue supportate sono definite nella chiave `supportedLocales` di questo file.
@@ -123,7 +123,7 @@ Il pacchetto utilizza diversi middleware per gestire la localizzazione:
 2. `LaravelLocalizationViewPath` - Imposta il percorso della vista localizzata
 3. `LaravelLocalizationRoutes` - Gestisce le rotte localizzate
 
-Questi middleware sono già configurati in SaluteOra e non è necessario modificarli.
+Questi middleware sono già configurati  e non è necessario modificarli.
 
 ## Errori Comuni da Evitare
 

@@ -8,7 +8,7 @@
 
 ## Panoramica
 
-Questo documento descrive le best practices per l'utilizzo delle chiavi di traduzione in SaluteOra, con particolare attenzione alla struttura delle chiavi e all'evitare l'uso di stringhe in italiano come chiavi di traduzione.
+Questo documento descrive le best practices per l'utilizzo delle chiavi di traduzione , con particolare attenzione alla struttura delle chiavi e all'evitare l'uso di stringhe in italiano come chiavi di traduzione.
 
 ## Regola Fondamentale: Mai Usare Chiavi in Italiano
 
