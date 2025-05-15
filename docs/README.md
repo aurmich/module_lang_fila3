@@ -445,10 +445,13 @@ class UserController extends Controller
 
 ---
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 
 >>>>>>> bde0734 (.)
+=======
+>>>>>>> Stashed changes
 ## Notification System
 - Email Templates
 - SMS Templates
@@ -782,7 +785,10 @@ class UserController extends Controller
 - Bug traduzioni
 - Problemi cache
 - Errori namespace
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 
 ## Politica, Filosofia, Religione, Etica, Zen
 
@@ -791,5 +797,8 @@ class UserController extends Controller
 - **Religione**: Laicità, rispetto di tutte le fedi, libertà di pensiero.
 - **Etica**: Onestà, rispetto, responsabilità, attenzione all'impatto sociale e ambientale.
 - **Zen**: Semplicità, concentrazione sul presente, armonia e serenità nello sviluppo.
+<<<<<<< Updated upstream
 =======
 >>>>>>> bde0734 (.)
+=======
+>>>>>>> Stashed changes

@@ -29,15 +29,20 @@ class AutoLabelAction
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction
      */
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function execute($component,string $type = 'label')
 =======
     public function execute($component)
 >>>>>>> bde0734 (.)
+=======
+    public function execute($component,string $type = 'label')
+>>>>>>> Stashed changes
     {
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function ($item) {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\')){
                 return true;
@@ -61,16 +66,35 @@ class AutoLabelAction
 =======
             if (! isset($item['object'])) {
                 return false;
+=======
+            if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\')){
+                return true;
+>>>>>>> Stashed changes
             }
-
-            return Str::startsWith($item['object']::class, 'Modules\\');
-            // return Str::startsWith($item['class'],'Modules\\');
+            if(isset($item['class']) && Str::startsWith($item['class'], 'Modules\\')){
+                return true;
+            }
+            return false;
         });
+<<<<<<< Updated upstream
         if (is_array($class) && isset($class['object'])) {
             $object_class = $class['object']::class;
 
             // Assert::string($class = Arr::get($backtrace, '5.class'));
 >>>>>>> bde0734 (.)
+=======
+        if (is_array($class)) {
+            $object_class = null;
+            if(isset($class['object'])){
+                $object_class = $class['object']::class;
+            }
+            if(isset($class['class'])){
+                $object_class = $class['class'];
+            }
+            if(is_null($object_class)){
+                throw new \Exception('No object class found');
+            }
+>>>>>>> Stashed changes
             $trans_key = app(GetTransKeyAction::class)->execute($object_class);
         } else {
             $trans_key = 'lang::txt';
@@ -88,6 +112,7 @@ class AutoLabelAction
             $label_tkey = $trans_key.'.actions.'.$val.'';
         }
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         $label_key = $label_tkey.'.'.Str::snake($type);
 
@@ -103,6 +128,16 @@ class AutoLabelAction
         $label = trans($label_key);
         if (is_string($label)) {
 >>>>>>> bde0734 (.)
+=======
+        $label_key = $label_tkey.'.'.Str::snake($type);
+
+        $label = trans($label_key);
+        if (is_string($label) && $label_key == $label) { //se non esiste la traduzione, la salvo
+            app(SaveTransAction::class)->execute($label_key, $val);
+        }
+        if (is_string($label) && $label_key != $label) { //se esiste la traduzione, la aggiorno
+            /*
+>>>>>>> Stashed changes
             if ($label_key == $label) {
                 $label_value = $val;
                 $label_key1 = $label_tkey;
@@ -113,12 +148,16 @@ class AutoLabelAction
 
                 app(SaveTransAction::class)->execute($label_key, $label_value);
             }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
             */
             if (method_exists($component, $type)) {
                 $component->{$type}($label);
             }
             
+<<<<<<< Updated upstream
             if (method_exists($component, 'tooltip')) {
                 $component->tooltip($label);
             }
@@ -131,6 +170,13 @@ class AutoLabelAction
             }
         } else {
 >>>>>>> bde0734 (.)
+=======
+            if (method_exists($component, 'tooltip')) {
+                $component->tooltip($label);
+            }
+        }
+        if (!is_string($label)) {
+>>>>>>> Stashed changes
             $component->label('FIX:'.$label_key);
         }
 

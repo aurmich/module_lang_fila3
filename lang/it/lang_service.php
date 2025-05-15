@@ -1,6 +1,9 @@
 <?php
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 return array (
   'fields' => 
   array (
@@ -364,6 +367,7 @@ return array (
     ),
   ),
 );
+<<<<<<< Updated upstream
 =======
 declare(strict_types=1);
 
@@ -628,3 +632,5 @@ return [
     ],
 ];
 >>>>>>> bde0734 (.)
+=======
+>>>>>>> Stashed changes
