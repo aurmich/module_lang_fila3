@@ -17,25 +17,7 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\View;
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 use Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider;
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-use Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider;
-=======
->>>>>>> bde0734 (.)
-=======
-use Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider;
->>>>>>> Stashed changes
-=======
->>>>>>> 2dbb0e7 (.)
->>>>>>> 1754090 (.)
-=======
-use Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider;
->>>>>>> Stashed changes
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Services\TranslatorService;
 use Modules\Xot\Providers\XotBaseServiceProvider;
@@ -65,17 +47,6 @@ class LangServiceProvider extends XotBaseServiceProvider
     public function register(): void
     {
         parent::register();
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
->>>>>>> 1754090 (.)
-=======
->>>>>>> Stashed changes
 
         // Registra il service provider di laravel-localization
         $this->app->register(LaravelLocalizationServiceProvider::class);
@@ -103,25 +74,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerFilamentLabel(): void
     {
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
->>>>>>> bde0734 (.)
-=======
-
->>>>>>> Stashed changes
-=======
->>>>>>> 2dbb0e7 (.)
->>>>>>> 1754090 (.)
-=======
-
->>>>>>> Stashed changes
         Field::configureUsing(function (Field $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             Assert::isInstanceOf($component, Field::class);
@@ -136,33 +89,9 @@ class LangServiceProvider extends XotBaseServiceProvider
                 }
                 $component->validationMessages($typedMessages);
             }
-<<<<<<< Updated upstream
-<<<<<<< HEAD
             $component = app(AutoLabelAction::class)->execute($component,'placeholder');
             $component = app(AutoLabelAction::class)->execute($component,'helperText');
             $component = app(AutoLabelAction::class)->execute($component,'description');
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-            $component = app(AutoLabelAction::class)->execute($component,'placeholder');
-            $component = app(AutoLabelAction::class)->execute($component,'helperText');
-            $component = app(AutoLabelAction::class)->execute($component,'description');
-=======
->>>>>>> bde0734 (.)
-=======
-            $component = app(AutoLabelAction::class)->execute($component,'placeholder');
-            $component = app(AutoLabelAction::class)->execute($component,'helperText');
-            $component = app(AutoLabelAction::class)->execute($component,'description');
->>>>>>> Stashed changes
-=======
->>>>>>> 2dbb0e7 (.)
->>>>>>> 1754090 (.)
-=======
-            $component = app(AutoLabelAction::class)->execute($component,'placeholder');
-            $component = app(AutoLabelAction::class)->execute($component,'helperText');
-            $component = app(AutoLabelAction::class)->execute($component,'description');
->>>>>>> Stashed changes
 
             return $component;
         });
