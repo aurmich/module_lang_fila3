@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -6,6 +7,8 @@
 =======
 >>>>>>> Stashed changes
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes
 <div x-data="{ open: false }">
     <button
         @click="open = !open"
@@ -40,6 +43,7 @@
                         href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
                         class="flex items-center w-full px-2 py-3 space-x-2 transition rounded hover:bg-white"
                     >
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -99,11 +103,14 @@
                         class="flex items-center w-full px-2 py-3 space-x-2 transition rounded hover:bg-white">
 >>>>>>> 2dbb0e7 (.)
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes
                         <x-filament::icon icon="ui-flags.{{ $localeCode }}" class="size-5" />
                         <div>{{ $properties['native'] }}</div>
                     </a>
                 </li>
             @endforeach
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             {{--
 =======
@@ -121,6 +128,9 @@
             {{--  
 >>>>>>> 2dbb0e7 (.)
 >>>>>>> 1754090 (.)
+=======
+            {{--
+>>>>>>> Stashed changes
 			<li>
 				<button class="flex items-center w-full px-2 py-3 space-x-2 transition rounded hover:bg-white">
 					<svg xmlns="http://www.w3.org/2000/svg" class="size-5" id="flag-icons-us" viewBox="0 0 640 480">

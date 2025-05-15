@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -8,6 +9,8 @@
 =======
 >>>>>>> Stashed changes
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes
 return array (
   'fields' => 
   array (
@@ -371,6 +374,7 @@ return array (
     ),
   ),
 );
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
@@ -646,3 +650,5 @@ return [
 =======
 >>>>>>> 2dbb0e7 (.)
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes

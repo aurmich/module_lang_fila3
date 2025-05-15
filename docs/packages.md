@@ -55,7 +55,6 @@
 - [Traduzioni](packages/translations.md)
 - [SEO](packages/seo.md)
 - [Performance](packages/performance.md) 
-<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -76,5 +75,3 @@
 
 ---
 
-=======
->>>>>>> 2dbb0e7 (.)

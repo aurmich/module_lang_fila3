@@ -3,7 +3,6 @@ Modulo dedicato alla gestione delle traduzioni
 
 ## Aggiungere Modulo nella base del progetto
 Dentro la cartella laravel/Modules
-<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -128,8 +127,6 @@ Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](L
 
 ---
 
-=======
->>>>>>> 2dbb0e7 (.)
 
 ```bash
 git submodule add https://github.com/laraxot/module_lang_fila3.git Lang
@@ -147,7 +144,6 @@ php artisan module:enable Lang
 ## Eseguire le migrazioni
 ```bash
 php artisan module:migrate Lang
-<<<<<<< HEAD
 ### Versione HEAD
 
 ```
@@ -159,6 +155,3 @@ php artisan module:migrate Lang
 
 ---
 
-=======
-```
->>>>>>> 2dbb0e7 (.)

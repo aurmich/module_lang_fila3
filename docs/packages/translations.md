@@ -90,7 +90,6 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 - [Torna a packages.md](../packages.md)
 - [Localizzazione](localization.md)
 - [Performance](performance.md) 
-<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -119,5 +118,3 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 
 ---
 
-=======
->>>>>>> 2dbb0e7 (.)

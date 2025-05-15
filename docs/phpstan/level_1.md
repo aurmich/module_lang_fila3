@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 =======
@@ -60,16 +59,3 @@ aurmich/dev
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
-=======
-# PHPStan Report - Livello 1
-
-## Errori rilevati
-
-## Soluzioni proposte
-
-> TODO: descrivere soluzioni architetturali e funzionali
-
-## Collegamenti
-
-- Torna all'indice principale: [Indice Report PHPStan Moduli](/docs/phpstan_modules_index.md)
->>>>>>> 2dbb0e7 (.)

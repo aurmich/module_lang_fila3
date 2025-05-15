@@ -8,18 +8,11 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
-<<<<<<< HEAD
 use DB;
-=======
->>>>>>> 2dbb0e7 (.)
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Facades\DB;
->>>>>>> 2dbb0e7 (.)
 
 /**
  * Modules\Lang\Models\Translation.
@@ -32,13 +25,8 @@ use Illuminate\Support\Facades\DB;
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
-<<<<<<< HEAD
  * @property string      $namespace
  * @property string      $group
-=======
- * @property string $namespace
- * @property string $group
->>>>>>> 2dbb0e7 (.)
  * @property string|null $item
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newModelQuery()
@@ -102,20 +90,12 @@ class Translation extends BaseModel
 
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder
     {
-<<<<<<< HEAD
         $select = match (\DB::getDriverName()) {
-=======
-        $select = match (DB::getDriverName()) {
->>>>>>> 2dbb0e7 (.)
             'mysql' => 'DISTINCT `group`',
             default => 'DISTINCT "group"',
         };
 
-<<<<<<< HEAD
         return $query->select(\DB::raw($select));
-=======
-        return $query->select(DB::raw($select));
->>>>>>> 2dbb0e7 (.)
     }
 
     /*

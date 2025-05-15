@@ -29,6 +29,7 @@ class AutoLabelAction
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction
      */
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function execute($component,string $type = 'label')
 =======
@@ -46,16 +47,22 @@ class AutoLabelAction
     public function execute($component)
 >>>>>>> 2dbb0e7 (.)
 >>>>>>> 1754090 (.)
+=======
+    public function execute($component,string $type = 'label')
+>>>>>>> Stashed changes
     {
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function ($item) {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes
             if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\')){
                 return true;
             }
@@ -75,6 +82,7 @@ class AutoLabelAction
             if(is_null($object_class)){
                 throw new \Exception('No object class found');
             }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -122,6 +130,8 @@ class AutoLabelAction
 =======
 >>>>>>> 2dbb0e7 (.)
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes
             $trans_key = app(GetTransKeyAction::class)->execute($object_class);
         } else {
             $trans_key = 'lang::txt';
@@ -139,12 +149,15 @@ class AutoLabelAction
             $label_tkey = $trans_key.'.actions.'.$val.'';
         }
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes
         $label_key = $label_tkey.'.'.Str::snake($type);
 
         $label = trans($label_key);
@@ -153,6 +166,7 @@ class AutoLabelAction
         }
         if (is_string($label) && $label_key != $label) { //se esiste la traduzione, la aggiorno
             /*
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -177,6 +191,8 @@ class AutoLabelAction
 =======
 >>>>>>> 2dbb0e7 (.)
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes
             if ($label_key == $label) {
                 $label_value = $val;
                 $label_key1 = $label_tkey;
@@ -187,6 +203,7 @@ class AutoLabelAction
 
                 app(SaveTransAction::class)->execute($label_key, $label_value);
             }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -195,11 +212,14 @@ class AutoLabelAction
 =======
 >>>>>>> Stashed changes
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes
             */
             if (method_exists($component, $type)) {
                 $component->{$type}($label);
             }
             
+<<<<<<< Updated upstream
             if (method_exists($component, 'tooltip')) {
                 $component->tooltip($label);
             }
@@ -218,15 +238,20 @@ class AutoLabelAction
 <<<<<<< HEAD
 >>>>>>> bde0734 (.)
 =======
+=======
+>>>>>>> Stashed changes
             if (method_exists($component, 'tooltip')) {
                 $component->tooltip($label);
             }
         }
         if (!is_string($label)) {
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> 2dbb0e7 (.)
 >>>>>>> 1754090 (.)
+=======
+>>>>>>> Stashed changes
             $component->label('FIX:'.$label_key);
         }
 
