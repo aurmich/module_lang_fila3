@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+
 return array (
   'fields' => 
   array (
@@ -299,6 +299,15 @@ return array (
     array (
       'description' => 'newstate',
       'helper_text' => 'newstate',
+      'placeholder' => 'newstate',
+      'label' => 'newstate',
+    ),
+    'icon' => 
+    array (
+      'description' => 'icon',
+      'label' => 'icon',
+      'placeholder' => 'icon',
+      'helper_text' => 'icon',
     ),
   ),
   'actions' => 
@@ -366,6 +375,14 @@ return array (
     'copy_from_last_year_' => 
     array (
       'label' => 'copy_from_last_year_',
+    ),
+    'win_action' => 
+    array (
+      'label' => 'win_action',
+    ),
+    'bet_action' => 
+    array (
+      'label' => 'bet_action',
     ),
   ),
 );
