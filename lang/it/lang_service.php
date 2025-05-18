@@ -85,6 +85,7 @@ return array (
       'tooltip' => 'Indica se l\'elemento è attivo',
       'description' => 'isActive',
       'helper_text' => 'isActive',
+      'placeholder' => 'isActive',
     ),
     'file' => 
     array (
@@ -293,6 +294,11 @@ return array (
     'layout' => 
     array (
       'label' => 'layout',
+    ),
+    'newstate' => 
+    array (
+      'description' => 'newstate',
+      'helper_text' => 'newstate',
     ),
   ),
   'actions' => 
