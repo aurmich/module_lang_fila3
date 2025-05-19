@@ -202,6 +202,7 @@ class TranslationResource extends XotBaseResource
 }
 ```
 
+<<<<<<< HEAD
 ## Conclusioni e Raccomandazioni
 
 Il `LangServiceProvider` è un componente essenziale che garantisce coerenza nelle traduzioni dell'interfaccia utente. Le migliorie proposte mirano a:
@@ -224,3 +225,42 @@ L'implementazione di queste migliorie permetterebbe di:
 2. Aggiungere il sistema di cache (1 giorno)
 3. Sviluppare il supporto per gli enum (2-3 giorni)
 4. Creare l'interfaccia di gestione traduzioni (3-5 giorni)
+=======
+## Gestione dei Console Commands
+
+### Autoregistrazione (Filosofia Xot)
+
+Tutti i comandi console del modulo vengono autoregistrati tramite la classe base `XotBaseServiceProvider`.
+
+**Non è mai necessario (né consentito) registrarli manualmente** con `$this->commands([...])`.
+
+#### Motivazione (Zen, Religione, Politica, Filosofia)
+- **Zen**: meno codice, meno errori, più armonia.
+- **Religione**: la via Xot è una sola, non si devia dal sentiero.
+- **Politica**: la centralizzazione evita conflitti e garantisce coerenza tra i moduli.
+- **Filosofia**: la ripetizione è il male, l'automazione è il bene.
+
+#### Esempio Sbagliato
+```php
+// NON FARE MAI!
+$this->commands([
+    \Modules\Lang\Console\Commands\ConvertTranslations::class,
+    \Modules\Lang\Console\Commands\FindMissingTranslations::class,
+]);
+```
+
+#### Esempio Corretto
+```php
+// Non serve fare nulla: XotBaseServiceProvider li registra automaticamente.
+```
+
+#### Warning
+> Qualsiasi registrazione manuale dei comandi console è considerata un errore grave e va rimossa.
+
+### Approfondimento
+Per dettagli tecnici, vedi anche la documentazione di `XotBaseServiceProvider` e le best practice nei file correlati.
+
+## Conclusioni e Raccomandazioni
+
+Il `
+>>>>>>> f7129da (.)

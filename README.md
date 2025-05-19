@@ -1,5 +1,62 @@
 # Module Lang
-Modulo dedicato alla gestione delle traduzioni
+
+Modulo dedicato alla gestione delle traduzioni e localizzazione in applicazioni Laravel.
+
+## 📚 Documentazione Traduzioni
+
+### Guide Disponibili
+
+1. [Strategie di Traduzione](docs/TRANSLATION_STRATEGIES.md) - Panoramica su PHP vs JSON, best practice e linee guida
+2. [Guida Rapida](docs/QUICK_REFERENCE.md) - Riferimento veloce per lo sviluppo
+3. [Guida mcamara/laravel-localization](docs/MCAMARA_IMPLEMENTATION_GUIDE.md) - Implementazione della localizzazione avanzata
+
+### Strumenti Utili
+
+#### Conversione Formati
+
+```bash
+# Converti da PHP a JSON
+php artisan translations:convert php json it
+
+# Converti da JSON a PHP
+php artisan translations:convert json php it
+```
+
+#### Comandi Artisan
+
+```bash
+# Pubblicare file di lingua Laravel
+php artisan lang:publish
+
+# Cercare traduzioni mancanti
+php artisan translation:show-missing
+
+# Estrarre stringhe traducibili
+php artisan translation:extract
+
+# Pulire la cache delle traduzioni
+php artisan view:clear
+php artisan config:clear
+```
+
+### Best Practice
+
+1. **Struttura**
+   - Usa file PHP per le traduzioni di sistema
+   - Organizza le traduzioni per moduli/funzionalità
+   - Usa la notazione puntata per le gerarchie
+
+2. **Sicurezza**
+   - Usa `{{ }}` per evitare XSS
+   - Non inserire mai dati utente non validati nelle chiavi di traduzione
+
+3. **Performance**
+   - Abilita la cache in produzione
+   - Usa `route:trans:cache` invece di `route:cache`
+
+---
+
+*Il resto del documento originale continua qui sotto...*
 
 ## Aggiungere Modulo nella base del progetto
 Dentro la cartella laravel/Modules

@@ -237,6 +237,60 @@ E per i pulsanti di login/registrazione:
 - **Laravel Translation Manager**: Interfaccia web per gestire le traduzioni
 - **Laravel Translation Loader**: Carica le traduzioni da un database invece che da file
 
+## Quando usare PHP, quando JSON
+
+- **PHP**: per UI, errori, messaggi brevi, validazione, notifiche, dove serve contesto e fallback.
+- **JSON**: solo per frasi lunghe, onboarding, email, o se serve collaborazione con traduttori non-dev.
+- **Non mischiare** chiavi tra PHP e JSON con lo stesso nome.
+- **Fallback**: solo PHP supporta il fallback_locale, JSON mostra la chiave se manca la traduzione.
+
+## Checklist per la scelta
+- [ ] La chiave è breve e serve contesto? → PHP
+- [ ] Serve fallback automatico? → PHP
+- [ ] Traduttori non-dev devono lavorare facilmente? → JSON (solo se necessario)
+- [ ] È una frase lunga o onboarding? → JSON o chiave dedicata in PHP
+- [ ] La chiave è già presente in PHP? → Non duplicare in JSON
+
+## Nota sulle traduzioni lunghe
+Per blocchi di testo lunghi, valuta se usare chiavi dedicate in PHP (es. `onboarding.welcome_text`) o, solo se necessario, JSON. Documenta sempre la scelta.
+
+## Gestione Plurale/Singolare nelle Traduzioni
+
+- Usa sempre `trans_choice()` o la direttiva Blade `@choice()` per messaggi che variano in base al conteggio.
+- Sintassi tipica in PHP:
+  ```php
+  // lang/en/messages.php
+  return [
+      'newMessageIndicator' => '{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages',
+  ];
+  ```
+- In Blade:
+  ```blade
+  @choice('messages.newMessageIndicator', $messagesCount)
+  ```
+- Sintassi delle regole plurali:
+  - `{0}`: caso zero
+  - `{1}`: caso singolare
+  - `[2,*]`: da 2 in poi
+  - Usa `:count` per il numero
+- Plurale in JSON: supportato ma meno leggibile, preferire i file PHP.
+- Modifiche proposte:
+  - Inserire tutte le stringhe plurali in `/lang/{locale}/messages.php`.
+  - Nei Blade, sostituire blocchi condizionali con `trans_choice()` o `@choice()`.
+  - Evitare l'uso del JSON per le stringhe plurali.
+
 ## Conclusione
 
 Seguire queste best practices per le chiavi di traduzione garantirà un'applicazione più manutenibile, coerente e facile da tradurre in più lingue. Ricorda sempre di utilizzare chiavi strutturate in inglese e mai stringhe in italiano come chiavi di traduzione.
+
+## Checklist Dev → Traduttore
+
+- Prepara i file PHP/JSON di riferimento in `/lang/en/` e `/lang/en.json`.
+- Invia solo i file di riferimento ai traduttori, con istruzioni:
+  - Traduci solo i valori, non le chiavi.
+  - Non modificare la struttura.
+  - Se serve un apostrofo (`'`), anteporre `\`.
+- Al ritorno, sostituisci i file nella lingua target e verifica la sintassi.
+- Nei Blade, sostituisci tutte le stringhe hardcoded con chiavi strutturate.
+- Nei file PHP, uniforma la struttura e aggiungi commenti per i traduttori.
+- Versiona i file di traduzione separatamente.

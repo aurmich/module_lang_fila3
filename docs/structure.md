@@ -491,3 +491,9 @@ tests/Unit
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
 
+## Struttura della Registrazione dei Console Commands
+
+- Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
+- Non aggiungere mai manualmente $this->commands([...]) nei provider.
+- Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+

@@ -23,6 +23,7 @@
 - [x] Basic templates
 - [x] API endpoints
 - [x] Cache system
+- [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](./lang-service-provider.md), [PHILOSOPHY.md](./PHILOSOPHY.md))
 
 ### In Progress (50%)
 - [ ] Performance optimization

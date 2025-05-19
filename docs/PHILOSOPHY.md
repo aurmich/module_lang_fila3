@@ -125,3 +125,25 @@ Questi principi si traducono in pratiche concrete:
    - Monitoraggio dell'uso effettivo
    - Adattamento alle nuove esigenze
    - Documentazione continua delle best practices
+
+## Console Commands: Zen e Filosofia della Non-Azione
+
+Nel progetto Laraxot, la registrazione dei comandi console segue il principio dello zen: la miglior azione è la non-azione. I comandi vengono autoregistrati dalla classe base `XotBaseServiceProvider`.
+
+- **Zen**: Non aggiungere ciò che è già automatico.
+- **Religione**: Segui la via tracciata, non deviare.
+- **Politica**: Centralizza per evitare conflitti e ridondanze.
+- **Filosofia**: L'automazione è superiore alla ripetizione manuale.
+
+### Esempio
+```php
+// Sbagliato
+$this->commands([
+    \Modules\Lang\Console\Commands\ConvertTranslations::class,
+]);
+
+// Giusto
+// Non serve fare nulla: XotBaseServiceProvider li trova e li registra.
+```
+
+> Ogni deviazione da questa regola è considerata un errore concettuale e tecnico.

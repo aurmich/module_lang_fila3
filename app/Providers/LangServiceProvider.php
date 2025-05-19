@@ -52,7 +52,7 @@ class LangServiceProvider extends XotBaseServiceProvider
         $this->app->register(LaravelLocalizationServiceProvider::class);
 
         // Carica la configurazione di laravel-localization
-        //$this->mergeConfigFrom(
+        // $this->mergeConfigFrom(
         //    __DIR__.'/../config/laravel-localization.php', 'laravel-localization'
         //);
 
