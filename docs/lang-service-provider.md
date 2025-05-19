@@ -202,7 +202,6 @@ class TranslationResource extends XotBaseResource
 }
 ```
 
-<<<<<<< HEAD
 ## Conclusioni e Raccomandazioni
 
 Il `LangServiceProvider` è un componente essenziale che garantisce coerenza nelle traduzioni dell'interfaccia utente. Le migliorie proposte mirano a:
@@ -225,7 +224,6 @@ L'implementazione di queste migliorie permetterebbe di:
 2. Aggiungere il sistema di cache (1 giorno)
 3. Sviluppare il supporto per gli enum (2-3 giorni)
 4. Creare l'interfaccia di gestione traduzioni (3-5 giorni)
-=======
 ## Gestione dei Console Commands
 
 ### Autoregistrazione (Filosofia Xot)
@@ -263,4 +261,3 @@ Per dettagli tecnici, vedi anche la documentazione di `XotBaseServiceProvider` e
 ## Conclusioni e Raccomandazioni
 
 Il `
->>>>>>> f7129da (.)
