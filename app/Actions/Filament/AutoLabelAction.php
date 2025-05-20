@@ -29,11 +29,16 @@ class AutoLabelAction
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction
      */
+<<<<<<< HEAD
     public function execute($component,string $type = 'label')
+=======
+    public function execute($component)
+>>>>>>> 57d034b (.)
     {
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function ($item) {
+<<<<<<< HEAD
             if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\')){
                 return true;
             }
@@ -53,6 +58,19 @@ class AutoLabelAction
             if(is_null($object_class)){
                 throw new \Exception('No object class found');
             }
+=======
+            if (! isset($item['object'])) {
+                return false;
+            }
+
+            return Str::startsWith($item['object']::class, 'Modules\\');
+            // return Str::startsWith($item['class'],'Modules\\');
+        });
+        if (is_array($class) && isset($class['object'])) {
+            $object_class = $class['object']::class;
+
+            // Assert::string($class = Arr::get($backtrace, '5.class'));
+>>>>>>> 57d034b (.)
             $trans_key = app(GetTransKeyAction::class)->execute($object_class);
         } else {
             $trans_key = 'lang::txt';
@@ -70,6 +88,7 @@ class AutoLabelAction
             $label_tkey = $trans_key.'.actions.'.$val.'';
         }
 
+<<<<<<< HEAD
         $label_key = $label_tkey.'.'.Str::snake($type);
 
         $label = trans($label_key);
@@ -78,6 +97,12 @@ class AutoLabelAction
         }
         if (is_string($label) && $label_key != $label) { //se esiste la traduzione, la aggiorno
             /*
+=======
+        $label_key = $label_tkey.'.label';
+
+        $label = trans($label_key);
+        if (is_string($label)) {
+>>>>>>> 57d034b (.)
             if ($label_key == $label) {
                 $label_value = $val;
                 $label_key1 = $label_tkey;
@@ -88,6 +113,7 @@ class AutoLabelAction
 
                 app(SaveTransAction::class)->execute($label_key, $label_value);
             }
+<<<<<<< HEAD
             */
             if (method_exists($component, $type)) {
                 $component->{$type}($label);
@@ -98,6 +124,13 @@ class AutoLabelAction
             }
         }
         if (!is_string($label)) {
+=======
+            $component->label($label);
+            if (method_exists($component, 'tooltip')) {
+                $component->tooltip($label);
+            }
+        } else {
+>>>>>>> 57d034b (.)
             $component->label('FIX:'.$label_key);
         }
 
