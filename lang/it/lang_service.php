@@ -301,16 +301,6 @@ return array (
       'helper_text' => 'newstate',
       'placeholder' => 'newstate',
       'label' => 'newstate',
-<<<<<<< HEAD
-=======
-    ),
-    'icon' => 
-    array (
-      'description' => 'icon',
-      'label' => 'icon',
-      'placeholder' => 'icon',
-      'helper_text' => 'icon',
->>>>>>> d643d32 (.)
     ),
     'icon' => 
     array (
@@ -319,7 +309,6 @@ return array (
       'placeholder' => 'icon',
       'helper_text' => 'icon',
     ),
-<<<<<<< HEAD
     'user' => 
     array (
       'label' => 'user',
@@ -384,8 +373,6 @@ return array (
     array (
       'label' => '946595X2259X48869SQ01',
     ),
-=======
->>>>>>> 84211c8 (.)
   ),
   'actions' => 
   array (
@@ -450,7 +437,6 @@ return array (
       'tooltip' => 'Scarica un file di esempio',
     ),
     'copy_from_last_year_' => 
-<<<<<<< HEAD
     array (
       'label' => 'copy_from_last_year_',
     ),
@@ -462,22 +448,5 @@ return array (
     array (
       'label' => 'bet_action',
     ),
-<<<<<<< HEAD
-    'export_xls' => 
-=======
->>>>>>> d643d32 (.)
-    array (
-      'label' => 'copy_from_last_year_',
-    ),
-    'win_action' => 
-    array (
-      'label' => 'win_action',
-    ),
-    'bet_action' => 
-    array (
-      'label' => 'bet_action',
-    ),
-=======
->>>>>>> 84211c8 (.)
   ),
 );
