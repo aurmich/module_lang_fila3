@@ -412,6 +412,7 @@ class UserController extends Controller
 - Problemi cache
 - Errori namespace
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 ## Collegamenti tra versioni di README.md
@@ -782,6 +783,8 @@ class UserController extends Controller
 - Errori namespace
 
 >>>>>>> Stashed changes
+=======
+>>>>>>> 84211c8 (.)
 ## Politica, Filosofia, Religione, Etica, Zen
 
 - **Politica**: Il modulo Lang promuove collaborazione, trasparenza e inclusività, senza discriminazioni.
@@ -789,7 +792,10 @@ class UserController extends Controller
 - **Religione**: Laicità, rispetto di tutte le fedi, libertà di pensiero.
 - **Etica**: Onestà, rispetto, responsabilità, attenzione all'impatto sociale e ambientale.
 - **Zen**: Semplicità, concentrazione sul presente, armonia e serenità nello sviluppo.
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 84211c8 (.)
 
 ## Gestione storage traduzioni: PHP vs JSON
 Vedi [translations-storage.md](./translations-storage.md) per un confronto dettagliato tra i due approcci, vantaggi, svantaggi e raccomandazioni per il progetto.
@@ -938,5 +944,8 @@ Tutti i comandi console del modulo sono autoregistrati tramite `XotBaseServicePr
 - Per approfondimenti, vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md).
 
 > Qualsiasi registrazione manuale è un errore e va rimossa.
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> 84211c8 (.)

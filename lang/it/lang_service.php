@@ -309,6 +309,7 @@ return array (
       'placeholder' => 'icon',
       'helper_text' => 'icon',
     ),
+<<<<<<< HEAD
     'user' => 
     array (
       'label' => 'user',
@@ -373,6 +374,8 @@ return array (
     array (
       'label' => '946595X2259X48869SQ01',
     ),
+=======
+>>>>>>> 84211c8 (.)
   ),
   'actions' => 
   array (
@@ -448,9 +451,12 @@ return array (
     array (
       'label' => 'bet_action',
     ),
+<<<<<<< HEAD
     'export_xls' => 
     array (
       'label' => 'export_xls',
     ),
+=======
+>>>>>>> 84211c8 (.)
   ),
 );
