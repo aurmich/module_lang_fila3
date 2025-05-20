@@ -301,6 +301,16 @@ return array (
       'helper_text' => 'newstate',
       'placeholder' => 'newstate',
       'label' => 'newstate',
+<<<<<<< HEAD
+=======
+    ),
+    'icon' => 
+    array (
+      'description' => 'icon',
+      'label' => 'icon',
+      'placeholder' => 'icon',
+      'helper_text' => 'icon',
+>>>>>>> d643d32 (.)
     ),
     'icon' => 
     array (
@@ -440,6 +450,7 @@ return array (
       'tooltip' => 'Scarica un file di esempio',
     ),
     'copy_from_last_year_' => 
+<<<<<<< HEAD
     array (
       'label' => 'copy_from_last_year_',
     ),
@@ -453,8 +464,18 @@ return array (
     ),
 <<<<<<< HEAD
     'export_xls' => 
+=======
+>>>>>>> d643d32 (.)
     array (
-      'label' => 'export_xls',
+      'label' => 'copy_from_last_year_',
+    ),
+    'win_action' => 
+    array (
+      'label' => 'win_action',
+    ),
+    'bet_action' => 
+    array (
+      'label' => 'bet_action',
     ),
 =======
 >>>>>>> 84211c8 (.)
