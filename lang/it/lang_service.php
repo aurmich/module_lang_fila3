@@ -448,5 +448,9 @@ return array (
     array (
       'label' => 'bet_action',
     ),
+    'export_xls' => 
+    array (
+      'label' => 'export_xls',
+    ),
   ),
 );
