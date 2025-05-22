@@ -413,6 +413,7 @@ class UserController extends Controller
 - Problemi cache
 - Errori namespace
 
+<<<<<<< HEAD
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -780,6 +781,8 @@ class UserController extends Controller
 - Problemi cache
 - Errori namespace
 
+=======
+>>>>>>> 98a60a4 (.)
 ## Politica, Filosofia, Religione, Etica, Zen
 
 - **Politica**: Il modulo Lang promuove collaborazione, trasparenza e inclusività, senza discriminazioni.
@@ -936,3 +939,43 @@ Tutti i comandi console del modulo sono autoregistrati tramite `XotBaseServicePr
 
 > Qualsiasi registrazione manuale è un errore e va rimossa.
 
+<<<<<<< HEAD
+=======
+## Regola fondamentale: divieto di chiavi .navigation nelle traduzioni
+
+- **Mai usare chiavi che terminano con `.navigation` nei file di traduzione.**
+- Usare invece la struttura array:
+  ```php
+  'navigation' => [
+      'label' => 'Gestione Pazienti',
+      'group' => 'Pazienti',
+      'icon' => 'heroicon-o-user-group',
+      'color' => 'primary',
+  ],
+  ```
+- **Motivazione:**
+  - Migliora la manutenibilità e la localizzazione
+  - Permette l'aggiunta di icone, colori, tooltip, ecc.
+  - Evita errori e duplicazioni
+- **Esempio ERRATO:**
+  ```php
+  'group' => 'patient.navigation',
+  'label' => 'patient.navigation',
+  ```
+- **Esempio CORRETTO:**
+  ```php
+  'navigation' => [
+      'label' => 'Gestione Pazienti',
+      'group' => 'Pazienti',
+      'icon' => 'heroicon-o-user-group',
+      'color' => 'primary',
+  ],
+  ```
+- Consulta anche:
+  - [translation_keys_best_practices.md](./translation_keys_best_practices.md)
+  - [translation_keys_rules.md](./translation_keys_rules.md)
+  - [filament-translations.md](./filament-translations.md)
+  - [docs SaluteOra](../../SaluteOra/docs/translations.md)
+  - [docs Xot](../../Xot/docs/README.md)
+
+>>>>>>> 98a60a4 (.)
