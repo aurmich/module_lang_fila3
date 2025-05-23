@@ -373,8 +373,6 @@ return array (
     array (
       'label' => '946595X2259X48869SQ01',
     ),
-<<<<<<< HEAD
-=======
     'state' => 
     array (
       'label' => 'state',
@@ -382,7 +380,10 @@ return array (
       'helper_text' => 'state',
       'placeholder' => 'state',
     ),
->>>>>>> 98a60a4 (.)
+    'changePassword' => 
+    array (
+      'label' => 'changePassword',
+    ),
   ),
   'actions' => 
   array (
