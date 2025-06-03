@@ -436,6 +436,13 @@ return array (
       'label' => 'motivo/invio_email',
 >>>>>>> ce1c80e (.)
     ),
+    'recordId' => 
+    array (
+      'description' => 'recordId',
+      'label' => 'recordId',
+      'placeholder' => 'recordId',
+      'helper_text' => 'recordId',
+    ),
   ),
   'actions' => 
   array (
