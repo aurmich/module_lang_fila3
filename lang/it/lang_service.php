@@ -36,7 +36,6 @@ return array (
       'label' => 'Valori',
       'placeholder' => 'Inserisci i valori',
       'tooltip' => 'Lista dei valori associati',
-      'description' => 'values',
     ),
     'value' => 
     array (
@@ -113,8 +112,6 @@ return array (
         'label' => 'Gruppo di lavoro',
         'placeholder' => 'Seleziona il gruppo',
         'tooltip' => 'Gruppo di lavoro associato',
-        'description' => 'workgroup.denominazione',
-        'helper_text' => 'workgroup.denominazione',
       ),
     ),
     'data_inizio_esecuzione' => 
@@ -122,16 +119,12 @@ return array (
       'label' => 'Data inizio esecuzione',
       'placeholder' => 'Seleziona la data di inizio',
       'tooltip' => 'Data di inizio dell\'esecuzione',
-      'description' => 'data_inizio_esecuzione',
-      'helper_text' => 'data_inizio_esecuzione',
     ),
     'data_fine_esecuzione' => 
     array (
       'label' => 'Data fine esecuzione',
       'placeholder' => 'Seleziona la data di fine',
       'tooltip' => 'Data di fine dell\'esecuzione',
-      'description' => 'data_fine_esecuzione',
-      'helper_text' => 'data_fine_esecuzione',
     ),
     'toggleColumns' => 
     array (
@@ -279,16 +272,10 @@ return array (
     'determina' => 
     array (
       'label' => 'Determina',
-      'description' => 'determina',
-      'helper_text' => 'determina',
-      'placeholder' => 'determina',
     ),
     'data_aggiudicazione' => 
     array (
       'label' => 'Data aggiudicazione',
-      'description' => 'data_aggiudicazione',
-      'helper_text' => 'data_aggiudicazione',
-      'placeholder' => 'data_aggiudicazione',
     ),
     'updated_by' => 
     array (
@@ -308,7 +295,6 @@ return array (
     array (
       'label' => 'layout',
     ),
-<<<<<<< HEAD
     'newstate' => 
     array (
       'description' => 'newstate',
@@ -386,62 +372,10 @@ return array (
     '946595X2259X48869SQ01' => 
     array (
       'label' => '946595X2259X48869SQ01',
-=======
-    'individuale_spread_money' => 
-    array (
-      'label' => 'individuale_spread_money',
     ),
-    'organizzativa_spread_money' => 
+    'changePassword' => 
     array (
-      'label' => 'organizzativa_spread_money',
-    ),
-    'periodo' => 
-    array (
-      'label' => 'periodo',
-    ),
-    'copy_valutatore_id_from_individuale' => 
-    array (
-      'label' => 'copy_valutatore_id_from_individuale',
-    ),
-    'reparto' => 
-    array (
-      'label' => 'reparto',
-    ),
-    'qualifica' => 
-    array (
-      'label' => 'qualifica',
-    ),
-    'info' => 
-    array (
-      'label' => 'info',
-    ),
-    'lavoratore' => 
-    array (
-      'label' => 'lavoratore',
-    ),
-    'soldi' => 
-    array (
-      'label' => 'soldi',
-    ),
-    'pdf' => 
-    array (
-      'label' => 'pdf',
-    ),
-    'anno_valutatore' => 
-    array (
-      'label' => 'anno_valutatore',
-    ),
-    'motivo/invio_email' => 
-    array (
-      'label' => 'motivo/invio_email',
->>>>>>> ce1c80e (.)
-    ),
-    'recordId' => 
-    array (
-      'description' => 'recordId',
-      'label' => 'recordId',
-      'placeholder' => 'recordId',
-      'helper_text' => 'recordId',
+      'label' => 'changePassword',
     ),
   ),
   'actions' => 
@@ -510,7 +444,6 @@ return array (
     array (
       'label' => 'copy_from_last_year_',
     ),
-<<<<<<< HEAD
     'win_action' => 
     array (
       'label' => 'win_action',
@@ -518,38 +451,10 @@ return array (
     'bet_action' => 
     array (
       'label' => 'bet_action',
-=======
-    'GeneratePDFProjectReportAction' => 
-    array (
-      'label' => 'GeneratePDFProjectReportAction',
->>>>>>> ce1c80e (.)
     ),
     'export_xls' => 
     array (
       'label' => 'export_xls',
     ),
-<<<<<<< HEAD
-=======
-    'trova_esclusi' => 
-    array (
-      'label' => 'trova_esclusi',
-    ),
-    'copy_valutatore_id_from_individuale' => 
-    array (
-      'label' => 'copy_valutatore_id_from_individuale',
-    ),
-    'populate_year' => 
-    array (
-      'label' => 'populate_year',
-    ),
-    'Carica/Aggiorna Dipendenti' => 
-    array (
-      'label' => 'Carica/Aggiorna Dipendenti',
-    ),
-    'import_valutatori_' => 
-    array (
-      'label' => 'import_valutatori_',
-    ),
->>>>>>> ce1c80e (.)
   ),
 );
