@@ -377,6 +377,13 @@ return array (
     array (
       'label' => 'changePassword',
     ),
+    'recordId' => 
+    array (
+      'description' => 'recordId',
+      'helper_text' => 'recordId',
+      'placeholder' => 'recordId',
+      'label' => 'recordId',
+    ),
   ),
   'actions' => 
   array (
