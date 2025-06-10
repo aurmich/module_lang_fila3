@@ -2,7 +2,7 @@
 
 ## Introduzione
 
-Il pacchetto `mcamara/laravel-localization` è una soluzione potente per implementare la localizzazione in applicazioni Laravel. Questa guida, basata sul corso di Laravel Daily, fornisce istruzioni dettagliate per l'installazione, la configurazione e l'uso del pacchetto in progetti multi-modulo.
+Il pacchetto `mcamara/laravel-localization` è una soluzione potente per implementare la localizzazione in applicazioni Laravel. Questa guida, basata sul corso di Laravel Daily, fornisce istruzioni dettagliate per l'installazione, la configurazione e l'uso del pacchetto nel progetto `saluteora`.
 
 ## Funzionalità Principali
 
@@ -46,97 +46,100 @@ Per configurare le route con il prefisso della lingua, modificare il file `route
 ```php
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    'middleware' => ['localeSessionRedirect', 'localizationRedirect']
 ], function () {
-    // Route localizzate
     Route::get('/', function () {
         return view('welcome');
     });
-    
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->middleware(['auth'])->name('dashboard');
-    
-    // ...
+    // altre route...
+    require __DIR__ . '/auth.php';
 });
 ```
 
-## Configurazione delle Lingue Supportate
+Questo codice:
+- Aggiunge il prefisso della lingua agli URL (es. `/en/` o `/es/`).
+- Reindirizza l'utente alla lingua corretta se non la sta utilizzando.
+- Tenta di indovinare la lingua dell'utente basandosi sulle impostazioni del browser.
 
-Configurare le lingue supportate nel file `config/laravellocalization.php`:
+## Abilitazione di Diverse Lingue
+
+Modificare il file `config/laravellocalization.php` per abilitare le lingue desiderate:
 
 ```php
 'supportedLocales' => [
-    'en' => [
-        'name' => 'English',
-        'script' => 'Latn',
-        'native' => 'English',
-        'regional' => 'en_GB',
-    ],
-    'it' => [
-        'name' => 'Italian',
-        'script' => 'Latn',
-        'native' => 'Italiano',
-        'regional' => 'it_IT',
-    ],
+    'en' => ['name' => 'English', 'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
+    'it' => ['name' => 'Italian', 'script' => 'Latn', 'native' => 'Italiano', 'regional' => 'it_IT'],
+    'es' => ['name' => 'Spanish', 'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
 ],
 ```
 
-## Selettore di Lingua
+## Aggiunta di un Selettore di Lingua
 
-Aggiungere un selettore di lingua nella vista:
-
-```blade
-<ul>
-    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-        <li>
-            <a href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                {{ $properties['native'] }}
-            </a>
-        </li>
-    @endforeach
-</ul>
-```
-
-## Ottenere Informazioni sulla Lingua Corrente
+Aggiungere un selettore di lingua alla navigazione dell'applicazione modificando il file `resources/views/layouts/navigation.blade.php`:
 
 ```php
-// Ottenere il codice della lingua corrente
-$currentLocale = LaravelLocalization::getCurrentLocale();
-
-// Ottenere il nome della lingua corrente
-$currentLocaleName = LaravelLocalization::getCurrentLocaleName();
-
-// Ottenere il nome nativo della lingua corrente
-$currentLocaleNative = LaravelLocalization::getCurrentLocaleNative();
-
-// Verificare se la lingua corrente è la lingua predefinita
-$isDefaultLocale = LaravelLocalization::getCurrentLocale() === config('app.locale');
+@foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+    <x-nav-link rel="alternate" hreflang="{{ $localeCode }}"
+                :active="$localeCode === app()->getLocale()"
+                href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+        {{ ucfirst($properties['native']) }}
+    </x-nav-link>
+@endforeach
 ```
 
-## Generazione di URL Localizzati
+## Correzione della Cache delle Route
+
+Per utilizzare la cache delle route con questo pacchetto, modificare il file `app/Providers/RouteServiceProvider.php`:
 
 ```php
-// Generare un URL localizzato per la lingua corrente
-$url = LaravelLocalization::localizeUrl('dashboard');
-
-// Generare un URL localizzato per una lingua specifica
-$url = LaravelLocalization::getLocalizedURL('en', 'dashboard');
-
-// Generare un URL non localizzato (senza prefisso della lingua)
-$url = LaravelLocalization::getNonLocalizedURL('dashboard');
+class RouteServiceProvider extends ServiceProvider
+{
+    use \Mcamara\LaravelLocalization\Traits\LoadsTranslatedCachedRoutes;
+    // ...
+}
 ```
 
-## Traduzione delle Route
+Utilizzare i seguenti comandi per la cache delle route:
+- Invece di `php artisan route:cache`, usare `php artisan route:trans:cache`.
+- Invece di `php artisan route:clear`, usare `php artisan route:trans:clear`.
 
-Per tradurre le route, utilizzare il metodo `transRoute`:
+## Visualizzazione di Tutte le Route
+
+Per visualizzare un elenco dettagliato delle route tradotte, utilizzare:
+```bash
+php artisan route:trans:list {locale}
+```
+
+## Funzionalità Estese del Pacchetto
+
+### Mostrare o Nascondere la Lingua Predefinita nell'URL
+
+Modificare `config/laravellocalization.php` per nascondere la lingua predefinita:
+
+```php
+'hideDefaultLocaleInURL' => true,
+```
+
+### Ignorare Route Specifiche
+
+Per ignorare la localizzazione di alcune route, aggiungerle a `config/laravellocalization.php`:
+
+```php
+'urlsIgnored' => [
+    '/queue-check',
+],
+```
+
+### Traduzione delle Route
+
+Per tradurre le route, aggiungere il middleware `localize` al gruppo di route in `routes/web.php`:
 
 ```php
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localize']
 ], function () {
-    Route::get(LaravelLocalization::transRoute('routes.dashboard'), [DashboardController::class, 'index'])->name('dashboard');
+    // route tradotte...
 });
 ```
 
@@ -187,7 +190,7 @@ public function boot()
 
 ## Conclusione
 
-Il pacchetto `mcamara/laravel-localization` offre un controllo versatile sulla localizzazione delle route. Combinato con la traduzione di testi statici, rende l'applicazione multilingue facile da gestire e user-friendly. Questa guida fornisce tutte le informazioni necessarie per implementare il pacchetto in progetti multi-modulo, rispettando le convenzioni di localizzazione degli URL e migliorando l'esperienza utente.
+Il pacchetto `mcamara/laravel-localization` offre un controllo versatile sulla localizzazione delle route. Combinato con la traduzione di testi statici, rende l'applicazione multilingue facile da gestire e user-friendly. Questa guida fornisce tutte le informazioni necessarie per implementare il pacchetto nel progetto `saluteora`, rispettando le convenzioni di localizzazione degli URL e migliorando l'esperienza utente.
 
 ## Risorse
 

@@ -1,8 +1,12 @@
-# Navigazione delle Traduzioni
+# Regola sulle Chiavi di Traduzione `.navigation`
 
-- [Documentazione sulle traduzioni](../translations.md)
-- [Regole di naming delle chiavi](translation_keys_rules.md)
-- [Best practices per la localizzazione](integration_mc_laravel_localization.md)
+**Mai utilizzare chiavi o valori che terminano con `.navigation` nei file di traduzione.**
 
-Tutte le regole e i pattern descritti sono pensati per essere riutilizzabili in qualunque progetto, senza riferimenti a domini specifici.
-/<directory progetto>/
+- Le chiavi di navigazione devono essere esplicite e localizzate (es: `'label' => 'Pazienti'` e non `'label' => 'patient.navigation'`).
+- Quando si trova `.navigation`, occorre sostituire con una chiave esplicita e un valore localizzato.
+- Aggiornare sempre la documentazione di progetto quando si introduce una nuova regola di traduzione.
+- Questa regola si applica a tutti i moduli, ma va documentata qui in Lang/docs e referenziata negli altri moduli coinvolti.
+
+## Collegamenti
+- [docs di SaluteOra](../../SaluteOra/docs/traduzioni-navigation.mdc)
+- [docs di Xot](../../Xot/docs/traduzioni-navigation.mdc)

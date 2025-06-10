@@ -1,11 +1,11 @@
 # Advanced Language Switching Strategies
 
 ## Overview
-In a multi-language application, providing a seamless multi-language experience is crucial for accessibility and user satisfaction. This document explores advanced strategies for language switching, building upon our existing URL-based approach.
+In a healthcare application like `saluteora`, providing a seamless multi-language experience is crucial for accessibility and user satisfaction. This document explores advanced strategies for language switching, building upon our existing URL-based approach.
 
 ## Combined URL and Session-Based Language Switching
 
-For optimal user experience and SEO benefits, a hybrid approach combining URL-based language prefixes with session/database storage is recommended.
+For optimal user experience and SEO benefits, `saluteora` can implement a hybrid approach combining URL-based language prefixes with session/database storage.
 
 ### Benefits
 - SEO friendly URLs with language prefix (e.g., `/en/services`)
@@ -24,7 +24,7 @@ For optimal user experience and SEO benefits, a hybrid approach combining URL-ba
 
 #### Middleware Enhancement
 ```php
-// Modules/Lang/Http/Middleware/SetLocale.php
+// app/Http/Middleware/SetLocale.php
 public function handle(Request $request, Closure $next): Response
 {
     $locale = $request->segment(1);
@@ -52,7 +52,7 @@ public function handle(Request $request, Closure $next): Response
 
 #### Language Switch Controller
 ```php
-// Modules/Lang/Http/Controllers/ChangeLanguageController.php
+// app/Http/Controllers/ChangeLanguageController.php
 public function __invoke($locale)
 {
     if (!in_array($locale, config('app.available_locales'))) {
