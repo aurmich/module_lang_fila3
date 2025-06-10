@@ -2,7 +2,7 @@
 
 ## Introduzione
 
-La traduzione di testi statici in Laravel può essere gestita utilizzando due approcci principali: file PHP e file JSON. Questa documentazione, basata sul corso di Laravel Daily, analizza entrambi i metodi, evidenziando vantaggi e svantaggi, e propone un'implementazione per il progetto `saluteora`.
+La traduzione di testi statici in Laravel può essere gestita utilizzando due approcci principali: file PHP e file JSON. Questa documentazione, basata sul corso di Laravel Daily, analizza entrambi i metodi, evidenziando vantaggi e svantaggi, e propone un'implementazione per progetti multi-modulo.
 
 ## Opzioni di Archiviazione delle Traduzioni
 
@@ -11,7 +11,7 @@ La traduzione di testi statici in Laravel può essere gestita utilizzando due ap
 I file PHP sono stati il metodo predefinito per lungo tempo. Le traduzioni sono organizzate in file separati per lingua e funzionalità.
 
 **Esempio**:
-In un file Blade come `/var/www/html/saluteora/laravel/resources/views/auth/register.blade.php`, potremmo avere:
+In un file Blade come `resources/views/auth/register.blade.php`, potremmo avere:
 ```php
 <!-- Nome -->
 <div>
@@ -21,7 +21,7 @@ In un file Blade come `/var/www/html/saluteora/laravel/resources/views/auth/regi
 </div>
 ```
 
-La traduzione corrispondente sarebbe in `/var/www/html/saluteora/laravel/lang/it/auth.php`:
+La traduzione corrispondente sarebbe in `lang/it/auth.php`:
 ```php
 return [
     'register' => [
@@ -52,200 +52,180 @@ php artisan lang:publish
 
 ### File JSON
 
-I file JSON contengono un elenco unico di traduzioni per ogni lingua, con chiavi leggibili dall'uomo.
+I file JSON contengono un elenco unico di traduzioni per ogni lingua, con chiavi che rappresentano il testo in inglese e valori che rappresentano la traduzione.
 
 **Esempio**:
-In un file Blade come `/var/www/html/saluteora/laravel/resources/views/auth/register.blade.php`, potremmo avere:
+In un file Blade:
 ```php
-<!-- Nome -->
-<div>
-    <x-input-label for="name" :value="__('Nome')" />
-    <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-    <x-input-error :messages="$errors->get('name')" class="mt-2" />
-</div>
+<h1>{{ __('Welcome to our application') }}</h1>
 ```
 
-La traduzione corrispondente sarebbe in `/var/www/html/saluteora/laravel/lang/it.json`:
+La traduzione corrispondente sarebbe in `lang/it.json`:
 ```json
 {
-    "Nome": "Il Tuo Nome"
+    "Welcome to our application": "Benvenuto nella nostra applicazione"
 }
 ```
 
 **Vantaggi dei File JSON**:
-- Possibilità di scrivere frasi complete come chiavi, che vengono mostrate se non tradotte.
-- Facilità di consegna a traduttori non tecnici.
-- Coerenza delle traduzioni per chiavi identiche in diverse viste.
+- Facilità di utilizzo per frasi complete.
+- Più intuitivo per traduttori non tecnici.
+- Nessuna necessità di creare chiavi astratte.
+- Fallback automatico al testo inglese se manca la traduzione.
 
 **Svantaggi dei File JSON**:
-- Impossibilità di avere chiavi nidificate, tutto è in un unico file.
-- Mancanza di contesto per traduzioni ambigue.
-- File di traduzione molto grandi in progetti complessi.
-- Impossibilità di aggiungere commenti nei file JSON.
+- Nessuna struttura nidificata.
+- Rischio di duplicazione per frasi simili.
+- Difficoltà nella gestione di stringhe plurali.
+- File potenzialmente molto grandi in applicazioni complesse.
 
-## Problemi nel Mescolare File PHP e JSON
+## Analisi e Ragionamento per Progetti Multi-Modulo
 
-Mescolare i due approcci può causare problemi se una chiave JSON corrisponde al nome di un file PHP. Ad esempio, se esiste un file `/var/www/html/saluteora/laravel/lang/it/auth.php` e una chiave `"Auth": "Autenticazione"` in `/var/www/html/saluteora/laravel/lang/it.json`, chiamare `__('Auth')` restituirà il contenuto di `auth.php` invece della traduzione attesa.
+Considerando la struttura di un progetto multi-modulo e le regole di localizzazione esistenti, propongo di adottare principalmente l'approccio con file PHP per le seguenti ragioni:
 
-## `trans()` vs `__()`: Quale Usare?
+1. **Struttura**: La struttura nidificata dei file PHP si allinea meglio con l'organizzazione modulare del progetto.
+2. **Contesto**: Le chiavi nidificate offrono maggiore chiarezza e contesto, utili in un'applicazione complessa.
+3. **Riutilizzo**: Chiavi ben strutturate facilitano il riutilizzo delle traduzioni tra moduli.
+4. **Manutenibilità**: Più facile mantenere file separati per funzionalità che un unico file JSON grande.
 
-- `__()` è una funzione helper che chiama internamente `trans()`.
-- `__()` restituisce `null` se non viene passato alcun valore, mentre `trans()` restituisce l'istanza del traduttore, permettendo di concatenare metodi come `trans()->getLocale()`.
-- **Raccomandazione**: Usare `__()` per stringhe di traduzione e `trans()` per operazioni più complesse come ottenere la lingua corrente.
+Tuttavia, per frasi complete o testi lunghi, i file JSON possono essere una scelta migliore.
 
-## Analisi e Ragionamento per il Progetto `saluteora`
+## Implementazione Pratica
 
-Considerando la struttura del progetto `saluteora` e le regole di localizzazione esistenti, propongo di adottare principalmente l'approccio con file PHP per le seguenti ragioni:
-1. **Organizzazione**: I file PHP permettono di separare le traduzioni per modulo (es. `auth.php`, `patient.php`), coerente con la struttura modulare del progetto.
-2. **Contesto**: Le chiavi nidificate offrono maggiore chiarezza e contesto, utili in un'applicazione complessa come `saluteora`.
-3. **Commenti**: La possibilità di commentare i file PHP è vantaggiosa per documentare traduzioni complesse o ambigue.
+Di seguito elenco i file che modificherei e le modifiche specifiche che apporterei per implementare il sistema di traduzione in un progetto multi-modulo:
 
-Tuttavia, per testi più lunghi o frasi complete che non richiedono contesto specifico, potremmo utilizzare file JSON per semplificare il lavoro dei traduttori non tecnici.
+### 1. Configurazione delle Lingue
 
-## Modifiche Proposte
+```php
+// config/app.php
+'locale' => 'it',
+'fallback_locale' => 'en',
+'available_locales' => ['it', 'en'],
+```
 
-Di seguito elenco i file che modificherei e le modifiche specifiche che apporterei per implementare il sistema di traduzione nel progetto `saluteora`:
+### 2. Middleware per la Localizzazione
 
-1. **Creazione della Cartella `lang` (se non presente)**:
-   - Eseguire il comando:
-     ```bash
-     php artisan lang:publish
-     ```
-   - Questo creerà la cartella `/var/www/html/saluteora/laravel/lang/` con le sottocartelle per le lingue supportate (es. `en`, `it`).
+```php
+// Modules/Lang/Http/Middleware/SetLocale.php
+namespace Modules\Lang\Http\Middleware;
 
-2. **Struttura dei File di Traduzione PHP**:
-   - Creare file di traduzione per ogni modulo in `/var/www/html/saluteora/laravel/lang/it/` e `/var/www/html/saluteora/laravel/lang/en/`.
-   - Esempio per il modulo di autenticazione in `/var/www/html/saluteora/laravel/lang/it/auth.php`:
-     ```php
-     return [
-         'register' => [
-             'name' => 'Nome',
-             'email' => 'Email',
-             'password' => 'Password',
-             'confirm_password' => 'Conferma Password',
-             'already_registered' => 'Già registrato?',
-             'register' => 'Registrati',
-         ],
-         'login' => [
-             'email' => 'Email',
-             'password' => 'Password',
-             'remember_me' => 'Ricordami',
-             'forgot_password' => 'Password dimenticata?',
-             'login' => 'Accedi',
-         ],
-         // Commento: Traduzioni per messaggi di errore
-         'failed' => 'Queste credenziali non corrispondono ai nostri record.',
-         'password_incorrect' => 'La password fornita non è corretta.',
-         'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
-     ];
-     ```
-   - Creare file simili per altri moduli come `patient.php`, `dental.php`, ecc.
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
-3. **File JSON per Testi Lunghi**:
-   - Creare file JSON per testi lunghi o frasi complete in `/var/www/html/saluteora/laravel/lang/it.json` e `/var/www/html/saluteora/laravel/lang/en.json`.
-   - Esempio per `/var/www/html/saluteora/laravel/lang/it.json`:
-     ```json
-     {
-         "Benvenuto nel sistema di gestione sanitaria": "Benvenuto nel sistema di gestione sanitaria",
-         "Hai dimenticato la password? Nessun problema. Inserisci il tuo indirizzo email e ti invieremo un link per reimpostare la password.": "Hai dimenticato la password? Nessun problema. Inserisci il tuo indirizzo email e ti invieremo un link per reimpostare la password."
-     }
-     ```
+class SetLocale
+{
+    public function handle(Request $request, Closure $next)
+    {
+        $locale = $request->segment(1);
+        
+        if (in_array($locale, config('app.available_locales'))) {
+            App::setLocale($locale);
+        }
+        
+        return $next($request);
+    }
+}
+```
 
-4. **Modifica dei File Blade per Utilizzare le Traduzioni**:
-   - Modificare i file Blade per utilizzare la funzione `__()` con chiavi appropriate.
-   - Esempio per `/var/www/html/saluteora/laravel/resources/views/auth/login.blade.php`:
-     ```php
-     <!-- Email -->
-     <div>
-         <x-input-label for="email" :value="__('auth.login.email')" />
-         <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-         <x-input-error :messages="$errors->get('email')" class="mt-2" />
-     </div>
+### 3. Registrazione del Middleware
 
-     <!-- Password -->
-     <div class="mt-4">
-         <x-input-label for="password" :value="__('auth.login.password')" />
-         <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
-         <x-input-error :messages="$errors->get('password')" class="mt-2" />
-     </div>
+```php
+// app/Http/Kernel.php
+protected $middlewareGroups = [
+    'web' => [
+        // ...
+        \Modules\Lang\Http\Middleware\SetLocale::class,
+    ],
+];
+```
 
-     <!-- Ricordami -->
-     <div class="block mt-4">
-         <label for="remember_me" class="flex items-center">
-             <x-checkbox id="remember_me" name="remember" />
-             <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('auth.login.remember_me') }}</span>
-         </label>
-     </div>
+### 4. File di Traduzione PHP
 
-     <div class="flex items-center justify-end mt-4">
-         @if (Route::has('password.request'))
-             <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-indigo-600" href="{{ route('password.request') }}">
-                 {{ __('auth.login.forgot_password') }}
-             </a>
-         @endif
+```php
+// Modules/User/lang/it/auth.php
+return [
+    'login' => [
+        'title' => 'Accedi',
+        'email' => 'Indirizzo Email',
+        'password' => 'Password',
+        'remember' => 'Ricordami',
+        'submit' => 'Accedi',
+        'forgot' => 'Password dimenticata?',
+    ],
+    'register' => [
+        'title' => 'Registrati',
+        'name' => 'Nome',
+        'email' => 'Indirizzo Email',
+        'password' => 'Password',
+        'confirm_password' => 'Conferma Password',
+        'submit' => 'Registrati',
+        'already_registered' => 'Già registrato?',
+    ],
+];
+```
 
-         <x-primary-button class="ms-4">
-             {{ __('auth.login.login') }}
-         </x-primary-button>
-     </div>
-     ```
-   - Applicare modifiche simili a tutti i file Blade rilevanti nel progetto.
+### 5. File di Traduzione JSON
 
-5. **Integrazione con `mcamara/laravel-localization`**:
-   - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `/var/www/html/saluteora/laravel/Modules/Lang/docs/laravel-localization-complete.md`.
-   - Modificare il file `/var/www/html/saluteora/laravel/routes/web.php` per aggiungere il prefisso della lingua:
-     ```php
-     Route::group([
-         'prefix' => LaravelLocalization::setLocale(),
-         'middleware' => ['localeSessionRedirect', 'localizationRedirect']
-     ], function () {
-         // Tutte le route web
-         Route::get('/', function () {
-             return view('welcome');
-         });
-         // altre route...
-     });
-     ```
+```json
+// Modules/User/lang/it.json
+{
+    "Welcome to our application": "Benvenuto nella nostra applicazione",
+    "Please log in to continue": "Accedi per continuare",
+    "Thank you for registering": "Grazie per esserti registrato"
+}
+```
 
-6. **Creazione di un Selettore di Lingua**:
-   - Modificare il file `/var/www/html/saluteora/laravel/resources/views/layouts/navigation.blade.php` per aggiungere un selettore di lingua:
-     ```php
-     @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-         <x-nav-link rel="alternate" hreflang="{{ $localeCode }}"
-                     :active="$localeCode === app()->getLocale()"
-                     href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-             {{ ucfirst($properties['native']) }}
-         </x-nav-link>
-     @endforeach
-     ```
+### 6. Utilizzo nei File Blade
 
-## Gestione Plurale/Singolare nelle Traduzioni
+```blade
+<!-- Modules/User/resources/views/auth/login.blade.php -->
+<h1>{{ __('auth.login.title') }}</h1>
+<p>{{ __('Please log in to continue') }}</p>
 
-### Uso di `trans_choice()` e `@choice`
-- Per messaggi che variano in base al conteggio, usa `trans_choice()` o la direttiva Blade `@choice()`.
-- Sintassi tipica in PHP:
+<form method="POST" action="{{ route('login') }}">
+    @csrf
+    <div>
+        <label for="email">{{ __('auth.login.email') }}</label>
+        <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus />
+    </div>
+    <!-- ... -->
+    <button type="submit">{{ __('auth.login.submit') }}</button>
+</form>
+```
+
+### 7. Gestione delle Route con Prefisso Lingua
+
+```php
+// routes/web.php
+use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+
+Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => ['localeSessionRedirect', 'localizationRedirect']
+], function () {
+    // Tutte le route localizzate qui
+    Route::get('/', 'HomeController@index')->name('home');
+    // ...
+});
+```
+
+## Casi Speciali
+
+### Stringhe Plurali
+
+- In file PHP:
   ```php
-  // lang/en/messages.php
+  // lang/it/messages.php
   return [
-      'newMessageIndicator' => '{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages',
+      'messages' => '{0} Non hai nuovi messaggi|{1} Hai 1 nuovo messaggio|[2,*] Hai :count nuovi messaggi',
   ];
   ```
-- In Blade:
-  ```blade
-  @choice('messages.newMessageIndicator', $messagesCount)
-  ```
-
-### Sintassi delle Regole Plurali
-- `{0}`: caso zero
-- `{1}`: caso singolare
-- `[2,*]`: da 2 in poi
-- Usa `:count` per il numero
-
-### Plurale in JSON
-- Supportato ma meno leggibile:
+- In file JSON:
   ```json
   {
-    "{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages": "{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages"
+      "You have no new messages|You have 1 new message|You have :count new messages": "Non hai nuovi messaggi|Hai 1 nuovo messaggio|Hai :count nuovi messaggi"
   }
   ```
 - In Blade:
@@ -275,7 +255,7 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
 
 ## Conclusione
 
-Implementare un sistema di traduzione per testi statici nel progetto `saluteora` migliorerà l'accessibilità e l'esperienza utente per utenti di diverse lingue. L'approccio con file PHP è raccomandato per la maggior parte delle traduzioni a causa della sua flessibilità e organizzazione, mentre i file JSON possono essere utilizzati per testi più lunghi o frasi complete. Le modifiche proposte ai file Blade, ai file di traduzione e alle route garantiranno che il sistema di localizzazione sia robusto e conforme alle regole del progetto, come l'uso del prefisso della lingua negli URL.
+Implementare un sistema di traduzione per testi statici in un progetto multi-modulo migliorerà l'accessibilità e l'esperienza utente per utenti di diverse lingue. L'approccio con file PHP è raccomandato per la maggior parte delle traduzioni a causa della sua flessibilità e organizzazione, mentre i file JSON possono essere utilizzati per testi più lunghi o frasi complete. Le modifiche proposte ai file Blade, ai file di traduzione e alle route garantiranno che il sistema di localizzazione sia robusto e conforme alle regole del progetto, come l'uso del prefisso della lingua negli URL.
 
 ## Risorse
 

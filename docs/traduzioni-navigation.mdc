@@ -1,0 +1,8 @@
+# Navigazione delle Traduzioni
+
+- [Documentazione sulle traduzioni](../translations.md)
+- [Regole di naming delle chiavi](translation_keys_rules.md)
+- [Best practices per la localizzazione](integration_mc_laravel_localization.md)
+
+Tutte le regole e i pattern descritti sono pensati per essere riutilizzabili in qualunque progetto, senza riferimenti a domini specifici.
+/<directory progetto>/

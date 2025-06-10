@@ -1,12 +1,13 @@
 # Integration of Mcamara Laravel Localization with Laravel Folio
 
 ## Overview
-In the `saluteora` project, providing a multi-language experience with localized URLs is essential for accessibility and SEO. This document explores the integration between [`mcamara/laravel-localization`](https://github.com/mcamara/laravel-localization) and [`laravel/folio`](https://github.com/laravel/folio), ensuring that our page routing system supports language prefixes and locale-specific content in a healthcare context.
+Providing a multi-language experience with localized URLs is essential for accessibility and SEO in modern web applications. This document explores the integration between [`mcamara/laravel-localization`](https://github.com/mcamara/laravel-localization) and [`laravel/folio`](https://github.com/laravel/folio), ensuring that the page routing system supports language prefixes and locale-specific content.
 
 ## Purpose of Integration
 - **Localized URLs**: Enable language prefixes in URLs (e.g., `/en/services`, `/it/servizi`) for better user experience and SEO.
 - **Dynamic Page Routing**: Use Laravel Folio for managing page routes directly from Blade files while maintaining locale awareness.
 - **Seamless Language Switching**: Ensure users can switch languages without breaking page navigation or losing context.
+- **Scalability**: The solution must support adding new languages without restructuring the application, ensuring future growth.
 
 ## Analysis of Components
 
@@ -164,8 +165,8 @@ public function __invoke($locale)
 }
 ```
 
-## Best Practices for `saluteora`
-1. **Consistent Locale Prefix**: Always show the locale in URLs (`hideDefaultLocaleInURL = false`) to maintain clarity, especially important in healthcare contexts where users must be certain of the language they're viewing.
+## Best Practices
+1. **Consistent Locale Prefix**: Always show the locale in URLs (`hideDefaultLocaleInURL = false`) to maintain clarity.
 2. **Custom Middleware**: Use the `HandleFolioLocalization` middleware approach to handle locale prefixes without altering Folio's core functionality.
 3. **Localized Content**: Ensure content within Folio pages is fetched based on `app()->getLocale()` to display language-specific data.
 4. **SEO Considerations**: Leverage `laravel-localization`'s ability to generate hreflang tags in Folio pages for better international SEO:
@@ -185,4 +186,4 @@ public function __invoke($locale)
   - **Solution**: Optimize middleware execution and cache locale settings where possible.
 
 ## Conclusion
-Integrating `mcamara/laravel-localization` with `laravel/folio` requires careful handling of URL prefixes and middleware to ensure seamless localized routing. By using a custom middleware to manage locale prefixes and leveraging `laravel-localization`'s helpers for URL generation, `saluteora` can provide a robust multi-language experience for healthcare users while maintaining the simplicity of Folio's page-based routing. This approach ensures accessibility, SEO benefits, and user-friendly navigation across languages.
+Integrating `mcamara/laravel-localization` with `laravel/folio` requires careful handling of URL prefixes and middleware to ensure seamless localized routing. By using a custom middleware to manage locale prefixes and leveraging `laravel-localization`'s helpers for URL generation, you can provide a robust multi-language experience while maintaining the simplicity of Folio's page-based routing. This approach ensures accessibility, SEO benefits, and user-friendly navigation across languages.
