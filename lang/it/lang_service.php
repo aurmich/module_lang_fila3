@@ -373,9 +373,28 @@ return array (
     array (
       'label' => '946595X2259X48869SQ01',
     ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    'state' => 
+    array (
+      'label' => 'state',
+      'description' => 'state',
+      'helper_text' => 'state',
+      'placeholder' => 'state',
+    ),
+>>>>>>> e3e8bcb (✨ (docs): add Laravel localization metadata for Cursor and Windsurf to enhance documentation)
     'changePassword' => 
     array (
       'label' => 'changePassword',
+=======
+    'view' => 
+    array (
+      'description' => 'view',
+      'helper_text' => 'view',
+      'placeholder' => 'view',
+      'label' => 'view',
+>>>>>>> 1e86395 (📝 docs: remove outdated PHPStan level 9 and 10 fixes documentation files to streamline the documentation and avoid confusion)
     ),
     'recordId' => 
     array (
