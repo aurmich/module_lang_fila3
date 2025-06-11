@@ -46,9 +46,5 @@ return array (
       'icon' => 'heroicon-o-key',
       'color' => 'success',
     ),
-    'request' => 
-    array (
-      'label' => 'request',
-    ),
   ),
 );
