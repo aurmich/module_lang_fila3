@@ -37,6 +37,7 @@ return array (
       'placeholder' => 'Inserisci i valori',
       'tooltip' => 'Lista dei valori associati',
       'description' => 'values',
+      'helper_text' => 'values',
     ),
     'value' => 
     array (
@@ -375,6 +376,13 @@ return array (
     '946595X2259X48869SQ01' => 
     array (
       'label' => '946595X2259X48869SQ01',
+<<<<<<< HEAD
+=======
+    ),
+    'individuale_spread_money' => 
+    array (
+      'label' => 'individuale_spread_money',
+>>>>>>> 15bdeb7 (.)
     ),
     'state' => 
     array (
@@ -415,7 +423,34 @@ return array (
     ),
     'identity_document' => 
     array (
+<<<<<<< HEAD
       'label' => 'identity_document',
+=======
+      'label' => 'soldi',
+    ),
+    'pdf' => 
+    array (
+      'label' => 'pdf',
+    ),
+    'anno_valutatore' => 
+    array (
+      'label' => 'anno_valutatore',
+    ),
+    'motivo/invio_email' => 
+    array (
+      'label' => 'motivo/invio_email',
+    ),
+    'changePassword' => 
+    array (
+      'label' => 'changePassword',
+    ),
+    'recordId' => 
+    array (
+      'description' => 'recordId',
+      'helper_text' => 'recordId',
+      'placeholder' => 'recordId',
+      'label' => 'recordId',
+>>>>>>> 15bdeb7 (.)
     ),
   ),
   'actions' => 
@@ -491,14 +526,56 @@ return array (
     'bet_action' => 
     array (
       'label' => 'bet_action',
+<<<<<<< HEAD
+=======
+    ),
+    'GeneratePDFProjectReportAction' => 
+    array (
+      'label' => 'GeneratePDFProjectReportAction',
+>>>>>>> 15bdeb7 (.)
     ),
     'export_xls' => 
     array (
       'label' => 'export_xls',
     ),
+<<<<<<< HEAD
     'register' => 
+=======
+    'trova_esclusi' => 
+>>>>>>> 15bdeb7 (.)
     array (
       'label' => 'register',
     ),
+<<<<<<< HEAD
+=======
+    'copy_valutatore_id_from_individuale' => 
+    array (
+      'label' => 'copy_valutatore_id_from_individuale',
+    ),
+    'populate_year' => 
+    array (
+      'label' => 'populate_year',
+    ),
+    'Carica/Aggiorna Dipendenti' => 
+    array (
+      'label' => 'Carica/Aggiorna Dipendenti',
+    ),
+    'import_valutatori_' => 
+    array (
+      'label' => 'import_valutatori_',
+    ),
+    'WorkgroupSeederAction' => 
+    array (
+      'label' => 'WorkgroupSeederAction',
+    ),
+    'Carica Percentuali Fondo' => 
+    array (
+      'label' => 'Carica Percentuali Fondo',
+    ),
+    'DefaultActivitiesSeederAction' => 
+    array (
+      'label' => 'DefaultActivitiesSeederAction',
+    ),
+>>>>>>> 15bdeb7 (.)
   ),
 );
