@@ -417,6 +417,27 @@ return array (
     array (
       'label' => 'identity_document',
     ),
+<<<<<<< HEAD
+=======
+    'certifications' => 
+    array (
+      'label' => 'certifications',
+    ),
+    'schedule' => 
+    array (
+      'description' => 'schedule',
+      'helper_text' => 'schedule',
+      'placeholder' => 'schedule',
+      'label' => 'schedule',
+    ),
+    'addresses' => 
+    array (
+      'description' => 'addresses',
+      'helper_text' => 'addresses',
+      'placeholder' => 'addresses',
+      'label' => 'addresses',
+    ),
+>>>>>>> c8ed798 (.)
   ),
   'actions' => 
   array (
