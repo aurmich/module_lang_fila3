@@ -420,6 +420,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9b21852 (.)
@@ -454,6 +455,29 @@ return array (
 >>>>>>> 90c9008 (.)
 =======
 >>>>>>> 9b21852 (.)
+=======
+    'certifications' => [
+        'label' => 'Certificazioni',
+    ],
+    'schedule' => [
+        'label' => 'Orario',
+        'description' => 'Orario',
+        'helper_text' => 'Orario',
+        'placeholder' => 'Orario',
+    ],
+    'addresses' => [
+        'label' => 'Indirizzi',
+        'description' => 'Indirizzi',
+        'helper_text' => 'Indirizzi',
+        'placeholder' => 'Indirizzi',
+    ],
+    'view' => [
+        'label' => 'Vista',
+        'description' => 'Vista',
+        'helper_text' => 'Vista',
+        'placeholder' => 'Vista',
+    ],
+>>>>>>> 6b5b79c (.)
   ),
   'actions' => 
   array (
