@@ -442,10 +442,16 @@ return array (
     ),
     'view' => 
     array (
+<<<<<<< HEAD
       'label' => 'Vista',
       'description' => 'Vista',
       'helper_text' => 'Modalità di visualizzazione',
       'placeholder' => 'Seleziona la vista',
+=======
+      'description' => 'view',
+      'helper_text' => 'view',
+      'placeholder' => 'view',
+>>>>>>> 540d90c (.)
     ),
   ),
   'actions' => 
