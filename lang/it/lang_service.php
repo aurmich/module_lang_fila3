@@ -419,7 +419,10 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 9b21852 (.)
     'certifications' => 
     array (
       'label' => 'certifications',
@@ -438,6 +441,7 @@ return array (
       'placeholder' => 'addresses',
       'label' => 'addresses',
     ),
+<<<<<<< HEAD
 >>>>>>> c8ed798 (.)
 =======
     'view' => 
@@ -448,6 +452,8 @@ return array (
       'placeholder' => 'view',
     ),
 >>>>>>> 90c9008 (.)
+=======
+>>>>>>> 9b21852 (.)
   ),
   'actions' => 
   array (
