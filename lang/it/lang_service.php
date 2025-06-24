@@ -418,6 +418,7 @@ return array (
       'label' => 'identity_document',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'certifications' => 
     array (
@@ -438,6 +439,15 @@ return array (
       'label' => 'addresses',
     ),
 >>>>>>> c8ed798 (.)
+=======
+    'view' => 
+    array (
+      'description' => 'view',
+      'helper_text' => 'view',
+      'label' => 'view',
+      'placeholder' => 'view',
+    ),
+>>>>>>> 90c9008 (.)
   ),
   'actions' => 
   array (
