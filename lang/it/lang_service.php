@@ -56,8 +56,29 @@ return array (
     'description' => 
     array (
       'label' => 'Descrizione',
+<<<<<<< HEAD
       'placeholder' => 'Fornisci una descrizione dettagliata',
       'help' => 'Descrizione completa per maggiori informazioni sull\'elemento',
+=======
+      'placeholder' => 'Inserisci una descrizione',
+      'tooltip' => 'Breve descrizione dell\'elemento',
+    ),
+    'values' => 
+    array (
+      'label' => 'Valori',
+      'placeholder' => 'Inserisci i valori',
+      'tooltip' => 'Lista dei valori associati',
+      'description' => 'values',
+      'helper_text' => 'values',
+    ),
+    'value' => 
+    array (
+      'label' => 'Valore',
+      'placeholder' => 'Inserisci un valore',
+      'tooltip' => 'Valore singolo',
+      'description' => 'value',
+      'helper_text' => 'value',
+>>>>>>> f626bf0 (.)
     ),
     'email' => 
     array (
@@ -391,9 +412,68 @@ return array (
     ),
     'determina' => 
     array (
+<<<<<<< HEAD
       'label' => 'Numero Determina',
       'placeholder' => 'Inserisci numero determina',
       'help' => 'Numero della determina dirigenziale di riferimento',
+=======
+      'label' => 'Data inizio esecuzione',
+      'placeholder' => 'Seleziona la data di inizio',
+      'tooltip' => 'Data di inizio dell\'esecuzione',
+      'description' => 'data_inizio_esecuzione',
+      'helper_text' => 'data_inizio_esecuzione',
+    ),
+    'data_fine_esecuzione' => 
+    array (
+      'label' => 'Data fine esecuzione',
+      'placeholder' => 'Seleziona la data di fine',
+      'tooltip' => 'Data di fine dell\'esecuzione',
+      'description' => 'data_fine_esecuzione',
+      'helper_text' => 'data_fine_esecuzione',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'Gestisci colonne',
+      'tooltip' => 'Mostra/Nascondi colonne della tabella',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'Riordina',
+      'tooltip' => 'Riordina gli elementi',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'Reimposta filtri',
+      'tooltip' => 'Rimuovi tutti i filtri applicati',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'Applica filtri',
+      'tooltip' => 'Applica i filtri selezionati',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'Filtri',
+      'tooltip' => 'Apri il pannello dei filtri',
+    ),
+    'longitude' => 
+    array (
+      'label' => 'Longitudine',
+    ),
+    'latitude' => 
+    array (
+      'label' => 'Latitudine',
+    ),
+    'unit' => 
+    array (
+      'label' => 'Unità',
+    ),
+    'deleted_at' => 
+    array (
+      'label' => 'Data di eliminazione',
+      'description' => 'deleted_at',
+      'helper_text' => 'deleted_at',
+>>>>>>> f626bf0 (.)
     ),
     'radius' => 
     array (
@@ -547,10 +627,231 @@ return array (
     ),
     'test_date' => 
     array (
+<<<<<<< HEAD
       'label' => 'test_date',
       'placeholder' => 'test_date',
       'helper_text' => 'test_date',
       'description' => 'test_date',
+=======
+      'label' => 'Partita IVA',
+    ),
+    'company_office' => 
+    array (
+      'label' => 'Sede aziendale',
+    ),
+    'business_closed' => 
+    array (
+      'label' => 'Attività chiusa',
+    ),
+    'company_name' => 
+    array (
+      'label' => 'Nome azienda',
+    ),
+    'street_number' => 
+    array (
+      'label' => 'Numero civico',
+    ),
+    'province' => 
+    array (
+      'label' => 'Provincia',
+    ),
+    'postal_code' => 
+    array (
+      'label' => 'CAP',
+    ),
+    'fax' => 
+    array (
+      'label' => 'Fax',
+    ),
+    'mobile' => 
+    array (
+      'label' => 'Cellulare',
+    ),
+    'notes' => 
+    array (
+      'label' => 'Note',
+    ),
+    'activity' => 
+    array (
+      'label' => 'Attività',
+    ),
+    'determina' => 
+    array (
+      'label' => 'Determina',
+      'description' => 'determina',
+      'helper_text' => 'determina',
+      'placeholder' => 'determina',
+    ),
+    'data_aggiudicazione' => 
+    array (
+      'label' => 'Data aggiudicazione',
+      'description' => 'data_aggiudicazione',
+    ),
+    'updated_by' => 
+    array (
+      'description' => 'updated_by',
+      'helper_text' => 'updated_by',
+      'placeholder' => 'updated_by',
+      'label' => 'updated_by',
+    ),
+    'created_by' => 
+    array (
+      'description' => 'created_by',
+      'helper_text' => 'created_by',
+      'placeholder' => 'created_by',
+      'label' => 'created_by',
+    ),
+    'layout' => 
+    array (
+      'label' => 'layout',
+    ),
+    'newstate' => 
+    array (
+      'description' => 'newstate',
+      'helper_text' => 'newstate',
+      'placeholder' => 'newstate',
+      'label' => 'newstate',
+    ),
+    'icon' => 
+    array (
+      'description' => 'icon',
+      'label' => 'icon',
+      'placeholder' => 'icon',
+      'helper_text' => 'icon',
+    ),
+    'user' => 
+    array (
+      'label' => 'user',
+    ),
+    'attributes' => 
+    array (
+      'label' => 'attributes',
+    ),
+    '946595X2254X48249SQ01' => 
+    array (
+      'label' => '946595X2254X48249SQ01',
+    ),
+    '946595X2255X48257SQ01' => 
+    array (
+      'label' => '946595X2255X48257SQ01',
+    ),
+    '946595X2256X48262SQ01' => 
+    array (
+      'label' => '946595X2256X48262SQ01',
+    ),
+    '946595X2257X48264' => 
+    array (
+      'label' => '946595X2257X48264',
+    ),
+    '946595X2257X48265SQ01' => 
+    array (
+      'label' => '946595X2257X48265SQ01',
+    ),
+    '946595X2258X48268SQ01' => 
+    array (
+      'label' => '946595X2258X48268SQ01',
+    ),
+    '946595X2259X48269SQ01' => 
+    array (
+      'label' => '946595X2259X48269SQ01',
+    ),
+    '946595X2259X48843SQ01' => 
+    array (
+      'label' => '946595X2259X48843SQ01',
+    ),
+    '946595X2259X48847SQ01' => 
+    array (
+      'label' => '946595X2259X48847SQ01',
+    ),
+    '946595X2259X48270SQ01' => 
+    array (
+      'label' => '946595X2259X48270SQ01',
+    ),
+    '946595X2259X48850SQ01' => 
+    array (
+      'label' => '946595X2259X48850SQ01',
+    ),
+    '946595X2259X48852SQ01' => 
+    array (
+      'label' => '946595X2259X48852SQ01',
+    ),
+    '946595X2259X48271SQ01' => 
+    array (
+      'label' => '946595X2259X48271SQ01',
+    ),
+    '946595X2259X48869SQ01' => 
+    array (
+      'label' => '946595X2259X48869SQ01',
+    ),
+    'state' => 
+    array (
+      'label' => 'state',
+      'description' => 'state',
+      'helper_text' => 'state',
+      'placeholder' => 'state',
+    ),
+    'changePassword' => 
+    array (
+      'label' => 'changePassword',
+    ),
+    'recordId' => 
+    array (
+      'description' => 'recordId',
+      'label' => 'recordId',
+      'placeholder' => 'recordId',
+      'helper_text' => 'recordId',
+    ),
+    'session_id' => 
+    array (
+      'description' => 'session_id',
+      'label' => 'session_id',
+      'placeholder' => 'session_id',
+      'helper_text' => 'session_id',
+    ),
+    'pregnancy_certificate' => 
+    array (
+      'label' => 'pregnancy_certificate',
+    ),
+    'isee_certificate' => 
+    array (
+      'label' => 'isee_certificate',
+    ),
+    'health_card' => 
+    array (
+      'label' => 'health_card',
+    ),
+    'identity_document' => 
+    array (
+      'label' => 'identity_document',
+>>>>>>> f626bf0 (.)
+    ),
+    'pdf' => 
+    array (
+      'label' => 'pdf',
+    ),
+    'anno_valutatore' => 
+    array (
+      'label' => 'anno_valutatore',
+    ),
+    'periodo' => 
+    array (
+      'label' => 'periodo',
+    ),
+    'reparto' => 
+    array (
+      'label' => 'reparto',
+    ),
+    'qualifica' => 
+    array (
+      'label' => 'qualifica',
+    ),
+    'lavoratore' => 
+    array (
+      'label' => 'lavoratore',
+    ),
+    'motivo/invio_email' => 
+    array (
+      'label' => 'motivo/invio_email',
     ),
   ),
   'actions' => 
@@ -671,6 +972,22 @@ return array (
     'change-password' => 
     array (
       'label' => 'change-password',
+    ),
+    'GeneratePDFProjectReportAction' => 
+    array (
+      'label' => 'GeneratePDFProjectReportAction',
+    ),
+    'populate_year' => 
+    array (
+      'label' => 'populate_year',
+    ),
+    'Carica Percentuali Fondo' => 
+    array (
+      'label' => 'Carica Percentuali Fondo',
+    ),
+    'import_valutatori_' => 
+    array (
+      'label' => 'import_valutatori_',
     ),
   ),
   'messages' => 
