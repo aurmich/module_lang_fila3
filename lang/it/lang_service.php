@@ -323,6 +323,10 @@ return array (
       'placeholder' => 'Inserisci un valore',
       'help' => 'Valore specifico per il campo corrente',
       'description' => 'value',
+<<<<<<< HEAD
+=======
+      'helper_text' => 'value',
+>>>>>>> 15b6cb3 (.)
     ),
     'values' => 
     array (
@@ -347,12 +351,22 @@ return array (
       'label' => 'Icona',
       'placeholder' => 'heroicon-o-document',
       'help' => 'Icona identificativa per l\'elemento nell\'interfaccia',
+<<<<<<< HEAD
+=======
+      'description' => 'icon',
+      'helper_text' => 'icon',
+>>>>>>> 15b6cb3 (.)
     ),
     'isActive' => 
     array (
       'label' => 'Stato Attivo',
       'placeholder' => 'Elemento attivo',
       'help' => 'Indica se l\'elemento è attualmente attivo e visibile',
+<<<<<<< HEAD
+=======
+      'description' => 'isActive',
+      'helper_text' => 'isActive',
+>>>>>>> 15b6cb3 (.)
     ),
     'state' => 
     array (
@@ -367,6 +381,11 @@ return array (
       'label' => 'Nuovo Stato',
       'placeholder' => 'Seleziona nuovo stato',
       'help' => 'Nuovo stato da assegnare all\'elemento',
+<<<<<<< HEAD
+=======
+      'description' => 'newstate',
+      'helper_text' => 'newstate',
+>>>>>>> 15b6cb3 (.)
     ),
     'layout' => 
     array (
@@ -380,6 +399,10 @@ return array (
       'placeholder' => 'Seleziona modalità di visualizzazione',
       'help' => 'Modalità di visualizzazione dei dati nell\'interfaccia',
       'description' => 'view',
+<<<<<<< HEAD
+=======
+      'helper_text' => 'view',
+>>>>>>> 15b6cb3 (.)
     ),
     'data_scadenza' => 
     array (
@@ -653,6 +676,23 @@ return array (
       'placeholder' => 'test_date',
       'helper_text' => 'test_date',
       'description' => 'test_date',
+<<<<<<< HEAD
+=======
+    ),
+    'outcome' => 
+    array (
+      'description' => 'outcome',
+      'helper_text' => 'outcome',
+      'placeholder' => 'outcome',
+      'label' => 'outcome',
+    ),
+    'action' => 
+    array (
+      'description' => 'action',
+      'helper_text' => 'action',
+      'placeholder' => 'action',
+      'label' => 'action',
+>>>>>>> 15b6cb3 (.)
     ),
   ),
   'actions' => 
