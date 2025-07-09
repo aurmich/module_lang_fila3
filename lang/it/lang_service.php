@@ -322,11 +322,14 @@ return array (
       'label' => 'Valore Singolo',
       'placeholder' => 'Inserisci un valore',
       'help' => 'Valore specifico per il campo corrente',
+<<<<<<< HEAD
       'description' => 'value',
 <<<<<<< HEAD
 =======
       'helper_text' => 'value',
 >>>>>>> 15b6cb3 (.)
+=======
+>>>>>>> 82c64db (.)
     ),
     'values' => 
     array (
@@ -352,10 +355,13 @@ return array (
       'placeholder' => 'heroicon-o-document',
       'help' => 'Icona identificativa per l\'elemento nell\'interfaccia',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'icon',
       'helper_text' => 'icon',
 >>>>>>> 15b6cb3 (.)
+=======
+>>>>>>> 82c64db (.)
     ),
     'isActive' => 
     array (
@@ -363,10 +369,13 @@ return array (
       'placeholder' => 'Elemento attivo',
       'help' => 'Indica se l\'elemento è attualmente attivo e visibile',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'isActive',
       'helper_text' => 'isActive',
 >>>>>>> 15b6cb3 (.)
+=======
+>>>>>>> 82c64db (.)
     ),
     'state' => 
     array (
@@ -382,10 +391,13 @@ return array (
       'placeholder' => 'Seleziona nuovo stato',
       'help' => 'Nuovo stato da assegnare all\'elemento',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'newstate',
       'helper_text' => 'newstate',
 >>>>>>> 15b6cb3 (.)
+=======
+>>>>>>> 82c64db (.)
     ),
     'layout' => 
     array (
@@ -398,11 +410,14 @@ return array (
       'label' => 'Modalità Vista',
       'placeholder' => 'Seleziona modalità di visualizzazione',
       'help' => 'Modalità di visualizzazione dei dati nell\'interfaccia',
+<<<<<<< HEAD
       'description' => 'view',
 <<<<<<< HEAD
 =======
       'helper_text' => 'view',
 >>>>>>> 15b6cb3 (.)
+=======
+>>>>>>> 82c64db (.)
     ),
     'data_scadenza' => 
     array (
@@ -677,6 +692,7 @@ return array (
       'helper_text' => 'test_date',
       'description' => 'test_date',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     ),
     'outcome' => 
@@ -693,6 +709,8 @@ return array (
       'placeholder' => 'action',
       'label' => 'action',
 >>>>>>> 15b6cb3 (.)
+=======
+>>>>>>> 82c64db (.)
     ),
   ),
   'actions' => 
