@@ -1,22 +1,26 @@
 <?php
 
 return array (
-  'actions' => 
+  'navigation' => 
   array (
-    'create' => 
-    array (
-      'label' => 'create',
-    ),
-    'lang' => 
-    array (
-      'label' => 'lang',
-    ),
+    'label' => 'Gestione Traduzioni',
+    'group' => 'Impostazioni',
+    'icon' => 'heroicon-o-language',
+    'sort' => 73,
   ),
   'fields' => 
   array (
-    'edit' => 
+    'key' => 
     array (
-      'label' => 'edit',
+      'label' => 'Chiave',
+      'placeholder' => 'Inserisci la chiave di traduzione',
+      'help' => 'Identificatore univoco della stringa da tradurre',
+    ),
+    'value' => 
+    array (
+      'label' => 'Valore',
+      'placeholder' => 'Inserisci la traduzione',
+      'help' => 'Testo tradotto per la chiave selezionata',
     ),
     'toggleColumns' => 
     array (
@@ -26,57 +30,32 @@ return array (
     array (
       'label' => 'reorderRecords',
     ),
-    'resetFilters' => 
+  ),
+  'actions' => 
+  array (
+    'create' => 
     array (
-      'label' => 'resetFilters',
+      'label' => 'Crea Traduzione',
+      'success' => 'Traduzione creata con successo',
+      'error' => 'Errore durante la creazione della traduzione',
     ),
-    'content' => 
+    'edit' => 
     array (
-      'description' => 'content',
-      'helper_text' => 'content',
-      'placeholder' => 'content',
-    ),
-    'applyFilters' => 
-    array (
-      'label' => 'applyFilters',
-    ),
-    'snapshots' => 
-    array (
-      'fields' => 
-      array (
-        'updated_at' => 
-        array (
-          'help' => 
-          array (
-            'description' => 'snapshots.fields.updated_at.help',
-            'helper_text' => 'snapshots.fields.updated_at.help',
-            'placeholder' => 'snapshots.fields.updated_at.help',
-            'label' => 'snapshots.fields.updated_at.help',
-          ),
-          'label' => 
-          array (
-            'description' => 'snapshots.fields.updated_at.label',
-            'helper_text' => 'snapshots.fields.updated_at.label',
-            'placeholder' => 'snapshots.fields.updated_at.label',
-          ),
-        ),
-      ),
-    ),
-    'openFilters' => 
-    array (
-      'label' => 'openFilters',
-    ),
-    'key' => 
-    array (
-      'label' => 'key',
+      'label' => 'Modifica Traduzione',
+      'success' => 'Traduzione aggiornata con successo',
+      'error' => 'Errore durante l\'aggiornamento della traduzione',
     ),
   ),
-  'navigation' => 
+  'messages' => 
   array (
-    'label' => 'translation file.navigation',
-    'sort' => 73,
-    'icon' => 'translation file.navigation',
-    'group' => 'translation file.navigation',
+    'created' => 'Traduzione aggiunta',
+    'updated' => 'Traduzione aggiornata',
+    'deleted' => 'Traduzione eliminata',
+  ),
+  'validation' => 
+  array (
+    'key_required' => 'La chiave è obbligatoria',
+    'value_required' => 'Il valore è obbligatorio',
   ),
   'model' => 
   array (

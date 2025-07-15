@@ -489,6 +489,13 @@ return array (
           'description' => 'content.stats.no_show_rate',
         ),
       ),
+      'status' => 
+      array (
+        'critical' => 
+        array (
+          'description' => 'content.status.critical',
+        ),
+      ),
     ),
   ),
   'actions' => 
