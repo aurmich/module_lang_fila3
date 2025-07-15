@@ -1,28 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-return array (
-  'fields' => 
-  array (
-    'schedule' => 
-    array (
-      'label' => 'schedule',
-      'placeholder' => 'schedule',
-      'helper_text' => 'schedule',
-      'description' => 'schedule',
-    ),
-  ),
-);
-=======
 return [
     'fields' => [
-        'schedule' => [
-            'label' => 'schedule',
-            'placeholder' => 'schedule',
-            'helper_text' => 'schedule',
-            'description' => 'schedule',
-            'help' => 'Orari di apertura e disponibilità del servizio medico',
-        ],
         'id' => [
             'label' => 'ID',
             'placeholder' => 'Identificativo univoco',
@@ -312,6 +291,11 @@ return [
             'placeholder' => 'Gestisci indirizzi multipli',
             'help' => 'Elenco degli indirizzi delle strutture mediche associate',
         ],
+        'schedule' => [
+            'label' => 'Orario Servizio',
+            'placeholder' => 'Configura orari apertura',
+            'help' => 'Orari di apertura e disponibilità del servizio medico',
+        ],
         'schedule1' => [
             'label' => 'Orario Alternativo',
             'placeholder' => 'Orario secondario',
@@ -399,15 +383,6 @@ return [
         ],
     ],
     'actions' => [
-        'cancel' => [
-            'label' => 'cancel',
-            'tooltip' => 'Annulla l\'operazione corrente',
-        ],
-        'save' => [
-            'label' => 'save',
-            'success' => 'Dati salvati correttamente',
-            'error' => 'Errore durante il salvataggio',
-        ],
         'create' => [
             'label' => 'Crea Nuovo',
             'success' => 'Elemento creato con successo',
@@ -427,6 +402,15 @@ return [
         'view' => [
             'label' => 'Visualizza',
             'tooltip' => 'Visualizza dettagli completi',
+        ],
+        'save' => [
+            'label' => 'Salva',
+            'success' => 'Dati salvati correttamente',
+            'error' => 'Errore durante il salvataggio',
+        ],
+        'cancel' => [
+            'label' => 'Annulla',
+            'tooltip' => 'Annulla l\'operazione corrente',
         ],
         'back' => [
             'label' => 'Indietro',
@@ -546,4 +530,3 @@ return [
         'size' => 'Il campo :attribute deve essere di :size MB',
     ],
 ];
->>>>>>> 6bc2950 (.)
