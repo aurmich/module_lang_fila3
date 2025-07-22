@@ -114,10 +114,14 @@ class WriteTranslationFileAction
         // Pulisce la cache delle traduzioni
         if (app()->bound('translation.loader')) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore-next-line */
 =======
             /** @phpstan-ignore method.notFound */
 >>>>>>> e3660f5 (.)
+=======
+            /** @phpstan-ignore method.notFound */
+>>>>>>> 637747f (.)
             app('translation.loader')->flush();
         }
     }

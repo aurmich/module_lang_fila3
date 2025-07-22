@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -522,3 +523,440 @@ return array (
     ),
   ),
 );
+=======
+declare(strict_types=1);
+
+return [
+    'fields' => [
+        'email' => [
+            'label' => 'Email',
+            'placeholder' => 'Inserisci la tua email',
+            'tooltip' => 'Usa un indirizzo email valido',
+            'icon' => 'heroicon-o-mail',
+            'description' => 'Indirizzo email',
+            'helper_text' => 'Inserisci un indirizzo email valido',
+        ],
+        'password' => [
+            'label' => 'Password',
+            'placeholder' => 'Inserisci la tua password',
+            'tooltip' => 'La password deve contenere almeno 8 caratteri',
+            'icon' => 'heroicon-o-lock-closed',
+            'description' => 'Password di accesso',
+            'helper_text' => 'La password deve essere sicura',
+        ],
+        'remember' => [
+            'label' => 'Ricordami',
+            'tooltip' => 'Mantieni l\'accesso attivo su questo dispositivo',
+            'description' => 'Opzione ricordami',
+            'helper_text' => 'Seleziona per mantenere l\'accesso',
+            'placeholder' => 'Ricordami',
+        ],
+        'applyFilters' => [
+            'label' => 'Applica filtri',
+        ],
+        'toggleColumns' => [
+            'label' => 'Attiva/Disattiva colonne',
+        ],
+        'reorderRecords' => [
+            'label' => 'Riordina record',
+        ],
+        'options' => [
+            'prefix-icon-color' => [
+                'description' => 'Opzioni.Icona prefisso colore',
+                'helper_text' => 'Opzioni.Icona prefisso colore',
+                'placeholder' => 'Opzioni.Icona prefisso colore',
+                'label' => 'Opzioni.Icona prefisso colore',
+            ],
+            'allow_multiple' => [
+                'description' => 'Opzioni.Permetti più voci',
+                'label' => 'Opzioni.Permetti più voci',
+                'placeholder' => 'Opzioni.Permetti più voci',
+                'helper_text' => 'Opzioni.Permetti più voci',
+            ],
+            'visibility' => [
+                'values' => [
+                    'description' => 'Opzioni.Visibilità.Valori',
+                    'label' => 'Opzioni.Visibilità.Valori',
+                    'placeholder' => 'Opzioni.Visibilità.Valori',
+                    'helper_text' => 'Opzioni.Visibilità.Valori',
+                ],
+                'active' => [
+                    'label' => 'Opzioni.Visibilità.Attiva',
+                    'placeholder' => 'Opzioni.Visibilità.Attiva',
+                    'helper_text' => 'Opzioni.Visibilità.Attiva',
+                    'description' => 'Opzioni.Visibilità.Attiva',
+                ],
+                'fieldID' => [
+                    'label' => 'Opzioni.Visibilità.IDCampo',
+                    'placeholder' => 'Opzioni.Visibilità.IDCampo',
+                    'helper_text' => 'Opzioni.Visibilità.IDCampo',
+                    'description' => 'Opzioni.Visibilità.IDCampo',
+                ],
+            ],
+            'confirmation-message' => [
+                'label' => 'Opzioni.Messaggio conferma',
+                'placeholder' => 'Opzioni.Messaggio conferma',
+                'helper_text' => 'Opzioni.Messaggio conferma',
+                'description' => 'Opzioni.Messaggio conferma',
+            ],
+            'require-login' => [
+                'label' => 'Opzioni.Richiedi login',
+                'placeholder' => 'Opzioni.Richiedi login',
+                'helper_text' => 'Opzioni.Richiedi login',
+                'description' => 'Opzioni.Richiedi login',
+            ],
+            'one-entry-per-user' => [
+                'label' => 'Opzioni.Una voce per utente',
+                'placeholder' => 'Opzioni.Una voce per utente',
+                'helper_text' => 'Opzioni.Una voce per utente',
+                'description' => 'Opzioni.Una voce per utente',
+            ],
+            'show-as' => [
+                'label' => 'Opzioni.Mostra come',
+                'placeholder' => 'Opzioni.Mostra come',
+                'helper_text' => 'Opzioni.Mostra come',
+                'description' => 'Opzioni.Mostra come',
+            ],
+            'emails-notification' => [
+                'label' => 'Opzioni.Notifiche email',
+                'placeholder' => 'Opzioni.Notifiche email',
+                'helper_text' => 'Opzioni.Notifiche email',
+                'description' => 'Opzioni.Notifiche email',
+            ],
+            'primary_color' => [
+                'label' => 'Opzioni.Colore primario',
+                'placeholder' => 'Opzioni.Colore primario',
+                'helper_text' => 'Opzioni.Colore primario',
+                'description' => 'Opzioni.Colore primario',
+            ],
+            'logo' => [
+                'label' => 'Opzioni.Logo',
+                'placeholder' => 'Opzioni.Logo',
+                'helper_text' => 'Opzioni.Logo',
+                'description' => 'Opzioni.Logo',
+            ],
+            'cover' => [
+                'label' => 'Opzioni.Copertina',
+                'placeholder' => 'Opzioni.Copertina',
+                'helper_text' => 'Opzioni.Copertina',
+                'description' => 'Opzioni.Copertina',
+            ],
+            'prefix-icon' => [
+                'description' => 'Opzioni.Icona prefisso',
+                'helper_text' => 'Opzioni.Icona prefisso',
+                'placeholder' => 'Opzioni.Icona prefisso',
+                'label' => 'Opzioni.Icona prefisso',
+            ],
+            'htmlId' => [
+                'label' => 'Opzioni.ID HTML',
+                'placeholder' => 'Opzioni.ID HTML',
+                'helper_text' => 'Opzioni.ID HTML',
+                'description' => 'Opzioni.ID HTML',
+            ],
+            'hint' => [
+                'text' => [
+                    'label' => 'Opzioni.Hint testo',
+                    'placeholder' => 'Opzioni.Hint testo',
+                    'helper_text' => 'Opzioni.Hint testo',
+                    'description' => 'Opzioni.Hint testo',
+                ],
+                'icon' => [
+                    'label' => 'Opzioni.Hint icona',
+                    'placeholder' => 'Opzioni.Hint icona',
+                    'helper_text' => 'Opzioni.Hint icona',
+                    'description' => 'Opzioni.Hint icona',
+                ],
+                'color' => [
+                    'label' => 'Opzioni.Hint colore',
+                    'placeholder' => 'Opzioni.Hint colore',
+                    'helper_text' => 'Opzioni.Hint colore',
+                    'description' => 'Opzioni.Hint colore',
+                ],
+                'icon-tooltip' => [
+                    'label' => 'Opzioni.Hint icona tooltip',
+                    'placeholder' => 'Opzioni.Hint icona tooltip',
+                    'helper_text' => 'Opzioni.Hint icona tooltip',
+                    'description' => 'Opzioni.Hint icona tooltip',
+                ],
+            ],
+            'is_required' => [
+                'label' => 'Opzioni.Obbligatorio',
+                'placeholder' => 'Opzioni.Obbligatorio',
+                'helper_text' => 'Opzioni.Obbligatorio',
+                'description' => 'Opzioni.Obbligatorio',
+            ],
+            'column_span_full' => [
+                'label' => 'Opzioni.Colonna span completa',
+                'placeholder' => 'Opzioni.Colonna span completa',
+                'helper_text' => 'Opzioni.Colonna span completa',
+                'description' => 'Opzioni.Colonna span completa',
+            ],
+            'hidden_label' => [
+                'label' => 'Opzioni.Etichetta nascosta',
+                'placeholder' => 'Opzioni.Etichetta nascosta',
+                'helper_text' => 'Opzioni.Etichetta nascosta',
+                'description' => 'Opzioni.Etichetta nascosta',
+            ],
+            'dataSource' => [
+                'label' => 'Opzioni.Sorgente dati',
+                'placeholder' => 'Opzioni.Sorgente dati',
+                'helper_text' => 'Opzioni.Sorgente dati',
+                'description' => 'Opzioni.Sorgente dati',
+            ],
+            'dateType' => [
+                'label' => 'Opzioni.Tipo data',
+                'placeholder' => 'Opzioni.Tipo data',
+                'helper_text' => 'Opzioni.Tipo data',
+                'description' => 'Opzioni.Tipo data',
+            ],
+            'minValue' => [
+                'label' => 'Opzioni.Valore minimo',
+                'placeholder' => 'Opzioni.Valore minimo',
+                'helper_text' => 'Opzioni.Valore minimo',
+                'description' => 'Opzioni.Valore minimo',
+            ],
+            'maxValue' => [
+                'label' => 'Opzioni.Valore massimo',
+                'placeholder' => 'Opzioni.Valore massimo',
+                'helper_text' => 'Opzioni.Valore massimo',
+                'description' => 'Opzioni.Valore massimo',
+            ],
+            'suffix' => [
+                'label' => 'Opzioni.Suffisso',
+                'placeholder' => 'Opzioni.Suffisso',
+                'helper_text' => 'Opzioni.Suffisso',
+                'description' => 'Opzioni.Suffisso',
+            ],
+            'suffix-icon' => [
+                'label' => 'Opzioni.Icona suffisso',
+                'placeholder' => 'Opzioni.Icona suffisso',
+                'helper_text' => 'Opzioni.Icona suffisso',
+                'description' => 'Opzioni.Icona suffisso',
+            ],
+            'suffix-icon-color' => [
+                'label' => 'Opzioni.Colore icona suffisso',
+                'placeholder' => 'Opzioni.Colore icona suffisso',
+                'helper_text' => 'Opzioni.Colore icona suffisso',
+                'description' => 'Opzioni.Colore icona suffisso',
+            ],
+            'prefix' => [
+                'label' => 'Opzioni.Prefisso',
+                'placeholder' => 'Opzioni.Prefisso',
+                'helper_text' => 'Opzioni.Prefisso',
+                'description' => 'Opzioni.Prefisso',
+            ],
+        ],
+        'resetFilters' => [
+            'label' => 'Resetta filtri',
+        ],
+        'openFilters' => [
+            'label' => 'Apri filtri',
+        ],
+        'value' => [
+            'description' => 'Valore',
+            'helper_text' => 'Inserisci il valore',
+            'placeholder' => 'Inserisci il valore',
+            'label' => 'Valore',
+        ],
+        'values-list' => [
+            'description' => 'Lista valori',
+            'helper_text' => 'Inserisci la lista dei valori',
+            'placeholder' => 'Inserisci la lista dei valori',
+            'label' => 'Lista valori',
+        ],
+        'user_id' => [
+            'label' => 'ID utente',
+            'placeholder' => 'ID utente',
+            'helper_text' => 'ID dell\'utente',
+            'description' => 'ID dell\'utente',
+        ],
+        'name' => [
+            'label' => 'Nome',
+            'placeholder' => 'Inserisci il nome',
+            'helper_text' => 'Inserisci il nome',
+            'description' => 'Nome del campo',
+        ],
+        'slug' => [
+            'label' => 'Slug',
+            'placeholder' => 'Inserisci lo slug',
+            'helper_text' => 'Inserisci lo slug',
+            'description' => 'Slug del campo',
+        ],
+        'category_id' => [
+            'label' => 'ID categoria',
+            'placeholder' => 'ID categoria',
+            'helper_text' => 'ID della categoria',
+            'description' => 'ID della categoria',
+        ],
+        'description' => [
+            'label' => 'Descrizione',
+            'placeholder' => 'Inserisci la descrizione',
+            'helper_text' => 'Inserisci la descrizione',
+            'description' => 'Descrizione del campo',
+        ],
+        'details' => [
+            'label' => 'Dettagli',
+            'placeholder' => 'Inserisci i dettagli',
+            'helper_text' => 'Inserisci i dettagli',
+            'description' => 'Dettagli del campo',
+        ],
+        'is_active' => [
+            'label' => 'Attivo',
+            'placeholder' => 'Attivo',
+            'helper_text' => 'Stato attivo del campo',
+            'description' => 'Stato attivo del campo',
+        ],
+        'ordering' => [
+            'label' => 'Ordinamento',
+            'placeholder' => 'Ordinamento',
+            'helper_text' => 'Ordinamento dei record',
+            'description' => 'Ordinamento dei record',
+        ],
+        'start_date' => [
+            'label' => 'Data inizio',
+            'placeholder' => 'Inserisci la data di inizio',
+            'helper_text' => 'Inserisci la data di inizio',
+            'description' => 'Data di inizio del campo',
+        ],
+        'end_date' => [
+            'label' => 'Data fine',
+            'placeholder' => 'Inserisci la data di fine',
+            'helper_text' => 'Inserisci la data di fine',
+            'description' => 'Data di fine del campo',
+        ],
+        'extensions' => [
+            'label' => 'Estensioni',
+            'placeholder' => 'Estensioni',
+            'helper_text' => 'Estensioni del campo',
+            'description' => 'Estensioni del campo',
+        ],
+        'sections' => [
+            'label' => 'Sezioni',
+            'placeholder' => 'Sezioni',
+            'helper_text' => 'Sezioni del campo',
+            'description' => 'Sezioni del campo',
+        ],
+        'fields' => [
+            'label' => 'Campi',
+            'placeholder' => 'Campi',
+            'helper_text' => 'Campi del campo',
+            'description' => 'Campi del campo',
+        ],
+        'type' => [
+            'label' => 'Tipo',
+            'placeholder' => 'Tipo',
+            'helper_text' => 'Tipo del campo',
+            'description' => 'Tipo del campo',
+        ],
+        'compact' => [
+            'label' => 'Compatto',
+            'placeholder' => 'Compatto',
+            'helper_text' => 'Stile compatto del campo',
+            'description' => 'Stile compatto del campo',
+        ],
+        'aside' => [
+            'label' => 'Lato',
+            'placeholder' => 'Lato',
+            'helper_text' => 'Posizione del campo',
+            'description' => 'Posizione del campo',
+        ],
+        'borderless' => [
+            'label' => 'Senza bordo',
+            'placeholder' => 'Senza bordo',
+            'helper_text' => 'Stile senza bordo del campo',
+            'description' => 'Stile senza bordo del campo',
+        ],
+        'icon' => [
+            'label' => 'Icona',
+            'placeholder' => 'Icona',
+            'helper_text' => 'Icona del campo',
+            'description' => 'Icona del campo',
+        ],
+        'columns' => [
+            'label' => 'Colonne',
+            'placeholder' => 'Colonne',
+            'helper_text' => 'Colonne del campo',
+            'description' => 'Colonne del campo',
+        ],
+        'itemIsDefault' => [
+            'description' => 'itemIsDefault',
+            'helper_text' => 'itemIsDefault',
+            'placeholder' => 'itemIsDefault',
+            'label' => 'itemIsDefault',
+        ],
+        'delete' => [
+            'label' => 'Elimina',
+        ],
+        'edit' => [
+            'label' => 'Modifica',
+        ],
+        'isActive' => [
+            'description' => 'isActive',
+            'helper_text' => 'isActive',
+            'placeholder' => 'isActive',
+            'label' => 'isActive',
+        ],
+        'status' => [
+            'label' => 'Stato',
+        ],
+        'notes' => [
+            'description' => 'Note',
+        ],
+        'responses_count' => [
+            'description' => 'Risposte',
+            'helper_text' => 'Numero di risposte',
+            'placeholder' => 'Numero di risposte',
+            'label' => 'Risposte',
+        ],
+        'itemKey' => [
+            'description' => 'itemKey',
+            'helper_text' => 'itemKey',
+            'placeholder' => 'itemKey',
+            'label' => 'itemKey',
+        ],
+        'forms_count' => [
+            'description' => 'Formulari',
+        ],
+        'responses_exists' => [
+            'description' => 'responses_exists',
+            'helper_text' => 'responses_exists',
+            'placeholder' => 'responses_exists',
+        ],
+    ],
+    'actions' => [
+        'authenticate' => [
+            'label' => 'Autentica',
+            'tooltip' => 'Effettua il login nel sistema',
+            'icon' => 'heroicon-o-login',
+            'color' => 'primary',
+        ],
+        'login' => [
+            'label' => 'Accedi',
+            'tooltip' => 'Accedi con le tue credenziali',
+            'icon' => 'heroicon-o-key',
+            'color' => 'success',
+        ],
+        'request' => [
+            'label' => 'Richiedi',
+        ],
+        'cancel' => [
+            'label' => 'Annulla',
+        ],
+        'save' => [
+            'label' => 'Salva',
+        ],
+        'activeLocale' => [
+            'label' => 'Lingua attiva',
+        ],
+        'open' => [
+            'label' => 'Apri',
+        ],
+        'create' => [
+            'label' => 'Crea',
+        ],
+        'createAnother' => [
+            'label' => 'Crea un altro',
+        ],
+    ],
+];
+>>>>>>> 637747f (.)

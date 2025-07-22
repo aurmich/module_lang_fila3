@@ -1,6 +1,9 @@
 # Struttura corretta per i file di traduzione nel modulo Lang
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 637747f (.)
 ## Aggiornamento luglio 2025: eliminazione di translation_file.php
 
 A partire da luglio 2025, il file `translation_file.php` è stato ELIMINATO dal percorso `/Modules/Lang/lang/it/` perché:
@@ -65,7 +68,10 @@ return [
 - [errori-comuni-traduzione.md](./errori-comuni-traduzione.md)
 
 *Ultimo aggiornamento: luglio 2025*
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 637747f (.)
 ## Percorsi standard per i file di traduzione
 
 I file di traduzione nel modulo Lang devono seguire una struttura precisa dei percorsi per evitare duplicazioni e conflitti:
@@ -149,4 +155,17 @@ I file di traduzione nel modulo Lang devono seguire una struttura precisa dei pe
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 3 Giugno 2025*
+<<<<<<< HEAD
 >>>>>>> e3660f5 (.)
+=======
+
+## ⚠️ Regola fondamentale: Non rimuovere mai chiavi dalle traduzioni
+
+Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi esistenti, ma solo aggiungere nuove chiavi o migliorare i valori e la struttura. Questa regola è prioritaria e va sempre rispettata in ogni intervento di refactoring o miglioramento delle traduzioni.
+
+### Best Practice
+- **Non rimuovere mai chiavi esistenti dalle traduzioni**: ogni chiave già presente va mantenuta per garantire retrocompatibilità e stabilità del sistema. Si possono solo aggiungere nuove chiavi o migliorare i valori.
+
+### Anti-pattern
+- ❌ Rimuovere chiavi esistenti dai file di traduzione
+>>>>>>> 637747f (.)

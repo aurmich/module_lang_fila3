@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 637747f (.)
 declare(strict_types=1);
 
 return [
@@ -10,6 +13,12 @@ return [
         'icon' => 'heroicon-o-language',
         'sort' => 73,
     ],
+<<<<<<< HEAD
+=======
+    'model' => [
+        'label' => 'Translation File',
+    ],
+>>>>>>> 637747f (.)
     'fields' => [
         'key' => [
             'label' => 'Key',
@@ -20,6 +29,7 @@ return [
             'label' => 'Value',
             'placeholder' => 'Enter translation',
             'help' => 'Translated text for the selected key',
+<<<<<<< HEAD
 =======
 return [
     'model' => [
@@ -51,11 +61,34 @@ return [
         ],
         'applyFilters' => [
             'label' => 'applyFilters',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'Toggle Columns',
+        ],
+        'reorderRecords' => [
+            'label' => 'Reorder Records',
+        ],
+        'edit' => [
+            'label' => 'Edit',
+        ],
+        'resetFilters' => [
+            'label' => 'Reset Filters',
+        ],
+        'content' => [
+            'description' => 'Content',
+            'helper_text' => 'Content field help',
+            'placeholder' => 'Enter content',
+        ],
+        'applyFilters' => [
+            'label' => 'Apply Filters',
+>>>>>>> 637747f (.)
         ],
         'snapshots' => [
             'fields' => [
                 'updated_at' => [
                     'help' => [
+<<<<<<< HEAD
                         'description' => 'snapshots.fields.updated_at.help',
                         'helper_text' => 'snapshots.fields.updated_at.help',
                         'placeholder' => 'snapshots.fields.updated_at.help',
@@ -65,21 +98,39 @@ return [
                         'description' => 'snapshots.fields.updated_at.label',
                         'helper_text' => 'snapshots.fields.updated_at.label',
                         'placeholder' => 'snapshots.fields.updated_at.label',
+=======
+                        'description' => 'Help for updated at',
+                        'helper_text' => 'Help for updated at',
+                        'placeholder' => 'Help for updated at',
+                        'label' => 'Help for updated at',
+                    ],
+                    'label' => [
+                        'description' => 'Label for updated at',
+                        'helper_text' => 'Label for updated at',
+                        'placeholder' => 'Label for updated at',
+>>>>>>> 637747f (.)
                     ],
                 ],
             ],
         ],
         'openFilters' => [
+<<<<<<< HEAD
             'label' => 'openFilters',
         ],
         'key' => [
             'label' => 'key',
 >>>>>>> e3660f5 (.)
+=======
+            'label' => 'Open Filters',
+>>>>>>> 637747f (.)
         ],
     ],
     'actions' => [
         'create' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 637747f (.)
             'label' => 'Create Translation',
             'success' => 'Translation created successfully',
             'error' => 'Error creating translation',
@@ -89,6 +140,12 @@ return [
             'success' => 'Translation updated successfully',
             'error' => 'Error updating translation',
         ],
+<<<<<<< HEAD
+=======
+        'lang' => [
+            'label' => 'Language',
+        ],
+>>>>>>> 637747f (.)
     ],
     'messages' => [
         'created' => 'Translation added',
@@ -99,6 +156,7 @@ return [
         'key_required' => 'Key is required',
         'value_required' => 'Value is required',
     ],
+<<<<<<< HEAD
 =======
             'label' => 'create',
         ],
@@ -107,4 +165,6 @@ return [
         ],
     ],
 >>>>>>> e3660f5 (.)
+=======
+>>>>>>> 637747f (.)
 ];

@@ -47,3 +47,14 @@ Questo errore indica generalmente che il parser PHP si aspettava di chiudere una
 -   Implementare hook pre-commit che eseguano automaticamente `php -l` sui file PHP modificati.
 -   Effettuare code review attente per le modifiche ai file di configurazione critici.
 -   In caso di errori di parsing difficili da diagnosticare, provare a commentare sezioni dell'array per isolare la parte problematica.
+<<<<<<< HEAD
+=======
+
+## ⚠️ Regola fondamentale: Non rimuovere mai chiavi dalle traduzioni
+
+Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi esistenti, ma solo aggiungere nuove chiavi o migliorare i valori e la struttura. Questa regola è prioritaria e va sempre rispettata in ogni intervento di refactoring o miglioramento delle traduzioni.
+
+### Best Practice
+
+- Non rimuovere mai chiavi esistenti: aggiungi solo nuove chiavi o migliora i valori.
+>>>>>>> 637747f (.)

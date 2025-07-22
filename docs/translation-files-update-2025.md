@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 637747f (.)
 # Aggiornamento File di Traduzione - Luglio 2025
 
 ## Novità
@@ -23,7 +26,10 @@
 - [translation_keys_best_practices.md](./translation_keys_best_practices.md)
 
 *Ultimo aggiornamento: luglio 2025*
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 637747f (.)
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento
@@ -155,4 +161,14 @@ return [
 2. **Documentazione**: Aggiornare la documentazione dei moduli Notify e Lang
 3. **Review**: Code review per confermare le modifiche
 4. **Deploy**: Deploy in ambiente di staging per test completi 
+<<<<<<< HEAD
 >>>>>>> e3660f5 (.)
+=======
+
+## ⚠️ Regola fondamentale: Non rimuovere mai chiavi dalle traduzioni
+
+Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi esistenti, ma solo aggiungere nuove chiavi o migliorare i valori e la struttura. Questa regola è prioritaria e va sempre rispettata in ogni intervento di refactoring o miglioramento delle traduzioni.
+
+### Checklist finale
+- [x] Nessuna chiave rimossa dai file di traduzione 
+>>>>>>> 637747f (.)

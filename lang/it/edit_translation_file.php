@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -561,3 +562,354 @@ return array (
     ),
   ),
 );
+=======
+declare(strict_types=1);
+
+return [
+    'fields' => [
+        'key' => [
+            'label' => 'Chiave',
+            'placeholder' => 'Inserisci la chiave di traduzione',
+            'helper_text' => 'Identificatore univoco della stringa da tradurre',
+            'description' => 'Chiave di traduzione',
+        ],
+        'data' => [
+            'pippo' => [
+                'description' => 'Dati di esempio pippo',
+                'helper_text' => 'Aiuto per pippo',
+                'placeholder' => 'Inserisci pippo',
+            ],
+        ],
+        'pippo' => [
+            'description' => 'Pippo',
+            'helper_text' => 'Aiuto per pippo',
+            'placeholder' => 'Inserisci pippo',
+            'label' => 'Pippo',
+        ],
+        'pluto' => [
+            'description' => 'Pluto',
+            'label' => 'Pluto',
+            'placeholder' => 'Inserisci pluto',
+            'helper_text' => 'Aiuto per pluto',
+        ],
+        'snapshots' => [
+            'fields' => [
+                'updated_at' => [
+                    'help' => [
+                        'description' => 'Aiuto per data aggiornamento',
+                        'helper_text' => 'Testo di aiuto per data aggiornamento',
+                        'placeholder' => 'Inserisci data aggiornamento',
+                        'label' => 'Data aggiornamento',
+                    ],
+                ],
+            ],
+        ],
+        'content' => [
+            'snapshots' => [
+                'fields' => [
+                    'updated_at' => [
+                        'help' => [
+                            'description' => 'Aiuto per data aggiornamento contenuto',
+                        ],
+                    ],
+                ],
+            ],
+            'search_placeholder' => [
+                'description' => 'Placeholder ricerca contenuto',
+                'helper_text' => 'Aiuto ricerca contenuto',
+            ],
+            'badges' => [
+                'level' => [
+                    'debug' => [
+                        'description' => 'Badge livello debug',
+                        'helper_text' => 'Aiuto badge debug',
+                        'placeholder' => 'Debug',
+                        'label' => 'Debug',
+                    ],
+                    'info' => [
+                        'description' => 'Badge livello info',
+                        'helper_text' => 'Aiuto badge info',
+                        'placeholder' => 'Info',
+                        'label' => 'Info',
+                    ],
+                    'notice' => [
+                        'description' => 'Badge livello notice',
+                        'helper_text' => 'Aiuto badge notice',
+                        'placeholder' => 'Notice',
+                        'label' => 'Notice',
+                    ],
+                ],
+            ],
+            'fields' => [
+                'id' => [
+                    'label' => [
+                        'label' => 'ID',
+                        'placeholder' => 'Inserisci ID',
+                        'helper_text' => 'Aiuto per ID',
+                        'description' => 'Identificativo',
+                    ],
+                    'tooltip' => [
+                        'label' => 'Tooltip ID',
+                        'placeholder' => 'Tooltip per ID',
+                        'helper_text' => 'Aiuto tooltip ID',
+                        'description' => 'Tooltip identificativo',
+                    ],
+                ],
+                'description' => [
+                    'label' => [
+                        'label' => 'Descrizione',
+                        'placeholder' => 'Inserisci la descrizione',
+                        'helper_text' => 'Aiuto per descrizione',
+                        'description' => 'Descrizione del contenuto',
+                    ],
+                    'tooltip' => [
+                        'label' => 'Tooltip descrizione',
+                        'placeholder' => 'Tooltip per descrizione',
+                        'helper_text' => 'Aiuto tooltip descrizione',
+                        'description' => 'Tooltip per descrizione',
+                    ],
+                    'help' => [
+                        'description' => 'Aiuto per descrizione',
+                        'helper_text' => 'Aiuto per descrizione',
+                        'placeholder' => 'Inserisci la descrizione',
+                    ],
+                ],
+                'subject_type' => [
+                    'label' => [
+                        'label' => 'Tipo oggetto',
+                        'placeholder' => 'Inserisci il tipo di oggetto',
+                        'helper_text' => 'Aiuto per tipo oggetto',
+                        'description' => 'Tipo di oggetto associato',
+                    ],
+                    'tooltip' => [
+                        'label' => 'Tooltip tipo oggetto',
+                        'placeholder' => 'Tooltip per tipo oggetto',
+                        'helper_text' => 'Aiuto tooltip tipo oggetto',
+                        'description' => 'Tooltip per tipo oggetto',
+                    ],
+                ],
+                'subject_id' => [
+                    'label' => [
+                        'label' => 'ID oggetto',
+                        'placeholder' => 'Inserisci l\'ID dell\'oggetto',
+                        'helper_text' => 'Aiuto per ID oggetto',
+                        'description' => 'ID dell\'oggetto associato',
+                    ],
+                    'tooltip' => [
+                        'label' => 'Tooltip ID oggetto',
+                        'placeholder' => 'Tooltip per ID oggetto',
+                        'helper_text' => 'Aiuto tooltip ID oggetto',
+                        'description' => 'Tooltip per ID oggetto',
+                    ],
+                ],
+                'causer_type' => [
+                    'label' => [
+                        'label' => 'Tipo causante',
+                        'placeholder' => 'Inserisci il tipo di causante',
+                        'helper_text' => 'Aiuto per tipo causante',
+                        'description' => 'Tipo di utente che ha causato l\'azione',
+                    ],
+                    'tooltip' => [
+                        'label' => 'Tooltip tipo causante',
+                        'placeholder' => 'Tooltip per tipo causante',
+                        'helper_text' => 'Aiuto tooltip tipo causante',
+                        'description' => 'Tooltip per tipo causante',
+                    ],
+                ],
+                'causer_id' => [
+                    'label' => [
+                        'label' => 'ID causante',
+                        'placeholder' => 'Inserisci l\'ID del causante',
+                        'helper_text' => 'Aiuto per ID causante',
+                        'description' => 'ID dell\'utente causante',
+                    ],
+                    'tooltip' => [
+                        'label' => 'Tooltip ID causante',
+                        'placeholder' => 'Tooltip per ID causante',
+                        'helper_text' => 'Aiuto tooltip ID causante',
+                        'description' => 'Tooltip per ID causante',
+                    ],
+                ],
+                'created_at' => [
+                    'label' => [
+                        'label' => 'Data creazione',
+                        'placeholder' => 'Inserisci la data di creazione',
+                        'helper_text' => 'Aiuto per data creazione',
+                        'description' => 'Data di creazione del contenuto',
+                    ],
+                    'tooltip' => [
+                        'label' => 'Tooltip data creazione',
+                        'placeholder' => 'Tooltip per data creazione',
+                        'helper_text' => 'Aiuto tooltip data creazione',
+                        'description' => 'Tooltip per data creazione',
+                    ],
+                ],
+                'reorderRecords' => [
+                    'label' => [
+                        'description' => 'Riordina record',
+                        'helper_text' => 'Aiuto per riordinazione',
+                    ],
+                ],
+            ],
+        ],
+        'actions' => [
+            'view' => [
+                'label' => [
+                    'label' => 'Visualizza',
+                    'placeholder' => 'Inserisci la descrizione di visualizzazione',
+                    'helper_text' => 'Aiuto per azione di visualizzazione',
+                    'description' => 'Descrizione azione di visualizzazione',
+                ],
+                'tooltip' => [
+                    'label' => 'Tooltip visualizzazione',
+                    'placeholder' => 'Tooltip per azione di visualizzazione',
+                    'helper_text' => 'Aiuto tooltip visualizzazione',
+                    'description' => 'Tooltip per azione di visualizzazione',
+                ],
+            ],
+            'delete' => [
+                'label' => [
+                    'label' => 'Elimina',
+                    'placeholder' => 'Inserisci la descrizione di eliminazione',
+                    'helper_text' => 'Aiuto per azione di eliminazione',
+                    'description' => 'Descrizione azione di eliminazione',
+                ],
+                'tooltip' => [
+                    'label' => 'Tooltip eliminazione',
+                    'placeholder' => 'Tooltip per azione di eliminazione',
+                    'helper_text' => 'Aiuto tooltip eliminazione',
+                    'description' => 'Tooltip per azione di eliminazione',
+                ],
+                'confirmation' => [
+                    'label' => [
+                        'label' => 'Conferma eliminazione',
+                        'placeholder' => 'Inserisci la descrizione di conferma eliminazione',
+                        'helper_text' => 'Aiuto per conferma eliminazione',
+                        'description' => 'Descrizione conferma eliminazione',
+                    ],
+                ],
+            ],
+            'WorkgroupSeederAction' => [
+                'label' => [
+                    'description' => 'Azione Seeder Gruppo di lavoro',
+                ],
+            ],
+        ],
+        'filters' => [
+            'date' => [
+                'label' => [
+                    'label' => 'Filtra per data',
+                    'placeholder' => 'Inserisci la data di filtro',
+                    'helper_text' => 'Aiuto per filtro data',
+                    'description' => 'Descrizione filtro data',
+                ],
+                'tooltip' => [
+                    'label' => 'Tooltip filtro data',
+                    'placeholder' => 'Tooltip per filtro data',
+                    'helper_text' => 'Aiuto tooltip filtro data',
+                    'description' => 'Tooltip per filtro data',
+                ],
+            ],
+            'type' => [
+                'label' => [
+                    'label' => 'Filtra per tipo',
+                    'placeholder' => 'Inserisci il tipo di filtro',
+                    'helper_text' => 'Aiuto per filtro tipo',
+                    'description' => 'Descrizione filtro tipo',
+                ],
+                'tooltip' => [
+                    'label' => 'Tooltip filtro tipo',
+                    'placeholder' => 'Tooltip per filtro tipo',
+                    'helper_text' => 'Aiuto tooltip filtro tipo',
+                    'description' => 'Tooltip per filtro tipo',
+                ],
+            ],
+        ],
+        'state_transition' => [
+            'missing_data' => [
+                'description' => 'Transizione stato: dati mancanti',
+                'helper_text' => 'Aiuto per transizione stato dati mancanti',
+            ],
+        ],
+        'specialties' => [
+            'empty' => [
+                'description' => 'Specializzazioni vuote',
+                'helper_text' => 'Aiuto per specializzazioni vuote',
+                'placeholder' => 'Inserisci specializzazioni vuote',
+                'label' => 'Specializzazioni vuote',
+            ],
+            'description' => [
+                'description' => 'Descrizione specializzazioni',
+                'helper_text' => 'Aiuto per specializzazioni',
+            ],
+        ],
+        'delete' => [
+            'tooltip' => [
+                'description' => 'Tooltip eliminazione',
+                'helper_text' => 'Aiuto tooltip eliminazione',
+                'placeholder' => 'Inserisci tooltip eliminazione',
+                'label' => 'Tooltip eliminazione',
+            ],
+            'label' => [
+                'description' => 'Label eliminazione',
+                'helper_text' => 'Aiuto label eliminazione',
+                'placeholder' => 'Inserisci label eliminazione',
+                'label' => 'Label eliminazione',
+            ],
+        ],
+        'studio_email' => [
+            'description' => [
+                'description' => 'Email studio',
+            ],
+        ],
+        'enums' => [
+            'appointment_type_descriptions' => [
+                'prevention' => [
+                    'description' => 'Descrizione tipo appuntamento prevenzione',
+                ],
+            ],
+        ],
+        'notifications' => [
+            'account_reinstated' => [
+                'description' => 'Notifica account ripristinato',
+            ],
+        ],
+        'studios' => [
+            'actions' => [
+                'view' => [
+                    'description' => 'Azione studio: visualizza',
+                ],
+            ],
+        ],
+        'stats' => [
+            'no_show_rate' => [
+                'description' => 'Tasso no-show',
+            ],
+        ],
+        'resources' => [
+            'liquidazione' => [
+                'fields' => [
+                    'stato' => [
+                        'options' => [
+                            'annullata' => [
+                                'description' => 'Stato liquidazione: annullata',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
+    'actions' => [
+        'delete' => [
+            'label' => 'Elimina',
+        ],
+        'activeLocale' => [
+            'label' => 'Lingua attiva',
+        ],
+        'lang' => [
+            'label' => 'Lingua',
+        ],
+    ],
+];
+>>>>>>> 637747f (.)

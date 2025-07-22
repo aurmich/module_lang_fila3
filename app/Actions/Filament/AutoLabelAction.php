@@ -36,6 +36,7 @@ class AutoLabelAction
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function ($item) use($component){
 <<<<<<< HEAD
+<<<<<<< HEAD
             
            if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\') && $item['object'] != $component){
               return true;
@@ -44,6 +45,8 @@ class AutoLabelAction
             if(isset($item['class']) && Str::startsWith($item['class'], 'Modules\\')){
                 $reflection_class = new ReflectionClass($item['class']);
 =======
+=======
+>>>>>>> 637747f (.)
             if($item['function'] == 'execute'){
                 return false;
             }
@@ -54,7 +57,10 @@ class AutoLabelAction
 
             if(isset($item['class']) && Str::startsWith($item['class'], 'Modules\\') ){
                 $reflection_class = new ReflectionClass($item['class'] );
+<<<<<<< HEAD
 >>>>>>> e3660f5 (.)
+=======
+>>>>>>> 637747f (.)
                 if (!$reflection_class->isAbstract()) {
                     return true;
                 }
@@ -63,10 +69,14 @@ class AutoLabelAction
             return false;
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
        
 >>>>>>> e3660f5 (.)
+=======
+       
+>>>>>>> 637747f (.)
         if (is_array($class)) {
             $object_class = null;
             if(isset($class['object'])){
