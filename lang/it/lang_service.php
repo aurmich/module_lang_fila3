@@ -25,6 +25,12 @@ return array (
       'label' => 'value',
 >>>>>>> e3660f5 (.)
     ),
+    'updated_at' => 
+    array (
+      'description' => 'updated_at',
+      'helper_text' => 'updated_at',
+      'placeholder' => 'updated_at',
+    ),
   ),
   'actions' => 
   array (
@@ -44,6 +50,10 @@ return array (
     array (
       'label' => 'save',
 >>>>>>> e3660f5 (.)
+    ),
+    'save' => 
+    array (
+      'label' => 'save',
     ),
   ),
   'messages' => 

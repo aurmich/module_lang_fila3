@@ -238,6 +238,12 @@ return array (
             'helper_text' => 'content.fields.description.tooltip',
             'description' => 'content.fields.description.tooltip',
           ),
+          'help' => 
+          array (
+            'description' => 'content.fields.description.help',
+            'helper_text' => 'content.fields.description.help',
+            'placeholder' => 'content.fields.description.help',
+          ),
         ),
         'subject_type' => 
         array (
@@ -376,6 +382,13 @@ return array (
             'description' => 'content.actions.delete.confirmation',
           ),
         ),
+        'WorkgroupSeederAction' => 
+        array (
+          'label' => 
+          array (
+            'description' => 'content.actions.WorkgroupSeederAction.label',
+          ),
+        ),
       ),
       'filters' => 
       array (
@@ -506,8 +519,30 @@ return array (
           'description' => 'content.status.critical',
         ),
       ),
+<<<<<<< HEAD
 =======
 >>>>>>> e3660f5 (.)
+=======
+      'resources' => 
+      array (
+        'liquidazione' => 
+        array (
+          'fields' => 
+          array (
+            'stato' => 
+            array (
+              'options' => 
+              array (
+                'annullata' => 
+                array (
+                  'description' => 'content.resources.liquidazione.fields.stato.options.annullata',
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+>>>>>>> 0c3d02d (.)
     ),
   ),
   'actions' => 

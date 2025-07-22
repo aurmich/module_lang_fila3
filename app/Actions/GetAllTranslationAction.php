@@ -10,6 +10,8 @@ use Webmozart\Assert\Assert;
 use Spatie\QueueableAction\QueueableAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use function Safe\glob;
+use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\App;
 
 class GetAllTranslationAction
 {
@@ -20,21 +22,34 @@ class GetAllTranslationAction
      */
     public function execute(): array
     {
+        $loader = App::make('translation.loader');
+        $namespaces = $loader->namespaces();
+        $namespaces = Arr::where($namespaces,function($namespace){
+            return !Str::of($namespace)->startsWith(base_path('vendor/'));
+        });
+        
+
         $lang=session()->get('locale');
         if(is_string($lang) && in_array($lang,['it','en'])){
             app()->setLocale($lang);
         }
 
         $lang=app()->getLocale();
-        $path = base_path('Modules/*/lang/'.$lang.'/*.php');
-        $files=glob($path);
-        $files=Arr::map($files,function($file){
-            $module_low=Str::of($file)->between('Modules/','/lang/')->lower()->toString();
-            return [
-                'key'=>$module_low.'::'.basename($file,'.php'),
-                'path'=>$file,
-            ];
-        });
-        return $files;
+        $res=[];
+        foreach($namespaces as $namespace=>$path){
+            $path = $path.'/'.$lang.'/*.php';
+            $files=glob($path);
+            $files=Arr::map($files,function($file) use ($namespace){
+                
+                return [
+                    'key'=>$namespace.'::'.basename($file,'.php'),
+                    'path'=>$file,
+                ];
+            });
+            $res=array_merge($res,$files);
+        }
+        
+        return $res;
+        
     }
 }
