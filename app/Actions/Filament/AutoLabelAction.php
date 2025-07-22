@@ -35,6 +35,7 @@ class AutoLabelAction
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function ($item) use($component){
+<<<<<<< HEAD
             
            if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\') && $item['object'] != $component){
               return true;
@@ -42,6 +43,18 @@ class AutoLabelAction
 
             if(isset($item['class']) && Str::startsWith($item['class'], 'Modules\\')){
                 $reflection_class = new ReflectionClass($item['class']);
+=======
+            if($item['function'] == 'execute'){
+                return false;
+            }
+            
+           if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\') && $item['object'] != $component  ){
+              return true;
+            }
+
+            if(isset($item['class']) && Str::startsWith($item['class'], 'Modules\\') ){
+                $reflection_class = new ReflectionClass($item['class'] );
+>>>>>>> e3660f5 (.)
                 if (!$reflection_class->isAbstract()) {
                     return true;
                 }
@@ -49,13 +62,17 @@ class AutoLabelAction
             }
             return false;
         });
+<<<<<<< HEAD
         
+=======
+       
+>>>>>>> e3660f5 (.)
         if (is_array($class)) {
             $object_class = null;
             if(isset($class['object'])){
                 $object_class = $class['object']::class;
             }
-            if(isset($class['class'])){
+            if(isset($class['class']) && $object_class == null){
                 $object_class = $class['class'];
             }
             if(is_null($object_class)){
@@ -66,6 +83,7 @@ class AutoLabelAction
             $trans_key = 'lang::txt';
         }
 
+        
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
@@ -79,6 +97,19 @@ class AutoLabelAction
         }
 
         $label_key = $label_tkey.'.'.Str::snake($type);
+
+        if(Str::startsWith($label_key,'media::attachments_schema')){
+            dddx([
+                'message'=>'preso',
+                'label_key'=>$label_key,
+                'label_tkey'=>$label_tkey,
+                'val'=>$val,
+                'type'=>$type,
+                'component'=>$component,
+                'class'=>$class,
+                'backtrace'=>$backtrace,
+            ]);
+        }
 
         $label = trans($label_key);
         if (is_string($label) && $label_key == $label) { //se non esiste la traduzione, la salvo

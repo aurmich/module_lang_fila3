@@ -34,7 +34,11 @@ class ReadTranslationFileAction
         if (!is_array($translations)) {
             throw new \Exception("File di traduzione non valido: {$filePath}");
         }
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line */
+=======
+        /** @phpstan-ignore return.type */
+>>>>>>> e3660f5 (.)
         return $translations;
     }
 
@@ -70,7 +74,11 @@ class ReadTranslationFileAction
 
             if (is_array($value)) {
                 $content .= "[\n";
+<<<<<<< HEAD
                 /** @phpstan-ignore-next-line */
+=======
+                /** @phpstan-ignore argument.type */
+>>>>>>> e3660f5 (.)
                 $content .= $this->arrayToPhp($value, $indent + 1);
                 $content .= $indentStr . "],\n";
             } else {

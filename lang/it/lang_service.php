@@ -14,6 +14,16 @@ return array (
       'label' => 'Lingue Disponibili',
       'placeholder' => 'Elenco lingue',
       'help' => 'Lingue disponibili per la selezione',
+<<<<<<< HEAD
+=======
+    ),
+    'value' => 
+    array (
+      'description' => 'value',
+      'helper_text' => 'value',
+      'placeholder' => 'value',
+      'label' => 'value',
+>>>>>>> e3660f5 (.)
     ),
   ),
   'actions' => 
@@ -27,6 +37,13 @@ return array (
     'cancel' => 
     array (
       'label' => 'cancel',
+<<<<<<< HEAD
+=======
+    ),
+    'save' => 
+    array (
+      'label' => 'save',
+>>>>>>> e3660f5 (.)
     ),
   ),
   'messages' => 

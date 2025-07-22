@@ -429,6 +429,15 @@ return array (
           'description' => 'content.specialties.empty',
           'helper_text' => 'content.specialties.empty',
           'placeholder' => 'content.specialties.empty',
+<<<<<<< HEAD
+=======
+          'label' => 'content.specialties.empty',
+        ),
+        'description' => 
+        array (
+          'description' => 'content.specialties.description',
+          'helper_text' => 'content.specialties.description',
+>>>>>>> e3660f5 (.)
         ),
       ),
       'delete' => 
@@ -489,6 +498,7 @@ return array (
           'description' => 'content.stats.no_show_rate',
         ),
       ),
+<<<<<<< HEAD
       'status' => 
       array (
         'critical' => 
@@ -496,6 +506,8 @@ return array (
           'description' => 'content.status.critical',
         ),
       ),
+=======
+>>>>>>> e3660f5 (.)
     ),
   ),
   'actions' => 

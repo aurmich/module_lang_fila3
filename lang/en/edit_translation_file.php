@@ -1714,6 +1714,10 @@ return array (
         array (
           'description' => 'content.specialties.empty',
           'helper_text' => 'content.specialties.empty',
+<<<<<<< HEAD
+=======
+          'placeholder' => 'content.specialties.empty',
+>>>>>>> e3660f5 (.)
         ),
       ),
       'snapshots' => 

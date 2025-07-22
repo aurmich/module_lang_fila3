@@ -55,7 +55,11 @@ class EditTranslationFile extends XotBaseEditRecord
             $this->halt();
         }
         */
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line */
+=======
+        /** @phpstan-ignore argument.type, property.nonObject */
+>>>>>>> e3660f5 (.)
         app(SaveTransAction::class)->execute($this->record->key,$data['content']);
         //dddx(['record'=>$this->record,'data'=>$data]);
         return $data;
@@ -64,7 +68,11 @@ class EditTranslationFile extends XotBaseEditRecord
     protected function afterSave(): void
     {
         // Ricarica il record per aggiornare i dati
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line */
+=======
+        /** @phpstan-ignore method.nonObject */
+>>>>>>> e3660f5 (.)
         $this->record->refresh();
     }
 
