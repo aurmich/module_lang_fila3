@@ -1,9 +1,5 @@
 # Struttura corretta per i file di traduzione nel modulo Lang
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 637747f (.)
 ## Aggiornamento luglio 2025: eliminazione di translation_file.php
 
 A partire da luglio 2025, il file `translation_file.php` è stato ELIMINATO dal percorso `/Modules/Lang/lang/it/` perché:
@@ -68,10 +64,7 @@ return [
 - [errori-comuni-traduzione.md](./errori-comuni-traduzione.md)
 
 *Ultimo aggiornamento: luglio 2025*
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 637747f (.)
+
 ## Percorsi standard per i file di traduzione
 
 I file di traduzione nel modulo Lang devono seguire una struttura precisa dei percorsi per evitare duplicazioni e conflitti:
@@ -155,9 +148,49 @@ I file di traduzione nel modulo Lang devono seguire una struttura precisa dei pe
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 3 Giugno 2025*
-<<<<<<< HEAD
->>>>>>> e3660f5 (.)
-=======
+
+## Novità 2025: Best practice obbligatorie
+
+- Ogni file di traduzione deve avere la sezione `validation` con messaggi specifici per i campi principali.
+- Ogni azione (`actions`) deve avere almeno `label`, `success`, `error`, `tooltip` dove serve.
+- Tutti i campi in `fields` devono avere almeno `label`, `placeholder`, `help` o `tooltip`.
+- Non rimuovere mai chiavi esistenti: solo aggiunte o miglioramenti.
+- Uniformare la struttura tra i file (navigation, fields, actions, messages, validation, statuses, priorities, types, ecc.).
+
+## Esempio aggiornato
+
+```php
+<?php
+
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+        'label' => 'Job Manager',
+        'group' => 'Jobs',
+        'icon' => 'heroicon-o-queue-list',
+        'sort' => 10,
+    ],
+    'fields' => [
+        'job_id' => [
+            'label' => 'Job ID',
+            'placeholder' => 'Enter job ID',
+            'help' => 'Unique identifier for the job',
+        ],
+    ],
+    'actions' => [
+        'import' => [
+            'label' => 'Import',
+            'success' => 'Import completed successfully',
+            'error' => 'Import failed',
+            'tooltip' => 'Import jobs from file',
+        ],
+    ],
+    'validation' => [
+        'job_id_required' => 'Job ID is required.',
+    ],
+];
+```
 
 ## ⚠️ Regola fondamentale: Non rimuovere mai chiavi dalle traduzioni
 
@@ -168,4 +201,3 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ### Anti-pattern
 - ❌ Rimuovere chiavi esistenti dai file di traduzione
->>>>>>> 637747f (.)

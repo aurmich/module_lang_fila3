@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 637747f (.)
 declare(strict_types=1);
 
 return [
@@ -13,158 +9,112 @@ return [
         'icon' => 'heroicon-o-language',
         'sort' => 73,
     ],
-<<<<<<< HEAD
-=======
     'model' => [
         'label' => 'Translation File',
     ],
->>>>>>> 637747f (.)
     'fields' => [
         'key' => [
-            'label' => 'Key',
-            'placeholder' => 'Enter translation key',
-            'help' => 'Unique identifier for the string to translate',
+            'label' => 'Translation Key',
+            'placeholder' => 'Enter the unique translation key',
+            'help' => 'This key identifies the string to be translated.',
         ],
         'value' => [
-            'label' => 'Value',
-            'placeholder' => 'Enter translation',
-            'help' => 'Translated text for the selected key',
-<<<<<<< HEAD
-=======
-return [
-    'model' => [
-        'label' => 'translation file.model',
-    ],
-    'navigation' => [
-        'label' => 'translation file.navigation',
-        'group' => 'translation file.navigation',
-        'icon' => 'translation file.navigation',
-        'sort' => '23',
-    ],
-    'fields' => [
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
+            'label' => 'Translation Value',
+            'placeholder' => 'Enter the translated text',
+            'help' => 'The actual text that will be shown to users.',
         ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
+        'locale' => [
+            'label' => 'Language',
+            'placeholder' => 'Select the language',
+            'help' => 'Choose the language for this translation.',
         ],
-        'edit' => [
-            'label' => 'edit',
+        'group' => [
+            'label' => 'Group',
+            'placeholder' => 'Enter the translation group',
+            'help' => 'Group translations for better organization.',
         ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
+        'namespace' => [
+            'label' => 'Namespace',
+            'placeholder' => 'Enter the namespace',
+            'help' => 'Namespace for modular translation management.',
         ],
-        'content' => [
-            'description' => 'content',
-            'helper_text' => 'content',
-            'placeholder' => 'content',
+        'file' => [
+            'label' => 'File',
+            'placeholder' => 'Enter the file name',
+            'help' => 'The PHP file where this translation is stored.',
         ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-=======
+        'status' => [
+            'label' => 'Status',
+            'placeholder' => 'Select the status',
+            'help' => 'Indicates if the translation is active or pending.',
         ],
-        'toggleColumns' => [
-            'label' => 'Toggle Columns',
+        'updated_at' => [
+            'label' => 'Last Updated',
+            'placeholder' => 'Date of last update',
+            'help' => 'The date and time when this translation was last modified.',
         ],
-        'reorderRecords' => [
-            'label' => 'Reorder Records',
-        ],
-        'edit' => [
-            'label' => 'Edit',
-        ],
-        'resetFilters' => [
-            'label' => 'Reset Filters',
-        ],
-        'content' => [
-            'description' => 'Content',
-            'helper_text' => 'Content field help',
-            'placeholder' => 'Enter content',
-        ],
-        'applyFilters' => [
-            'label' => 'Apply Filters',
->>>>>>> 637747f (.)
-        ],
-        'snapshots' => [
-            'fields' => [
-                'updated_at' => [
-                    'help' => [
-<<<<<<< HEAD
-                        'description' => 'snapshots.fields.updated_at.help',
-                        'helper_text' => 'snapshots.fields.updated_at.help',
-                        'placeholder' => 'snapshots.fields.updated_at.help',
-                        'label' => 'snapshots.fields.updated_at.help',
-                    ],
-                    'label' => [
-                        'description' => 'snapshots.fields.updated_at.label',
-                        'helper_text' => 'snapshots.fields.updated_at.label',
-                        'placeholder' => 'snapshots.fields.updated_at.label',
-=======
-                        'description' => 'Help for updated at',
-                        'helper_text' => 'Help for updated at',
-                        'placeholder' => 'Help for updated at',
-                        'label' => 'Help for updated at',
-                    ],
-                    'label' => [
-                        'description' => 'Label for updated at',
-                        'helper_text' => 'Label for updated at',
-                        'placeholder' => 'Label for updated at',
->>>>>>> 637747f (.)
-                    ],
-                ],
-            ],
-        ],
-        'openFilters' => [
-<<<<<<< HEAD
-            'label' => 'openFilters',
-        ],
-        'key' => [
-            'label' => 'key',
->>>>>>> e3660f5 (.)
-=======
-            'label' => 'Open Filters',
->>>>>>> 637747f (.)
+        'created_at' => [
+            'label' => 'Created At',
+            'placeholder' => 'Date of creation',
+            'help' => 'The date and time when this translation was created.',
         ],
     ],
     'actions' => [
-        'create' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 637747f (.)
-            'label' => 'Create Translation',
-            'success' => 'Translation created successfully',
-            'error' => 'Error creating translation',
+        'save' => [
+            'label' => 'Save Translation',
+            'success' => 'Translation saved successfully.',
+            'error' => 'An error occurred while saving the translation.',
+            'confirmation' => 'Are you sure you want to save this translation?',
+        ],
+        'delete' => [
+            'label' => 'Delete Translation',
+            'success' => 'Translation deleted successfully.',
+            'error' => 'An error occurred while deleting the translation.',
+            'confirmation' => 'Are you sure you want to delete this translation? This action cannot be undone.',
         ],
         'edit' => [
             'label' => 'Edit Translation',
-            'success' => 'Translation updated successfully',
-            'error' => 'Error updating translation',
+            'success' => 'Translation updated successfully.',
+            'error' => 'An error occurred while updating the translation.',
+            'confirmation' => 'Are you sure you want to update this translation?',
         ],
-<<<<<<< HEAD
-=======
-        'lang' => [
-            'label' => 'Language',
+        'import' => [
+            'label' => 'Import Translations',
+            'success' => 'Translations imported successfully.',
+            'error' => 'An error occurred during import.',
+            'confirmation' => 'Are you sure you want to import translations? Existing entries may be overwritten.',
         ],
->>>>>>> 637747f (.)
+        'export' => [
+            'label' => 'Export Translations',
+            'success' => 'Translations exported successfully.',
+            'error' => 'An error occurred during export.',
+            'confirmation' => 'Are you sure you want to export translations?',
+        ],
+        'toggle_columns' => [
+            'label' => 'Show/Hide Columns',
+            'help' => 'Select which columns to display in the table.',
+        ],
     ],
     'messages' => [
-        'created' => 'Translation added',
-        'updated' => 'Translation updated',
-        'deleted' => 'Translation deleted',
+        'no_translations' => 'No translations found for the selected criteria.',
+        'import_success' => 'All translations have been imported successfully.',
+        'import_error' => 'Some translations could not be imported. Please check the file and try again.',
+        'export_success' => 'All translations have been exported successfully.',
+        'export_error' => 'An error occurred during export. Please try again.',
+        'delete_success' => 'The translation has been deleted.',
+        'delete_error' => 'Unable to delete the translation. Please try again.',
+        'save_success' => 'The translation has been saved.',
+        'save_error' => 'Unable to save the translation. Please try again.',
+        'update_success' => 'The translation has been updated.',
+        'update_error' => 'Unable to update the translation. Please try again.',
     ],
     'validation' => [
-        'key_required' => 'Key is required',
-        'value_required' => 'Value is required',
+        'key_required' => 'The translation key is required.',
+        'value_required' => 'The translation value is required.',
+        'locale_required' => 'The language selection is required.',
+        'file_required' => 'The file name is required.',
+        'group_required' => 'The group is required.',
+        'namespace_required' => 'The namespace is required.',
+        'unique_key' => 'This translation key already exists in the selected file and language.',
     ],
-<<<<<<< HEAD
-=======
-            'label' => 'create',
-        ],
-        'lang' => [
-            'label' => 'lang',
-        ],
-    ],
->>>>>>> e3660f5 (.)
-=======
->>>>>>> 637747f (.)
 ];

@@ -23,69 +23,42 @@ class AutoLabelAction
     use QueueableAction;
 
     /**
-     * Undocumented function.
-     * return number of input added.
+     * Automatically assigns a label to a Filament component based on translation keys.
+     * If the translation does not exist, it is created with the default value.
      *
      * @param Field|BaseFilter|Column|Step|Action|TableAction $component
-     *
+     * @param string $type The type of label to assign (default: 'label')
      * @return Field|BaseFilter|Column|Step|Action|TableAction
+     * @throws \Exception If the class context cannot be determined
      */
-    public function execute($component,string $type = 'label')
+    public function execute($component, string $type = 'label')
     {
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function ($item) use($component){
-<<<<<<< HEAD
-<<<<<<< HEAD
-            
-           if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\') && $item['object'] != $component){
-              return true;
-            }
-
-            if(isset($item['class']) && Str::startsWith($item['class'], 'Modules\\')){
-                $reflection_class = new ReflectionClass($item['class']);
-=======
-=======
->>>>>>> 637747f (.)
             if($item['function'] == 'execute'){
                 return false;
             }
-            
-           if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\') && $item['object'] != $component  ){
-              return true;
+            if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\') && $item['object'] != $component  ){
+                return true;
             }
-
             if(isset($item['class']) && Str::startsWith($item['class'], 'Modules\\') ){
                 $reflection_class = new ReflectionClass($item['class'] );
-<<<<<<< HEAD
->>>>>>> e3660f5 (.)
-=======
->>>>>>> 637747f (.)
                 if (!$reflection_class->isAbstract()) {
                     return true;
                 }
-                
             }
             return false;
         });
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-=======
-       
->>>>>>> e3660f5 (.)
-=======
-       
->>>>>>> 637747f (.)
         if (is_array($class)) {
             $object_class = null;
-            if(isset($class['object'])){
+            if (isset($class['object'])) {
                 $object_class = $class['object']::class;
             }
-            if(isset($class['class']) && $object_class == null){
+            if (isset($class['class']) && $object_class == null) {
                 $object_class = $class['class'];
             }
-            if(is_null($object_class)){
+            if (is_null($object_class)) {
                 throw new \Exception('No object class found');
             }
             $trans_key = app(GetTransKeyAction::class)->execute($object_class);
@@ -93,62 +66,49 @@ class AutoLabelAction
             $trans_key = 'lang::txt';
         }
 
-        
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
-            $label_tkey = $trans_key.'.steps.'.$val.'';
+            $label_tkey = $trans_key . '.steps.' . $val;
         } else {
             Assert::string($val = $component->getName());
-            $label_tkey = $trans_key.'.fields.'.$val.'';
+            $label_tkey = $trans_key . '.fields.' . $val;
         }
 
         if ($component instanceof Action) {
-            $label_tkey = $trans_key.'.actions.'.$val.'';
+            $label_tkey = $trans_key . '.actions.' . $val;
         }
 
-        $label_key = $label_tkey.'.'.Str::snake($type);
+        $label_key = $label_tkey . '.' . Str::snake($type);
 
-        if(Str::startsWith($label_key,'media::attachments_schema')){
+        if (Str::startsWith($label_key, 'media::attachments_schema')) {
             dddx([
-                'message'=>'preso',
-                'label_key'=>$label_key,
-                'label_tkey'=>$label_tkey,
-                'val'=>$val,
-                'type'=>$type,
-                'component'=>$component,
-                'class'=>$class,
-                'backtrace'=>$backtrace,
+                'message' => 'preso',
+                'label_key' => $label_key,
+                'label_tkey' => $label_tkey,
+                'val' => $val,
+                'type' => $type,
+                'component' => $component,
+                'class' => $class,
+                'backtrace' => $backtrace,
             ]);
         }
 
         $label = trans($label_key);
-        if (is_string($label) && $label_key == $label) { //se non esiste la traduzione, la salvo
-            
+        if (is_string($label) && $label_key == $label) {
+            // If the translation does not exist, create it
             app(SaveTransAction::class)->execute($label_key, $val);
         }
-        if (is_string($label) && $label_key != $label) { //se esiste la traduzione, la aggiorno
-            /*
-            if ($label_key == $label) {
-                $label_value = $val;
-                $label_key1 = $label_tkey;
-                $label1 = trans($label_key1);
-                if ($label_key1 != $label1) {
-                    $label_value = $label1;
-                }
-
-                app(SaveTransAction::class)->execute($label_key, $label_value);
-            }
-            */
+        if (is_string($label) && $label_key != $label) {
+            // If the translation exists, update the component
             if (method_exists($component, $type)) {
                 $component->{$type}($label);
             }
-            
             if (method_exists($component, 'tooltip')) {
                 $component->tooltip($label);
             }
         }
         if (!is_string($label)) {
-            $component->label('FIX:'.$label_key);
+            $component->label('FIX:' . $label_key);
         }
 
         return $component;
