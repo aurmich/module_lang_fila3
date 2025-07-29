@@ -34,10 +34,6 @@ class EditTranslationFile extends XotBaseEditRecord
    
     protected function mutateFormDataBeforeSave(array $data): array
     {
-<<<<<<< HEAD
-        /** @phpstan-ignore argument.type, property.nonObject */
-        app(SaveTransAction::class)->execute($this->record->key,$data['content']);
-=======
         /*
         // Salva le traduzioni nel file
         try {
@@ -59,28 +55,20 @@ class EditTranslationFile extends XotBaseEditRecord
             $this->halt();
         }
         */
-        /** @phpstan-ignore-next-line */
+        /** @phpstan-ignore argument.type, property.nonObject */
         app(SaveTransAction::class)->execute($this->record->key,$data['content']);
         //dddx(['record'=>$this->record,'data'=>$data]);
->>>>>>> 7f8122e (.)
         return $data;
     }
 
     protected function afterSave(): void
     {
-<<<<<<< HEAD
+        // Ricarica il record per aggiornare i dati
         /** @phpstan-ignore method.nonObject */
         $this->record->refresh();
     }
 
-=======
-        // Ricarica il record per aggiornare i dati
-        /** @phpstan-ignore-next-line */
-        $this->record->refresh();
-    }
 
-
->>>>>>> 7f8122e (.)
     public function getFormSchema(): array
     {
         return [

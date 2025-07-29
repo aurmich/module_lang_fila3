@@ -1,12 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-return [
-    // ... qui va la versione più completa e descrittiva di tutte le chiavi, unificate e migliorate ...
-];
-=======
 return array (
   'fields' => 
   array (
@@ -427,6 +420,7 @@ return array (
       'description' => 'itemIsDefault',
       'helper_text' => 'itemIsDefault',
       'placeholder' => 'itemIsDefault',
+      'label' => 'itemIsDefault',
     ),
     'delete' => 
     array (
@@ -456,6 +450,24 @@ return array (
       'description' => 'responses_count',
       'helper_text' => 'responses_count',
       'placeholder' => 'responses_count',
+      'label' => 'responses_count',
+    ),
+    'itemKey' => 
+    array (
+      'description' => 'itemKey',
+      'helper_text' => 'itemKey',
+      'placeholder' => 'itemKey',
+      'label' => 'itemKey',
+    ),
+    'forms_count' => 
+    array (
+      'description' => 'forms_count',
+    ),
+    'responses_exists' => 
+    array (
+      'description' => 'responses_exists',
+      'helper_text' => 'responses_exists',
+      'placeholder' => 'responses_exists',
     ),
   ),
   'actions' => 
@@ -504,4 +516,3 @@ return array (
     ),
   ),
 );
->>>>>>> 7f8122e (.)

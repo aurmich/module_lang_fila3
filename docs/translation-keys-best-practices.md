@@ -10,13 +10,6 @@
 
 Questo documento descrive le best practices per l'utilizzo delle chiavi di traduzione , con particolare attenzione alla struttura delle chiavi e all'evitare l'uso di stringhe in italiano come chiavi di traduzione.
 
-<<<<<<< HEAD
-## ⚠️ Regola fondamentale: Non rimuovere mai chiavi dalle traduzioni
-
-Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi esistenti, ma solo aggiungere nuove chiavi o migliorare i valori e la struttura. Questa regola è prioritaria e va sempre rispettata in ogni intervento di refactoring o miglioramento delle traduzioni.
-
-=======
->>>>>>> 7f8122e (.)
 ## Regola Fondamentale: Mai Usare Chiavi in Italiano
 
 ### Problema
