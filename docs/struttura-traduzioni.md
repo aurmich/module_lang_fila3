@@ -63,6 +63,7 @@ return [
 - [translation_keys_best_practices.md](./translation_keys_best_practices.md)
 - [errori-comuni-traduzione.md](./errori-comuni-traduzione.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: luglio 2025*
 
 ## Percorsi standard per i file di traduzione
@@ -201,3 +202,6 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ### Anti-pattern
 - ❌ Rimuovere chiavi esistenti dai file di traduzione
+=======
+*Ultimo aggiornamento: luglio 2025*
+>>>>>>> 7f8122e (.)

@@ -9,6 +9,7 @@ return [
         'icon' => 'heroicon-o-language',
         'sort' => 73,
     ],
+<<<<<<< HEAD
     'model' => [
         'label' => 'Translation File',
     ],
@@ -116,5 +117,39 @@ return [
         'group_required' => 'The group is required.',
         'namespace_required' => 'The namespace is required.',
         'unique_key' => 'This translation key already exists in the selected file and language.',
+=======
+    'fields' => [
+        'key' => [
+            'label' => 'Key',
+            'placeholder' => 'Enter translation key',
+            'help' => 'Unique identifier for the string to translate',
+        ],
+        'value' => [
+            'label' => 'Value',
+            'placeholder' => 'Enter translation',
+            'help' => 'Translated text for the selected key',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Create Translation',
+            'success' => 'Translation created successfully',
+            'error' => 'Error creating translation',
+        ],
+        'edit' => [
+            'label' => 'Edit Translation',
+            'success' => 'Translation updated successfully',
+            'error' => 'Error updating translation',
+        ],
+    ],
+    'messages' => [
+        'created' => 'Translation added',
+        'updated' => 'Translation updated',
+        'deleted' => 'Translation deleted',
+    ],
+    'validation' => [
+        'key_required' => 'Key is required',
+        'value_required' => 'Value is required',
+>>>>>>> 7f8122e (.)
     ],
 ];

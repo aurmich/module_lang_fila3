@@ -42,7 +42,11 @@ class WriteTranslationFileAction
             throw new \Exception("Impossibile scrivere il file: {$filePath}");
         }
 
+<<<<<<< HEAD
         // Pulisce la cache delle traduzioni
+=======
+        // Pulisci la cache delle traduzioni
+>>>>>>> 7f8122e (.)
         $this->clearTranslationCache();
 
         return true;
@@ -113,7 +117,11 @@ class WriteTranslationFileAction
 
         // Pulisce la cache delle traduzioni
         if (app()->bound('translation.loader')) {
+<<<<<<< HEAD
             /** @phpstan-ignore method.notFound */
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 7f8122e (.)
             app('translation.loader')->flush();
         }
     }

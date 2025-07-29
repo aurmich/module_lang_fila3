@@ -21,6 +21,7 @@
 - [translation-standards.md](./translation-standards.md)
 - [translation_keys_best_practices.md](./translation_keys_best_practices.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: luglio 2025*
 
 ## Struttura Standard Adottata
@@ -66,3 +67,6 @@ Quando si lavora sui file di traduzione, non è mai consentito rimuovere chiavi 
 
 ### Checklist finale
 - [x] Nessuna chiave rimossa dai file di traduzione
+=======
+*Ultimo aggiornamento: luglio 2025*
+>>>>>>> 7f8122e (.)

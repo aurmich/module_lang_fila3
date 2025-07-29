@@ -42,7 +42,10 @@ class LangServiceProvider extends XotBaseServiceProvider
         // $this->registerTranslator();
         $this->translatableComponents();
         $this->registerFilamentLabel();
+<<<<<<< HEAD
         
+=======
+>>>>>>> 7f8122e (.)
     }
 
     public function register(): void
@@ -116,11 +119,17 @@ class LangServiceProvider extends XotBaseServiceProvider
 
             return $component;
         });
+<<<<<<< HEAD
 
         
         Step::configureUsing(function (Step $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             
+=======
+        Step::configureUsing(function (Step $component) {
+            $component = app(AutoLabelAction::class)->execute($component);
+
+>>>>>>> 7f8122e (.)
             // ->translateLabel()
             return $component;
         });

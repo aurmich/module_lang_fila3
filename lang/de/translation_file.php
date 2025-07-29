@@ -20,6 +20,7 @@ return [
             'placeholder' => 'Übersetzung eingeben',
             'help' => 'Übersetzter Text für den ausgewählten Schlüssel',
         ],
+<<<<<<< HEAD
         'toggleColumns' => [
             'label' => 'Spalten ein-/ausblenden',
         ],
@@ -43,6 +44,8 @@ return [
         'openFilters' => [
             'label' => 'Filter öffnen',
         ],
+=======
+>>>>>>> 7f8122e (.)
     ],
     'actions' => [
         'create' => [
@@ -55,9 +58,12 @@ return [
             'success' => 'Übersetzung erfolgreich aktualisiert',
             'error' => 'Fehler beim Aktualisieren der Übersetzung',
         ],
+<<<<<<< HEAD
         'lang' => [
             'label' => 'Sprache',
         ],
+=======
+>>>>>>> 7f8122e (.)
     ],
     'messages' => [
         'created' => 'Übersetzung hinzugefügt',
@@ -69,3 +75,8 @@ return [
         'value_required' => 'Wert ist erforderlich',
     ],
 ];
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7f8122e (.)
