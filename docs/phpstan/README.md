@@ -9,6 +9,37 @@ Data: Wed Apr 23 10:43:32 CEST 2025
 | 1 | ✅ Successo | Nessun errore |
 | 2 | ✅ Successo | Nessun errore |
 | 3 | ❌ Errore | Errore di esecuzione |
+
+## Correzioni PHPStan Applicate
+
+### Data: 2025-01-16
+
+#### File Corretti
+
+**1. ReadTranslationFileAction.php - Cast sicuro**
+- **Problema**: `Cannot cast mixed to string` per `$value` in `arrayToPhp()`
+- **Soluzione**: Utilizzato controllo `is_string()` prima del cast
+- **Motivazione**: Gestione sicura dei cast da `mixed` a `string` per file di traduzione
+
+```php
+$content .= "'" . addslashes(is_string($value) ? $value : (string) $value) . "',\n";
+```
+
+**2. SyncTranslationsAction.php - Cast sicuro**
+- **Problema**: `Cannot cast mixed to string` per `$value` in `arrayToPhp()`
+- **Soluzione**: Utilizzato controllo `is_string()` prima del cast
+- **Motivazione**: Gestione sicura dei cast da `mixed` a `string` per sincronizzazione traduzioni
+
+```php
+$content .= "'" . addslashes(is_string($value) ? $value : (string) $value) . "',\n";
+```
+
+#### Pattern di Correzione Utilizzati
+
+1. **Controlli is_string()**: Per validazione prima del cast
+2. **Cast sicuri**: Per gestione di valori `mixed` in file di traduzione
+3. **Type safety**: Per azioni che gestiscono dati di traduzione dinamici
+
 ## Collegamenti
 
 - [Report Generale](/docs/phpstan/README.md)

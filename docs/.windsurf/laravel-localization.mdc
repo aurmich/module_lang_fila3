@@ -3,14 +3,11 @@
 ## Context
 
 This document provides metadata for Windsurf about the integration of `mcamara/laravel-localization` into the `saluteora` project.
-<<<<<<< HEAD
 # Laravel Localization Metadata for Windsurf
 
 ## Context
 
 This document provides metadata for Windsurf about the integration of `mcamara/laravel-localization` into the `saluteora` project.
-=======
->>>>>>> d0bd514 (.)
 
 ## Key Points
 
@@ -22,7 +19,6 @@ This document provides metadata for Windsurf about the integration of `mcamara/l
   - Use middleware for automatic language detection and redirection.
   - Generate localized URLs using provided helpers.
 - **Benefits**: Seamless language switching and improved accessibility for users.
-<<<<<<< HEAD
 
 # Regola: Vietato usare chiavi che terminano con `.navigation` nei file di traduzione
 
@@ -40,5 +36,3 @@ This document provides metadata for Windsurf about the integration of `mcamara/l
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [filament-translations.md](../filament-translations.md)
   - [docs SaluteOra](../../../SaluteOra/docs/translations.md)
-=======
->>>>>>> d0bd514 (.)

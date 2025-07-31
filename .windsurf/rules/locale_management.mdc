@@ -107,11 +107,7 @@ return [
     'title' => 'Paziente',
     'fields' => [
         'name' => 'Nome',
-<<<<<<< HEAD
         'last_name' => 'Cognome',
-=======
-        'surname' => 'Cognome',
->>>>>>> d0bd514 (.)
     ],
     'validation' => [
         'required' => 'Il campo :attribute è obbligatorio',
