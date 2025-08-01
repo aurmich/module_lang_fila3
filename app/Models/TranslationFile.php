@@ -53,7 +53,6 @@ class TranslationFile extends BaseModel
         'content' => 'json',
     ];
 
-<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -65,11 +64,6 @@ class TranslationFile extends BaseModel
             'content' => 'array',
         ];
     }
-=======
-    protected $casts = [
-        'content' => 'array',
-    ];
->>>>>>> 98451c6 (.)
 
     public function getRows(): array
     {
