@@ -1,155 +1,4 @@
-https://github.com/dimsav/laravel-translatable
-
-https://github.com/Astrotomic/laravel-translatable !!
-
-https://github.com/spatie/laravel-translatable
-
-https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-translations/
-
-
-## Collegamenti tra versioni di readme.md
-* [readme.md](../../../Gdpr/docs/readme.md)
-* [readme.md](../../../UI/docs/readme.md)
-* [readme.md](../../../Lang/docs/readme.md)
-* [readme.md](../../../Activity/docs/readme.md)
-* [readme.md](../../../Cms/docs/readme.md)
-
-## Extra risorse da _docs
-
-<<<<<<< HEAD
-(Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
-=======
-- [Documentazione](#documentazione)
-- [Dipendenze](#dipendenze)
-- [Utilizzo](#utilizzo)
-
-### Versione HEAD
-
-## Architettura e Componenti
-- Translation Engine
-- Message System
-- Notification System
-- Cache System
-
-## Translation Management
-- File Structure
-- Translation Cache
-- Validation
-
-
-### Versione Incoming
-
-## Collegamenti correlati
-> - [README.md documentazione generale](../../../docs/README.md)
-> - [README.md toolkit bashscripts](../../../bashscripts/docs/README.md)
-> - [README.md modulo GDPR](../Gdpr/docs/README.md)
-> - [README.md modulo User](../User/docs/README.md)
-> - [README.md modulo Lang](../Lang/docs/README.md)
-> - [README.md modulo Media](../Media/docs/README.md)
-> - [README.md modulo Notify](../Notify/docs/README.md)
-> - [README.md modulo Tenant](../Tenant/docs/README.md)
-> - [README.md modulo UI](../UI/docs/README.md)
-> - [README.md modulo Xot](../Xot/docs/README.md)
-> - [Collegamenti documentazione centrale](../../../docs/collegamenti-documentazione.md)
-
-## Architettura e Componenti
-- Translation Engine
-- Message System
-- Notification System
-- Cache System
-
-## Translation Management
-- File Structure
-- Translation Cache
-- Validation
-
-
----
-
-## Message System
-- Message Types
-- Message Cache
-- Validation
-### Versione HEAD
-
-
-### Versione Incoming
-
-
-## Notification System
-- Email Templates
-- SMS Templates
-- Push Notifications
-
-## Best Practices
-- Translation Structure
-- Message Design
-- Cache Strategy
-
-## Documentazione Tecnica
-- [Roadmap](./roadmap.md)
-- [Bottlenecks](./bottlenecks.md)
-- [Best Practices](./BEST-PRACTICES.md)
-- [Testing](./testing.md)
-
-## Note Importanti
-1. Tutte le traduzioni devono seguire la struttura corretta
-2. Seguire le convenzioni di naming
-3. Utilizzare i trait forniti
-4. Documentare il codice
-
-## Collegamenti Bidirezionali
-- [Modulo User](../User/docs/README.md)
-- [Modulo UI](../UI/docs/README.md)
-- [Modulo Cms](../Cms/docs/README.md)
-
-## Documentazione
-- [Guida Iniziale](./getting-started.md)
-- [Translation Guide](./translation-guide.md)
-- [Message Guide](./message-guide.md)
-- [Notification Guide](./notification-guide.md)
-
-## Dipendenze
-- Laravel Framework
-- Filament
-- Livewire
-- Volt
-- Folio
-- Tailwind CSS
-- Alpine.js
-
-## Utilizzo
-```php
-// Esempio di utilizzo translation service
-use Modules\Lang\Services\TranslationService;
-
-class MyService
-{
-    public function __construct(
-        protected TranslationService $translation
-    ) {}
-
-    public function getTranslation(string $key): string
-    {
-        return $this->translation->get($key);
-    }
-}
-
-// Esempio di utilizzo message service
-use Modules\Lang\Services\MessageService;
-
-class MyService
-{
-    public function __construct(
-        protected MessageService $message
-    ) {}
-
-    public function getMessage(string $key): string
-    {
-        return $this->message->get($key);
-    }
-}
-```
+# Modulo Lang
 
 ## Panoramica
 Il modulo Lang gestisce tutte le traduzioni dell'applicazione, fornendo un sistema centralizzato per la gestione dei testi multilingua. Si integra con tutti gli altri moduli per garantire una coerenza nelle traduzioni.
@@ -565,6 +414,44 @@ Tutti i comandi console del modulo sono autoregistrati tramite `XotBaseServicePr
 - Per approfondimenti, vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md).
 
 > Qualsiasi registrazione manuale è un errore e va rimossa.
+
+## Regola fondamentale: divieto di chiavi .navigation nelle traduzioni
+
+- **Mai usare chiavi che terminano con `.navigation` nei file di traduzione.**
+- Usare invece la struttura array:
+  ```php
+  'navigation' => [
+      'label' => 'Gestione Pazienti',
+      'group' => 'Pazienti',
+      'icon' => 'heroicon-o-user-group',
+      'color' => 'primary',
+  ],
+  ```
+- **Motivazione:**
+  - Migliora la manutenibilità e la localizzazione
+  - Permette l'aggiunta di icone, colori, tooltip, ecc.
+  - Evita errori e duplicazioni
+- **Esempio ERRATO:**
+  ```php
+  'group' => 'patient.navigation',
+  'label' => 'patient.navigation',
+  ```
+- **Esempio CORRETTO:**
+  ```php
+  'navigation' => [
+      'label' => 'Gestione Pazienti',
+      'group' => 'Pazienti',
+      'icon' => 'heroicon-o-user-group',
+      'color' => 'primary',
+  ],
+  ```
+- Consulta anche:
+  - [translation_keys_best_practices.md](./translation_keys_best_practices.md)
+  - [translation_keys_rules.md](./translation_keys_rules.md)
+  - [filament-translations.md](./filament-translations.md)
+  - [docs SaluteOra](../../SaluteOra/docs/translations.md)
+  - [docs Xot](../../Xot/docs/README.md)
+
 ## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
 
 Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
@@ -617,4 +504,3 @@ docs/
 - [x] Nessun file .sh fuori da bashscripts/
 - [x] Documentazione aggiornata
 - [x] Struttura coerente in tutti i moduli
->>>>>>> bb902e8 (.)
