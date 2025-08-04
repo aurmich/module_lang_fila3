@@ -238,6 +238,7 @@ if (Session::has('locale')) {
 ## Comandi Artisan Utili
 
 ```bash
+
 # Pubblicare le traduzioni di Laravel
 php artisan lang:publish
 
