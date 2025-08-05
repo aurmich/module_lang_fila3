@@ -15,6 +15,7 @@ use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use function Safe\json_encode;
 
+<<<<<<< HEAD
 /**
  * @property string|null $key
  * @property string|null $path
@@ -34,6 +35,8 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile wherePath($value)
  * @mixin \Eloquent
  */
+=======
+>>>>>>> 05e41a1 (.)
 class TranslationFile extends BaseModel
 {
     use \Sushi\Sushi;
@@ -53,6 +56,7 @@ class TranslationFile extends BaseModel
         'content' => 'json',
     ];
 
+<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -64,6 +68,11 @@ class TranslationFile extends BaseModel
             'content' => 'array',
         ];
     }
+=======
+    protected $casts = [
+        'content' => 'array',
+    ];
+>>>>>>> 05e41a1 (.)
 
     public function getRows(): array
     {

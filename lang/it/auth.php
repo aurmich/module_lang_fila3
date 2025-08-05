@@ -17,7 +17,11 @@ return [
     'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
 
     'login' => [
+<<<<<<< HEAD
         'title' => 'Accedi',
+=======
+        'title' => 'Accedi al tuo account',
+>>>>>>> 05e41a1 (.)
         'email' => 'Email',
         'password' => 'Password',
         'remember_me' => 'Ricordami',
@@ -29,7 +33,11 @@ return [
     ],
 
     'register' => [
+<<<<<<< HEAD
         'title' => 'Registati',
+=======
+        'title' => 'Crea un nuovo account',
+>>>>>>> 05e41a1 (.)
         'name' => 'Nome',
         'email' => 'Email',
         'password' => 'Password',

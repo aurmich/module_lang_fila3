@@ -74,7 +74,10 @@ class ReadTranslationFileAction
                 $content .= $this->arrayToPhp($value, $indent + 1);
                 $content .= $indentStr . "],\n";
             } else {
+<<<<<<< HEAD
                 /** @phpstan-ignore-next-line */
+=======
+>>>>>>> 05e41a1 (.)
                 $content .= "'" . addslashes((string) $value) . "',\n";
             }
         }

@@ -22,6 +22,7 @@ class ListTranslationFiles extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, \Filament\Actions\Action>
      */
@@ -40,6 +41,15 @@ class ListTranslationFiles extends XotBaseListRecords
         }
         
         return $actions;
+=======
+    protected function getHeaderActions(): array
+    {
+        return [
+            LocaleSwitcherRefresh::make('lang'),
+            ...parent::getHeaderActions(),
+            // ...
+        ];
+>>>>>>> 05e41a1 (.)
     }
 
 }

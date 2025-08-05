@@ -147,7 +147,11 @@ $request->validate([
 public function test_locale_switch()
 {
     $response = $this->get(route('change-locale', 'en'));
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 05e41a1 (.)
     $response->assertSessionHas('locale', 'en');
     $this->assertEquals('en', app()->getLocale());
 }
