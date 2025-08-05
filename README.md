@@ -15,10 +15,7 @@ Modulo dedicato alla gestione delle traduzioni e localizzazione in applicazioni 
 #### Conversione Formati
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 05e41a1 (.)
 # Converti da PHP a JSON
 php artisan translations:convert php json it
 
@@ -29,10 +26,7 @@ php artisan translations:convert json php it
 #### Comandi Artisan
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 05e41a1 (.)
 # Pubblicare file di lingua Laravel
 php artisan lang:publish
 
@@ -68,10 +62,7 @@ php artisan config:clear
 
 ## Aggiungere Modulo nella base del progetto
 Dentro la cartella laravel/Modules
-<<<<<<< HEAD
 
-=======
->>>>>>> 05e41a1 (.)
 ### Versione HEAD
 
 
@@ -213,10 +204,7 @@ php artisan module:enable Lang
 ## Eseguire le migrazioni
 ```bash
 php artisan module:migrate Lang
-<<<<<<< HEAD
 
-=======
->>>>>>> 05e41a1 (.)
 ### Versione HEAD
 
 ```

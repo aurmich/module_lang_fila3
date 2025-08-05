@@ -34,13 +34,8 @@ class SyncTranslationsAction
         foreach ($modules as $module) {
             $moduleResults = $this->syncModule($module, $sourceLang, $targetLangs);
             $results['modules'][$module] = $moduleResults;
-<<<<<<< HEAD
             $results['total_files'] += is_numeric($moduleResults['files_processed'] ?? null) ? (int) $moduleResults['files_processed'] : 0;
             $results['total_translations'] += is_numeric($moduleResults['translations_added'] ?? null) ? (int) $moduleResults['translations_added'] : 0;
-=======
-            $results['total_files'] += (int) ($moduleResults['files_processed'] ?? 0);
-            $results['total_translations'] += (int) ($moduleResults['translations_added'] ?? 0);
->>>>>>> 05e41a1 (.)
             $results['total_modules']++;
         }
 
@@ -244,10 +239,7 @@ class SyncTranslationsAction
                 $content .= $this->arrayToPhp($this->filterStringKeyArray($value), $indent + 1);
                 $content .= $indentStr . "],\n";
             } else {
-<<<<<<< HEAD
                 /** @phpstan-ignore-next-line */
-=======
->>>>>>> 05e41a1 (.)
                 $content .= "'" . addslashes((string) $value) . "',\n";
             }
         }
