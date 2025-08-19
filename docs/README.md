@@ -1,34 +1,28 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Lang
+=======
+https://github.com/dimsav/laravel-translatable
+>>>>>>> 538e939 (.)
 
-## Panoramica
-Il modulo Lang gestisce tutte le traduzioni dell'applicazione, fornendo un sistema centralizzato per la gestione dei testi multilingua. Si integra con tutti gli altri moduli per garantire una coerenza nelle traduzioni.
+https://github.com/Astrotomic/laravel-translatable !!
 
-## Collegamenti Principali
+https://github.com/spatie/laravel-translatable
 
-### Documentazione Core
-- [Struttura del Modulo](./structure.md)
-- [Gestione Traduzioni](./translations.md)
-- [Messaggi Sistema](./messages.md)
-- [Notifiche](./notifications.md)
-- [Best Practices](./BEST-PRACTICES.md)
+https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-translations/
 
-### Integrazioni
-- [Integrazione con User](../User/docs/README.md)
-- [Integrazione con Xot](../Xot/docs/README.md)
-- [Integrazione con UI](../UI/docs/README.md)
 
-### Best Practices
-- [Convenzioni Traduzioni](./translation-conventions.md)
-- [Gestione Namespace](./namespace-conventions.md)
-- [PHPStan Fixes](./phpstan-fixes.md)
+## Collegamenti tra versioni di readme.md
+* [readme.md](../../../Gdpr/docs/readme.md)
+* [readme.md](../../../UI/docs/readme.md)
+* [readme.md](../../../Lang/docs/readme.md)
+* [readme.md](../../../Activity/docs/readme.md)
+* [readme.md](../../../Cms/docs/readme.md)
 
-### Testing e Qualità
-- [PHPStan Level 9](./PHPSTAN_LEVEL9_FIXES.md)
-- [PHPStan Level 10](./PHPSTAN_LEVEL10_FIXES.md)
-- [Testing Best Practices](./testing-best-practices.md)
+## Extra risorse da _docs
 
+<<<<<<< HEAD
 ## Struttura del Modulo
 
 ```
@@ -534,3 +528,6 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 >>>>>>> ed13d19 (.)
 =======
 >>>>>>> 30a6e9b (.)
+=======
+(Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
+>>>>>>> 538e939 (.)
