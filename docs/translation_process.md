@@ -80,15 +80,21 @@ Per le traduzioni di base di Laravel:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 =======
 >>>>>>> ed13d19 (.)
 =======
 >>>>>>> 30a6e9b (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 538e939 (.)
 =======
 >>>>>>> 22c5ea9 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Installazione
 composer require laravel-lang/common --dev
 
@@ -125,15 +131,21 @@ Traduci in italiano mantenendo la struttura JSON:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 =======
 >>>>>>> ed13d19 (.)
 =======
 >>>>>>> 30a6e9b (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 538e939 (.)
 =======
 >>>>>>> 22c5ea9 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Creare un branch dedicato
 git checkout -b feature/italian-translations
 
@@ -149,15 +161,21 @@ git commit -m "Aggiunte traduzioni in italiano"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 =======
 >>>>>>> ed13d19 (.)
 =======
 >>>>>>> 30a6e9b (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 538e939 (.)
 =======
 >>>>>>> 22c5ea9 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Verificare le traduzioni mancanti
 php artisan translations:missing it
 
@@ -254,15 +272,21 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 =======
 >>>>>>> ed13d19 (.)
 =======
 >>>>>>> 30a6e9b (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 538e939 (.)
 =======
 >>>>>>> 22c5ea9 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Verificare le chiavi mancanti
 php artisan translations:missing it
 
@@ -280,15 +304,21 @@ Assicurarsi che i file siano salvati in UTF-8 senza BOM:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 =======
 >>>>>>> ed13d19 (.)
 =======
 >>>>>>> 30a6e9b (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 538e939 (.)
 =======
 >>>>>>> 22c5ea9 (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Convertire in UTF-8 senza BOM
 find lang -type f -name "*.php" -o -name "*.json" | xargs dos2unix
 ```
