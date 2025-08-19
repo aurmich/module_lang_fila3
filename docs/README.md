@@ -28,6 +28,7 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Struttura del Modulo
 
 ```
@@ -539,3 +540,6 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 =======
 (Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
 >>>>>>> 22c5ea9 (.)
+=======
+(Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
+>>>>>>> d8cea8f (.)
