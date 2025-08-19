@@ -114,10 +114,6 @@ __('auth::validation.required')
 ### 1. Creazione Struttura Base
 
 ```bash
-<<<<<<< HEAD
-
-=======
->>>>>>> ed13d19 (.)
 # Pubblicare i file di lingua Laravel
 php artisan lang:publish
 
@@ -185,10 +181,6 @@ public function handle($request, Closure $next)
 
 ### Comandi Artisan
 ```bash
-<<<<<<< HEAD
-
-=======
->>>>>>> ed13d19 (.)
 # Pubblicare file di lingua
 php artisan lang:publish
 

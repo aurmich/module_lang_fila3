@@ -6,6 +6,10 @@ namespace Modules\Lang\View\Components;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\View\Component;
+<<<<<<< HEAD
+=======
+use Illuminate\View\View;
+>>>>>>> ed13d19 (.)
 use Modules\Xot\Actions\GetViewAction;
 
 /**
@@ -17,7 +21,11 @@ class Flag extends Component
     {
     }
 
+<<<<<<< HEAD
     public function render(): Renderable
+=======
+    public function render(): View
+>>>>>>> ed13d19 (.)
     {
         $view = app(GetViewAction::class)->execute();
         $view_params = [
