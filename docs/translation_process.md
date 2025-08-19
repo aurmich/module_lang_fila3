@@ -79,6 +79,7 @@ Per le traduzioni di base di Laravel:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
@@ -86,6 +87,8 @@ Per le traduzioni di base di Laravel:
 >>>>>>> 30a6e9b (.)
 =======
 >>>>>>> 538e939 (.)
+=======
+>>>>>>> 22c5ea9 (.)
 # Installazione
 composer require laravel-lang/common --dev
 
@@ -121,6 +124,7 @@ Traduci in italiano mantenendo la struttura JSON:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
@@ -128,6 +132,8 @@ Traduci in italiano mantenendo la struttura JSON:
 >>>>>>> 30a6e9b (.)
 =======
 >>>>>>> 538e939 (.)
+=======
+>>>>>>> 22c5ea9 (.)
 # Creare un branch dedicato
 git checkout -b feature/italian-translations
 
@@ -142,6 +148,7 @@ git commit -m "Aggiunte traduzioni in italiano"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
@@ -149,6 +156,8 @@ git commit -m "Aggiunte traduzioni in italiano"
 >>>>>>> 30a6e9b (.)
 =======
 >>>>>>> 538e939 (.)
+=======
+>>>>>>> 22c5ea9 (.)
 # Verificare le traduzioni mancanti
 php artisan translations:missing it
 
@@ -244,6 +253,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
@@ -251,6 +261,8 @@ jobs:
 >>>>>>> 30a6e9b (.)
 =======
 >>>>>>> 538e939 (.)
+=======
+>>>>>>> 22c5ea9 (.)
 # Verificare le chiavi mancanti
 php artisan translations:missing it
 
@@ -267,6 +279,7 @@ Assicurarsi che i file siano salvati in UTF-8 senza BOM:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
@@ -274,6 +287,8 @@ Assicurarsi che i file siano salvati in UTF-8 senza BOM:
 >>>>>>> 30a6e9b (.)
 =======
 >>>>>>> 538e939 (.)
+=======
+>>>>>>> 22c5ea9 (.)
 # Convertire in UTF-8 senza BOM
 find lang -type f -name "*.php" -o -name "*.json" | xargs dos2unix
 ```

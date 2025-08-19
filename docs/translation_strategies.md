@@ -117,6 +117,7 @@ __('auth::validation.required')
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
@@ -124,6 +125,8 @@ __('auth::validation.required')
 >>>>>>> 30a6e9b (.)
 =======
 >>>>>>> 538e939 (.)
+=======
+>>>>>>> 22c5ea9 (.)
 # Pubblicare i file di lingua Laravel
 php artisan lang:publish
 
@@ -194,6 +197,7 @@ public function handle($request, Closure $next)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
@@ -201,6 +205,8 @@ public function handle($request, Closure $next)
 >>>>>>> 30a6e9b (.)
 =======
 >>>>>>> 538e939 (.)
+=======
+>>>>>>> 22c5ea9 (.)
 # Pubblicare file di lingua
 php artisan lang:publish
 

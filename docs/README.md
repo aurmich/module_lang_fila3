@@ -1,10 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Lang
 =======
 https://github.com/dimsav/laravel-translatable
 >>>>>>> 538e939 (.)
+=======
+https://github.com/dimsav/laravel-translatable
+>>>>>>> 22c5ea9 (.)
 
 https://github.com/Astrotomic/laravel-translatable !!
 
@@ -22,6 +26,7 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 
 ## Extra risorse da _docs
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Struttura del Modulo
 
@@ -531,3 +536,6 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 =======
 (Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
 >>>>>>> 538e939 (.)
+=======
+(Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
+>>>>>>> 22c5ea9 (.)
