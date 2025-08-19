@@ -115,9 +115,12 @@ __('auth::validation.required')
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
+=======
+>>>>>>> 30a6e9b (.)
 # Pubblicare i file di lingua Laravel
 php artisan lang:publish
 
@@ -186,9 +189,12 @@ public function handle($request, Closure $next)
 ### Comandi Artisan
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
+=======
+>>>>>>> 30a6e9b (.)
 # Pubblicare file di lingua
 php artisan lang:publish
 

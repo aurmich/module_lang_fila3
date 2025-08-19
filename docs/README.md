@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Lang
 
 ## Panoramica
@@ -508,6 +509,10 @@ docs/
 =======
 https://github.com/dimsav/laravel-translatable
 
+=======
+https://github.com/dimsav/laravel-translatable
+
+>>>>>>> 30a6e9b (.)
 https://github.com/Astrotomic/laravel-translatable !!
 
 https://github.com/spatie/laravel-translatable
@@ -525,4 +530,7 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 ## Extra risorse da _docs
 
 (Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
+<<<<<<< HEAD
 >>>>>>> ed13d19 (.)
+=======
+>>>>>>> 30a6e9b (.)

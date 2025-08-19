@@ -77,9 +77,12 @@ Per le traduzioni di base di Laravel:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
+=======
+>>>>>>> 30a6e9b (.)
 # Installazione
 composer require laravel-lang/common --dev
 
@@ -113,9 +116,12 @@ Traduci in italiano mantenendo la struttura JSON:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
+=======
+>>>>>>> 30a6e9b (.)
 # Creare un branch dedicato
 git checkout -b feature/italian-translations
 
@@ -128,9 +134,12 @@ git commit -m "Aggiunte traduzioni in italiano"
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
+=======
+>>>>>>> 30a6e9b (.)
 # Verificare le traduzioni mancanti
 php artisan translations:missing it
 
@@ -224,9 +233,12 @@ jobs:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
+=======
+>>>>>>> 30a6e9b (.)
 # Verificare le chiavi mancanti
 php artisan translations:missing it
 
@@ -241,9 +253,12 @@ Assicurarsi che i file siano salvati in UTF-8 senza BOM:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ed13d19 (.)
+=======
+>>>>>>> 30a6e9b (.)
 # Convertire in UTF-8 senza BOM
 find lang -type f -name "*.php" -o -name "*.json" | xargs dos2unix
 ```
