@@ -114,25 +114,6 @@ __('auth::validation.required')
 ### 1. Creazione Struttura Base
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
-
-=======
->>>>>>> ed13d19 (.)
-=======
->>>>>>> 30a6e9b (.)
-<<<<<<< HEAD
-=======
->>>>>>> 538e939 (.)
-=======
->>>>>>> 22c5ea9 (.)
-=======
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Pubblicare i file di lingua Laravel
 php artisan lang:publish
 
@@ -200,25 +181,6 @@ public function handle($request, Closure $next)
 
 ### Comandi Artisan
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
-
-=======
->>>>>>> ed13d19 (.)
-=======
->>>>>>> 30a6e9b (.)
-<<<<<<< HEAD
-=======
->>>>>>> 538e939 (.)
-=======
->>>>>>> 22c5ea9 (.)
-=======
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Pubblicare file di lingua
 php artisan lang:publish
 

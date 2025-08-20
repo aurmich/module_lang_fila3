@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌐 **Lang Module** - Sistema Avanzato di Localizzazione
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -8,9 +7,6 @@
 [![Multi-Language](https://img.shields.io/badge/Multi-Language%20Ready-orange.svg)](https://laravel.com/docs/localization)
 [![Auto Translation](https://img.shields.io/badge/Auto-Translation%20Ready-yellow.svg)](https://cloud.google.com/translate)
 [![Quality Score](https://img.shields.io/badge/Quality%20Score-99%25-brightgreen.svg)](https://github.com/laraxot/lang-module)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Modulo Lang
 
 ## Panoramica
@@ -517,15 +513,7 @@ docs/
 - [x] Nessun file .sh fuori da bashscripts/
 - [x] Documentazione aggiornata
 - [x] Struttura coerente in tutti i moduli
-=======
-https://github.com/dimsav/laravel-translatable
-
-=======
-https://github.com/dimsav/laravel-translatable
-
->>>>>>> 30a6e9b (.)
 https://github.com/Astrotomic/laravel-translatable !!
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 > **🚀 Modulo Lang**: Sistema completo per localizzazione, traduzioni automatiche e gestione multilingua con supporto avanzato per Filament e componenti UI.
 
@@ -542,7 +530,6 @@ Il modulo **Lang** è il motore di localizzazione dell'applicazione, fornendo:
 
 ## ⚡ **Funzionalità Core**
 
-<<<<<<< HEAD
 ### 🌐 **Multi-Language Support**
 ```php
 // Configurazione lingue supportate
@@ -928,10 +915,3 @@ php artisan lang:auto-translate
 **🐛 PHPStan Level 9**: File core certificati ✅  
 **🌐 Translation Standards**: File traduzione certificati ✅  
 **🚀 Performance**: 99/100 score 
-=======
-(Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
-<<<<<<< HEAD
->>>>>>> ed13d19 (.)
-=======
->>>>>>> 30a6e9b (.)
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)

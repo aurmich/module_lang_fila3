@@ -24,7 +24,7 @@ Questo documento riepiloga tutti i conflitti Git risolti e le regole implementat
 - **Soluzione**: Rimossi i marker mantenendo i comandi corretti
 - **Risultato**: File funzionale per la guida rapida
 
-#### `laravel/Modules/Lang/docs/TRANSLATION_STRATEGIES.md`
+#### `laravel/Modules/Lang/docs/translation_strategies.md`
 - **Problema**: Marker di conflitto nei comandi bash
 - **Soluzione**: Rimossi i marker mantenendo la documentazione
 - **Risultato**: File pulito per le strategie di traduzione
@@ -83,15 +83,8 @@ Questo documento riepiloga tutti i conflitti Git risolti e le regole implementat
 - **OBBLIGATORIO** controllare tutte le cartelle docs per file in minuscolo
 
 ### 3. Regole di Gestione Git
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **MAI** lasciare marker git  nei file
-=======
-- **MAI** lasciare marker `<<< HEAD` nei file
->>>>>>> ed13d19 (.)
-=======
-- **MAI** lasciare marker `<<< HEAD` nei file
->>>>>>> 30a6e9b (.)
+- **MAI** lasciare marker  nei file
 - **OBBLIGATORIO** risolvere immediatamente tutti i conflitti
 - **OBBLIGATORIO** eliminare file binari con conflitti
 
