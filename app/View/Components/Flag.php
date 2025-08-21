@@ -6,7 +6,6 @@ namespace Modules\Lang\View\Components;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\View\Component;
-use Illuminate\View\View;
 use Modules\Xot\Actions\GetViewAction;
 
 /**
@@ -18,7 +17,7 @@ class Flag extends Component
     {
     }
 
-    public function render(): View
+    public function render(): Renderable
     {
         $view = app(GetViewAction::class)->execute();
         $view_params = [
