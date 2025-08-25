@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0f52eb1 (.)
 # Modulo Lang - Documentazione Consolidata
 
 ## 🎯 Panoramica
@@ -54,8 +57,11 @@ Modulo per la gestione delle lingue, traduzioni e internazionalizzazione del sis
 **Ultimo aggiornamento:** Gennaio 2025  
 **Versione:** 2.0 - Consolidata DRY + KISS 
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 0cd7164 (.)
+=======
+>>>>>>> 0f52eb1 (.)
 # 🌐 **Lang Module** - Sistema Avanzato di Localizzazione
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -466,8 +472,13 @@ php artisan lang:auto-translate
 **🐛 PHPStan Level 9**: File core certificati ✅  
 **🌐 Translation Standards**: File traduzione certificati ✅  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **🚀 Performance**: 99/100 score 
 >>>>>>> 7911631 (.)
 =======
 **🚀 Performance**: 99/100 score 
 >>>>>>> 0cd7164 (.)
+=======
+**🚀 Performance**: 99/100 score 
+>>>>>>> 7911631 (.)
+>>>>>>> 0f52eb1 (.)

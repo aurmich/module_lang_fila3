@@ -85,14 +85,20 @@ Questo documento riepiloga tutti i conflitti Git risolti e le regole implementat
 ### 3. Regole di Gestione Git
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0f52eb1 (.)
 - **MAI** lasciare marker git  nei file
 - **MAI** lasciare marker  nei file
 =======
 - **MAI** lasciare marker `<<< HEAD` nei file
 >>>>>>> 7911631 (.)
+<<<<<<< HEAD
 =======
 - **MAI** lasciare marker `<<< HEAD` nei file
 >>>>>>> 0cd7164 (.)
+=======
+>>>>>>> 0f52eb1 (.)
 - **OBBLIGATORIO** risolvere immediatamente tutti i conflitti
 - **OBBLIGATORIO** eliminare file binari con conflitti
 

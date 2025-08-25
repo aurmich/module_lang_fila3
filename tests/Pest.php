@@ -17,9 +17,12 @@ use Modules\Lang\Tests\TestCase;
 
 pest()->extend(TestCase::class)
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
 =======
 >>>>>>> 0cd7164 (.)
+=======
+>>>>>>> 0f52eb1 (.)
     ->in('Feature', 'Unit');
 
 /*

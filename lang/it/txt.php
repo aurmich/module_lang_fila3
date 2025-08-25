@@ -486,7 +486,10 @@ return array (
         'helper_text' => '',
       ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 0f52eb1 (.)
     ),
     'test_date' => 
     array (
@@ -501,7 +504,10 @@ return array (
       'placeholder' => 'test',
       'helper_text' => 'test',
       'description' => 'test',
+<<<<<<< HEAD
 >>>>>>> 0cd7164 (.)
+=======
+>>>>>>> 0f52eb1 (.)
     ),
   ),
   'actions' => 
