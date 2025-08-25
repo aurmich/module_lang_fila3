@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0f52eb1 (.)
 # Modulo Lang - Documentazione Consolidata
@@ -62,6 +63,8 @@ Modulo per la gestione delle lingue, traduzioni e internazionalizzazione del sis
 >>>>>>> 0cd7164 (.)
 =======
 >>>>>>> 0f52eb1 (.)
+=======
+>>>>>>> e9433fe (.)
 # 🌐 **Lang Module** - Sistema Avanzato di Localizzazione
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -473,6 +476,7 @@ php artisan lang:auto-translate
 **🌐 Translation Standards**: File traduzione certificati ✅  
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **🚀 Performance**: 99/100 score 
 >>>>>>> 7911631 (.)
 =======
@@ -482,3 +486,6 @@ php artisan lang:auto-translate
 **🚀 Performance**: 99/100 score 
 >>>>>>> 7911631 (.)
 >>>>>>> 0f52eb1 (.)
+=======
+**🚀 Performance**: 99/100 score 
+>>>>>>> e9433fe (.)

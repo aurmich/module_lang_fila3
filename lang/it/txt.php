@@ -509,6 +509,20 @@ return array (
 =======
 >>>>>>> 0f52eb1 (.)
     ),
+    'test_date' => 
+    array (
+      'label' => 'test_date',
+      'placeholder' => 'test_date',
+      'helper_text' => 'test_date',
+      'description' => 'test_date',
+    ),
+    'test' => 
+    array (
+      'label' => 'test',
+      'placeholder' => 'test',
+      'helper_text' => 'test',
+      'description' => 'test',
+    ),
   ),
   'actions' => 
   array (

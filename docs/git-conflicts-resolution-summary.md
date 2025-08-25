@@ -86,6 +86,7 @@ Questo documento riepiloga tutti i conflitti Git risolti e le regole implementat
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0f52eb1 (.)
 - **MAI** lasciare marker git  nei file
@@ -99,6 +100,9 @@ Questo documento riepiloga tutti i conflitti Git risolti e le regole implementat
 >>>>>>> 0cd7164 (.)
 =======
 >>>>>>> 0f52eb1 (.)
+=======
+- **MAI** lasciare marker `<<< HEAD` nei file
+>>>>>>> e9433fe (.)
 - **OBBLIGATORIO** risolvere immediatamente tutti i conflitti
 - **OBBLIGATORIO** eliminare file binari con conflitti
 
