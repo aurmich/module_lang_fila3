@@ -77,6 +77,7 @@ Per le traduzioni di base di Laravel:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -89,6 +90,8 @@ Per le traduzioni di base di Laravel:
 =======
 >>>>>>> 538e939 (.)
 >>>>>>> 7911631 (.)
+=======
+>>>>>>> bb37d15 (.)
 # Installazione
 composer require laravel-lang/common --dev
 

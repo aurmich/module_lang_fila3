@@ -2,8 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0f52eb1 (.)
+=======
+>>>>>>> bb37d15 (.)
 # Modulo Lang - Documentazione Consolidata
 
 ## 🎯 Panoramica
@@ -59,12 +62,17 @@ Modulo per la gestione delle lingue, traduzioni e internazionalizzazione del sis
 **Versione:** 2.0 - Consolidata DRY + KISS 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0cd7164 (.)
 =======
 >>>>>>> 0f52eb1 (.)
 =======
 >>>>>>> e9433fe (.)
+=======
+=======
+>>>>>>> 0cd7164 (.)
+>>>>>>> bb37d15 (.)
 # 🌐 **Lang Module** - Sistema Avanzato di Localizzazione
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -477,11 +485,15 @@ php artisan lang:auto-translate
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bb37d15 (.)
 **🚀 Performance**: 99/100 score 
 >>>>>>> 7911631 (.)
 =======
 **🚀 Performance**: 99/100 score 
 >>>>>>> 0cd7164 (.)
+<<<<<<< HEAD
 =======
 **🚀 Performance**: 99/100 score 
 >>>>>>> 7911631 (.)
@@ -489,3 +501,5 @@ php artisan lang:auto-translate
 =======
 **🚀 Performance**: 99/100 score 
 >>>>>>> e9433fe (.)
+=======
+>>>>>>> bb37d15 (.)

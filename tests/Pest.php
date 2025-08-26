@@ -19,6 +19,7 @@ pest()->extend(TestCase::class)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
 =======
 >>>>>>> 0cd7164 (.)
@@ -26,6 +27,8 @@ pest()->extend(TestCase::class)
 >>>>>>> 0f52eb1 (.)
 =======
 >>>>>>> e9433fe (.)
+=======
+>>>>>>> bb37d15 (.)
     ->in('Feature', 'Unit');
 
 /*
