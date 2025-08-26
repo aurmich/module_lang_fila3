@@ -16,6 +16,7 @@ use Modules\Lang\Tests\TestCase;
 |
 */
 
+<<<<<<< HEAD
 uses(
     TestCase::class,
     RefreshDatabase::class,
@@ -23,6 +24,17 @@ uses(
 )->in('Feature', 'Unit');
 
 uses()->group('lang')->in('Feature', 'Unit');
+=======
+pest()->extend(TestCase::class)
+<<<<<<< HEAD
+<<<<<<< HEAD
+    ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
+=======
+>>>>>>> 0cd7164 (.)
+=======
+>>>>>>> 0f52eb1 (.)
+    ->in('Feature', 'Unit');
+>>>>>>> 685d248 (.)
 
 /*
 |--------------------------------------------------------------------------
