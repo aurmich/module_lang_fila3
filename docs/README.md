@@ -1,418 +1,486 @@
-# 🌐 **Lang Module** - Sistema Avanzato di Localizzazione Laraxot
+# Modulo Lang - Sistema di Gestione Lingue e Traduzioni
 
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 3.x](https://img.shields.io/badge/Filament-3.x-blue.svg)](https://filamentphp.com/)
-[![PHPStan Level 9](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg)](https://phpstan.org/)
-[![Translation Ready](https://img.shields.io/badge/Translation-IT%20%7C%20EN%20%7C%20DE-green.svg)](https://laravel.com/docs/localization)
-[![Multi-Language](https://img.shields.io/badge/Multi-Language%20Ready-orange.svg)](https://laravel.com/docs/localization)
-[![Auto Translation](https://img.shields.io/badge/Auto-Translation%20Ready-yellow.svg)](https://cloud.google.com/translate)
-[![Quality Score](https://img.shields.io/badge/Quality%20Score-98%25-brightgreen.svg)](https://github.com/laravel/laravel)
+## Panoramica
 
-## 📋 **Indice Rapido**
+Il modulo Lang fornisce un sistema completo di gestione delle lingue e traduzioni per l'applicazione Laraxot PTVX. Gestisce il caricamento automatico delle traduzioni, la configurazione delle lingue supportate e l'integrazione con il sistema di traduzione di Laravel.
 
-- [Panoramica](#panoramica)
-- [Caratteristiche Principali](#caratteristiche-principali)
-- [Architettura](#architettura)
-- [Installazione](#installazione)
-- [Configurazione](#configurazione)
-- [Utilizzo](#utilizzo)
-- [Best Practices](#best-practices)
-- [Troubleshooting](#troubleshooting)
-- [API Reference](#api-reference)
-- [Contributi](#contributi)
+## Caratteristiche Principali
 
----
+- **Gestione Lingue**: Supporto per multiple lingue (IT, EN, DE)
+- **Caricamento Automatico**: Caricamento automatico delle traduzioni dai moduli
+- **Namespace Modulari**: Sistema di namespace per evitare conflitti
+- **Validazione**: Controllo automatico delle chiavi di traduzione
+- **Performance**: Sistema di cache per le traduzioni
+- **Fallback**: Gestione automatica delle traduzioni mancanti
 
-## 🎯 **Panoramica**
+## Struttura del Modulo
 
-Il modulo **Lang** è il cuore del sistema di localizzazione di Laraxot, implementando un'architettura robusta e scalabile per la gestione multilingua. Progettato seguendo i principi **DRY**, **KISS**, **SOLID** e **Laraxot**, garantisce coerenza, manutenibilità e performance ottimali.
-
-### **Principi Architetturali**
-- **DRY (Don't Repeat Yourself)**: Centralizzazione logica traduzioni
-- **KISS (Keep It Simple, Stupid)**: API intuitive e dirette
-- **SOLID**: Separazione responsabilità e estensibilità
-- **Robust**: Gestione errori e fallback intelligenti
-- **Laraxot**: Integrazione nativa con l'ecosistema
-
----
-
-## ⚡ **Caratteristiche Principali**
-
-### **🌍 Gestione Multilingua Avanzata**
-- Supporto nativo per **IT**, **EN**, **DE**
-- Estensibile per nuove lingue
-- Fallback intelligente tra lingue
-- Cache ottimizzata per performance
-
-### **🔧 Integrazione Filament**
-- Traduzioni automatiche per componenti UI
-- Gestione centralizzata delle label
-- Supporto per moduli custom
-- Auto-discovery delle traduzioni
-
-### **📊 Sistema di Validazione**
-- Controllo completezza traduzioni
-- Report di qualità automatici
-- Identificazione chiavi mancanti
-- Metriche di copertura
-
-### **🚀 Performance e Scalabilità**
-- Lazy loading delle traduzioni
-- Cache intelligente con TTL
-- Compressione automatica
-- Ottimizzazione memoria
-
----
-
-## 🏗️ **Architettura**
-
-### **Struttura Modulo**
 ```
 Modules/Lang/
 ├── app/
-│   ├── Services/
-│   │   ├── TranslationService.php      # Core service
-│   │   ├── ValidationService.php       # Validazione traduzioni
-│   │   └── CacheService.php           # Gestione cache
 │   ├── Providers/
-│   │   └── LangServiceProvider.php    # Registrazione servizi
-│   └── Console/
-│       └── Commands/                   # Comandi artisan
+│   │   └── LangServiceProvider.php
+│   ├── Models/
+│   │   ├── Language.php
+│   │   └── Translation.php
+│   └── Services/
+│       └── TranslationService.php
 ├── config/
-│   └── lang.php                       # Configurazione
-├── lang/                               # File traduzioni
+├── database/
+├── docs/
+├── lang/
 │   ├── it/
+│   │   ├── common.php
+│   │   ├── validation.php
+│   │   ├── errors.php
+│   │   └── txt.php
 │   ├── en/
 │   └── de/
-└── docs/                               # Documentazione
-    └── README.md                       # Questo file
+├── resources/
+└── tests/
 ```
 
-### **Pattern Architetturali**
-- **Service Layer**: Logica business centralizzata
-- **Provider Pattern**: Registrazione servizi Laravel
-- **Command Pattern**: Operazioni CLI standardizzate
-- **Cache Strategy**: Ottimizzazione performance
+## Componenti Principali
 
----
+### LangServiceProvider
 
-## 📦 **Installazione**
+Service provider principale che gestisce il caricamento delle traduzioni:
 
-### **1. Installazione Automatica**
-```bash
-# Il modulo si installa automaticamente con Laraxot
-composer require laraxot/laraxot
-```
-
-### **2. Configurazione Manuale**
 ```php
-// config/app.php
-'providers' => [
-    Modules\Lang\Providers\LangServiceProvider::class,
-],
-
-// config/lang.php
-'default_locale' => 'it',
-'fallback_locale' => 'en',
-'available_locales' => ['it', 'en', 'de'],
+class LangServiceProvider extends ServiceProvider
+{
+    protected string $module_name = 'Lang';
+    
+    public function boot(): void
+    {
+        parent::boot();
+        
+        // Carica le traduzioni del modulo
+        $this->loadTranslationsFrom(
+            module_path('Lang', 'lang'),
+            'lang'
+        );
+    }
+}
 ```
 
-### **3. Pubblicazione Assets**
-```bash
-php artisan vendor:publish --tag=lang-config
-php artisan lang:cache
+### Language Model
+
+Modello per la gestione delle lingue supportate:
+
+```php
+class Language extends Model
+{
+    protected $fillable = [
+        'code',
+        'name',
+        'native_name',
+        'is_active',
+        'is_default',
+        'sort_order',
+    ];
+    
+    protected $casts = [
+        'is_active' => 'boolean',
+        'is_default' => 'boolean',
+        'sort_order' => 'integer',
+    ];
+}
 ```
 
----
+### Translation Model
 
-## ⚙️ **Configurazione**
+Modello per la gestione delle traduzioni dinamiche:
 
-### **Configurazione Base**
+```php
+class Translation extends Model
+{
+    protected $fillable = [
+        'language_id',
+        'namespace',
+        'key',
+        'value',
+        'group',
+    ];
+    
+    public function language()
+    {
+        return $this->belongsTo(Language::class);
+    }
+}
+```
+
+## Configurazione
+
+### Configurazione Base
+
 ```php
 // config/lang.php
 return [
-    'default_locale' => env('APP_LOCALE', 'it'),
-    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+    'default' => env('APP_LOCALE', 'it'),
+    'fallback_locale' => 'en',
     'available_locales' => ['it', 'en', 'de'],
-    
-    'auto_translate' => env('LANG_AUTO_TRANSLATE', false),
-    'cache_ttl' => env('LANG_CACHE_TTL', 3600),
-    'validation_enabled' => env('LANG_VALIDATION', true),
+    'supported_locales' => [
+        'it' => [
+            'name' => 'Italiano',
+            'native_name' => 'Italiano',
+            'flag' => '🇮🇹',
+        ],
+        'en' => [
+            'name' => 'English',
+            'native_name' => 'English',
+            'flag' => '🇬🇧',
+        ],
+        'de' => [
+            'name' => 'Deutsch',
+            'native_name' => 'Deutsch',
+            'flag' => '🇩🇪',
+        ],
+    ],
 ];
 ```
 
-### **Variabili Ambiente**
+### Environment Variables
+
 ```env
-# .env
 APP_LOCALE=it
 APP_FALLBACK_LOCALE=en
-LANG_AUTO_TRANSLATE=false
-LANG_CACHE_TTL=3600
-LANG_VALIDATION=true
+LANG_DEBUG=true
+LANG_CACHE_ENABLED=true
 ```
 
----
+## Utilizzo
 
-## 🚀 **Utilizzo**
+### Traduzioni Base
 
-### **Traduzioni Base**
 ```php
-// Helper globali
-__('lang::messages.welcome');           // Traduzione modulo
-trans('messages.welcome');               // Traduzione app
-trans_choice('messages.items', 5);      // Pluralizzazione
+// Utilizzo delle traduzioni
+__('lang::common.welcome')
+__('lang::validation.required')
+__('lang::errors.not_found')
 
-// Nel codice
-use Modules\Lang\Services\TranslationService;
+// Con parametri
+__('lang::messages.welcome_user', ['name' => $user->name])
 
-$translation = app(TranslationService::class);
-$text = $translation->get('welcome', 'it');
+// Pluralizzazione
+trans_choice('lang::messages.items_count', $count, ['count' => $count])
 ```
 
-### **Integrazione Filament**
-```php
-// Componenti automaticamente tradotti
-TextInput::make('name'),                // Label automatica
-Select::make('status'),                 // Opzioni tradotte
-Action::make('save'),                   # Testo azione tradotto
+### Traduzioni Modulari
 
-// File traduzioni
-// lang/it/fields.php
+```php
+// Traduzioni specifiche del modulo
+__('performance::actions.create.label')
+__('user::fields.name.label')
+__('ptv::messages.success')
+```
+
+### Cambio Lingua
+
+```php
+// Cambio lingua per l'utente corrente
+app()->setLocale('en');
+
+// Cambio lingua per sessione
+session(['locale' => 'de']);
+
+// Cambio lingua per utente specifico
+$user->update(['preferred_locale' => 'en']);
+```
+
+## Struttura delle Traduzioni
+
+### File di Traduzione
+
+Ogni file di traduzione deve seguire la struttura espansa:
+
+```php
+// lang/it/common.php
 return [
-    'name' => [
-        'label' => 'Nome',
-        'placeholder' => 'Inserisci nome',
-        'help' => 'Nome completo utente'
-    ]
+    'welcome' => [
+        'label' => 'Benvenuto',
+        'placeholder' => 'Inserisci messaggio di benvenuto',
+        'help' => 'Messaggio di benvenuto per gli utenti',
+    ],
+    'loading' => [
+        'label' => 'Caricamento',
+        'placeholder' => 'Messaggio di caricamento',
+        'help' => 'Indica che il sistema sta caricando',
+    ],
 ];
 ```
 
-### **Validazione Traduzioni**
-```bash
-# Controllo completezza
-php artisan lang:validate
+### Organizzazione per Contesto
 
-# Report qualità
-php artisan lang:report
-
-# Fix automatici
-php artisan lang:fix
+```php
+// lang/it/validation.php
+return [
+    'required' => 'Il campo :attribute è obbligatorio',
+    'email' => 'Il campo :attribute deve essere un indirizzo email valido',
+    'min' => [
+        'string' => 'Il campo :attribute deve contenere almeno :min caratteri',
+        'numeric' => 'Il campo :attribute deve essere almeno :min',
+    ],
+];
 ```
 
----
+## Best Practices
 
-## 📚 **Best Practices**
+### Naming Convention
 
-### **1. Struttura File Traduzioni**
+1. **Chiavi Descrittive**: Usare nomi chiari e descrittivi
+2. **Struttura Gerarchica**: Organizzare in gruppi logici
+3. **Consistenza**: Mantenere coerenza tra moduli
+4. **Documentazione**: Documentare ogni chiave di traduzione
+
+### Struttura Espansa
+
 ```php
 // ✅ CORRETTO - Struttura espansa
-return [
-    'fields' => [
-        'name' => [
-            'label' => 'Nome',
-            'placeholder' => 'Inserisci nome',
-            'help' => 'Nome completo utente'
-        ]
+'field_name' => [
+    'label' => 'Etichetta Campo',
+    'placeholder' => 'Testo placeholder',
+    'help' => 'Testo di aiuto',
+    'validation' => [
+        'required' => 'Campo obbligatorio',
+        'invalid' => 'Valore non valido',
     ],
-    'actions' => [
-        'save' => [
-            'label' => 'Salva',
-            'success' => 'Salvato con successo',
-            'error' => 'Errore nel salvataggio'
-        ]
-    ]
-];
+],
 
 // ❌ ERRATO - Struttura piatta
-return [
-    'name_label' => 'Nome',
-    'name_placeholder' => 'Inserisci nome',
-    'save_label' => 'Salva'
-];
+'field_name_label' => 'Etichetta Campo',
+'field_name_placeholder' => 'Testo placeholder',
 ```
 
-### **2. Naming Convention**
+### Gestione Parametri
+
 ```php
-// ✅ CORRETTO
-'user.profile.name'           // Modulo.contesto.campo
-'actions.create.success'       // Azione.operazione.risultato
-'validation.required'          // Tipo.regola
+// ✅ CORRETTO - Con parametri
+'welcome_user' => 'Benvenuto, :name!',
+'items_count' => '{0} Nessun elemento|{1} Un elemento|[2,*] :count elementi',
 
-// ❌ ERRATO
-'user_name'                   // Troppo generico
-'create_success'              // Manca contesto
-'required_validation'         # Ordine non logico
+// Utilizzo
+__('lang::messages.welcome_user', ['name' => $user->name])
+trans_choice('lang::messages.items_count', $count, ['count' => $count])
 ```
 
-### **3. Gestione Fallback**
-```php
-// Configurazione fallback intelligente
-'fallback_chain' => [
-    'it' => ['en', 'de'],     // IT → EN → DE
-    'de' => ['en', 'it'],     # DE → EN → IT
-    'en' => ['it', 'de']      # EN → IT → DE
-]
+## Testing
+
+Il modulo Lang include una suite completa di test Pest per garantire la qualità e la robustezza del codice.
+
+### Struttura Testing
+```
+tests/
+├── Pest.php                    # Configurazione Pest
+├── TestCase.php               # TestCase base del modulo
+├── Unit/                      # Test unitari
+│   ├── Models/               # Test modelli
+│   ├── Actions/              # Test actions
+│   └── Services/             # Test services
+└── Feature/                   # Test di integrazione
+    └── LangBusinessLogicTest.php
 ```
 
----
-
-## 🔧 **Troubleshooting**
-
-### **Problemi Comuni**
-
-#### **1. Traduzioni Non Trovate**
+### Esecuzione Test
 ```bash
-# Verifica cache
+cd /var/www/html/ptvx/laravel
+
+# Tutti i test del modulo
+./vendor/bin/pest Modules/Lang/tests/
+
+# Solo test unitari
+./vendor/bin/pest Modules/Lang/tests/Unit/
+
+# Solo test di integrazione
+./vendor/bin/pest Modules/Lang/tests/Feature/
+```
+
+### Documentazione Testing
+Per informazioni dettagliate sui test, consultare:
+- [Setup Testing](testing-setup.md) - Configurazione e utilizzo dei test
+- [Testing Overview](../../../docs/testing-overview.md) - Panoramica generale testing
+- [Testing Guidelines](../../../docs/testing-guidelines.md) - Linee guida testing
+
+## Performance
+
+### Caching
+
+```php
+// Abilita cache delle traduzioni
+config(['lang.cache_enabled' => true]);
+
+// Pulisci cache
 php artisan lang:clear
-php artisan cache:clear
 
-# Controllo file
-php artisan lang:validate
-
-# Debug traduzioni
-php artisan tinker
->>> __('lang::messages.welcome')
+// Pubblica cache
+php artisan lang:publish
 ```
 
-#### **2. Performance Lente**
-```bash
-# Abilita cache
-php artisan lang:cache
+### Ottimizzazioni
 
-# Verifica TTL
-php artisan config:show lang.cache_ttl
+1. **Lazy Loading**: Carica solo le traduzioni necessarie
+2. **Compressione**: Comprimi le traduzioni per la produzione
+3. **CDN**: Utilizza CDN per le traduzioni statiche
+4. **Monitoring**: Monitora le performance del caricamento
 
-# Monitor performance
-php artisan lang:benchmark
-```
+## Sicurezza
 
-#### **3. Validazione Fallita**
-```bash
-# Report dettagliato
-php artisan lang:report --detailed
+### Validazione Input
 
-# Fix automatici
-php artisan lang:fix --auto
-
-# Verifica specifica lingua
-php artisan lang:validate --locale=it
-```
-
-### **Log e Debug**
 ```php
-// Abilita debug traduzioni
+// Validazione delle chiavi di traduzione
+if (!Lang::has($key)) {
+    throw new InvalidTranslationKeyException("Translation key '{$key}' not found");
+}
+
+// Sanitizzazione dei parametri
+$safeParams = array_map('htmlspecialchars', $parameters);
+```
+
+### Controllo Accessi
+
+```php
+// Verifica permessi per modifiche
+if (!auth()->user()->can('manage-translations')) {
+    abort(403, 'Unauthorized to manage translations');
+}
+```
+
+## Monitoraggio e Logging
+
+### Log delle Traduzioni
+
+```php
+// Log delle traduzioni mancanti
+if (!Lang::has($key)) {
+    Log::warning('Missing translation key', [
+        'key' => $key,
+        'locale' => app()->getLocale(),
+        'user_id' => auth()->id(),
+    ]);
+}
+```
+
+### Metriche
+
+- Numero chiavi tradotte per lingua
+- Chiavi mancanti
+- Performance caricamento
+- Utilizzo cache
+
+## Troubleshooting
+
+### Problemi Comuni
+
+1. **Chiavi Mancanti**
+   - Verificare la struttura dei file
+   - Controllare i namespace
+   - Verificare il caricamento del modulo
+
+2. **Traduzioni Non Caricate**
+   - Controllare il ServiceProvider
+   - Verificare i percorsi
+   - Controllare i permessi
+
+3. **Cache Corrotta**
+   - Pulire la cache
+   - Riavviare l'applicazione
+   - Verificare la configurazione
+
+### Debug
+
+```php
+// Abilita debug
 config(['lang.debug' => true]);
 
-// Log traduzioni mancanti
-Log::channel('translations')->info('Missing key', [
-    'key' => 'welcome',
-    'locale' => 'it',
-    'fallback' => 'en'
-]);
+// Verifica lingue disponibili
+dd(Lang::getLocale(), Lang::getFallback());
+
+// Verifica traduzioni caricate
+dd(Lang::get('lang::common'));
 ```
 
----
+## Integrazione con Altri Moduli
 
-## 📖 **API Reference**
+### Caricamento Automatico
 
-### **TranslationService**
+Ogni modulo può registrare le proprie traduzioni:
+
 ```php
-class TranslationService
+// Nel ServiceProvider del modulo
+public function boot(): void
 {
-    // Recupera traduzione
-    public function get(string $key, string $locale = null): string;
+    parent::boot();
     
-    // Traduzione con fallback
-    public function getWithFallback(string $key, string $locale): string;
-    
-    // Validazione traduzioni
-    public function validate(string $locale): array;
-    
-    // Cache management
-    public function clearCache(): void;
-    public function warmCache(): void;
+    $this->loadTranslationsFrom(
+        module_path('ModuleName', 'lang'),
+        'modulename'
+    );
 }
 ```
 
-### **ValidationService**
+### Namespace Modulari
+
 ```php
-class ValidationService
-{
-    // Validazione completezza
-    public function validateCompleteness(string $locale): array;
-    
-    // Report qualità
-    public function generateReport(string $locale): array;
-    
-    // Fix automatici
-    public function autoFix(string $locale): array;
-}
+// Traduzioni del modulo Performance
+__('performance::actions.create.label')
+
+// Traduzioni del modulo User
+__('user::fields.name.label')
+
+// Traduzioni del modulo Ptv
+__('ptv::messages.success')
 ```
 
-### **Comandi Artisan**
-```bash
-# Gestione traduzioni
-php artisan lang:validate          # Validazione
-php artisan lang:report            # Report qualità
-php artisan lang:fix               # Fix automatici
-php artisan lang:cache             # Gestione cache
-php artisan lang:benchmark         # Test performance
-```
+## Roadmap
+
+### Funzionalità Future
+
+- [ ] Editor visuale per traduzioni
+- [ ] Import/Export traduzioni
+- [ ] Traduzioni automatiche con AI
+- [ ] Versioning delle traduzioni
+- [ ] Collaborazione multi-utente
+- [ ] Backup e restore
+
+### Miglioramenti
+
+- [ ] Performance optimization
+- [ ] Advanced caching
+- [ ] Real-time updates
+- [ ] Analytics avanzate
+- [ ] API REST per traduzioni
+
+## Contributi
+
+### Sviluppo
+
+1. Fork del repository
+2. Creazione branch feature
+3. Implementazione funzionalità
+4. Test completi
+5. Pull request con documentazione
+
+### Standard di Codice
+
+- PSR-12 coding standards
+- PHPStan livello 9+
+- Test coverage >90%
+- Documentazione PHPDoc completa
+
+## Licenza
+
+Questo modulo è rilasciato sotto la licenza MIT. Vedi il file LICENSE per i dettagli.
+
+## Supporto
+
+Per supporto tecnico o domande:
+
+- **Issues**: GitHub Issues
+- **Documentazione**: Questa documentazione
+- **Wiki**: Wiki del progetto
+- **Chat**: Canale Slack/Teams
 
 ---
 
-## 🤝 **Contributi**
-
-### **Linee Guida Sviluppo**
-1. **Seguire principi DRY + KISS + SOLID**
-2. **Mantenere coerenza Laraxot**
-3. **Documentare tutte le funzionalità**
-4. **Testare con PHPStan livello 9+**
-5. **Aggiornare questo README**
-
-### **Processo Contributo**
-```bash
-# Fork repository
-# Crea branch feature
-git checkout -b feature/nuova-funzionalita
-
-# Sviluppa e testa
-./vendor/bin/phpstan analyze --level=9
-php artisan test
-
-# Commit e push
-git commit -m "feat: aggiunge nuova funzionalità traduzioni"
-git push origin feature/nuova-funzionalita
-
-# Crea Pull Request
-```
-
----
-
-## 📄 **Licenza**
-
-Questo modulo è parte del framework **Laraxot** e segue la licenza MIT.
-
----
-
-## 🔗 **Collegamenti**
-
-### **1. Documentazione Modulo**
-- [BEST_PRACTICES.md](BEST_PRACTICES.md) - Best practices complete
-- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Guida troubleshooting
-- [API_REFERENCE.md](API_REFERENCE.md) - Riferimento API completo
-- [EXAMPLES.md](EXAMPLES.md) - Esempi pratici e casi d'uso
-- [config/lang.php](../config/lang.php) - Configurazione centralizzata
-
-### **2. Framework e Risorse**
-- [Documentazione Laravel Localization](https://laravel.com/docs/localization)
-- [Filament Documentation](https://filamentphp.com/docs)
-- [Laraxot Framework](https://github.com/laraxot/laraxot)
-- [PHPStan Documentation](https://phpstan.org/)
-
----
-
-**Ultimo aggiornamento**: Gennaio 2025  
-**Versione**: 2.0.0  
-**Autore**: Team Laraxot  
-**Mantenuto da**: Community Laraxot
+*Ultimo aggiornamento: {{ date('Y-m-d') }}*

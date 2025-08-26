@@ -3,9 +3,7 @@
 declare(strict_types=1);
 
 return [
-    // ========================================
     // CAMPI DI AUTENTICAZIONE E UTENTE
-    // ========================================
     'fields' => [
         // Autenticazione
         'email' => [
@@ -29,9 +27,7 @@ return [
             'help' => 'Identificativo dell\'utente',
         ],
         
-        // ========================================
         // CAMPI GENERICI DI SISTEMA
-        // ========================================
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
@@ -63,9 +59,7 @@ return [
             'help' => 'Elenco dei valori disponibili',
         ],
         
-        // ========================================
         // CAMPI DI STATO E CONFIGURAZIONE
-        // ========================================
         'is_active' => [
             'label' => 'Attivo',
             'placeholder' => 'Seleziona stato',
@@ -82,9 +76,7 @@ return [
             'help' => 'Categoria di appartenenza',
         ],
         
-        // ========================================
         // CAMPI TEMPORALI
-        // ========================================
         'start_date' => [
             'label' => 'Data Inizio',
             'placeholder' => 'Seleziona data inizio',
@@ -101,18 +93,14 @@ return [
             'help' => 'Data per il test del sistema',
         ],
         
-        // ========================================
         // CAMPI DI TEST E DEBUG
-        // ========================================
         'test' => [
             'label' => 'Test',
             'placeholder' => 'Inserisci valore test',
             'help' => 'Campo per test del sistema',
         ],
         
-        // ========================================
         // CAMPI DI INTERFACCIA E FILTRI
-        // ========================================
         'apply_filters' => [
             'label' => 'Applica Filtri',
             'placeholder' => 'Applica i filtri selezionati',
@@ -140,9 +128,7 @@ return [
         ],
     ],
     
-    // ========================================
     // AZIONI DI SISTEMA
-    // ========================================
     'actions' => [
         // Autenticazione
         'authenticate' => [
@@ -198,9 +184,7 @@ return [
         ],
     ],
     
-    // ========================================
     // MESSAGGI DI SISTEMA
-    // ========================================
     'messages' => [
         'system' => [
             'ready' => 'Sistema pronto',
