@@ -690,9 +690,12 @@ return array (
       ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0f52eb1 (.)
+=======
+>>>>>>> aee7a32 (.)
     ),
     'test_date' => 
     array (
@@ -708,9 +711,12 @@ return array (
       'helper_text' => 'test',
       'description' => 'test',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0cd7164 (.)
 =======
 >>>>>>> 0f52eb1 (.)
+=======
+>>>>>>> aee7a32 (.)
     ),
   ),
   'actions' => 
