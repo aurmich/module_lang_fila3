@@ -5,19 +5,27 @@ declare(strict_types=1);
 namespace Modules\Lang\Filament\Resources\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 =======
 use Filament\Forms\Form;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
+=======
+use Filament\Forms\Form;
+use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
+>>>>>>> bb1b835 (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\App;
 use Modules\Lang\Models\Translation;
 use Filament\Resources\Pages\CreateRecord;
 use Filament\Actions;
+<<<<<<< HEAD
 >>>>>>> 054e6ea (.)
+=======
+>>>>>>> bb1b835 (.)
 
 /**
  * Class LangBaseCreateRecord.

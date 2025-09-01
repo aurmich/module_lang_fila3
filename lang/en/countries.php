@@ -268,7 +268,11 @@ return [
     'um' => 'U.S. Minor Outlying Islands',
     'eh' => 'Western Sahara',
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ]; 
 >>>>>>> 054e6ea (.)
+=======
+]; 
+>>>>>>> bb1b835 (.)

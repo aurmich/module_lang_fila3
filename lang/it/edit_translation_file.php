@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'fields' => [
         'key' => [
@@ -410,6 +411,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> bb1b835 (.)
 return array (
   'fields' => 
   array (
@@ -923,4 +926,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 >>>>>>> 054e6ea (.)
+=======
+>>>>>>> bb1b835 (.)

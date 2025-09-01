@@ -268,7 +268,11 @@ return [
     'um' => 'Isole Minori degli Stati Uniti',
     'eh' => 'Saharawi',
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
 >>>>>>> 054e6ea (.)
+=======
+];
+>>>>>>> bb1b835 (.)

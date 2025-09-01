@@ -268,7 +268,11 @@ return [
     'um' => 'Amerikanische Außengebiete',
     'eh' => 'Westsahara',
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ]; 
 >>>>>>> 054e6ea (.)
+=======
+]; 
+>>>>>>> bb1b835 (.)

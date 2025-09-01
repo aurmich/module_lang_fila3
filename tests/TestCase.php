@@ -24,10 +24,14 @@ abstract class TestCase extends BaseTestCase
         // Load Lang module specific configurations
         $this->loadLaravelMigrations();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 054e6ea (.)
+=======
+        
+>>>>>>> bb1b835 (.)
         // Seed any required data for Lang tests
         $this->artisan('module:seed', ['module' => 'Lang']);
     }
@@ -36,10 +40,14 @@ abstract class TestCase extends BaseTestCase
      * Get package providers.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  \Illuminate\Foundation\Application  $app
 =======
      * @param \Illuminate\Foundation\Application $app
 >>>>>>> 054e6ea (.)
+=======
+     * @param \Illuminate\Foundation\Application $app
+>>>>>>> bb1b835 (.)
      * @return array<int, class-string>
      */
     protected function getPackageProviders($app): array

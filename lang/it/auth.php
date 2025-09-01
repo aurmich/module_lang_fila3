@@ -81,10 +81,14 @@ return [
         'processing' => 'Disconnessione in corso...',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 054e6ea (.)
+=======
+    
+>>>>>>> bb1b835 (.)
     'user_dropdown' => [
         'manage_account' => 'Gestisci Account',
         'profile' => 'Profilo',

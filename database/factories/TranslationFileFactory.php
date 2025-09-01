@@ -20,6 +20,10 @@ class TranslationFileFactory extends Factory
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 054e6ea (.)
+=======
+
+>>>>>>> bb1b835 (.)

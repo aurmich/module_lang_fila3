@@ -20,6 +20,7 @@ use Modules\Lang\Models\Post;
  *
  * @property \Modules\Xot\Contracts\UserContract|null $user
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property Post $post
  */
 trait LinkedTrait {}
@@ -30,3 +31,10 @@ trait LinkedTrait
 {
 }
 >>>>>>> 054e6ea (.)
+=======
+ * @property Post                                     $post
+ */
+trait LinkedTrait
+{
+}
+>>>>>>> bb1b835 (.)

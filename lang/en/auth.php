@@ -83,10 +83,14 @@ return [
         'processing' => 'Logging out...',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 054e6ea (.)
+=======
+    
+>>>>>>> bb1b835 (.)
     'user_dropdown' => [
         'manage_account' => 'Manage Account',
         'profile' => 'Profile',

@@ -39,10 +39,14 @@ class Switcher extends Component
             // @phpstan-ignore staticMethod.notFound
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($url !== false) {
 =======
             if (false !== $url) {
 >>>>>>> 054e6ea (.)
+=======
+            if (false !== $url) {
+>>>>>>> bb1b835 (.)
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
                 if (! is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback

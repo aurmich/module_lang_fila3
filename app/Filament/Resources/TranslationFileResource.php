@@ -3,11 +3,23 @@
 namespace Modules\Lang\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Filament\Tables;
+use Filament\Actions;
+use Filament\Forms\Form;
+use Filament\Tables\Table;
+>>>>>>> bb1b835 (.)
 use Filament\Forms\Components;
+use Filament\Resources\Resource;
+use Filament\Forms\Components\Section;
 use Illuminate\Support\Facades\Config;
-use Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
+use Filament\Forms\Components\TextInput;
 use Modules\Lang\Models\TranslationFile;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
 =======
 use Filament\Tables;
 use Filament\Actions;
@@ -26,6 +38,11 @@ use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 use Modules\Lang\Filament\Resources\TranslationFileResource\RelationManagers;
 >>>>>>> 054e6ea (.)
+=======
+use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
+use Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
+use Modules\Lang\Filament\Resources\TranslationFileResource\RelationManagers;
+>>>>>>> bb1b835 (.)
 
 class TranslationFileResource extends XotBaseResource
 {
@@ -42,6 +59,7 @@ class TranslationFileResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     {
 
@@ -52,6 +70,13 @@ class TranslationFileResource extends XotBaseResource
     {
        
 >>>>>>> 054e6ea (.)
+=======
+    
+
+    public static function getFormSchema(): array
+    {
+       
+>>>>>>> bb1b835 (.)
         return [];
         /*
         return [
@@ -73,10 +98,14 @@ class TranslationFileResource extends XotBaseResource
                 ->disabled()
                 ->label('Percorso File'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> 054e6ea (.)
+=======
+            
+>>>>>>> bb1b835 (.)
             Components\KeyValue::make('content')
                 ->label('Traduzioni')
                 ->keyLabel('Chiave')
@@ -86,23 +115,32 @@ class TranslationFileResource extends XotBaseResource
                 ->reorderable()
                 ->columnSpanFull(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> 054e6ea (.)
+=======
+            
+>>>>>>> bb1b835 (.)
         ];
         */
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    
 >>>>>>> 054e6ea (.)
+=======
+   
+>>>>>>> bb1b835 (.)
     public static function getPages(): array
     {
         return [
             'index' => Pages\ListTranslationFiles::route('/'),
             'create' => Pages\CreateTranslationFile::route('/create'),
+<<<<<<< HEAD
 <<<<<<< HEAD
             // 'view' => Pages\ViewTranslationFile::route('/{record}'),
             'edit' => Pages\EditTranslationFile::route('/{record}/edit'),
@@ -117,4 +155,13 @@ class TranslationFileResource extends XotBaseResource
 
    
 >>>>>>> 054e6ea (.)
+=======
+            //'view' => Pages\ViewTranslationFile::route('/{record}'),
+            'edit' => Pages\EditTranslationFile::route('/{record}/edit'),
+        ];
+    }
+
+
+   
+>>>>>>> bb1b835 (.)
 }

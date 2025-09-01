@@ -14,12 +14,18 @@ use Modules\Xot\Actions\GetViewAction;
 class Flag extends Component
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function __construct(public string $name) {}
 =======
     public function __construct(public string $name)
     {
     }
 >>>>>>> 054e6ea (.)
+=======
+    public function __construct(public string $name)
+    {
+    }
+>>>>>>> bb1b835 (.)
 
     public function render(): Renderable
     {
