@@ -2,17 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Lang\Tests\Unit\Models;
-
-use Modules\Lang\Models\BaseModel;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Database\Eloquent\Model;
-use Tests\TestCase;
-
-uses(TestCase::class, RefreshDatabase::class);
+use Modules\Lang\Models\BaseModel;
 
 beforeEach(function () {
-    $this->baseModel = new class extends BaseModel {
+    $this->baseModel = new class extends BaseModel
+    {
         protected $table = 'test_lang_table';
     };
 });
