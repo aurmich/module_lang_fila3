@@ -82,15 +82,7 @@ return [
         'try_again' => 'Erneut versuchen',
         'processing' => 'Abmeldung läuft...',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
     
->>>>>>> 054e6ea (.)
-=======
-    
->>>>>>> bb1b835 (.)
     'user_dropdown' => [
         'manage_account' => 'Konto verwalten',
         'profile' => 'Profil',

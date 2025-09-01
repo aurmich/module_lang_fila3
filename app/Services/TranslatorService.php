@@ -20,22 +20,10 @@ class TranslatorService extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param  string  $key
-     * @param  string|null  $locale
-     * @param  bool  $fallback
-=======
-=======
->>>>>>> bb1b835 (.)
      * @param string      $key
      * @param string|null $locale
      * @param bool        $fallback
      *
-<<<<<<< HEAD
->>>>>>> 054e6ea (.)
-=======
->>>>>>> bb1b835 (.)
      * @return string|array
      */
     public function get($key, array $replace = [], $locale = null, $fallback = true)
@@ -61,17 +49,8 @@ class TranslatorService extends LaravelTranslator
     /**
      * Undocumented function.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param  string  $key
-=======
      * @param string $key
      *
->>>>>>> 054e6ea (.)
-=======
-     * @param string $key
-     *
->>>>>>> bb1b835 (.)
      * @return void
      */
     protected function notifyMissingKey($key)

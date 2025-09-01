@@ -42,15 +42,7 @@ class SaveTransAction
         }
 
         $piece = implode('.', array_slice(explode('.', $key), 1));
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if ($piece !== '') {
-=======
         if ('' !== $piece) {
->>>>>>> 054e6ea (.)
-=======
-        if ('' !== $piece) {
->>>>>>> bb1b835 (.)
             Arr::set($cont, $piece, $data);
         } else {
             $cont = $data;

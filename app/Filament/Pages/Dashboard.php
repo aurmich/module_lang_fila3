@@ -4,14 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Filament\Pages;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Filament\Pages\Page;
->>>>>>> 054e6ea (.)
-=======
-use Filament\Pages\Page;
->>>>>>> bb1b835 (.)
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard

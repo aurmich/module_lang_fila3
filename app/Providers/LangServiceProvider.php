@@ -7,13 +7,6 @@ namespace Modules\Lang\Providers;
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Placeholder;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Filament\Forms\Components\Select;
-=======
->>>>>>> 054e6ea (.)
-=======
->>>>>>> bb1b835 (.)
 use Filament\Forms\Components\Wizard\Step;
 use Filament\Infolists\Components\Entry;
 use Filament\Support\Components\Component;
@@ -30,14 +23,7 @@ use Modules\Lang\Services\TranslatorService;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Modules\Xot\Services\BladeService;
 use Webmozart\Assert\Assert;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Filament\Forms\Components\Select;
->>>>>>> 054e6ea (.)
-=======
-use Filament\Forms\Components\Select;
->>>>>>> bb1b835 (.)
 
 /**
  * ---.
@@ -57,15 +43,7 @@ class LangServiceProvider extends XotBaseServiceProvider
         // $this->registerTranslator();
         $this->translatableComponents();
         $this->registerFilamentLabel();
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 054e6ea (.)
-=======
-        
->>>>>>> bb1b835 (.)
     }
 
     public function register(): void
@@ -80,15 +58,7 @@ class LangServiceProvider extends XotBaseServiceProvider
         // Carica la configurazione di laravel-localization
         // $this->mergeConfigFrom(
         //    __DIR__.'/../config/laravel-localization.php', 'laravel-localization'
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // );
-=======
         //);
->>>>>>> 054e6ea (.)
-=======
-        //);
->>>>>>> bb1b835 (.)
 
         // --dalla doc in register ... ma non funziona, funziona in boot
         // $this->registerTranslator();
@@ -110,13 +80,6 @@ class LangServiceProvider extends XotBaseServiceProvider
     {
         Select::configureUsing(function (Select $component) {
             $component->placeholder(__('filament-forms::components.select.placeholder'));
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 054e6ea (.)
-=======
->>>>>>> bb1b835 (.)
             return $component;
         });
         Field::configureUsing(function (Field $component) {
@@ -133,36 +96,15 @@ class LangServiceProvider extends XotBaseServiceProvider
                 }
                 $component->validationMessages($typedMessages);
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $component = app(AutoLabelAction::class)->execute($component, 'placeholder');
-            $component = app(AutoLabelAction::class)->execute($component, 'helperText');
-            $component = app(AutoLabelAction::class)->execute($component, 'description');
-=======
             $component = app(AutoLabelAction::class)->execute($component,'placeholder');
             $component = app(AutoLabelAction::class)->execute($component,'helperText');
             $component = app(AutoLabelAction::class)->execute($component,'description');
->>>>>>> 054e6ea (.)
-=======
-            $component = app(AutoLabelAction::class)->execute($component,'placeholder');
-            $component = app(AutoLabelAction::class)->execute($component,'helperText');
-            $component = app(AutoLabelAction::class)->execute($component,'description');
->>>>>>> bb1b835 (.)
 
             return $component;
         });
         \Filament\Forms\Components\Section::configureUsing(function (\Filament\Forms\Components\Section $component) {
             $component = app(AutoLabelAction::class)->execute($component);
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $component = app(AutoLabelAction::class)->execute($component, 'heading');
-
-=======
             $component = app(AutoLabelAction::class)->execute($component,'heading');
->>>>>>> 054e6ea (.)
-=======
-            $component = app(AutoLabelAction::class)->execute($component,'heading');
->>>>>>> bb1b835 (.)
             return $component;
         });
         BaseFilter::configureUsing(function (BaseFilter $component) {
@@ -183,23 +125,10 @@ class LangServiceProvider extends XotBaseServiceProvider
             return $component;
         });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Step::configureUsing(function (Step $component) {
-            $component = app(AutoLabelAction::class)->execute($component);
-
-=======
         
         Step::configureUsing(function (Step $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             
->>>>>>> 054e6ea (.)
-=======
-        
-        Step::configureUsing(function (Step $component) {
-            $component = app(AutoLabelAction::class)->execute($component);
-            
->>>>>>> bb1b835 (.)
             // ->translateLabel()
             return $component;
         });

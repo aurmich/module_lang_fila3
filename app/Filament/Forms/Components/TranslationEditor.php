@@ -1,21 +1,9 @@
 <?php
 
 // app/Filament/Components/TranslationEditor.php
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-namespace Modules\Lang\Filament\Forms\Components;
-
-=======
 namespace Modules\Lang\Filament\Forms\Components;
 
 use Illuminate\Support\Arr;
->>>>>>> 054e6ea (.)
-=======
-namespace Modules\Lang\Filament\Forms\Components;
-
-use Illuminate\Support\Arr;
->>>>>>> bb1b835 (.)
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
@@ -37,15 +25,7 @@ class TranslationEditor extends Field
     {
         $components = [];
         $state = $this->getState() ?? [];
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (! is_iterable($state)) {
-=======
         if(!is_iterable($state)){
->>>>>>> 054e6ea (.)
-=======
-        if(!is_iterable($state)){
->>>>>>> bb1b835 (.)
             return $components;
         }
 
@@ -55,15 +35,7 @@ class TranslationEditor extends Field
                     ->schema([
                         TranslationEditor::make($key)
                             ->label('')
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            ->state($value),
-=======
                             ->state($value)
->>>>>>> 054e6ea (.)
-=======
-                            ->state($value)
->>>>>>> bb1b835 (.)
                     ]);
             } else {
                 $components[] = TextInput::make($key)
@@ -74,12 +46,4 @@ class TranslationEditor extends Field
 
         return $components;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 054e6ea (.)
-=======
-}
->>>>>>> bb1b835 (.)

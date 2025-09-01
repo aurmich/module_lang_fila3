@@ -19,22 +19,8 @@ use Modules\Lang\Models\Post;
  * Modules\Lang\Models\Traits\LinkedTrait.
  *
  * @property \Modules\Xot\Contracts\UserContract|null $user
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property Post $post
- */
-trait LinkedTrait {}
-=======
  * @property Post                                     $post
  */
 trait LinkedTrait
 {
 }
->>>>>>> 054e6ea (.)
-=======
- * @property Post                                     $post
- */
-trait LinkedTrait
-{
-}
->>>>>>> bb1b835 (.)

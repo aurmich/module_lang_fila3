@@ -19,11 +19,4 @@ class TranslationFileFactory extends Factory
         return [];
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 054e6ea (.)
-=======
-
->>>>>>> bb1b835 (.)

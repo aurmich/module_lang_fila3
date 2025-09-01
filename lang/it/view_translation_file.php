@@ -1,17 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-return [
-    'actions' => [
-        'edit' => [
-            'label' => 'edit',
-        ],
-    ],
-];
-=======
-=======
->>>>>>> bb1b835 (.)
 return array (
   'actions' => 
   array (
@@ -21,7 +9,3 @@ return array (
     ),
   ),
 );
-<<<<<<< HEAD
->>>>>>> 054e6ea (.)
-=======
->>>>>>> bb1b835 (.)

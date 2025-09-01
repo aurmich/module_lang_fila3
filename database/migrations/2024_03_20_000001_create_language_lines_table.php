@@ -6,16 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-return new class extends Migration
-{
-=======
 return new class() extends Migration {
->>>>>>> 054e6ea (.)
-=======
-return new class() extends Migration {
->>>>>>> bb1b835 (.)
     /**
      * Run the migrations.
      */

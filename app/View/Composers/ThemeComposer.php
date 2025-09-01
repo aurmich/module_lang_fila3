@@ -17,38 +17,15 @@ class ThemeComposer
     /**
      * Get all supported languages as a DataCollection.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-     * @return DataCollection<LangData>
-     *
-     * @throws \Exception if supportedLocales config is not an array
-=======
      * @throws \Exception if supportedLocales config is not an array
      *
      * @return DataCollection<LangData>
->>>>>>> 054e6ea (.)
-=======
-     * @throws \Exception if supportedLocales config is not an array
-     *
-     * @return DataCollection<LangData>
->>>>>>> bb1b835 (.)
      */
     public function languages(): DataCollection
     {
         // ✅ Controllo sicuro della configurazione laravellocalization
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $langs = config()->has('laravellocalization.supportedLocales')
-            ? config('laravellocalization.supportedLocales')
-=======
         $langs = config()->has('laravellocalization.supportedLocales') 
             ? config('laravellocalization.supportedLocales') 
->>>>>>> 054e6ea (.)
-=======
-        $langs = config()->has('laravellocalization.supportedLocales') 
-            ? config('laravellocalization.supportedLocales') 
->>>>>>> bb1b835 (.)
             : ['it' => ['name' => 'Italiano', 'regional' => 'it_IT'], 'en' => ['name' => 'English', 'regional' => 'en_US']];
 
         if (! is_array($langs)) {
@@ -75,15 +52,7 @@ class ThemeComposer
             $regionalParts = explode('_', $regional);
             $regionalCode = $regionalParts[0] ?? 'en';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-            if ($regionalCode === 'en') {
-=======
             if ('en' === $regionalCode) {
->>>>>>> 054e6ea (.)
-=======
-            if ('en' === $regionalCode) {
->>>>>>> bb1b835 (.)
                 $regionalCode = 'gb';
             }
 
@@ -153,15 +122,7 @@ class ThemeComposer
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
         $value = $lang->{$field};
         if (! is_string($value)) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            return $field === 'id' ? $currentLocale : '';
-=======
             return 'id' === $field ? $currentLocale : '';
->>>>>>> 054e6ea (.)
-=======
-            return 'id' === $field ? $currentLocale : '';
->>>>>>> bb1b835 (.)
         }
 
         return $value;
@@ -170,17 +131,8 @@ class ThemeComposer
     /**
      * Build the URL for the admin panel based on the current route and parameters.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param  string  $locale  The locale code to build URL for
-=======
      * @param string $locale The locale code to build URL for
      *
->>>>>>> 054e6ea (.)
-=======
-     * @param string $locale The locale code to build URL for
-     *
->>>>>>> bb1b835 (.)
      * @return string The generated URL
      */
     private function buildAdminLanguageUrl(string $locale): string
@@ -200,17 +152,8 @@ class ThemeComposer
     /**
      * Build the HTML for the language flag.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param  string  $regionalCode  The regional code for the flag
-=======
      * @param string $regionalCode The regional code for the flag
      *
->>>>>>> 054e6ea (.)
-=======
-     * @param string $regionalCode The regional code for the flag
-     *
->>>>>>> bb1b835 (.)
      * @return string The HTML for the flag
      */
     private function buildFlagHtml(string $regionalCode): string
