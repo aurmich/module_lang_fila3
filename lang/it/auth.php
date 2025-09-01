@@ -80,7 +80,11 @@ return [
         'try_again' => 'Riprova',
         'processing' => 'Disconnessione in corso...',
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 054e6ea (.)
     'user_dropdown' => [
         'manage_account' => 'Gestisci Account',
         'profile' => 'Profilo',

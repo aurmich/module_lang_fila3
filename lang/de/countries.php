@@ -267,4 +267,8 @@ return [
     'mp' => 'Nördliche Marianen',
     'um' => 'Amerikanische Außengebiete',
     'eh' => 'Westsahara',
+<<<<<<< HEAD
 ];
+=======
+]; 
+>>>>>>> 054e6ea (.)

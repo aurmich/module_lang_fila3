@@ -5,9 +5,15 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
+>>>>>>> 054e6ea (.)
 
 class GetTransPathAction
 {
@@ -30,7 +36,10 @@ class GetTransPathAction
         }
         $file_name = $piece[0] ?? '';
         Assert::string($file_name, 'Il nome del file deve essere una stringa');
+<<<<<<< HEAD
 
+=======
+>>>>>>> 054e6ea (.)
         return $lang_path.'/'.$lang.'/'.$file_name.'.php';
     }
 }

@@ -26,7 +26,11 @@ class TransArrayAction
         array $array,
         ?string $transKey,
     ): array {
+<<<<<<< HEAD
         if ($transKey === null) {
+=======
+        if (null === $transKey) {
+>>>>>>> 054e6ea (.)
             return Arr::map($array, fn (mixed $item): string => SafeStringCastAction::cast($item));
         }
 
@@ -38,7 +42,12 @@ class TransArrayAction
     /**
      * Traduce un singolo elemento.
      *
+<<<<<<< HEAD
      * @param  mixed  $item  L'elemento da tradurre
+=======
+     * @param mixed $item L'elemento da tradurre
+     *
+>>>>>>> 054e6ea (.)
      * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
      */
     public function trans(mixed $item): string
@@ -48,7 +57,11 @@ class TransArrayAction
             $item = SafeStringCastAction::cast($item);
         }
 
+<<<<<<< HEAD
         if (empty($item) || $this->transKey === null) {
+=======
+        if (empty($item) || null === $this->transKey) {
+>>>>>>> 054e6ea (.)
             return $item;
         }
 

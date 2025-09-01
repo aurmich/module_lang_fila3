@@ -1,9 +1,15 @@
 <?php
 
 // app/Filament/Components/TranslationEditor.php
+<<<<<<< HEAD
 
 namespace Modules\Lang\Filament\Forms\Components;
 
+=======
+namespace Modules\Lang\Filament\Forms\Components;
+
+use Illuminate\Support\Arr;
+>>>>>>> 054e6ea (.)
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
@@ -25,7 +31,11 @@ class TranslationEditor extends Field
     {
         $components = [];
         $state = $this->getState() ?? [];
+<<<<<<< HEAD
         if (! is_iterable($state)) {
+=======
+        if(!is_iterable($state)){
+>>>>>>> 054e6ea (.)
             return $components;
         }
 
@@ -35,7 +45,11 @@ class TranslationEditor extends Field
                     ->schema([
                         TranslationEditor::make($key)
                             ->label('')
+<<<<<<< HEAD
                             ->state($value),
+=======
+                            ->state($value)
+>>>>>>> 054e6ea (.)
                     ]);
             } else {
                 $components[] = TextInput::make($key)
@@ -46,4 +60,8 @@ class TranslationEditor extends Field
 
         return $components;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 054e6ea (.)

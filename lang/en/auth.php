@@ -82,7 +82,11 @@ return [
         'try_again' => 'Try again',
         'processing' => 'Logging out...',
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 054e6ea (.)
     'user_dropdown' => [
         'manage_account' => 'Manage Account',
         'profile' => 'Profile',

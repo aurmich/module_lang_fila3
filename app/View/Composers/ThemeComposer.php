@@ -17,16 +17,27 @@ class ThemeComposer
     /**
      * Get all supported languages as a DataCollection.
      *
+<<<<<<< HEAD
      *
      * @return DataCollection<LangData>
      *
      * @throws \Exception if supportedLocales config is not an array
+=======
+     * @throws \Exception if supportedLocales config is not an array
+     *
+     * @return DataCollection<LangData>
+>>>>>>> 054e6ea (.)
      */
     public function languages(): DataCollection
     {
         // ✅ Controllo sicuro della configurazione laravellocalization
+<<<<<<< HEAD
         $langs = config()->has('laravellocalization.supportedLocales')
             ? config('laravellocalization.supportedLocales')
+=======
+        $langs = config()->has('laravellocalization.supportedLocales') 
+            ? config('laravellocalization.supportedLocales') 
+>>>>>>> 054e6ea (.)
             : ['it' => ['name' => 'Italiano', 'regional' => 'it_IT'], 'en' => ['name' => 'English', 'regional' => 'en_US']];
 
         if (! is_array($langs)) {
@@ -53,7 +64,11 @@ class ThemeComposer
             $regionalParts = explode('_', $regional);
             $regionalCode = $regionalParts[0] ?? 'en';
 
+<<<<<<< HEAD
             if ($regionalCode === 'en') {
+=======
+            if ('en' === $regionalCode) {
+>>>>>>> 054e6ea (.)
                 $regionalCode = 'gb';
             }
 
@@ -123,7 +138,11 @@ class ThemeComposer
         // Verifichiamo che il valore del campo sia una stringa o lo convertiamo in modo sicuro
         $value = $lang->{$field};
         if (! is_string($value)) {
+<<<<<<< HEAD
             return $field === 'id' ? $currentLocale : '';
+=======
+            return 'id' === $field ? $currentLocale : '';
+>>>>>>> 054e6ea (.)
         }
 
         return $value;
@@ -132,7 +151,12 @@ class ThemeComposer
     /**
      * Build the URL for the admin panel based on the current route and parameters.
      *
+<<<<<<< HEAD
      * @param  string  $locale  The locale code to build URL for
+=======
+     * @param string $locale The locale code to build URL for
+     *
+>>>>>>> 054e6ea (.)
      * @return string The generated URL
      */
     private function buildAdminLanguageUrl(string $locale): string
@@ -152,7 +176,12 @@ class ThemeComposer
     /**
      * Build the HTML for the language flag.
      *
+<<<<<<< HEAD
      * @param  string  $regionalCode  The regional code for the flag
+=======
+     * @param string $regionalCode The regional code for the flag
+     *
+>>>>>>> 054e6ea (.)
      * @return string The HTML for the flag
      */
     private function buildFlagHtml(string $regionalCode): string

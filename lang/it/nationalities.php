@@ -267,4 +267,8 @@ return [
     'mp' => 'Isolano delle Marianne Settentrionali',
     'um' => 'Isole Minori degli Stati Uniti',
     'eh' => 'Saharawi',
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 054e6ea (.)

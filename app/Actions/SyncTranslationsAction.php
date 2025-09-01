@@ -14,9 +14,15 @@ class SyncTranslationsAction
     /**
      * Sincronizza le traduzioni da una lingua sorgente a lingue target.
      *
+<<<<<<< HEAD
      * @param  string  $sourceLang  Lingua sorgente (default: 'it')
      * @param  array<string>  $targetLangs  Lingue target (default: ['en', 'de'])
      * @param  string|null  $specificModule  Modulo specifico (opzionale)
+=======
+     * @param string $sourceLang Lingua sorgente (default: 'it')
+     * @param array<string> $targetLangs Lingue target (default: ['en', 'de'])
+     * @param string|null $specificModule Modulo specifico (opzionale)
+>>>>>>> 054e6ea (.)
      * @return array<string, mixed> Risultato della sincronizzazione
      */
     public function execute(string $sourceLang = 'it', array $targetLangs = ['en', 'de'], ?string $specificModule = null): array
@@ -45,16 +51,27 @@ class SyncTranslationsAction
     /**
      * Sincronizza le traduzioni per un modulo specifico.
      *
+<<<<<<< HEAD
      * @param  string  $module  Nome del modulo
      * @param  string  $sourceLang  Lingua sorgente
      * @param  array<string>  $targetLangs  Lingue target
+=======
+     * @param string $module Nome del modulo
+     * @param string $sourceLang Lingua sorgente
+     * @param array<string> $targetLangs Lingue target
+>>>>>>> 054e6ea (.)
      * @return array<string, mixed> Risultato per il modulo
      */
     private function syncModule(string $module, string $sourceLang, array $targetLangs): array
     {
         $moduleLangPath = base_path("Modules/{$module}/lang");
+<<<<<<< HEAD
 
         if (! File::exists($moduleLangPath)) {
+=======
+        
+        if (!File::exists($moduleLangPath)) {
+>>>>>>> 054e6ea (.)
             return [
                 'status' => 'skipped',
                 'reason' => 'No lang directory',
@@ -64,7 +81,11 @@ class SyncTranslationsAction
         }
 
         $sourcePath = "{$moduleLangPath}/{$sourceLang}";
+<<<<<<< HEAD
         if (! File::exists($sourcePath)) {
+=======
+        if (!File::exists($sourcePath)) {
+>>>>>>> 054e6ea (.)
             return [
                 'status' => 'skipped',
                 'reason' => "Source language {$sourceLang} not found",
@@ -92,7 +113,11 @@ class SyncTranslationsAction
                 $targetFile = "{$targetPath}/{$fileName}";
 
                 // Create target directory if it doesn't exist
+<<<<<<< HEAD
                 if (! File::exists($targetPath)) {
+=======
+                if (!File::exists($targetPath)) {
+>>>>>>> 054e6ea (.)
                     File::makeDirectory($targetPath, 0755, true);
                 }
 
@@ -122,14 +147,22 @@ class SyncTranslationsAction
     /**
      * Ottiene la lista dei moduli con cartella lang.
      *
+<<<<<<< HEAD
      * @param  string  $modulesPath  Percorso dei moduli
+=======
+     * @param string $modulesPath Percorso dei moduli
+>>>>>>> 054e6ea (.)
      * @return array<string> Lista dei moduli
      */
     private function getModules(string $modulesPath): array
     {
         $modules = [];
         $directories = File::directories($modulesPath);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         foreach ($directories as $directory) {
             $moduleName = basename($directory);
             if (File::exists("{$directory}/lang")) {
@@ -143,18 +176,29 @@ class SyncTranslationsAction
     /**
      * Carica le traduzioni da un file.
      *
+<<<<<<< HEAD
      * @param  string  $filePath  Percorso del file
+=======
+     * @param string $filePath Percorso del file
+>>>>>>> 054e6ea (.)
      * @return array<string, mixed> Traduzioni caricate
      */
     private function loadTranslations(string $filePath): array
     {
+<<<<<<< HEAD
         if (! File::exists($filePath)) {
+=======
+        if (!File::exists($filePath)) {
+>>>>>>> 054e6ea (.)
             return [];
         }
 
         try {
             $translations = require $filePath;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 054e6ea (.)
             return is_array($translations) ? $translations : [];
         } catch (\Exception $e) {
             return [];
@@ -164,7 +208,11 @@ class SyncTranslationsAction
     /**
      * Filtra un array per avere solo chiavi stringa (aiuta PHPStan).
      *
+<<<<<<< HEAD
      * @param  array<mixed, mixed>  $arr
+=======
+     * @param array<mixed, mixed> $arr
+>>>>>>> 054e6ea (.)
      * @return array<string, mixed>
      */
     private function filterStringKeyArray(array $arr): array
@@ -175,15 +223,23 @@ class SyncTranslationsAction
                 $out[$k] = $v;
             }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 054e6ea (.)
         return $out;
     }
 
     /**
      * Unisce le traduzioni sorgente con quelle target.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $source  Traduzioni sorgente
      * @param  array<string, mixed>  $target  Traduzioni target
+=======
+     * @param array<string, mixed> $source Traduzioni sorgente
+     * @param array<string, mixed> $target Traduzioni target
+>>>>>>> 054e6ea (.)
      * @return array<string, mixed> Traduzioni unite
      */
     private function mergeTranslations(array $source, array $target): array
@@ -196,7 +252,11 @@ class SyncTranslationsAction
                 $subTarget = isset($target[$key]) && is_array($target[$key]) ? $this->filterStringKeyArray($target[$key]) : [];
                 $merged[$key] = $this->mergeTranslations($this->filterStringKeyArray($value), $subTarget);
             } else {
+<<<<<<< HEAD
                 if (! isset($merged[$key])) {
+=======
+                if (!isset($merged[$key])) {
+>>>>>>> 054e6ea (.)
                     $merged[$key] = $value;
                 }
             }
@@ -208,8 +268,14 @@ class SyncTranslationsAction
     /**
      * Salva le traduzioni in un file.
      *
+<<<<<<< HEAD
      * @param  string  $filePath  Percorso del file
      * @param  array<string, mixed>  $translations  Traduzioni da salvare
+=======
+     * @param string $filePath Percorso del file
+     * @param array<string, mixed> $translations Traduzioni da salvare
+     * @return void
+>>>>>>> 054e6ea (.)
      */
     private function saveTranslations(string $filePath, array $translations): void
     {
@@ -223,8 +289,13 @@ class SyncTranslationsAction
     /**
      * Converte un array in formato PHP.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $array  Array da convertire
      * @param  int  $indent  Livello di indentazione
+=======
+     * @param array<string, mixed> $array Array da convertire
+     * @param int $indent Livello di indentazione
+>>>>>>> 054e6ea (.)
      * @return string Codice PHP
      */
     private function arrayToPhp(array $array, int $indent = 0): string
@@ -233,18 +304,33 @@ class SyncTranslationsAction
         $indentStr = str_repeat('    ', $indent);
 
         foreach ($array as $key => $value) {
+<<<<<<< HEAD
             $content .= $indentStr."'".addslashes($key)."' => ";
+=======
+            $content .= $indentStr . "'" . addslashes($key) . "' => ";
+>>>>>>> 054e6ea (.)
 
             if (is_array($value)) {
                 $content .= "[\n";
                 $content .= $this->arrayToPhp($this->filterStringKeyArray($value), $indent + 1);
+<<<<<<< HEAD
                 $content .= $indentStr."],\n";
             } else {
                 /** @phpstan-ignore-next-line */
                 $content .= "'".addslashes((string) $value)."',\n";
+=======
+                $content .= $indentStr . "],\n";
+            } else {
+                /** @phpstan-ignore-next-line */
+                $content .= "'" . addslashes((string) $value) . "',\n";
+>>>>>>> 054e6ea (.)
             }
         }
 
         return $content;
     }
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 054e6ea (.)

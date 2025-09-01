@@ -10,7 +10,11 @@ use Modules\User\Models\User;
 describe('Lang Business Logic', function () {
     it('can create and manage posts', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         $post = Post::factory()->create([
             'user_id' => $user->id,
             'title' => 'Test Post',
@@ -50,7 +54,11 @@ describe('Lang Business Logic', function () {
 
     it('can manage post categories', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         $newsPost = Post::factory()->create([
             'user_id' => $user->id,
             'category' => 'news',
@@ -79,7 +87,11 @@ describe('Lang Business Logic', function () {
 
     it('can create and manage translations', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         $translation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'welcome.message',
@@ -104,7 +116,11 @@ describe('Lang Business Logic', function () {
 
     it('can manage multilingual content', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         $englishTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'welcome.message',
@@ -148,7 +164,11 @@ describe('Lang Business Logic', function () {
 
     it('can manage translation files', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         $translationFile = TranslationFile::factory()->create([
             'user_id' => $user->id,
             'filename' => 'welcome.php',
@@ -171,7 +191,11 @@ describe('Lang Business Logic', function () {
 
     it('can validate translation keys', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         $validTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'user.profile.name',
@@ -233,7 +257,11 @@ describe('Lang Business Logic', function () {
 
     it('can manage post metadata', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         $post = Post::factory()->create([
             'user_id' => $user->id,
             'title' => 'SEO Optimized Post',
@@ -256,7 +284,11 @@ describe('Lang Business Logic', function () {
 
     it('can manage translation namespaces', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         $adminTranslation = Translation::factory()->create([
             'user_id' => $user->id,
             'key' => 'admin.dashboard.title',
@@ -289,9 +321,15 @@ describe('Lang Business Logic', function () {
 
     it('can validate locale formats', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
         $validLocales = ['en', 'it', 'de', 'fr', 'es'];
 
+=======
+        
+        $validLocales = ['en', 'it', 'de', 'fr', 'es'];
+        
+>>>>>>> 054e6ea (.)
         foreach ($validLocales as $locale) {
             $translation = Translation::factory()->create([
                 'user_id' => $user->id,
@@ -301,7 +339,11 @@ describe('Lang Business Logic', function () {
             ]);
 
             expect($translation->locale)->toBe($locale);
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 054e6ea (.)
             $this->assertDatabaseHas('translations', [
                 'id' => $translation->id,
                 'locale' => $locale,
@@ -312,7 +354,11 @@ describe('Lang Business Logic', function () {
     it('can manage post scheduling', function () {
         $user = User::factory()->create();
         $futureDate = now()->addDays(7);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         $scheduledPost = Post::factory()->create([
             'user_id' => $user->id,
             'title' => 'Scheduled Post',
@@ -332,7 +378,11 @@ describe('Lang Business Logic', function () {
 
     it('can track translation statistics', function () {
         $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 054e6ea (.)
         Translation::factory()->count(5)->create([
             'user_id' => $user->id,
             'locale' => 'en',

@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'fields' => [
         'locale' => [
@@ -10,3 +11,17 @@ return [
         ],
     ],
 ];
+=======
+return array (
+  'fields' => 
+  array (
+    'locale' => 
+    array (
+      'label' => 'locale',
+      'placeholder' => 'locale',
+      'helper_text' => 'locale',
+      'description' => 'locale',
+    ),
+  ),
+);
+>>>>>>> 054e6ea (.)

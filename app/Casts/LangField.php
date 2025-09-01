@@ -12,9 +12,15 @@ class LangField implements CastsAttributes
     /**
      * Cast the given value.
      *
+<<<<<<< HEAD
      * @param  BaseModelLang  $model
      * @param  string  $key
      * @param  array  $attributes
+=======
+     * @param BaseModelLang $model
+     * @param string        $key
+     * @param array         $attributes
+>>>>>>> 054e6ea (.)
      */
     public function get($model, $key, $value, $attributes)
     {
@@ -24,11 +30,19 @@ class LangField implements CastsAttributes
     /**
      * Prepare the given value for storage.
      *
+<<<<<<< HEAD
      * @param  BaseModelLang  $model
      * @param  string  $key
      * @param  array  $attributes
      * @param  string  $key
      * @param  string  $value
+=======
+     * @param BaseModelLang $model
+     * @param string        $key
+     * @param array         $attributes
+     * @param string        $key
+     * @param string        $value
+>>>>>>> 054e6ea (.)
      */
     public function set($model, $key, $value, $attributes): array
     {
