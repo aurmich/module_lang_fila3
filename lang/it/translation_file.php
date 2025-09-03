@@ -5,6 +5,7 @@ return array (
   array (
     'create' => 
     array (
+<<<<<<< HEAD
       'label' => 'Crea',
       'tooltip' => 'Crea nuovo file di traduzione',
       'success' => 'File di traduzione creato con successo',
@@ -13,12 +14,20 @@ return array (
     array (
       'label' => 'Lingua',
       'tooltip' => 'Seleziona lingua',
+=======
+      'label' => 'create',
+    ),
+    'lang' => 
+    array (
+      'label' => 'lang',
+>>>>>>> 8da72fe (.)
     ),
   ),
   'fields' => 
   array (
     'edit' => 
     array (
+<<<<<<< HEAD
       'label' => 'Modifica',
       'tooltip' => 'Modifica file di traduzione',
     ),
@@ -48,6 +57,31 @@ return array (
     array (
       'label' => 'Applica Filtri',
       'tooltip' => 'Applica i filtri selezionati',
+=======
+      'label' => 'edit',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'content' => 
+    array (
+      'description' => 'content',
+      'helper_text' => 'content',
+      'placeholder' => 'content',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+>>>>>>> 8da72fe (.)
     ),
     'snapshots' => 
     array (
@@ -57,6 +91,7 @@ return array (
         array (
           'help' => 
           array (
+<<<<<<< HEAD
             'description' => 'Data e ora dell\'ultimo aggiornamento',
             'helper_text' => '',
             'placeholder' => 'Data aggiornamento',
@@ -68,12 +103,25 @@ return array (
             'helper_text' => '',
             'placeholder' => 'Etichetta data',
             'label' => 'Etichetta Data',
+=======
+            'description' => 'snapshots.fields.updated_at.help',
+            'helper_text' => 'snapshots.fields.updated_at.help',
+            'placeholder' => 'snapshots.fields.updated_at.help',
+            'label' => 'snapshots.fields.updated_at.help',
+          ),
+          'label' => 
+          array (
+            'description' => 'snapshots.fields.updated_at.label',
+            'helper_text' => 'snapshots.fields.updated_at.label',
+            'placeholder' => 'snapshots.fields.updated_at.label',
+>>>>>>> 8da72fe (.)
           ),
         ),
       ),
     ),
     'openFilters' => 
     array (
+<<<<<<< HEAD
       'label' => 'Apri Filtri',
       'tooltip' => 'Apri il pannello dei filtri',
     ),
@@ -86,10 +134,18 @@ return array (
     'delete' => 
     array (
       'label' => 'delete',
+=======
+      'label' => 'openFilters',
+    ),
+    'key' => 
+    array (
+      'label' => 'key',
+>>>>>>> 8da72fe (.)
     ),
   ),
   'navigation' => 
   array (
+<<<<<<< HEAD
     'label' => 'File Traduzione',
     'group' => 'Lang',
     'icon' => 'heroicon-o-language',
@@ -100,5 +156,15 @@ return array (
     'label' => 'File Traduzione',
     'placeholder' => 'Seleziona file traduzione',
     'helper_text' => 'File di traduzione per la gestione delle lingue',
+=======
+    'label' => 'translation file.navigation',
+    'sort' => 73,
+    'icon' => 'translation file.navigation',
+    'group' => 'translation file.navigation',
+  ),
+  'model' => 
+  array (
+    'label' => 'translation file.model',
+>>>>>>> 8da72fe (.)
   ),
 );

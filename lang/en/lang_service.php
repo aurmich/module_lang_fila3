@@ -7,6 +7,7 @@ return [
         'language' => [
             'label' => 'Language',
             'placeholder' => 'Select language',
+<<<<<<< HEAD
             'helper_text' => 'Currently selected interface language',
         ],
         'available_languages' => [
@@ -28,11 +29,20 @@ return [
             'label' => 'Locale',
             'placeholder' => 'Select locale',
             'helper_text' => 'Language locale code (e.g. it, en, de)',
+=======
+            'help' => 'Currently selected interface language',
+        ],
+        'available_languages' => [
+            'label' => 'Available Languages',
+            'placeholder' => 'List of languages',
+            'help' => 'Languages available for selection',
+>>>>>>> 8da72fe (.)
         ],
     ],
     'actions' => [
         'change_language' => [
             'label' => 'Change Language',
+<<<<<<< HEAD
             'tooltip' => 'Change interface language',
             'success' => 'Language changed successfully',
             'error' => 'Error changing language',
@@ -66,19 +76,27 @@ return [
             'success' => 'Translation deleted successfully',
             'error' => 'Error deleting translation',
             'confirmation' => 'Are you sure you want to delete this translation?',
+=======
+            'success' => 'Language changed successfully',
+            'error' => 'Error changing language',
+>>>>>>> 8da72fe (.)
         ],
     ],
     'messages' => [
         'language_changed' => 'Language changed successfully',
         'error' => 'An error occurred while changing language',
+<<<<<<< HEAD
         'no_translations' => 'No translations found',
         'loading' => 'Loading translations...',
         'empty_state' => 'No translations available',
         'search_placeholder' => 'Search translations...',
+=======
+>>>>>>> 8da72fe (.)
     ],
     'validation' => [
         'language_required' => 'Language is required',
         'language_valid' => 'Selected language is not valid',
+<<<<<<< HEAD
         'key_required' => 'Translation key is required',
         'key_unique' => 'This translation key already exists',
         'value_required' => 'Translation value is required',
@@ -94,5 +112,7 @@ return [
         'title' => 'Translation Management',
         'heading' => 'Language Service',
         'description' => 'Manage translations and available languages in the system',
+=======
+>>>>>>> 8da72fe (.)
     ],
 ];

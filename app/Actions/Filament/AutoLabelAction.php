@@ -17,8 +17,11 @@ use Filament\Forms\Components\Wizard\Step;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Spatie\QueueableAction\QueueableAction;
 use Filament\Tables\Actions\Action as TableAction;
+<<<<<<< HEAD
 use Filament\Forms\Components\Section as FormsSection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> 8da72fe (.)
 
 class AutoLabelAction
 {
@@ -28,9 +31,15 @@ class AutoLabelAction
      * Undocumented function.
      * return number of input added.
      *
+<<<<<<< HEAD
      * @param Field|BaseFilter|Column|Step|Action|TableAction|FormsSection $component
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
+=======
+     * @param Field|BaseFilter|Column|Step|Action|TableAction $component
+     *
+     * @return Field|BaseFilter|Column|Step|Action|TableAction
+>>>>>>> 8da72fe (.)
      */
     public function execute($component,string $type = 'label')
     {
@@ -71,12 +80,16 @@ class AutoLabelAction
             $trans_key = 'lang::txt';
         }
 
+<<<<<<< HEAD
         $label_tkey = null;
         $val = 'no-set-val';
+=======
+>>>>>>> 8da72fe (.)
         
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
+<<<<<<< HEAD
         } 
         if($label_tkey == null && $component instanceof FormsSection){
            
@@ -91,10 +104,14 @@ class AutoLabelAction
             
         }
         if($label_tkey == null && method_exists($component,'getName')){
+=======
+        } else {
+>>>>>>> 8da72fe (.)
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
 
+<<<<<<< HEAD
         if ($component instanceof Action ) {
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.actions.'.$val.'';
@@ -134,6 +151,11 @@ class AutoLabelAction
         */
 
         
+=======
+        if ($component instanceof Action) {
+            $label_tkey = $trans_key.'.actions.'.$val.'';
+        }
+>>>>>>> 8da72fe (.)
 
         $label_key = $label_tkey.'.'.Str::snake($type);
 
@@ -142,7 +164,11 @@ class AutoLabelAction
                 'message'=>'preso',
                 'label_key'=>$label_key,
                 'label_tkey'=>$label_tkey,
+<<<<<<< HEAD
                 //'val'=>$val,
+=======
+                'val'=>$val,
+>>>>>>> 8da72fe (.)
                 'type'=>$type,
                 'component'=>$component,
                 'class'=>$class,
@@ -156,6 +182,21 @@ class AutoLabelAction
             app(SaveTransAction::class)->execute($label_key, $val);
         }
         if (is_string($label) && $label_key != $label) { //se esiste la traduzione, la aggiorno
+<<<<<<< HEAD
+=======
+            /*
+            if ($label_key == $label) {
+                $label_value = $val;
+                $label_key1 = $label_tkey;
+                $label1 = trans($label_key1);
+                if ($label_key1 != $label1) {
+                    $label_value = $label1;
+                }
+
+                app(SaveTransAction::class)->execute($label_key, $label_value);
+            }
+            */
+>>>>>>> 8da72fe (.)
             if (method_exists($component, $type)) {
                 $component->{$type}($label);
             }

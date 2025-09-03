@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> 8da72fe (.)
 return [
     'actions' => [
         'create' => [
@@ -57,10 +60,17 @@ return [
         ],
     ],
     'navigation' => [
+<<<<<<< HEAD
         'label' => 'Navigation Label',
         'sort' => '73',
         'icon' => 'heroicon-o-cog',
         'group' => 'Lang',
+=======
+        'label' => 'translation file.navigation',
+        'sort' => '73',
+        'icon' => 'translation file.navigation',
+        'group' => 'translation file.navigation',
+>>>>>>> 8da72fe (.)
     ],
     'model' => [
         'label' => 'translation file.model',

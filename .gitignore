@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies
 vendor/
 node_modules/
@@ -31,10 +32,36 @@ public_html/hot
 storage/*.key
 
 # Environment and configuration
+=======
+/vendor/
+vendor/
+node_modules/
+npm-debug.log
+*.cache
+*.phar
+*.lock
+package-lock.json
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+storage/*.key
+>>>>>>> 8da72fe (.)
 .env
 Homestead.yaml
 Homestead.json
 /.vagrant
+<<<<<<< HEAD
 
 # Git related
 .git-rewrite/
@@ -53,3 +80,49 @@ docs/phpstan/
 .windsurf/
 .cursor/
 
+=======
+.phpunit.result.cache
+
+*.stackdump
+*.cache
+*.lock
+package-lock.json
+*.log
+package-lock.json
+
+
+
+/.git-rewrite
+/build
+.git-blame-ignore-revs
+package-lock.json
+.php-cs-fixer.cache
+package-lock.json
+.git-rewrite/
+.php-cs-fixer.cache
+node_modules
+.git-blame-ignore-revs
+vendor/
+node_modules
+vendor
+/vendor
+vendor/
+.php-cs-fixer.cache
+.git-blame-ignore-revs
+build/
+vendor/
+build/
+node_modules
+docs/cache/
+cache/
+*.exe
+
+*:Zone.Identifier
+.php-cs-fixer.cache
+
+# Backup files
+*.bak
+-e 
+# PHPStan documentation
+docs/phpstan/
+>>>>>>> 8da72fe (.)

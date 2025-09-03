@@ -32,7 +32,10 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile whereKey($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile wherePath($value)
+<<<<<<< HEAD
  * @mixin IdeHelperTranslationFile
+=======
+>>>>>>> 8da72fe (.)
  * @mixin \Eloquent
  */
 class TranslationFile extends BaseModel

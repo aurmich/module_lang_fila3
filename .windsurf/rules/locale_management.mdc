@@ -107,7 +107,15 @@ return [
     'title' => 'Paziente',
     'fields' => [
         'name' => 'Nome',
+<<<<<<< HEAD
         'last_name' => 'Cognome',
+=======
+<<<<<<< HEAD
+        'last_name' => 'Cognome',
+=======
+        'surname' => 'Cognome',
+>>>>>>> bb902e8 (.)
+>>>>>>> 8da72fe (.)
     ],
     'validation' => [
         'required' => 'Il campo :attribute è obbligatorio',
