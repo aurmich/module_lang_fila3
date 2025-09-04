@@ -232,9 +232,9 @@ php docs/obbligatorio-audit-script.php
 - [Riepilogo Finale Refactor](translation-refactor-complete-summary.md)
 
 ### Documentazione Moduli
-- [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
-- [SaluteOra Module - Refactor Summary](../Modules/SaluteOra/docs/translation-refactor-summary-2025-08-08.md)
-- [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
+- [User Module - City Field Refactor](../Modules/User/project_docs/translation-city-field-refactor-2025-08-08.md)
+- [SaluteOra Module - Refactor Summary](../Modules/SaluteOra/project_docs/translation-refactor-summary-2025-08-08.md)
+- [Geo Module - Helper Text Fix](../Modules/Geo/project_docs/helper-text-normalization-fix.md)
 
 ### Script e Tool
 - [Helper Text Audit Script](helper-text-audit-script.php)

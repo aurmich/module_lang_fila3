@@ -11,22 +11,22 @@
 ## Collegamenti ai Moduli
 
 ### Moduli con Traduzioni
-- [Modulo Patient](../../Patient/docs/translations.md) - Traduzioni per il modulo paziente
-- [Modulo User](../../User/docs/translations.md) - Traduzioni per la gestione utenti
-- [Modulo UI](../../UI/docs/translations.md) - Traduzioni per i componenti UI
-- [Modulo Cms](../../Cms/docs/translations.md) - Traduzioni per il CMS
-- [Modulo Media](../../Media/docs/translations.md) - Traduzioni per la gestione media
-- [Modulo Dental](../../Dental/docs/translations.md) - Traduzioni per il modulo dentale
-- [Modulo Activity](../../Activity/docs/translations.md) - Traduzioni per le attività
-- [Modulo Chart](../../Chart/docs/translations.md) - Traduzioni per i grafici
-- [Modulo Gdpr](../../Gdpr/docs/translations.md) - Traduzioni per la privacy
-- [Modulo Job](../../Job/docs/translations.md) - Traduzioni per i job
-- [Modulo Notify](../../Notify/docs/translations.md) - Traduzioni per le notifiche
-- [Modulo Reporting](../../Reporting/docs/translations.md) - Traduzioni per i report
-- [Modulo Tenant](../../Tenant/docs/translations.md) - Traduzioni per il multi-tenant
+- [Modulo Patient](../../Patient/project_docs/translations.md) - Traduzioni per il modulo paziente
+- [Modulo User](../../User/project_docs/translations.md) - Traduzioni per la gestione utenti
+- [Modulo UI](../../UI/project_docs/translations.md) - Traduzioni per i componenti UI
+- [Modulo Cms](../../Cms/project_docs/translations.md) - Traduzioni per il CMS
+- [Modulo Media](../../Media/project_docs/translations.md) - Traduzioni per la gestione media
+- [Modulo Dental](../../Dental/project_docs/translations.md) - Traduzioni per il modulo dentale
+- [Modulo Activity](../../Activity/project_docs/translations.md) - Traduzioni per le attività
+- [Modulo Chart](../../Chart/project_docs/translations.md) - Traduzioni per i grafici
+- [Modulo Gdpr](../../Gdpr/project_docs/translations.md) - Traduzioni per la privacy
+- [Modulo Job](../../Job/project_docs/translations.md) - Traduzioni per i job
+- [Modulo Notify](../../Notify/project_docs/translations.md) - Traduzioni per le notifiche
+- [Modulo Reporting](../../Reporting/project_docs/translations.md) - Traduzioni per i report
+- [Modulo Tenant](../../Tenant/project_docs/translations.md) - Traduzioni per il multi-tenant
 
 ### Regole Generali
-- [Regole Traduzioni](../../Xot/docs/translations.md) - Documentazione base sulle traduzioni
+- [Regole Traduzioni](../../Xot/project_docs/translations.md) - Documentazione base sulle traduzioni
 
 
 ### Versione Incoming
@@ -287,8 +287,8 @@ public function testTranslations()
 
 ## Collegamenti
 
-- [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
-- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+- [Modulo Patient](../../Patient/project_docs/translations.md) - Esempio di implementazione delle traduzioni
+- [Regole Generali Traduzioni](../../Xot/project_docs/translations.md)
 
 ## Esempi
 

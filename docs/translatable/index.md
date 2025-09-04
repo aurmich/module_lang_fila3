@@ -134,7 +134,7 @@ Il sistema supporta anche la traduzione di contenuti JSON per pagine dinamiche. 
 
 ## Risorse
 
-- [Documentazione ufficiale](https://spatie.be/docs/laravel-translatable)
+- [Documentazione ufficiale](https://spatie.be/project_docs/laravel-translatable)
 - [Repository GitHub](https://github.com/spatie/laravel-translatable)
 - [Issues e discussioni](https://github.com/spatie/laravel-translatable/issues)
 - [Plugin Filament](https://filamentphp.com/plugins/filament-spatie-translatable)

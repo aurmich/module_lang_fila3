@@ -60,7 +60,7 @@ public function getLabel(): string
 - **`docs/indice_documentazione.md`** - Aggiornato con nuovo collegamento
 
 ### 3. Documentazione Modulo UI
-- **`laravel/Modules/UI/docs/table-layout-enum-complete-guide.md`** - Aggiornato con best practices
+- **`laravel/Modules/UI/project_docs/table-layout-enum-complete-guide.md`** - Aggiornato con best practices
 
 ## Motivazione della Regola
 
@@ -211,7 +211,7 @@ return [
 ## Collegamenti
 
 - [Enum Translation Pattern](enum-translation-pattern.md)
-- [TableLayoutEnum Guide](../laravel/Modules/UI/docs/table-layout-enum-complete-guide.md)
+- [TableLayoutEnum Guide](../laravel/Modules/UI/project_docs/table-layout-enum-complete-guide.md)
 - [Translation Management](translation-management.md)
 
 ## Ultimo Aggiornamento

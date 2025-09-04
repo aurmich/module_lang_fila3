@@ -3,8 +3,8 @@
 ## Collegamenti correlati
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
-- [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/project_docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [Collegamenti Documentazione](/project_docs/collegamenti-documentazione.md)
 
 ## Panoramica
 
@@ -230,5 +230,5 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 ## Riferimenti
 
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
-- [Documentazione Laravel Localization](https://laravel.com/docs/10.x/localization)
-- [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
+- [Documentazione Laravel Localization](https://laravel.com/project_docs/10.x/localization)
+- [Blade Components Documentation](https://laravel.com/project_docs/10.x/blade#components)

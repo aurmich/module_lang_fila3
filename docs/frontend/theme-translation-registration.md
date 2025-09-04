@@ -92,11 +92,11 @@ Time: Ora
 ## Moduli Correlati
 
 ### Temi Implementati
-- [Themes/One/docs/pub_theme_namespace_registration.md](../../Themes/One/docs/pub_theme_namespace_registration.md)
-- [Themes/Two/docs/theme-translations.md](../../Themes/Two/docs/theme-translations.md)
+- [Themes/One/project_docs/pub_theme_namespace_registration.md](../../Themes/One/project_docs/pub_theme_namespace_registration.md)
+- [Themes/Two/project_docs/theme-translations.md](../../Themes/Two/project_docs/theme-translations.md)
 
 ### Documentazione Base
-- [Modules/Xot/docs/theme-service-provider-rules.md](../../Modules/Xot/docs/theme-service-provider-rules.md)
+- [Modules/Xot/project_docs/theme-service-provider-rules.md](../../Modules/Xot/project_docs/theme-service-provider-rules.md)
 - [docs/frontend/widget-view-namespaces.md](widget-view-namespaces.md)
 
 ## Risoluzione Problemi

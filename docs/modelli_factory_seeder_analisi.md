@@ -98,10 +98,10 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 - [Localization Best Practices](./localization_best_practices.md)
 
 ### Moduli Collegati
-- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Traduzioni mediche
-- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Traduzioni utente
-- [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multilingua
-- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md) - Notifiche multilingua
+- [SaluteOra Module](../../SaluteOra/project_docs/modelli_factory_seeder_analisi.md) - Traduzioni mediche
+- [User Module](../../User/project_docs/modelli_factory_seeder_analisi.md) - Traduzioni utente
+- [Cms Module](../../Cms/project_docs/modelli_factory_seeder_analisi.md) - Contenuti multilingua
+- [Notify Module](../../Notify/project_docs/modelli_factory_seeder_analisi.md) - Notifiche multilingua
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 6 modelli, sistema traduzioni completo*

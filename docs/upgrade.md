@@ -31,8 +31,8 @@ php artisan module_lang:show-versions
 
 ```
 ## Collegamenti tra versioni di upgrade.md
-* [upgrade.md](../../../Lang/docs/upgrade.md)
-* [upgrade.md](../../../Cms/docs/upgrade.md)
+* [upgrade.md](../../../Lang/project_docs/upgrade.md)
+* [upgrade.md](../../../Cms/project_docs/upgrade.md)
 
 
 ### Versione Incoming

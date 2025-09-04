@@ -164,7 +164,7 @@ return [
 - Serenità zen: codice e traduzioni sempre coerenti
 
 ### Collegamenti
-- [SaluteOra/docs/appointment-management.md](../../SaluteOra/docs/appointment-management.md)
+- [SaluteOra/project_docs/appointment-management.md](../../SaluteOra/project_docs/appointment-management.md)
 - [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
 
 ### Checklist aggiornata

@@ -179,13 +179,13 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 ## Documentazione Aggiornata
 
 ### Moduli con Documentazione Aggiornata
-1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
-2. **SaluteOra Module**: `laravel/Modules/SaluteOra/docs/translation_refactor_summary_2025.md`
+1. **Lang Module**: `laravel/Modules/Lang/project_docs/translation_errors_correction_2025.md`
+2. **SaluteOra Module**: `laravel/Modules/SaluteOra/project_docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
-- [Root Docs: Translation Standards](../../docs/translation_standards.md)
+- [Root Docs: Translation Standards](../../project_docs/translation_standards.md)
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
-- [SaluteOra Module: Translation Guidelines](../SaluteOra/docs/translation_guidelines.md)
+- [SaluteOra Module: Translation Guidelines](../SaluteOra/project_docs/translation_guidelines.md)
 
 ## Riepilogo Statistiche
 

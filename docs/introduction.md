@@ -22,12 +22,12 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 
 
 ## Collegamenti tra versioni di introduction.md
-* [introduction.md](laravel/vendor/spatie/laravel-event-sourcing/docs/getting-familiar-with-event-sourcing/introduction.md)
-* [introduction.md](laravel/vendor/spatie/laravel-event-sourcing/docs/introduction.md)
-* [introduction.md](laravel/vendor/spatie/laravel-data/docs/introduction.md)
-* [introduction.md](laravel/vendor/spatie/laravel-data/docs/validation/introduction.md)
-* [introduction.md](../../../Lang/docs/introduction.md)
-* [introduction.md](../../../Cms/docs/introduction.md)
+* [introduction.md](laravel/vendor/spatie/laravel-event-sourcing/project_docs/getting-familiar-with-event-sourcing/introduction.md)
+* [introduction.md](laravel/vendor/spatie/laravel-event-sourcing/project_docs/introduction.md)
+* [introduction.md](laravel/vendor/spatie/laravel-data/project_docs/introduction.md)
+* [introduction.md](laravel/vendor/spatie/laravel-data/project_docs/validation/introduction.md)
+* [introduction.md](../../../Lang/project_docs/introduction.md)
+* [introduction.md](../../../Cms/project_docs/introduction.md)
 
 
 ### Versione Incoming

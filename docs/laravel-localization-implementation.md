@@ -1,11 +1,11 @@
 # Implementazione della Localizzazione 
 
 ## Collegamenti correlati
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni Lang](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
-- [Componenti SVG Bandiere](/laravel/Modules/UI/docs/FLAGS_COMPONENTS.md)
-- [Implementazione Header](/laravel/Themes/One/docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
+- [Documentazione centrale](/project_docs/README.md)
+- [Collegamenti documentazione](/project_docs/collegamenti-documentazione.md)
+- [Regole Traduzioni Lang](/laravel/Modules/Lang/project_docs/TRANSLATION_KEYS_RULES.md)
+- [Componenti SVG Bandiere](/laravel/Modules/UI/project_docs/FLAGS_COMPONENTS.md)
+- [Implementazione Header](/laravel/Themes/One/project_docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
 
 ## Panoramica
 

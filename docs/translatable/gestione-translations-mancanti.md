@@ -199,9 +199,9 @@ Nel progetto, vari modelli utilizzano il trait `HasTranslations`, tra cui:
 
 ## Collegamenti e Riferimenti
 
-- [Documentazione Ufficiale](https://spatie.be/docs/laravel-translatable/v6/basic-usage/handling-missing-translations)
+- [Documentazione Ufficiale](https://spatie.be/project_docs/laravel-translatable/v6/basic-usage/handling-missing-translations)
 - [Repository GitHub](https://github.com/spatie/laravel-translatable)
-- [Articoli correlati su Spatie](https://spatie.be/docs/laravel-translatable)
+- [Articoli correlati su Spatie](https://spatie.be/project_docs/laravel-translatable)
 
 ## Eventi e Testing
 
