@@ -65,7 +65,7 @@ Uso:
 
 ## Fonti
 - [Laravel Daily: Store in PHP or JSON?](https://laraveldaily.com/lesson/multi-language-laravel/mcamara-laravel-localization)
-- [Laravel Docs](https://laravel.com/project_docs/11.x/localization)
+- [Laravel Docs](https://laravel.com/docs/11.x/localization)
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 
 ## Processo Dev → Traduttore: Checklist e Istruzioni

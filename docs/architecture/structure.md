@@ -316,9 +316,9 @@ Lang_old/database/factories
 Lang_old/database/migrations
 Lang_old/database/seeders
 Lang_old/docs
-Lang_old/project_docs/.github
-Lang_old/project_docs/.github/workflows
-Lang_old/project_docs/performance
+Lang_old/docs/.github
+Lang_old/docs/.github/workflows
+Lang_old/docs/performance
 Lang_old/lang
 Lang_old/lang/it
 Lang_old/lang/lang
@@ -469,27 +469,27 @@ tests/Unit
 
 ## Collegamenti alla documentazione generale
 
-- [Analisi strutturale complessiva](/project_docs/phpstan/modules_structure_analysis.md)
-- [Report PHPStan](/project_docs/phpstan/)
+- [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
+- [Report PHPStan](/docs/phpstan/)
 
 
 ## Collegamenti tra versioni di structure.md
-* [structure.md](bashscripts/project_docs/structure.md)
-* [structure.md](../../../Gdpr/project_docs/structure.md)
-* [structure.md](../../../Notify/project_docs/structure.md)
-* [structure.md](../../../Xot/project_docs/structure.md)
-* [structure.md](../../../Xot/project_docs/base/structure.md)
-* [structure.md](../../../Xot/project_docs/config/structure.md)
-* [structure.md](../../../User/project_docs/structure.md)
-* [structure.md](../../../UI/project_docs/structure.md)
-* [structure.md](../../../Lang/project_docs/structure.md)
-* [structure.md](../../../Job/project_docs/structure.md)
-* [structure.md](../../../Media/project_docs/structure.md)
-* [structure.md](../../../Tenant/project_docs/structure.md)
-* [structure.md](../../../Activity/project_docs/structure.md)
-* [structure.md](../../../Cms/project_docs/structure.md)
-* [structure.md](../../../Cms/project_docs/themes/structure.md)
-* [structure.md](../../../Cms/project_docs/components/structure.md)
+* [structure.md](bashscripts/docs/structure.md)
+* [structure.md](../../../Gdpr/docs/structure.md)
+* [structure.md](../../../Notify/docs/structure.md)
+* [structure.md](../../../Xot/docs/structure.md)
+* [structure.md](../../../Xot/docs/base/structure.md)
+* [structure.md](../../../Xot/docs/config/structure.md)
+* [structure.md](../../../User/docs/structure.md)
+* [structure.md](../../../UI/docs/structure.md)
+* [structure.md](../../../Lang/docs/structure.md)
+* [structure.md](../../../Job/docs/structure.md)
+* [structure.md](../../../Media/docs/structure.md)
+* [structure.md](../../../Tenant/docs/structure.md)
+* [structure.md](../../../Activity/docs/structure.md)
+* [structure.md](../../../Cms/docs/structure.md)
+* [structure.md](../../../Cms/docs/themes/structure.md)
+* [structure.md](../../../Cms/docs/components/structure.md)
 
 ## Struttura della Registrazione dei Console Commands
 

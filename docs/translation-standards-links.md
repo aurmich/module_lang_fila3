@@ -6,20 +6,20 @@
 - [Struttura File Traduzione](translation_file_structure.md)
 
 ## Moduli Specifici
-- [Modulo User - Traduzioni](laravel/Modules/User/project_docs/translations.md)
-- [Modulo Performance - Traduzioni](laravel/Modules/Performance/project_docs/translation_guidelines.md)
-- [Modulo UI - Componenti](laravel/Modules/UI/project_docs/components.md)
-- [Modulo Xot - Regole Base](laravel/Modules/Xot/project_docs/translation_rules.md)
+- [Modulo User - Traduzioni](laravel/Modules/User/docs/translations.md)
+- [Modulo Performance - Traduzioni](laravel/Modules/Performance/docs/translation_guidelines.md)
+- [Modulo UI - Componenti](laravel/Modules/UI/docs/components.md)
+- [Modulo Xot - Regole Base](laravel/Modules/Xot/docs/translation_rules.md)
 
 ## Esempi e Fix
-- [Fix Traduzioni Performance](laravel/Modules/Performance/project_docs/organizzativa-migration-errors.md)
-- [Fix Traduzioni Xot Base](laravel/Modules/Xot/project_docs/xot_base_translation_fix.md)
-- [Fix Traduzioni Notify Send Email](laravel/Modules/Notify/project_docs/send_email_translation_fix.md)
-- [Fix Traduzioni UI Opening Hours](laravel/Modules/UI/project_docs/opening_hours_translation_fix.md)
+- [Fix Traduzioni Performance](laravel/Modules/Performance/docs/organizzativa-migration-errors.md)
+- [Fix Traduzioni Xot Base](laravel/Modules/Xot/docs/xot_base_translation_fix.md)
+- [Fix Traduzioni Notify Send Email](laravel/Modules/Notify/docs/send_email_translation_fix.md)
+- [Fix Traduzioni UI Opening Hours](laravel/Modules/UI/docs/opening_hours_translation_fix.md)
 
 ## Traduzioni Temi
 - [Tema One - Opening Hours](laravel/Themes/One/lang/) - Traduzioni multilingue per il tema principale
-- [Tema One - Language Switcher](laravel/Themes/One/project_docs/language-switcher-implementation.md) - Implementazione completa del selettore lingua
+- [Tema One - Language Switcher](laravel/Themes/One/docs/language-switcher-implementation.md) - Implementazione completa del selettore lingua
 - **Regola**: Tutti i temi devono avere traduzioni complete in IT/EN/DE
 - **Struttura**: `laravel/Themes/{ThemeName}/lang/{locale}/navigation.php`
 

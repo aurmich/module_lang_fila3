@@ -63,9 +63,9 @@ laravel/Themes/One/resources/views/filament/widgets/auth/password/
 ```
 
 ### 3. Documentazione Aggiornata
-- `/project_docs/frontend/widget-view-namespaces.md` - Regole generali
-- `/laravel/Modules/User/project_docs/auth-widgets-view-namespaces.md` - Specifiche User
-- `/project_docs/collegamenti-documentazione.md` - Collegamenti bidirezionali
+- `/docs/frontend/widget-view-namespaces.md` - Regole generali
+- `/laravel/Modules/User/docs/auth-widgets-view-namespaces.md` - Specifiche User
+- `/docs/collegamenti-documentazione.md` - Collegamenti bidirezionali
 
 ## 🎯 **Come Evitare l'Errore in Futuro**
 
@@ -94,7 +94,7 @@ Quando creo un nuovo widget, chiedermi:
 
 ### Documentazione di Riferimento
 - [Widget View Namespaces](../frontend/widget-view-namespaces.md)
-- [Auth Widgets Namespaces](../../laravel/Modules/User/project_docs/auth-widgets-view-namespaces.md)
+- [Auth Widgets Namespaces](../../laravel/Modules/User/docs/auth-widgets-view-namespaces.md)
 - [Struttura Temi](../tecnico/themes/theme-structure.md)
 
 ### Pattern di Controllo

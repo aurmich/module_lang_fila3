@@ -121,5 +121,5 @@ Prima di committare:
 ## Documentazione Correlata
 
 - [Filament Translations](/.cursor/rules/filament-translations.rule)
-- [Laravel Localization](https://laravel.com/project_docs/10.x/localization)
+- [Laravel Localization](https://laravel.com/docs/10.x/localization)
 - [Best Practices](/.cursor/rules/translations.rule)

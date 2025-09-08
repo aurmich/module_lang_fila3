@@ -1,9 +1,9 @@
 # Sistema di Traduzioni
 
 ## Collegamenti Bidirezionali
-- [Modulo SaluteMo - Regole Consolidate Traduzioni](../../SaluteMo/project_docs/translation-rules-consolidated.md)
-- [Modulo SaluteMo - Implementazione Appointment Report](../../SaluteMo/project_docs/appointment_report_translations_implementation.md)
-- [Modulo User - Translation Best Practices](../../User/project_docs/translation_best_practices.md)
+- [Modulo SaluteMo - Regole Consolidate Traduzioni](../../SaluteMo/docs/translation-rules-consolidated.md)
+- [Modulo SaluteMo - Implementazione Appointment Report](../../SaluteMo/docs/appointment_report_translations_implementation.md)
+- [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
 
 ## Panoramica
 Il sistema di traduzioni utilizza `LangServiceProvider` per gestire le traduzioni in modo centralizzato e efficiente.

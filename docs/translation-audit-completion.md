@@ -129,13 +129,13 @@ Durante l'audit delle traduzioni del progetto SaluteOra, sono state identificate
 ## Documentazione Aggiornata
 
 ### Moduli con Documentazione Aggiornata
-1. **Lang Module**: `laravel/Modules/Lang/project_docs/translation_errors_correction_2025.md`
-2. **SaluteOra Module**: `laravel/Modules/SaluteOra/project_docs/translation_refactor_summary_2025.md`
+1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
+2. **SaluteOra Module**: `laravel/Modules/SaluteOra/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali Creati
 - [Root Docs: Translation Standards](translation_standards.md)
-- [Lang Module: Translation Best Practices](../laravel/Modules/Lang/project_docs/translation_best_practices.md)
-- [SaluteOra Module: Translation Guidelines](../laravel/Modules/SaluteOra/project_docs/translation_guidelines.md)
+- [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
+- [SaluteOra Module: Translation Guidelines](../laravel/Modules/SaluteOra/docs/translation_guidelines.md)
 
 ## Prevenzione Errori Futuri
 

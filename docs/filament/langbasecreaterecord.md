@@ -136,5 +136,5 @@ Se si verificano errori di validazione durante il salvataggio, verificare:
 ## Riferimenti
 
 - [Spatie Laravel Translatable](https://github.com/spatie/laravel-translatable)
-- [Filament Forms](https://filamentphp.com/project_docs/forms)
+- [Filament Forms](https://filamentphp.com/docs/forms)
 - [Modulo Lang - Documentazione](../model-translations.md)

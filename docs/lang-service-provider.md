@@ -26,9 +26,9 @@ Il LangServiceProvider è un componente fondamentale per la gestione delle tradu
 
 Per una documentazione dettagliata sulle implementazioni e miglioramenti del LangServiceProvider, consultare:
 
-- [Miglioramenti LangServiceProvider](../laravel/Modules/Lang/project_docs/lang-service-provider-improvements.md)
-- [Guida Implementazione](../laravel/Modules/Lang/project_docs/implementation-guide.md)
-- [Best Practices](../laravel/Modules/Lang/project_docs/best-practices.md)
+- [Miglioramenti LangServiceProvider](../laravel/Modules/Lang/docs/lang-service-provider-improvements.md)
+- [Guida Implementazione](../laravel/Modules/Lang/docs/implementation-guide.md)
+- [Best Practices](../laravel/Modules/Lang/docs/best-practices.md)
 
 ## Utilizzo Base
 
