@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
 # Traduzioni nel Progetto
 
 ## Regole Fondamentali
@@ -127,6 +130,7 @@ Prima di committare:
 
 - [Filament Translations](/.cursor/rules/filament-translations.rule)
 - [Laravel Localization](https://laravel.com/docs/10.x/localization)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Best Practices](/.cursor/rules/translations.rule)
 =======
@@ -265,3 +269,6 @@ Prima di committare:
 =======
 - [Best Practices](/.cursor/rules/translations.rule)
 >>>>>>> 3b02f37 (.)
+=======
+- [Best Practices](/.cursor/rules/translations.rule)
+>>>>>>> 1e3d805 (.)

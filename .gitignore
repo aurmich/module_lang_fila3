@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
 # Dependencies
 vendor/
 node_modules/
@@ -36,6 +39,7 @@ storage/*.key
 
 # Environment and configuration
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /vendor/
 vendor/
@@ -63,14 +67,19 @@ storage/*.key
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
 .env
 Homestead.yaml
 Homestead.json
 /.vagrant
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
 
 # Git related
 .git-rewrite/
@@ -89,6 +98,7 @@ docs/phpstan/
 .windsurf/
 .cursor/
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 .phpunit.result.cache
@@ -138,3 +148,5 @@ docs/phpstan/
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)

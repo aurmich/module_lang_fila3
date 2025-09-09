@@ -108,6 +108,7 @@ return [
     'fields' => [
         'name' => 'Nome',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'last_name' => 'Cognome',
 =======
 <<<<<<< HEAD
@@ -116,6 +117,9 @@ return [
         'surname' => 'Cognome',
 >>>>>>> bb902e8 (.)
 >>>>>>> 8da72fe (.)
+=======
+        'last_name' => 'Cognome',
+>>>>>>> 1e3d805 (.)
     ],
     'validation' => [
         'required' => 'Il campo :attribute è obbligatorio',

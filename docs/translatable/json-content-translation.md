@@ -180,6 +180,7 @@ Dopo la traduzione:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 8da72fe (.)
@@ -189,6 +190,9 @@ Dopo la traduzione:
 =======
 
 >>>>>>> 3b02f37 (.)
+=======
+
+>>>>>>> 1e3d805 (.)
 # Validare la sintassi JSON
 cat file.json | jq .
 
@@ -203,6 +207,7 @@ jq '.title | keys' file.json
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 8da72fe (.)
@@ -212,6 +217,9 @@ jq '.title | keys' file.json
 =======
 
 >>>>>>> 3b02f37 (.)
+=======
+
+>>>>>>> 1e3d805 (.)
 # Controlla che tutti i file JSON abbiano le traduzioni complete
 
 for file in config/local/saluteora/database/content/pages/*.json; do
@@ -252,6 +260,7 @@ done
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - Tutte le modifiche ai contenuti JSON devono essere testate in ambiente di sviluppo prima del deploy 
 >>>>>>> 8da72fe (.)
@@ -259,3 +268,5 @@ done
 >>>>>>> 2947111 (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)

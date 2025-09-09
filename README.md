@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
 # 🌍 Lang - Il SISTEMA di TRADUZIONI più POTENTE! 🗣️
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -545,6 +548,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Module Lang
 
@@ -767,3 +771,5 @@ php artisan module:migrate Lang
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)

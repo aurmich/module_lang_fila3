@@ -2,8 +2,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
 declare(strict_types=1);
 
 return [
@@ -100,6 +103,7 @@ return [
         'description' => 'Gestisci le traduzioni e le lingue disponibili nel sistema',
     ],
 ];
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 return array (
@@ -670,3 +674,5 @@ return array (
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)

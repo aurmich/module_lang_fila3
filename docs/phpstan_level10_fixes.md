@@ -3,6 +3,9 @@
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Lang e le relative soluzioni implementate.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1e3d805 (.)
 ## Riepilogo Correzioni Completate
 
 ### ✅ Correzioni Implementate con Successo
@@ -49,6 +52,7 @@ Il modulo Lang ha ancora 39 errori PHPStan in altri file che richiedono correzio
 - **ConvertTranslations.php**: ✅ 0 errori PHPStan
 - **FindMissingTranslations.php**: ✅ 0 errori PHPStan  
 - **FieldOption.php**: ✅ 0 errori PHPStan
+<<<<<<< HEAD
 - **Struttura docs**: ✅ Conforme alle regole del progetto 
 =======
 ## Errori Principali e Soluzioni
@@ -168,3 +172,6 @@ Dopo aver implementato tutte le correzioni, PHPStan al livello 10 non riporta pi
 2. Implementare linee guida di codifica per evitare errori simili in futuro
 3. Considerare l'utilizzo di strumenti di analisi statica come parte del processo di CI/CD 
 >>>>>>> 8da72fe (.)
+=======
+- **Struttura docs**: ✅ Conforme alle regole del progetto 
+>>>>>>> 1e3d805 (.)

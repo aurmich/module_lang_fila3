@@ -7,8 +7,11 @@ return array (
     array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
       'label' => 'Crea',
       'tooltip' => 'Crea nuovo file di traduzione',
       'success' => 'File di traduzione creato con successo',
@@ -17,6 +20,7 @@ return array (
     array (
       'label' => 'Lingua',
       'tooltip' => 'Seleziona lingua',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       'label' => 'create',
@@ -27,6 +31,8 @@ return array (
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
     ),
   ),
   'fields' => 
@@ -35,8 +41,11 @@ return array (
     array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
       'label' => 'Modifica',
       'tooltip' => 'Modifica file di traduzione',
     ),
@@ -67,6 +76,7 @@ return array (
       'label' => 'Applica Filtri',
       'tooltip' => 'Applica i filtri selezionati',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'label' => 'edit',
     ),
@@ -94,6 +104,8 @@ return array (
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
     ),
     'snapshots' => 
     array (
@@ -105,8 +117,11 @@ return array (
           array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
             'description' => 'Data e ora dell\'ultimo aggiornamento',
             'helper_text' => '',
             'placeholder' => 'Data aggiornamento',
@@ -118,6 +133,7 @@ return array (
             'helper_text' => '',
             'placeholder' => 'Etichetta data',
             'label' => 'Etichetta Data',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             'description' => 'snapshots.fields.updated_at.help',
@@ -133,6 +149,8 @@ return array (
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
           ),
         ),
       ),
@@ -141,8 +159,11 @@ return array (
     array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
       'label' => 'Apri Filtri',
       'tooltip' => 'Apri il pannello dei filtri',
     ),
@@ -156,6 +177,7 @@ return array (
     array (
       'label' => 'delete',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'label' => 'openFilters',
     ),
@@ -165,14 +187,19 @@ return array (
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
     ),
   ),
   'navigation' => 
   array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
     'label' => 'File Traduzione',
     'group' => 'Lang',
     'icon' => 'heroicon-o-language',
@@ -183,6 +210,7 @@ return array (
     'label' => 'File Traduzione',
     'placeholder' => 'Seleziona file traduzione',
     'helper_text' => 'File di traduzione per la gestione delle lingue',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     'label' => 'translation file.navigation',
@@ -196,5 +224,7 @@ return array (
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
   ),
 );

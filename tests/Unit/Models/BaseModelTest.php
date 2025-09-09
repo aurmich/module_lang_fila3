@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Lang\Tests\Unit\Models;
 
 use Modules\Lang\Models\BaseModel;
@@ -13,6 +14,14 @@ uses(TestCase::class, RefreshDatabase::class);
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel {
+=======
+use Illuminate\Database\Eloquent\Model;
+use Modules\Lang\Models\BaseModel;
+
+beforeEach(function () {
+    $this->baseModel = new class extends BaseModel
+    {
+>>>>>>> 1e3d805 (.)
         protected $table = 'test_lang_table';
     };
 });

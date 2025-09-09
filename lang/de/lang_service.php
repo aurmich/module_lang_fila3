@@ -2,8 +2,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
 declare(strict_types=1);
 
 return [
@@ -98,6 +101,7 @@ return [
         'title' => 'Übersetzungsverwaltung',
         'heading' => 'Sprachdienst',
         'description' => 'Verwalten Sie Übersetzungen und verfügbare Sprachen im System',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 return [
@@ -631,5 +635,7 @@ return [
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
     ],
 ];

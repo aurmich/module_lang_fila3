@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
 # LangServiceProvider
 
 ## Introduzione
@@ -51,6 +54,7 @@ __('patient.registration.title')  // "Registrazione Paziente"
 - Gestire fallback locale
 - Supportare namespace personalizzati
 - Ottimizzare performance
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 # LangServiceProvider: Analisi e Proposte di Miglioramento
@@ -319,3 +323,5 @@ Il `
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)

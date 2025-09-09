@@ -122,6 +122,7 @@ public function handle(Request $request, Closure $next): Response
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 8da72fe (.)
@@ -131,6 +132,9 @@ public function handle(Request $request, Closure $next): Response
 =======
 
 >>>>>>> 3b02f37 (.)
+=======
+
+>>>>>>> 1e3d805 (.)
 # Lista delle route tradotte
 php artisan route:trans:list {locale}
 

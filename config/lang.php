@@ -200,3 +200,7 @@ return [
         'framework_compliance' => true,
     ],
 ];
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e3d805 (.)

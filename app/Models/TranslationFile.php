@@ -34,12 +34,16 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile wherePath($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin IdeHelperTranslationFile
 =======
 >>>>>>> 8da72fe (.)
 =======
  * @mixin IdeHelperTranslationFile
 >>>>>>> 3b02f37 (.)
+=======
+ * @mixin IdeHelperTranslationFile
+>>>>>>> 1e3d805 (.)
  * @mixin \Eloquent
  */
 class TranslationFile extends BaseModel

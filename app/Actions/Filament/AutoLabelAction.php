@@ -19,6 +19,7 @@ use Spatie\QueueableAction\QueueableAction;
 use Filament\Tables\Actions\Action as TableAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Section as FormsSection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 =======
@@ -28,6 +29,11 @@ use Filament\Forms\Components\Section as FormsSection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Illuminate\Support\HtmlString;
 >>>>>>> 3b02f37 (.)
+=======
+use Filament\Forms\Components\Section as FormsSection;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Illuminate\Support\HtmlString;
+>>>>>>> 1e3d805 (.)
 
 class AutoLabelAction
 {
@@ -37,6 +43,7 @@ class AutoLabelAction
      * Undocumented function.
      * return number of input added.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param Field|BaseFilter|Column|Step|Action|TableAction|FormsSection $component
@@ -52,6 +59,11 @@ class AutoLabelAction
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
 >>>>>>> 3b02f37 (.)
+=======
+     * @param Field|BaseFilter|Column|Step|Action|TableAction|FormsSection $component
+     *
+     * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
+>>>>>>> 1e3d805 (.)
      */
     public function execute($component,string $type = 'label')
     {
@@ -94,6 +106,7 @@ class AutoLabelAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $label_tkey = null;
         $val = 'no-set-val';
 =======
@@ -102,14 +115,21 @@ class AutoLabelAction
         $label_tkey = null;
         $val = 'no-set-val';
 >>>>>>> 3b02f37 (.)
+=======
+        $label_tkey = null;
+        $val = 'no-set-val';
+>>>>>>> 1e3d805 (.)
         
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
         } 
         if($label_tkey == null && $component instanceof FormsSection){
            
@@ -125,19 +145,25 @@ class AutoLabelAction
         }
         if($label_tkey == null && method_exists($component,'getName')){
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         } else {
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
         if ($component instanceof Action ) {
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.actions.'.$val.'';
@@ -178,6 +204,7 @@ class AutoLabelAction
 
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         if ($component instanceof Action) {
             $label_tkey = $trans_key.'.actions.'.$val.'';
@@ -185,6 +212,8 @@ class AutoLabelAction
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
 
         $label_key = $label_tkey.'.'.Str::snake($type);
 
@@ -195,6 +224,7 @@ class AutoLabelAction
                 'label_tkey'=>$label_tkey,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 //'val'=>$val,
 =======
                 'val'=>$val,
@@ -202,6 +232,9 @@ class AutoLabelAction
 =======
                 //'val'=>$val,
 >>>>>>> 3b02f37 (.)
+=======
+                //'val'=>$val,
+>>>>>>> 1e3d805 (.)
                 'type'=>$type,
                 'component'=>$component,
                 'class'=>$class,
@@ -215,6 +248,7 @@ class AutoLabelAction
             app(SaveTransAction::class)->execute($label_key, $val);
         }
         if (is_string($label) && $label_key != $label) { //se esiste la traduzione, la aggiorno
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -239,6 +273,8 @@ class AutoLabelAction
                 $component->tooltip($label);
             }
 =======
+=======
+>>>>>>> 1e3d805 (.)
             if (method_exists($component, $type)) {
                 if(strip_tags($label) != $label && in_array($type,['helperText'])){
                     $component->{$type}(new HtmlString($label));
@@ -250,7 +286,10 @@ class AutoLabelAction
             //if (method_exists($component, 'tooltip')) {
             //    $component->tooltip($label);
             //}
+<<<<<<< HEAD
 >>>>>>> 3b02f37 (.)
+=======
+>>>>>>> 1e3d805 (.)
         }
         if (!is_string($label)) {
             $component->label('FIX:'.$label_key);

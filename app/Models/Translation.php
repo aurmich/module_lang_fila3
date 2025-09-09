@@ -50,12 +50,16 @@ use Illuminate\Support\Carbon;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin IdeHelperTranslation
 =======
 >>>>>>> 8da72fe (.)
 =======
  * @mixin IdeHelperTranslation
 >>>>>>> 3b02f37 (.)
+=======
+ * @mixin IdeHelperTranslation
+>>>>>>> 1e3d805 (.)
  * @mixin \Eloquent
  */
 class Translation extends BaseModel
