@@ -24,9 +24,13 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 use Modules\Xot\Services\BladeService;
 use Webmozart\Assert\Assert;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 =======
 >>>>>>> 8da72fe (.)
+=======
+use Filament\Forms\Components\Select;
+>>>>>>> 3b02f37 (.)
 
 /**
  * ---.
@@ -82,13 +86,19 @@ class LangServiceProvider extends XotBaseServiceProvider
     public function registerFilamentLabel(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
         Select::configureUsing(function (Select $component) {
             $component->placeholder(__('filament-forms::components.select.placeholder'));
             return $component;
         });
+<<<<<<< HEAD
 =======
 
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
         Field::configureUsing(function (Field $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             Assert::isInstanceOf($component, Field::class);
@@ -110,14 +120,20 @@ class LangServiceProvider extends XotBaseServiceProvider
             return $component;
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
         \Filament\Forms\Components\Section::configureUsing(function (\Filament\Forms\Components\Section $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             $component = app(AutoLabelAction::class)->execute($component,'heading');
             return $component;
         });
+<<<<<<< HEAD
 =======
 
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
         BaseFilter::configureUsing(function (BaseFilter $component) {
             $component = app(AutoLabelAction::class)->execute($component);
 

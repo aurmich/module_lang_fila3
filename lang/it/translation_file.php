@@ -6,6 +6,9 @@ return array (
     'create' => 
     array (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
       'label' => 'Crea',
       'tooltip' => 'Crea nuovo file di traduzione',
       'success' => 'File di traduzione creato con successo',
@@ -14,6 +17,7 @@ return array (
     array (
       'label' => 'Lingua',
       'tooltip' => 'Seleziona lingua',
+<<<<<<< HEAD
 =======
       'label' => 'create',
     ),
@@ -21,6 +25,8 @@ return array (
     array (
       'label' => 'lang',
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     ),
   ),
   'fields' => 
@@ -28,6 +34,9 @@ return array (
     'edit' => 
     array (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
       'label' => 'Modifica',
       'tooltip' => 'Modifica file di traduzione',
     ),
@@ -57,6 +66,7 @@ return array (
     array (
       'label' => 'Applica Filtri',
       'tooltip' => 'Applica i filtri selezionati',
+<<<<<<< HEAD
 =======
       'label' => 'edit',
     ),
@@ -82,6 +92,8 @@ return array (
     array (
       'label' => 'applyFilters',
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     ),
     'snapshots' => 
     array (
@@ -92,6 +104,9 @@ return array (
           'help' => 
           array (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
             'description' => 'Data e ora dell\'ultimo aggiornamento',
             'helper_text' => '',
             'placeholder' => 'Data aggiornamento',
@@ -103,6 +118,7 @@ return array (
             'helper_text' => '',
             'placeholder' => 'Etichetta data',
             'label' => 'Etichetta Data',
+<<<<<<< HEAD
 =======
             'description' => 'snapshots.fields.updated_at.help',
             'helper_text' => 'snapshots.fields.updated_at.help',
@@ -115,6 +131,8 @@ return array (
             'helper_text' => 'snapshots.fields.updated_at.label',
             'placeholder' => 'snapshots.fields.updated_at.label',
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
           ),
         ),
       ),
@@ -122,6 +140,9 @@ return array (
     'openFilters' => 
     array (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
       'label' => 'Apri Filtri',
       'tooltip' => 'Apri il pannello dei filtri',
     ),
@@ -134,6 +155,7 @@ return array (
     'delete' => 
     array (
       'label' => 'delete',
+<<<<<<< HEAD
 =======
       'label' => 'openFilters',
     ),
@@ -141,11 +163,16 @@ return array (
     array (
       'label' => 'key',
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     ),
   ),
   'navigation' => 
   array (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
     'label' => 'File Traduzione',
     'group' => 'Lang',
     'icon' => 'heroicon-o-language',
@@ -156,6 +183,7 @@ return array (
     'label' => 'File Traduzione',
     'placeholder' => 'Seleziona file traduzione',
     'helper_text' => 'File di traduzione per la gestione delle lingue',
+<<<<<<< HEAD
 =======
     'label' => 'translation file.navigation',
     'sort' => 73,
@@ -166,5 +194,7 @@ return array (
   array (
     'label' => 'translation file.model',
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
   ),
 );

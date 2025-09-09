@@ -1,15 +1,21 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
 >>>>>>> 8da72fe (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> 3b02f37 (.)
 return [
     'model' => [
         'label' => 'translation file.model',
     ],
     'navigation' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'label' => 'Navigation Label',
         'group' => 'Lang',
@@ -19,6 +25,11 @@ return [
         'group' => 'translation file.navigation',
         'icon' => 'translation file.navigation',
 >>>>>>> 8da72fe (.)
+=======
+        'label' => 'Navigation Label',
+        'group' => 'Lang',
+        'icon' => 'heroicon-o-cog',
+>>>>>>> 3b02f37 (.)
         'sort' => '23',
     ],
     'fields' => [

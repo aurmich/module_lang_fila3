@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
 return array (
   'fields' => 
   array (
@@ -67,6 +70,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
@@ -115,3 +119,5 @@ return [
     ],
 ];
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)

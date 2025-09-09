@@ -49,9 +49,13 @@ use Illuminate\Support\Carbon;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin IdeHelperTranslation
 =======
 >>>>>>> 8da72fe (.)
+=======
+ * @mixin IdeHelperTranslation
+>>>>>>> 3b02f37 (.)
  * @mixin \Eloquent
  */
 class Translation extends BaseModel

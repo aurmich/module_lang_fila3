@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
 # Traduzioni nel Progetto
 
 ## Regole Fondamentali
@@ -124,6 +127,7 @@ Prima di committare:
 
 - [Filament Translations](/.cursor/rules/filament-translations.rule)
 - [Laravel Localization](https://laravel.com/docs/10.x/localization)
+<<<<<<< HEAD
 - [Best Practices](/.cursor/rules/translations.rule)
 =======
 # Gestione delle Traduzioni
@@ -258,3 +262,6 @@ Prima di committare:
 - [Laravel Localization](https://laravel.com/docs/10.x/localization)
 - [Best Practices](/.cursor/rules/translations.rule)
 >>>>>>> 122fdb0 (.)
+=======
+- [Best Practices](/.cursor/rules/translations.rule)
+>>>>>>> 3b02f37 (.)

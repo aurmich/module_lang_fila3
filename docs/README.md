@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
 # 🌐 **Lang Module** - Sistema Avanzato di Localizzazione
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -64,6 +67,7 @@ class TranslationService
             'en' => $this->autoTranslator->translate($text, 'it', 'en'),
             'de' => $this->autoTranslator->translate($text, 'it', 'de'),
         ];
+<<<<<<< HEAD
 =======
 https://github.com/dimsav/laravel-translatable
 
@@ -215,11 +219,16 @@ class MyService
     {
         return $this->message->get($key);
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     }
 }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
 ### 📝 **Translation Management**
 ```php
 // Gestione traduzioni con struttura espansa
@@ -456,6 +465,7 @@ class SmartTranslationService
             
             Lang::set($key, $translatedText, $locale);
         }
+<<<<<<< HEAD
 =======
 ## Panoramica
 Il modulo Lang gestisce tutte le traduzioni dell'applicazione, fornendo un sistema centralizzato per la gestione dei testi multilingua. Si integra con tutti gli altri moduli per garantire una coerenza nelle traduzioni.
@@ -591,11 +601,16 @@ class UserController extends Controller
         
         return view('users.index', compact('title', 'emailLabel', 'emailPlaceholder'));
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     }
 }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
 ## 🐛 **Troubleshooting**
 
 ### **Problemi Comuni**
@@ -696,6 +711,7 @@ php artisan lang:auto-translate
 **📦 Versione**: 4.0.0  
 **🐛 PHPStan Level 9**: File core certificati ✅  
 **🌐 Translation Standards**: File traduzione certificati ✅  
+<<<<<<< HEAD
 **🚀 Performance**: 99/100 score 
 =======
 ## Best Practices
@@ -1029,3 +1045,6 @@ docs/
 - [x] Struttura coerente in tutti i moduli
 >>>>>>> bb902e8 (.)
 >>>>>>> 8da72fe (.)
+=======
+**🚀 Performance**: 99/100 score 
+>>>>>>> 3b02f37 (.)

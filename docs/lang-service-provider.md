@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
 # LangServiceProvider
 
 ## Introduzione
@@ -48,6 +51,7 @@ __('patient.registration.title')  // "Registrazione Paziente"
 - Gestire fallback locale
 - Supportare namespace personalizzati
 - Ottimizzare performance
+<<<<<<< HEAD
 =======
 # LangServiceProvider: Analisi e Proposte di Miglioramento
 
@@ -313,3 +317,5 @@ Per dettagli tecnici, vedi anche la documentazione di `XotBaseServiceProvider` e
 
 Il `
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)

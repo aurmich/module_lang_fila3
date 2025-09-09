@@ -179,12 +179,16 @@ Dopo la traduzione:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 8da72fe (.)
 =======
 
 >>>>>>> 2947111 (.)
+=======
+
+>>>>>>> 3b02f37 (.)
 # Validare la sintassi JSON
 cat file.json | jq .
 
@@ -198,12 +202,16 @@ jq '.title | keys' file.json
 #!/bin/bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 8da72fe (.)
 =======
 
 >>>>>>> 2947111 (.)
+=======
+
+>>>>>>> 3b02f37 (.)
 # Controlla che tutti i file JSON abbiano le traduzioni complete
 
 for file in config/local/saluteora/database/content/pages/*.json; do
@@ -243,8 +251,11 @@ done
 - Il sistema utilizza il fallback alla lingua italiana per contenuti mancanti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - Tutte le modifiche ai contenuti JSON devono essere testate in ambiente di sviluppo prima del deploy 
 >>>>>>> 8da72fe (.)
 =======
 >>>>>>> 2947111 (.)
+=======
+>>>>>>> 3b02f37 (.)

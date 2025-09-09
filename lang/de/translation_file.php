@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
 >>>>>>> 8da72fe (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> 3b02f37 (.)
 return [
     'actions' => [
         'create' => [
@@ -61,16 +66,22 @@ return [
     ],
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
         'label' => 'Navigation Label',
         'sort' => '73',
         'icon' => 'heroicon-o-cog',
         'group' => 'Lang',
+<<<<<<< HEAD
 =======
         'label' => 'translation file.navigation',
         'sort' => '73',
         'icon' => 'translation file.navigation',
         'group' => 'translation file.navigation',
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     ],
     'model' => [
         'label' => 'translation file.model',

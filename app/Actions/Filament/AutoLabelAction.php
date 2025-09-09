@@ -18,10 +18,16 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use Spatie\QueueableAction\QueueableAction;
 use Filament\Tables\Actions\Action as TableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Section as FormsSection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 =======
 >>>>>>> 8da72fe (.)
+=======
+use Filament\Forms\Components\Section as FormsSection;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Illuminate\Support\HtmlString;
+>>>>>>> 3b02f37 (.)
 
 class AutoLabelAction
 {
@@ -32,6 +38,7 @@ class AutoLabelAction
      * return number of input added.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param Field|BaseFilter|Column|Step|Action|TableAction|FormsSection $component
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
@@ -40,6 +47,11 @@ class AutoLabelAction
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction
 >>>>>>> 8da72fe (.)
+=======
+     * @param Field|BaseFilter|Column|Step|Action|TableAction|FormsSection $component
+     *
+     * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
+>>>>>>> 3b02f37 (.)
      */
     public function execute($component,string $type = 'label')
     {
@@ -81,15 +93,23 @@ class AutoLabelAction
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $label_tkey = null;
         $val = 'no-set-val';
 =======
 >>>>>>> 8da72fe (.)
+=======
+        $label_tkey = null;
+        $val = 'no-set-val';
+>>>>>>> 3b02f37 (.)
         
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
         } 
         if($label_tkey == null && $component instanceof FormsSection){
            
@@ -104,14 +124,20 @@ class AutoLabelAction
             
         }
         if($label_tkey == null && method_exists($component,'getName')){
+<<<<<<< HEAD
 =======
         } else {
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
         if ($component instanceof Action ) {
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.actions.'.$val.'';
@@ -151,11 +177,14 @@ class AutoLabelAction
         */
 
         
+<<<<<<< HEAD
 =======
         if ($component instanceof Action) {
             $label_tkey = $trans_key.'.actions.'.$val.'';
         }
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
 
         $label_key = $label_tkey.'.'.Str::snake($type);
 
@@ -165,10 +194,14 @@ class AutoLabelAction
                 'label_key'=>$label_key,
                 'label_tkey'=>$label_tkey,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 //'val'=>$val,
 =======
                 'val'=>$val,
 >>>>>>> 8da72fe (.)
+=======
+                //'val'=>$val,
+>>>>>>> 3b02f37 (.)
                 'type'=>$type,
                 'component'=>$component,
                 'class'=>$class,
@@ -182,6 +215,7 @@ class AutoLabelAction
             app(SaveTransAction::class)->execute($label_key, $val);
         }
         if (is_string($label) && $label_key != $label) { //se esiste la traduzione, la aggiorno
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             /*
@@ -204,6 +238,19 @@ class AutoLabelAction
             if (method_exists($component, 'tooltip')) {
                 $component->tooltip($label);
             }
+=======
+            if (method_exists($component, $type)) {
+                if(strip_tags($label) != $label && in_array($type,['helperText'])){
+                    $component->{$type}(new HtmlString($label));
+                }else{
+                    $component->{$type}($label);
+                }
+            }
+            
+            //if (method_exists($component, 'tooltip')) {
+            //    $component->tooltip($label);
+            //}
+>>>>>>> 3b02f37 (.)
         }
         if (!is_string($label)) {
             $component->label('FIX:'.$label_key);

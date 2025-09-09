@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
 declare(strict_types=1);
 
 return [
@@ -95,6 +98,7 @@ return [
         'title' => 'Übersetzungsverwaltung',
         'heading' => 'Sprachdienst',
         'description' => 'Verwalten Sie Übersetzungen und verfügbare Sprachen im System',
+<<<<<<< HEAD
 =======
 return [
     'fields' => [
@@ -625,5 +629,7 @@ return [
         'mimes' => 'Il campo :attribute deve essere un file di tipo: :values',
         'size' => 'Il campo :attribute deve essere di :size MB',
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     ],
 ];

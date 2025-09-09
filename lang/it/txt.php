@@ -272,10 +272,14 @@ return array (
     array (
       'description' => 'value',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'value',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'placeholder' => 'value',
       'label' => 'value',
     ),
@@ -283,10 +287,14 @@ return array (
     array (
       'description' => 'values-list',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'values-list',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'placeholder' => 'values-list',
       'label' => 'values-list',
     ),
@@ -295,10 +303,14 @@ return array (
       'label' => 'user_id',
       'placeholder' => 'user_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'user_id',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'user_id',
     ),
     'name' => 
@@ -306,10 +318,14 @@ return array (
       'label' => 'name',
       'placeholder' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'name',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'name',
     ),
     'slug' => 
@@ -317,10 +333,14 @@ return array (
       'label' => 'slug',
       'placeholder' => 'slug',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'slug',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'slug',
     ),
     'category_id' => 
@@ -328,10 +348,14 @@ return array (
       'label' => 'category_id',
       'placeholder' => 'category_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'category_id',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'category_id',
     ),
     'description' => 
@@ -339,10 +363,14 @@ return array (
       'label' => 'description',
       'placeholder' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'description',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'description',
     ),
     'details' => 
@@ -350,10 +378,14 @@ return array (
       'label' => 'details',
       'placeholder' => 'details',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'details',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'details',
     ),
     'is_active' => 
@@ -361,10 +393,14 @@ return array (
       'label' => 'is_active',
       'placeholder' => 'is_active',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'is_active',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'is_active',
     ),
     'ordering' => 
@@ -372,10 +408,14 @@ return array (
       'label' => 'ordering',
       'placeholder' => 'ordering',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'ordering',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'ordering',
     ),
     'start_date' => 
@@ -383,10 +423,14 @@ return array (
       'label' => 'start_date',
       'placeholder' => 'start_date',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'start_date',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'start_date',
     ),
     'end_date' => 
@@ -394,10 +438,14 @@ return array (
       'label' => 'end_date',
       'placeholder' => 'end_date',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'end_date',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'end_date',
     ),
     'extensions' => 
@@ -405,10 +453,14 @@ return array (
       'label' => 'extensions',
       'placeholder' => 'extensions',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'extensions',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'extensions',
     ),
     'sections' => 
@@ -416,10 +468,14 @@ return array (
       'label' => 'sections',
       'placeholder' => 'sections',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'sections',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'sections',
     ),
     'fields' => 
@@ -427,10 +483,14 @@ return array (
       'label' => 'fields',
       'placeholder' => 'fields',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'fields',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'fields',
     ),
     'type' => 
@@ -438,10 +498,14 @@ return array (
       'label' => 'type',
       'placeholder' => 'type',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'type',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'type',
     ),
     'compact' => 
@@ -449,10 +513,14 @@ return array (
       'label' => 'compact',
       'placeholder' => 'compact',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'compact',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'compact',
     ),
     'aside' => 
@@ -460,10 +528,14 @@ return array (
       'label' => 'aside',
       'placeholder' => 'aside',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'aside',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'aside',
     ),
     'borderless' => 
@@ -471,10 +543,14 @@ return array (
       'label' => 'borderless',
       'placeholder' => 'borderless',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'borderless',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'borderless',
     ),
     'icon' => 
@@ -482,10 +558,14 @@ return array (
       'label' => 'icon',
       'placeholder' => 'icon',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'icon',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'icon',
     ),
     'columns' => 
@@ -493,20 +573,28 @@ return array (
       'label' => 'columns',
       'placeholder' => 'columns',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'columns',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'description' => 'columns',
     ),
     'itemIsDefault' => 
     array (
       'description' => 'itemIsDefault',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'itemIsDefault',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'placeholder' => 'itemIsDefault',
       'label' => 'itemIsDefault',
     ),
@@ -522,10 +610,14 @@ return array (
     array (
       'description' => 'isActive',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'isActive',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'placeholder' => 'isActive',
       'label' => 'isActive',
     ),
@@ -541,10 +633,14 @@ return array (
     array (
       'description' => 'responses_count',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'responses_count',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'placeholder' => 'responses_count',
       'label' => 'responses_count',
     ),
@@ -552,10 +648,14 @@ return array (
     array (
       'description' => 'itemKey',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'itemKey',
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+>>>>>>> 3b02f37 (.)
       'placeholder' => 'itemKey',
       'label' => 'itemKey',
     ),
@@ -563,16 +663,25 @@ return array (
     array (
       'description' => 'forms_count',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
       'placeholder' => 'forms_count',
       'label' => 'forms_count',
 =======
 >>>>>>> 8da72fe (.)
+=======
+      'helper_text' => '',
+      'placeholder' => 'forms_count',
+      'label' => 'forms_count',
+>>>>>>> 3b02f37 (.)
     ),
     'responses_exists' => 
     array (
       'description' => 'responses_exists',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
       'helper_text' => '',
       'placeholder' => 'responses_exists',
       'label' => 'responses_exists',
@@ -603,10 +712,13 @@ return array (
       'placeholder' => 'test',
       'helper_text' => 'test',
       'description' => 'test',
+<<<<<<< HEAD
 =======
       'helper_text' => 'responses_exists',
       'placeholder' => 'responses_exists',
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     ),
   ),
   'actions' => 

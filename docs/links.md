@@ -121,12 +121,16 @@ public function handle(Request $request, Closure $next): Response
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 8da72fe (.)
 =======
 
 >>>>>>> 2947111 (.)
+=======
+
+>>>>>>> 3b02f37 (.)
 # Lista delle route tradotte
 php artisan route:trans:list {locale}
 

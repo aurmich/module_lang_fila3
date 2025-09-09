@@ -1,21 +1,32 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
 >>>>>>> 8da72fe (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> 3b02f37 (.)
 namespace Modules\Lang\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\json_encode;
 use function Safe\shell_exec;
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> 8da72fe (.)
+=======
+use function Safe\json_encode;
+use function Safe\shell_exec;
+use Webmozart\Assert\Assert;
+>>>>>>> 3b02f37 (.)
 
 class FindMissingTranslations extends Command
 {
@@ -27,6 +38,9 @@ class FindMissingTranslations extends Command
     protected $description = 'Find missing translations in the application';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
     public function handle(): int
     {
         $localeArg = $this->argument('locale');
@@ -37,12 +51,15 @@ class FindMissingTranslations extends Command
         $locale = $localeArg;
         $path = is_string($pathOption) ? $pathOption : app()->langPath("{$locale}");
         Assert::string($path, 'Il percorso deve essere una stringa');
+<<<<<<< HEAD
 =======
     public function handle()
     {
         $locale = $this->argument('locale');
         $path = $this->option('path') ?: app()->langPath("$locale");
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
         
         if (!File::exists($path)) {
             $this->error("Translation directory not found: {$path}");
@@ -53,11 +70,16 @@ class FindMissingTranslations extends Command
         
         if ($this->option('json')) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $jsonOutput = json_encode($missing, JSON_PRETTY_PRINT);
             $this->output->write($jsonOutput);
 =======
             $this->output->write(json_encode($missing, JSON_PRETTY_PRINT));
 >>>>>>> 8da72fe (.)
+=======
+            $jsonOutput = json_encode($missing, JSON_PRETTY_PRINT);
+            $this->output->write($jsonOutput);
+>>>>>>> 3b02f37 (.)
             return 0;
         }
 
@@ -73,15 +95,21 @@ class FindMissingTranslations extends Command
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
     /**
      * @param string $path
      * @param string $locale
      * @return array<int, array<string, string|int>>
      */
     protected function findMissingTranslations(string $path, string $locale): array
+<<<<<<< HEAD
 =======
     protected function findMissingTranslations($path, $locale)
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     {
         $missing = [];
         $files = $this->getPhpFiles($path);
@@ -89,18 +117,27 @@ class FindMissingTranslations extends Command
         foreach ($files as $file) {
             $relativePath = Str::after($file, $path . DIRECTORY_SEPARATOR);
 <<<<<<< HEAD
+<<<<<<< HEAD
             Assert::string($relativePath, 'Il percorso relativo deve essere una stringa');
 =======
 >>>>>>> 8da72fe (.)
+=======
+            Assert::string($relativePath, 'Il percorso relativo deve essere una stringa');
+>>>>>>> 3b02f37 (.)
             $relativePath = str_replace(DIRECTORY_SEPARATOR, '.', $relativePath);
             $namespace = str_replace('.php', '', $relativePath);
             
             $translations = require $file;
 <<<<<<< HEAD
+<<<<<<< HEAD
             Assert::isArray($translations, 'Le traduzioni devono essere un array');
             /** @var array<string, mixed> $translations */
 =======
 >>>>>>> 8da72fe (.)
+=======
+            Assert::isArray($translations, 'Le traduzioni devono essere un array');
+            /** @var array<string, mixed> $translations */
+>>>>>>> 3b02f37 (.)
             $missing = array_merge(
                 $missing,
                 $this->checkArrayForMissing($translations, $namespace, $file)
@@ -111,6 +148,9 @@ class FindMissingTranslations extends Command
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
     /**
      * @param array<string, mixed> $array
      * @param string $namespace
@@ -119,25 +159,34 @@ class FindMissingTranslations extends Command
      * @return array<int, array<string, string|int>>
      */
     protected function checkArrayForMissing(array $array, string $namespace, string $file, string $parentKey = ''): array
+<<<<<<< HEAD
 =======
     protected function checkArrayForMissing($array, $namespace, $file, $parentKey = '')
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     {
         $missing = [];
         
         foreach ($array as $key => $value) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
             Assert::string($key, 'Le chiavi delle traduzioni devono essere stringhe');
             $currentKey = $parentKey ? "{$parentKey}.{$key}" : $key;
             
             if (is_array($value)) {
                 Assert::isArray($value, 'I valori annidati devono essere array');
                 /** @var array<string, mixed> $value */
+<<<<<<< HEAD
 =======
             $currentKey = $parentKey ? "{$parentKey}.{$key}" : $key;
             
             if (is_array($value)) {
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
                 $missing = array_merge(
                     $missing,
                     $this->checkArrayForMissing($value, $namespace, $file, $currentKey)
@@ -155,14 +204,20 @@ class FindMissingTranslations extends Command
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
     /**
      * @param string $key
      * @return int
      */
     protected function findOccurrences(string $key): int
+<<<<<<< HEAD
 =======
     protected function findOccurrences($key)
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     {
         $pattern = "__('" . str_replace('.', '\\.', $key) . "')";
         $command = "grep -r \"{$pattern}\" " . base_path() . " --include=\"*.php\" --include=\"*.blade.php\"";
@@ -170,20 +225,29 @@ class FindMissingTranslations extends Command
         try {
             $result = shell_exec($command);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
             if ($result === null) {
                 return 0;
             }
             Assert::string($result, 'shell_exec deve restituire una stringa o null');
             return count(explode("\n", trim($result)));
+<<<<<<< HEAD
 =======
             return $result ? count(explode("\n", trim($result))) : 0;
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
         } catch (\Exception $e) {
             return 0;
         }
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b02f37 (.)
     /**
      * @param string $path
      * @return array<int, string>
@@ -200,6 +264,7 @@ class FindMissingTranslations extends Command
         }
         
         return $phpFiles;
+<<<<<<< HEAD
 =======
     protected function getPhpFiles($path)
     {
@@ -208,5 +273,7 @@ class FindMissingTranslations extends Command
                    $file->getFilename() !== 'validation.php';
         });
 >>>>>>> 8da72fe (.)
+=======
+>>>>>>> 3b02f37 (.)
     }
 }
