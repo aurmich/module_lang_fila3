@@ -179,14 +179,7 @@ private function parseErrorLocation(array $matches): array
 
 ```bash
 #!/bin/bash
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 8da72fe (.)
-=======
-
->>>>>>> 2947111 (.)
 # Replace unsafe casts with safe cast actions
 
 # Replace (int) casts

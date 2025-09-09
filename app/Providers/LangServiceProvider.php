@@ -23,18 +23,7 @@ use Modules\Lang\Services\TranslatorService;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Modules\Xot\Services\BladeService;
 use Webmozart\Assert\Assert;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Forms\Components\Select;
-=======
->>>>>>> 8da72fe (.)
-=======
-use Filament\Forms\Components\Select;
->>>>>>> 3b02f37 (.)
-=======
-use Filament\Forms\Components\Select;
->>>>>>> 1e3d805 (.)
 
 /**
  * ---.
@@ -50,7 +39,6 @@ class LangServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-        
         // BladeService::registerComponents($this->module_dir.'/../View/Components', 'Modules\\Lang');
         // $this->registerTranslator();
         $this->translatableComponents();
@@ -90,26 +78,10 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerFilamentLabel(): void
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
         Select::configureUsing(function (Select $component) {
             $component->placeholder(__('filament-forms::components.select.placeholder'));
             return $component;
         });
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 8da72fe (.)
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
         Field::configureUsing(function (Field $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             Assert::isInstanceOf($component, Field::class);
@@ -130,27 +102,11 @@ class LangServiceProvider extends XotBaseServiceProvider
 
             return $component;
         });
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
         \Filament\Forms\Components\Section::configureUsing(function (\Filament\Forms\Components\Section $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             $component = app(AutoLabelAction::class)->execute($component,'heading');
             return $component;
         });
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 8da72fe (.)
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
         BaseFilter::configureUsing(function (BaseFilter $component) {
             $component = app(AutoLabelAction::class)->execute($component);
 

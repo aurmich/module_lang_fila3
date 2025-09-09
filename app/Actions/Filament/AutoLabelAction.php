@@ -17,26 +17,9 @@ use Filament\Forms\Components\Wizard\Step;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Spatie\QueueableAction\QueueableAction;
 use Filament\Tables\Actions\Action as TableAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Filament\Forms\Components\Section as FormsSection;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> 8da72fe (.)
-=======
-use Filament\Forms\Components\Section as FormsSection;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< HEAD
-use Illuminate\Support\HtmlString;
->>>>>>> 3b02f37 (.)
-=======
 use Filament\Forms\Components\Section as FormsSection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Illuminate\Support\HtmlString;
->>>>>>> 1e3d805 (.)
-=======
->>>>>>> 5ad6943 (.)
 
 class AutoLabelAction
 {
@@ -46,27 +29,9 @@ class AutoLabelAction
      * Undocumented function.
      * return number of input added.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param Field|BaseFilter|Column|Step|Action|TableAction|FormsSection $component
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
-=======
-     * @param Field|BaseFilter|Column|Step|Action|TableAction $component
-     *
-     * @return Field|BaseFilter|Column|Step|Action|TableAction
->>>>>>> 8da72fe (.)
-=======
-     * @param Field|BaseFilter|Column|Step|Action|TableAction|FormsSection $component
-     *
-     * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
->>>>>>> 3b02f37 (.)
-=======
-     * @param Field|BaseFilter|Column|Step|Action|TableAction|FormsSection $component
-     *
-     * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
->>>>>>> 1e3d805 (.)
      */
     public function execute($component,string $type = 'label')
     {
@@ -107,32 +72,12 @@ class AutoLabelAction
             $trans_key = 'lang::txt';
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         $label_tkey = null;
         $val = 'no-set-val';
-=======
->>>>>>> 8da72fe (.)
-=======
-        $label_tkey = null;
-        $val = 'no-set-val';
->>>>>>> 3b02f37 (.)
-=======
-        $label_tkey = null;
-        $val = 'no-set-val';
->>>>>>> 1e3d805 (.)
         
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
         } 
         if($label_tkey == null && $component instanceof FormsSection){
            
@@ -147,26 +92,10 @@ class AutoLabelAction
             
         }
         if($label_tkey == null && method_exists($component,'getName')){
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        } else {
->>>>>>> 8da72fe (.)
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
         if ($component instanceof Action ) {
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.actions.'.$val.'';
@@ -206,17 +135,6 @@ class AutoLabelAction
         */
 
         
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        if ($component instanceof Action) {
-            $label_tkey = $trans_key.'.actions.'.$val.'';
-        }
->>>>>>> 8da72fe (.)
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
 
         $label_key = $label_tkey.'.'.Str::snake($type);
 
@@ -225,19 +143,7 @@ class AutoLabelAction
                 'message'=>'preso',
                 'label_key'=>$label_key,
                 'label_tkey'=>$label_tkey,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 //'val'=>$val,
-=======
-                'val'=>$val,
->>>>>>> 8da72fe (.)
-=======
-                //'val'=>$val,
->>>>>>> 3b02f37 (.)
-=======
-                //'val'=>$val,
->>>>>>> 1e3d805 (.)
                 'type'=>$type,
                 'component'=>$component,
                 'class'=>$class,
@@ -251,50 +157,17 @@ class AutoLabelAction
             app(SaveTransAction::class)->execute($label_key, $val);
         }
         if (is_string($label) && $label_key != $label) { //se esiste la traduzione, la aggiorno
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-            /*
-            if ($label_key == $label) {
-                $label_value = $val;
-                $label_key1 = $label_tkey;
-                $label1 = trans($label_key1);
-                if ($label_key1 != $label1) {
-                    $label_value = $label1;
+            if (method_exists($component, $type)) {
+                if(strip_tags($label) != $label && in_array($type,['helperText'])){
+                    $component->{$type}(new HtmlString($label));
+                }else{
+                    $component->{$type}($label);
                 }
-
-                app(SaveTransAction::class)->execute($label_key, $label_value);
-            }
-            */
->>>>>>> 8da72fe (.)
-            if (method_exists($component, $type)) {
-                $component->{$type}($label);
             }
             
-            if (method_exists($component, 'tooltip')) {
-                $component->tooltip($label);
-            }
-=======
-=======
->>>>>>> 1e3d805 (.)
-            if (method_exists($component, $type)) {
-                $component->{$type}($label);
-            }
-            
-<<<<<<< HEAD
             //if (method_exists($component, 'tooltip')) {
             //    $component->tooltip($label);
             //}
-<<<<<<< HEAD
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
-=======
-            if (method_exists($component, 'tooltip')) {
-                $component->tooltip($label);
-            }
->>>>>>> 5ad6943 (.)
         }
         if (!is_string($label)) {
             $component->label('FIX:'.$label_key);

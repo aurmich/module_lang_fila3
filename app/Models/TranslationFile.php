@@ -21,8 +21,8 @@ use function Safe\json_encode;
  * @property string|null $id
  * @property string|null $name
  * @property array<array-key, mixed>|null $content
- * @property-read \Modules\SaluteOra\Models\Profile|null $creator
- * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Modules\Lang\Database\Factories\TranslationFileFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile newQuery()
@@ -32,18 +32,7 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile whereKey($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile wherePath($value)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @mixin IdeHelperTranslationFile
-=======
->>>>>>> 8da72fe (.)
-=======
- * @mixin IdeHelperTranslationFile
->>>>>>> 3b02f37 (.)
-=======
- * @mixin IdeHelperTranslationFile
->>>>>>> 1e3d805 (.)
  * @mixin \Eloquent
  */
 class TranslationFile extends BaseModel

@@ -1,46 +1,15 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
->>>>>>> 8da72fe (.)
-=======
-declare(strict_types=1);
-
->>>>>>> 3b02f37 (.)
-=======
-declare(strict_types=1);
-
->>>>>>> 1e3d805 (.)
 return [
     'model' => [
         'label' => 'translation file.model',
     ],
     'navigation' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         'label' => 'Navigation Label',
         'group' => 'Lang',
         'icon' => 'heroicon-o-cog',
-=======
-        'label' => 'translation file.navigation',
-        'group' => 'translation file.navigation',
-        'icon' => 'translation file.navigation',
->>>>>>> 8da72fe (.)
-=======
-        'label' => 'Navigation Label',
-        'group' => 'Lang',
-        'icon' => 'heroicon-o-cog',
->>>>>>> 3b02f37 (.)
-=======
-        'label' => 'Navigation Label',
-        'group' => 'Lang',
-        'icon' => 'heroicon-o-cog',
->>>>>>> 1e3d805 (.)
         'sort' => '23',
     ],
     'fields' => [

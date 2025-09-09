@@ -271,38 +271,14 @@ return array (
     'value' => 
     array (
       'description' => 'value',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'value',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'placeholder' => 'value',
       'label' => 'value',
     ),
     'values-list' => 
     array (
       'description' => 'values-list',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'values-list',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'placeholder' => 'values-list',
       'label' => 'values-list',
     ),
@@ -310,379 +286,139 @@ return array (
     array (
       'label' => 'user_id',
       'placeholder' => 'user_id',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'user_id',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'user_id',
     ),
     'name' => 
     array (
       'label' => 'name',
       'placeholder' => 'name',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'name',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'name',
     ),
     'slug' => 
     array (
       'label' => 'slug',
       'placeholder' => 'slug',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'slug',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'slug',
     ),
     'category_id' => 
     array (
       'label' => 'category_id',
       'placeholder' => 'category_id',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'category_id',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'category_id',
     ),
     'description' => 
     array (
       'label' => 'description',
       'placeholder' => 'description',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'description',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'description',
     ),
     'details' => 
     array (
       'label' => 'details',
       'placeholder' => 'details',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'details',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'details',
     ),
     'is_active' => 
     array (
       'label' => 'is_active',
       'placeholder' => 'is_active',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'is_active',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'is_active',
     ),
     'ordering' => 
     array (
       'label' => 'ordering',
       'placeholder' => 'ordering',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'ordering',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'ordering',
     ),
     'start_date' => 
     array (
       'label' => 'start_date',
       'placeholder' => 'start_date',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'start_date',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'start_date',
     ),
     'end_date' => 
     array (
       'label' => 'end_date',
       'placeholder' => 'end_date',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'end_date',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'end_date',
     ),
     'extensions' => 
     array (
       'label' => 'extensions',
       'placeholder' => 'extensions',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'extensions',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'extensions',
     ),
     'sections' => 
     array (
       'label' => 'sections',
       'placeholder' => 'sections',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'sections',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'sections',
     ),
     'fields' => 
     array (
       'label' => 'fields',
       'placeholder' => 'fields',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'fields',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'fields',
     ),
     'type' => 
     array (
       'label' => 'type',
       'placeholder' => 'type',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'type',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'type',
     ),
     'compact' => 
     array (
       'label' => 'compact',
       'placeholder' => 'compact',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'compact',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'compact',
     ),
     'aside' => 
     array (
       'label' => 'aside',
       'placeholder' => 'aside',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'aside',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'aside',
     ),
     'borderless' => 
     array (
       'label' => 'borderless',
       'placeholder' => 'borderless',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'borderless',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'borderless',
     ),
     'icon' => 
     array (
       'label' => 'icon',
       'placeholder' => 'icon',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'icon',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'icon',
     ),
     'columns' => 
     array (
       'label' => 'columns',
       'placeholder' => 'columns',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'columns',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'description' => 'columns',
     ),
     'itemIsDefault' => 
     array (
       'description' => 'itemIsDefault',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'itemIsDefault',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'placeholder' => 'itemIsDefault',
       'label' => 'itemIsDefault',
     ),
@@ -697,19 +433,7 @@ return array (
     'isActive' => 
     array (
       'description' => 'isActive',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'isActive',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'placeholder' => 'isActive',
       'label' => 'isActive',
     ),
@@ -724,73 +448,27 @@ return array (
     'responses_count' => 
     array (
       'description' => 'responses_count',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'responses_count',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'placeholder' => 'responses_count',
       'label' => 'responses_count',
     ),
     'itemKey' => 
     array (
       'description' => 'itemKey',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'itemKey',
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
->>>>>>> 1e3d805 (.)
       'placeholder' => 'itemKey',
       'label' => 'itemKey',
     ),
     'forms_count' => 
     array (
       'description' => 'forms_count',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => '',
       'placeholder' => 'forms_count',
       'label' => 'forms_count',
-=======
->>>>>>> 8da72fe (.)
-=======
-      'helper_text' => '',
-      'placeholder' => 'forms_count',
-      'label' => 'forms_count',
->>>>>>> 3b02f37 (.)
-=======
-      'helper_text' => '',
-      'placeholder' => 'forms_count',
-      'label' => 'forms_count',
->>>>>>> 1e3d805 (.)
     ),
     'responses_exists' => 
     array (
       'description' => 'responses_exists',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
       'helper_text' => '',
       'placeholder' => 'responses_exists',
       'label' => 'responses_exists',
@@ -821,16 +499,6 @@ return array (
       'placeholder' => 'test',
       'helper_text' => 'test',
       'description' => 'test',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      'helper_text' => 'responses_exists',
-      'placeholder' => 'responses_exists',
->>>>>>> 8da72fe (.)
-=======
->>>>>>> 3b02f37 (.)
-=======
->>>>>>> 1e3d805 (.)
     ),
   ),
   'actions' => 

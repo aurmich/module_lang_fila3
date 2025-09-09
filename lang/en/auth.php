@@ -1,25 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> bb902e8 (.)
->>>>>>> 8da72fe (.)
-=======
-declare(strict_types=1);
-
->>>>>>> 3b02f37 (.)
-=======
-declare(strict_types=1);
-
->>>>>>> 1e3d805 (.)
 return [
     /*
     |--------------------------------------------------------------------------

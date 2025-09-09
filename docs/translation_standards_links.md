@@ -6,25 +6,11 @@ Stiamo standardizzando i file di traduzione nel modulo Notify che presentano pro
 
 ## Documentazione nel Modulo Notify
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5ad6943 (.)
 - [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
 - [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
 - [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
 - [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
 - [Guida alla Correzione dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_CORRECTION_GUIDE.md)
-<<<<<<< HEAD
-=======
-- [Progresso della Standardizzazione](../../Notify/project_docs/TRANSLATION_STANDARDS_PROGRESS.md)
-- [Regole di Naming per i File di Traduzione](../../Notify/project_docs/TRANSLATION_FILE_NAMING_RULES.md)
-- [Guida alla Struttura dei File di Traduzione](../../Notify/project_docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/project_docs/TRANSLATION_CONVENTIONS.md)
-- [Guida alla Correzione dei File di Traduzione](../../Notify/project_docs/TRANSLATION_FILE_CORRECTION_GUIDE.md)
->>>>>>> 1e3d805 (.)
-=======
->>>>>>> 5ad6943 (.)
 
 ## Documentazione nel Modulo Lang
 
