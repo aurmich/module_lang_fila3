@@ -2,11 +2,8 @@
 
 namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 
-<<<<<<< HEAD
-=======
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
->>>>>>> ff3bb05 (.)
 use Modules\Lang\Filament\Resources\TranslationFileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 

@@ -12,11 +12,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Modules\Lang\Actions\GetAllTranslationAction;
 use Modules\Lang\Actions\ReadTranslationFileAction;
-<<<<<<< HEAD
-
-=======
 use Modules\Lang\Actions\WriteTranslationFileAction;
->>>>>>> ff3bb05 (.)
 use function Safe\json_encode;
 
 /**
@@ -25,12 +21,8 @@ use function Safe\json_encode;
  * @property string|null $id
  * @property string|null $name
  * @property array<array-key, mixed>|null $content
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
-<<<<<<< HEAD
- *
-=======
->>>>>>> ff3bb05 (.)
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
  * @method static \Modules\Lang\Database\Factories\TranslationFileFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile newQuery()
@@ -40,10 +32,6 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile whereKey($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TranslationFile wherePath($value)
-<<<<<<< HEAD
- *
-=======
->>>>>>> ff3bb05 (.)
  * @mixin IdeHelperTranslationFile
  * @mixin \Eloquent
  */
@@ -59,17 +47,10 @@ class TranslationFile extends BaseModel
     ];
 
     protected array $schema = [
-<<<<<<< HEAD
-        'key' => 'string',
-        'path' => 'string',
-        'id' => 'string',
-        'name' => 'string',
-=======
         'key' => "string",
         'path' => "string",
         'id' => "string",
         'name' => "string",
->>>>>>> ff3bb05 (.)
         'content' => 'json',
     ];
 
@@ -88,21 +69,12 @@ class TranslationFile extends BaseModel
     public function getRows(): array
     {
         $files = app(GetAllTranslationAction::class)->execute();
-<<<<<<< HEAD
-        $rows = Arr::map($files, function ($item) {
-            $item['id'] = $item['key'];
-            $item['name'] = basename($item['path'], '.php');
-
-            $item['content'] = json_encode(File::getRequire($item['path']));
-
-=======
         $rows = Arr::map($files, function($item) {
             $item['id'] = $item['key'];
             $item['name'] = basename($item['path'], '.php');
 
 
             $item['content']=json_encode(File::getRequire($item['path']));
->>>>>>> ff3bb05 (.)
             /*
             // Carica il contenuto del file
             try {
@@ -112,15 +84,6 @@ class TranslationFile extends BaseModel
                 $item['content'] = [];
             }
             */
-<<<<<<< HEAD
-            // dddx($item);
-            return $item;
-        });
-
-        return $rows;
-    }
-}
-=======
             //dddx($item);
             return $item;
         });
@@ -129,4 +92,3 @@ class TranslationFile extends BaseModel
 
    
 }
->>>>>>> ff3bb05 (.)

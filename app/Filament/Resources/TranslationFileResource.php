@@ -2,13 +2,6 @@
 
 namespace Modules\Lang\Filament\Resources;
 
-<<<<<<< HEAD
-use Filament\Forms\Components;
-use Illuminate\Support\Facades\Config;
-use Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
-use Modules\Lang\Models\TranslationFile;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-=======
 use Filament\Tables;
 use Filament\Actions;
 use Filament\Forms\Form;
@@ -25,7 +18,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 use Modules\Lang\Filament\Resources\TranslationFileResource\RelationManagers;
->>>>>>> ff3bb05 (.)
 
 class TranslationFileResource extends XotBaseResource
 {
@@ -41,16 +33,11 @@ class TranslationFileResource extends XotBaseResource
         return ['it', 'en'];
     }
 
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    {
-=======
     
 
     public static function getFormSchema(): array
     {
        
->>>>>>> ff3bb05 (.)
         return [];
         /*
         return [
@@ -71,11 +58,7 @@ class TranslationFileResource extends XotBaseResource
                 ->maxLength(255)
                 ->disabled()
                 ->label('Percorso File'),
-<<<<<<< HEAD
-
-=======
             
->>>>>>> ff3bb05 (.)
             Components\KeyValue::make('content')
                 ->label('Traduzioni')
                 ->keyLabel('Chiave')
@@ -84,30 +67,17 @@ class TranslationFileResource extends XotBaseResource
                 ->deleteActionLabel('Rimuovi')
                 ->reorderable()
                 ->columnSpanFull(),
-<<<<<<< HEAD
-
-=======
             
->>>>>>> ff3bb05 (.)
         ];
         */
     }
 
-<<<<<<< HEAD
-=======
    
->>>>>>> ff3bb05 (.)
     public static function getPages(): array
     {
         return [
             'index' => Pages\ListTranslationFiles::route('/'),
             'create' => Pages\CreateTranslationFile::route('/create'),
-<<<<<<< HEAD
-            // 'view' => Pages\ViewTranslationFile::route('/{record}'),
-            'edit' => Pages\EditTranslationFile::route('/{record}/edit'),
-        ];
-    }
-=======
             //'view' => Pages\ViewTranslationFile::route('/{record}'),
             'edit' => Pages\EditTranslationFile::route('/{record}/edit'),
         ];
@@ -115,5 +85,4 @@ class TranslationFileResource extends XotBaseResource
 
 
    
->>>>>>> ff3bb05 (.)
 }
