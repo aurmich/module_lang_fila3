@@ -10,8 +10,15 @@ use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 
 /**
  * Componente Blade per il Language Switcher.
+<<<<<<< HEAD
  *
  * Wrappa il LanguageSwitcherWidget per l'uso nei temi tramite sintassi Blade.
+=======
+ * 
+ * Wrappa il LanguageSwitcherWidget per l'uso nei temi tramite sintassi Blade.
+ * 
+ * @package Modules\Lang\View\Components
+>>>>>>> ff3bb05 (.)
  */
 class LanguageSwitcher extends Component
 {
@@ -25,7 +32,11 @@ class LanguageSwitcher extends Component
      */
     public function __construct()
     {
+<<<<<<< HEAD
         $this->widget = new LanguageSwitcherWidget;
+=======
+        $this->widget = new LanguageSwitcherWidget();
+>>>>>>> ff3bb05 (.)
     }
 
     /**
@@ -33,6 +44,7 @@ class LanguageSwitcher extends Component
      */
     public function render(): View
     {
+<<<<<<< HEAD
         $empty_view = 'lang::components.empty';
         /** @phpstan-ignore-next-line */
         if (! view()->exists($empty_view)) {
@@ -53,5 +65,18 @@ class LanguageSwitcher extends Component
         }
 
         return view($switcher_view, $viewData);
+=======
+        if (! LanguageSwitcherWidget::canView()) {
+            /** @var view-string $view */
+            $view = 'lang::components.empty';
+            return view($view);
+        }
+
+        // Ottiene i dati dal widget tramite metodo pubblico
+        $viewData = $this->widget->exposeViewData();
+        /** @var view-string $view */
+        $view = 'lang::filament.widgets.language-switcher';
+        return view($view, $viewData);
+>>>>>>> ff3bb05 (.)
     }
 }

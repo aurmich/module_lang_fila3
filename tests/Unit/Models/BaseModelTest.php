@@ -2,8 +2,19 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\Lang\Models\BaseModel;
+=======
+namespace Modules\Lang\Tests\Unit\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Modules\Lang\Models\BaseModel;
+use Tests\TestCase;
+
+uses(TestCase::class, RefreshDatabase::class);
+>>>>>>> ff3bb05 (.)
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel
