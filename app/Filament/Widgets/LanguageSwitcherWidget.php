@@ -44,7 +44,7 @@ class LanguageSwitcherWidget extends XotBaseWidget
      *
      * @return array<string, mixed>
      */
-    protected function getViewData(): array
+    public function getViewData(): array
     {
         return [
             'current_locale' => app()->getLocale(),
@@ -73,7 +73,7 @@ class LanguageSwitcherWidget extends XotBaseWidget
                             'code' => $language->code,
                             'name' => $language->name,
                             'native_name' => $language->native_name ?? $language->name,
-                            'flag' => $language->flag ?? null,
+                            'flag' => $language->flag ?? '',
                         ];
                     });
                 }
@@ -90,7 +90,7 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Lingue di default se il modello Language non è disponibile.
      *
-     * @return array<int, array{code: string, name: string, native_name: string, flag: string|null}>
+     * @return array<int, array{code: string, name: string, native_name: string, flag: string}>
      */
     protected function getDefaultLanguages(): array
     {

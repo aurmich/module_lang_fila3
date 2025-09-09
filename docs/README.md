@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌐 **Lang Module** - Sistema Avanzato di Localizzazione
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -44,7 +43,6 @@ echo __('welcome.message'); // "Welcome to our application"
 
 Lang::setLocale('de');
 echo __('welcome.message'); // "Willkommen in unserer Anwendung"
-=======
 # Modulo Lang - Sistema di Gestione Lingue e Traduzioni
 
 ## Panoramica
@@ -85,7 +83,6 @@ Modules/Lang/
 │   └── de/
 ├── resources/
 └── tests/
->>>>>>> 5f569bd (.)
 ```
 
 ## Componenti Principali
@@ -531,7 +528,6 @@ Per supporto tecnico o domande:
 
 ---
 
-<<<<<<< HEAD
 ### 🏆 **Achievements**
 
 - **🏅 PHPStan Level 9**: File core certificati ✅
@@ -557,6 +553,4 @@ Per supporto tecnico o domande:
 **🐛 PHPStan Level 9**: File core certificati ✅  
 **🌐 Translation Standards**: File traduzione certificati ✅  
 **🚀 Performance**: 99/100 score 
-=======
 *Ultimo aggiornamento: {{ date('Y-m-d') }}*
->>>>>>> 5f569bd (.)

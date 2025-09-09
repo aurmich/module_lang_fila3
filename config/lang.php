@@ -200,11 +200,3 @@ return [
         'framework_compliance' => true,
     ],
 ];
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
->>>>>>> 5f569bd (.)
-=======
-
->>>>>>> 8bc9b31 (.)
