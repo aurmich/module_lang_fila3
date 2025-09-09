@@ -10,8 +10,10 @@ use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 
 /**
  * Componente Blade per il Language Switcher.
- *
+ * 
  * Wrappa il LanguageSwitcherWidget per l'uso nei temi tramite sintassi Blade.
+ * 
+ * @package Modules\Lang\View\Components
  */
 class LanguageSwitcher extends Component
 {
@@ -25,7 +27,7 @@ class LanguageSwitcher extends Component
      */
     public function __construct()
     {
-        $this->widget = new LanguageSwitcherWidget;
+        $this->widget = new LanguageSwitcherWidget();
     }
 
     /**
@@ -34,7 +36,7 @@ class LanguageSwitcher extends Component
     public function render(): View
     {
         // Verifica se il widget può essere visualizzato
-        if (! LanguageSwitcherWidget::canView()) {
+        if (!LanguageSwitcherWidget::canView()) {
             return view('lang::components.empty');
         }
 

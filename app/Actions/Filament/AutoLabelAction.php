@@ -27,6 +27,7 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 =======
 use Filament\Forms\Components\Section as FormsSection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< HEAD
 use Illuminate\Support\HtmlString;
 >>>>>>> 3b02f37 (.)
 =======
@@ -34,6 +35,8 @@ use Filament\Forms\Components\Section as FormsSection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Illuminate\Support\HtmlString;
 >>>>>>> 1e3d805 (.)
+=======
+>>>>>>> 5ad6943 (.)
 
 class AutoLabelAction
 {
@@ -276,13 +279,10 @@ class AutoLabelAction
 =======
 >>>>>>> 1e3d805 (.)
             if (method_exists($component, $type)) {
-                if(strip_tags($label) != $label && in_array($type,['helperText'])){
-                    $component->{$type}(new HtmlString($label));
-                }else{
-                    $component->{$type}($label);
-                }
+                $component->{$type}($label);
             }
             
+<<<<<<< HEAD
             //if (method_exists($component, 'tooltip')) {
             //    $component->tooltip($label);
             //}
@@ -290,6 +290,11 @@ class AutoLabelAction
 >>>>>>> 3b02f37 (.)
 =======
 >>>>>>> 1e3d805 (.)
+=======
+            if (method_exists($component, 'tooltip')) {
+                $component->tooltip($label);
+            }
+>>>>>>> 5ad6943 (.)
         }
         if (!is_string($label)) {
             $component->label('FIX:'.$label_key);

@@ -3,10 +3,13 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\WithFaker;
 >>>>>>> 1e3d805 (.)
+=======
+>>>>>>> 5ad6943 (.)
 use Modules\Lang\Tests\TestCase;
 
 /*
@@ -21,6 +24,7 @@ use Modules\Lang\Tests\TestCase;
 */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 pest()->extend(TestCase::class)
     ->in('Feature', 'Unit');
 =======
@@ -32,12 +36,17 @@ uses(
 
 uses()->group('lang')->in('Feature', 'Unit');
 >>>>>>> 1e3d805 (.)
+=======
+pest()->extend(TestCase::class)
+    ->in('Feature', 'Unit');
+>>>>>>> 5ad6943 (.)
 
 /*
 |--------------------------------------------------------------------------
 | Expectations
 |--------------------------------------------------------------------------
 |
+<<<<<<< HEAD
 <<<<<<< HEAD
 | When you're writing tests, you often need to check that values meet certain conditions. The
 | "expect()" function gives you access to a set of "expectations" methods that you can use
@@ -55,6 +64,14 @@ expect()->extend('toBeOne', function () {
 });
 
 >>>>>>> 1e3d805 (.)
+=======
+| When you're writing tests, you often need to check that values meet certain conditions. The
+| "expect()" function gives you access to a set of "expectations" methods that you can use
+| to assert different things. Of course, you may extend the Expectation API at any time.
+|
+*/
+
+>>>>>>> 5ad6943 (.)
 expect()->extend('toBeTranslation', function () {
     return $this->toBeInstanceOf(\Modules\Lang\Models\Translation::class);
 });
@@ -63,6 +80,7 @@ expect()->extend('toBeLanguage', function () {
     return $this->toBeInstanceOf(\Modules\Lang\Models\Language::class);
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 expect()->extend('toBePost', function () {
@@ -74,11 +92,14 @@ expect()->extend('toHaveTranslationKey', function (string $key) {
 });
 
 >>>>>>> 1e3d805 (.)
+=======
+>>>>>>> 5ad6943 (.)
 /*
 |--------------------------------------------------------------------------
 | Functions
 |--------------------------------------------------------------------------
 |
+<<<<<<< HEAD
 <<<<<<< HEAD
 | While Pest is very powerful out-of-the-box, you may have some testing code specific to your
 | project that you don't want to repeat in every file. Here you can also expose helpers as
@@ -94,24 +115,40 @@ function createTranslation(array $attributes = []): \Modules\Lang\Models\Transla
 
 function createLangTranslation(array $attributes = []): \Modules\Lang\Models\Translation
 >>>>>>> 1e3d805 (.)
+=======
+| While Pest is very powerful out-of-the-box, you may have some testing code specific to your
+| project that you don't want to repeat in every file. Here you can also expose helpers as
+| global functions to help you to reduce the number of lines of code in your test files.
+|
+*/
+
+function createTranslation(array $attributes = []): \Modules\Lang\Models\Translation
+>>>>>>> 5ad6943 (.)
 {
     return \Modules\Lang\Models\Translation::factory()->create($attributes);
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5ad6943 (.)
 function makeTranslation(array $attributes = []): \Modules\Lang\Models\Translation
 {
     return \Modules\Lang\Models\Translation::factory()->make($attributes);
 }
 
 function createLanguage(array $attributes = []): \Modules\Lang\Models\Language
+<<<<<<< HEAD
 =======
 function createLangTranslationFile(array $attributes = []): \Modules\Lang\Models\TranslationFile
 >>>>>>> 1e3d805 (.)
+=======
+>>>>>>> 5ad6943 (.)
 {
     return \Modules\Lang\Models\Language::factory()->create($attributes);
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 function makeLanguage(array $attributes = []): \Modules\Lang\Models\Language
 {
@@ -121,4 +158,9 @@ function createLangPost(array $attributes = []): \Modules\Lang\Models\Post
 {
     return \Modules\Lang\Models\Post::factory()->create($attributes);
 >>>>>>> 1e3d805 (.)
+=======
+function makeLanguage(array $attributes = []): \Modules\Lang\Models\Language
+{
+    return \Modules\Lang\Models\Language::factory()->make($attributes);
+>>>>>>> 5ad6943 (.)
 }
