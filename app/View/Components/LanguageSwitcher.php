@@ -11,6 +11,7 @@ use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
 /**
  * Componente Blade per il Language Switcher.
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
  * Wrappa il LanguageSwitcherWidget per l'uso nei temi tramite sintassi Blade.
 =======
@@ -19,6 +20,10 @@ use Modules\Lang\Filament\Widgets\LanguageSwitcherWidget;
  * 
  * @package Modules\Lang\View\Components
 >>>>>>> ff3bb05 (.)
+=======
+ *
+ * Wrappa il LanguageSwitcherWidget per l'uso nei temi tramite sintassi Blade.
+>>>>>>> b791681 (.)
  */
 class LanguageSwitcher extends Component
 {
@@ -33,10 +38,14 @@ class LanguageSwitcher extends Component
     public function __construct()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->widget = new LanguageSwitcherWidget;
 =======
         $this->widget = new LanguageSwitcherWidget();
 >>>>>>> ff3bb05 (.)
+=======
+        $this->widget = new LanguageSwitcherWidget;
+>>>>>>> b791681 (.)
     }
 
     /**

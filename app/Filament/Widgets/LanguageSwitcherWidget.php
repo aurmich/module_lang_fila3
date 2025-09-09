@@ -11,6 +11,7 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 /**
  * Widget per il cambio di lingua.
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
  * Fornisce un selettore dropdown per cambiare la lingua dell'interfaccia.
  * Utilizza il sistema di localizzazione di Laravel per gestire le traduzioni.
@@ -21,6 +22,11 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * 
  * @package Modules\Lang\Filament\Widgets
 >>>>>>> ff3bb05 (.)
+=======
+ *
+ * Fornisce un selettore dropdown per cambiare la lingua dell'interfaccia.
+ * Utilizza il sistema di localizzazione di Laravel per gestire le traduzioni.
+>>>>>>> b791681 (.)
  */
 class LanguageSwitcherWidget extends XotBaseWidget
 {
@@ -40,10 +46,14 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Schema del form per la configurazione del widget.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
      * 
 >>>>>>> ff3bb05 (.)
+=======
+     *
+>>>>>>> b791681 (.)
      * @return array<int, \Filament\Forms\Components\Component>
      */
     public function getFormSchema(): array
@@ -54,12 +64,16 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Dati da passare alla vista.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
      */
     public function getViewData(): array
 =======
      * 
+=======
+     *
+>>>>>>> b791681 (.)
      * @return array<string, mixed>
      */
     protected function getViewData(): array
@@ -69,10 +83,14 @@ class LanguageSwitcherWidget extends XotBaseWidget
             'current_locale' => app()->getLocale(),
             'available_locales' => $this->getAvailableLocales(),
 <<<<<<< HEAD
+<<<<<<< HEAD
             'widget_id' => 'language-switcher-'.uniqid(),
 =======
             'widget_id' => 'language-switcher-' . uniqid(),
 >>>>>>> ff3bb05 (.)
+=======
+            'widget_id' => 'language-switcher-'.uniqid(),
+>>>>>>> b791681 (.)
         ];
     }
 
@@ -92,8 +110,12 @@ class LanguageSwitcherWidget extends XotBaseWidget
 
     /**
      * Ottiene le lingue disponibili nel sistema.
+<<<<<<< HEAD
      * 
 >>>>>>> ff3bb05 (.)
+=======
+     *
+>>>>>>> b791681 (.)
      * @return Collection<int, array{code: string, name: string, native_name: string, flag: string}>
      */
     protected function getAvailableLocales(): Collection
@@ -105,10 +127,14 @@ class LanguageSwitcherWidget extends XotBaseWidget
                     ->orderBy('order')
                     ->get(['code', 'name', 'native_name', 'flag']);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> ff3bb05 (.)
+=======
+
+>>>>>>> b791681 (.)
                 if ($languages->isNotEmpty()) {
                     return $languages->map(function ($language) {
                         return [
@@ -169,6 +195,7 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Cambia la lingua corrente.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param  string  $locale  Codice della lingua
 =======
@@ -176,6 +203,10 @@ class LanguageSwitcherWidget extends XotBaseWidget
      * @param string $locale Codice della lingua
      * @return void
 >>>>>>> ff3bb05 (.)
+=======
+     *
+     * @param  string  $locale  Codice della lingua
+>>>>>>> b791681 (.)
      */
     public function changeLanguage(string $locale): void
     {
@@ -183,10 +214,14 @@ class LanguageSwitcherWidget extends XotBaseWidget
             session(['locale' => $locale]);
             app()->setLocale($locale);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> ff3bb05 (.)
+=======
+
+>>>>>>> b791681 (.)
             // Redirect per applicare la nuova lingua
             $this->redirect(request()->url());
         }
@@ -195,24 +230,32 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Verifica se il locale è valido.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * 
      * @param string $locale
      * @return bool
 >>>>>>> ff3bb05 (.)
+=======
+>>>>>>> b791681 (.)
      */
     protected function isValidLocale(string $locale): bool
     {
         $availableLocales = $this->getAvailableLocales();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ff3bb05 (.)
+=======
+
+>>>>>>> b791681 (.)
         return $availableLocales->contains('code', $locale);
     }
 
     /**
      * Genera l'URL per una specifica lingua.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @param  string  $locale  Codice della lingua
@@ -220,12 +263,17 @@ class LanguageSwitcherWidget extends XotBaseWidget
      * 
      * @param string $locale Codice della lingua
 >>>>>>> ff3bb05 (.)
+=======
+     *
+     * @param  string  $locale  Codice della lingua
+>>>>>>> b791681 (.)
      * @return string URL con la lingua specificata
      */
     public function getLanguageUrl(string $locale): string
     {
         $currentUrl = request()->url();
         $currentLocale = app()->getLocale();
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         // Se l'URL contiene già la lingua corrente, sostituiscila
@@ -243,16 +291,23 @@ class LanguageSwitcherWidget extends XotBaseWidget
 }
 =======
         
+=======
+
+>>>>>>> b791681 (.)
         // Se l'URL contiene già la lingua corrente, sostituiscila
-        if (strpos($currentUrl, '/' . $currentLocale . '/') !== false) {
-            return str_replace('/' . $currentLocale . '/', '/' . $locale . '/', $currentUrl);
-        } elseif (str_ends_with($currentUrl, '/' . $currentLocale)) {
-            return str_replace('/' . $currentLocale, '/' . $locale, $currentUrl);
+        if (strpos($currentUrl, '/'.$currentLocale.'/') !== false) {
+            return str_replace('/'.$currentLocale.'/', '/'.$locale.'/', $currentUrl);
+        } elseif (str_ends_with($currentUrl, '/'.$currentLocale)) {
+            return str_replace('/'.$currentLocale, '/'.$locale, $currentUrl);
         } else {
             // Aggiunge la lingua all'URL
             $path = request()->getPathInfo();
-            return url($locale . ($path === '/' ? '' : $path));
+
+            return url($locale.($path === '/' ? '' : $path));
         }
     }
 }
+<<<<<<< HEAD
 >>>>>>> ff3bb05 (.)
+=======
+>>>>>>> b791681 (.)
