@@ -11,7 +11,7 @@ Trovati 2 errori al livello 8.
 
 ## Errori e suggerimenti
 
-### File: `/var/www/html/saluteora/laravel/Modules/Lang/app/Models/Post.php`
+### File: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/app/Models/Post.php`
 
 #### Linea 101: Class Modules\Lang\Models\Post uses unknown trait GeneaLabs\LaravelModelCaching\Traits\Cachable.
 

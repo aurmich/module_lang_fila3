@@ -139,8 +139,8 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Laravel Folio](https://laravel.com/project_docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
-- [FAQ e problemi comuni](/var/www/html/saluteora/laravel/Modules/Lang/project_docs/translations-faq.md)
-- [Guida language switcher](/var/www/html/saluteora/laravel/Modules/Lang/project_docs/README.md)
+- [FAQ e problemi comuni](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/project_docs/translations-faq.md)
+- [Guida language switcher](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/project_docs/README.md)
 
 ---
 

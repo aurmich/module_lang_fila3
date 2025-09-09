@@ -50,10 +50,10 @@ graph TD
 ## Implementazione Attuale
 
 Il file principale del provider si trova in:
-`/var/www/html/saluteora/laravel/Modules/Lang/app/Providers/LangServiceProvider.php`
+`/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/app/Providers/LangServiceProvider.php`
 
 L'azione principale che gestisce l'etichettatura automatica è:
-`/var/www/html/saluteora/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php`
+`/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php`
 
 ### Esempio di Utilizzo Corretto
 
