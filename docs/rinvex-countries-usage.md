@@ -47,7 +47,11 @@ $oceaniaCountries = \Rinvex\Country\CountryLoader::where('geo.continent', ['OC' 
 
 ## Usage in NationalFlagSelect Component
 
+<<<<<<< HEAD
 The `NationalFlagSelect` component in `/var/www/html/_bases/base_saluteora/laravel/Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php` demonstrates practical usage:
+=======
+The `NationalFlagSelect` component in `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php` demonstrates practical usage:
+>>>>>>> d5c53f4 (.)
 
 ```php
 protected function getCountryOptions(): array
