@@ -192,7 +192,7 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
    - Applicare modifiche simili a tutti i file Blade rilevanti nel progetto.
 
 5. **Integrazione con `mcamara/laravel-localization`**:
-   - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/docs/laravel-localization-complete.md`.
+   - Assicurarsi che il pacchetto `mcamara/laravel-localization` sia installato e configurato come descritto nella documentazione `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/project_docs/laravel-localization-complete.md`.
    - Modificare il file `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/routes/web.php` per aggiungere il prefisso della lingua:
      ```php
      Route::group([
