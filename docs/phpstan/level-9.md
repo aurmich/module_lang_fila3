@@ -11,11 +11,7 @@ Trovati 3 errori al livello 9.
 
 ## Errori e suggerimenti
 
-<<<<<<< HEAD
-### File: `/var/www/html/saluteora/laravel/Modules/Lang/app/Actions/GetTransPathAction.php`
-=======
 ### File: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/app/Actions/GetTransPathAction.php`
->>>>>>> d5c53f4 (.)
 
 #### Linea 39: Parameter #2 $path of function module_path expects string, mixed given.
 
@@ -25,11 +21,7 @@ Trovati 3 errori al livello 9.
 - Le variabili siano inizializzate prima dell'uso
 - I nomi di metodi e proprietà siano corretti
 
-<<<<<<< HEAD
-### File: `/var/www/html/saluteora/laravel/Modules/Lang/app/Models/Post.php`
-=======
 ### File: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/app/Models/Post.php`
->>>>>>> d5c53f4 (.)
 
 #### Linea 101: Class Modules\Lang\Models\Post uses unknown trait GeneaLabs\LaravelModelCaching\Traits\Cachable.
 

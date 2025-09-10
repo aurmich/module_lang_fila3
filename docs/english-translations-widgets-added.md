@@ -1,25 +1,17 @@
-<<<<<<< HEAD
-# English Translations Added for SaluteOra Widgets
-=======
 # English Translations Added for  Widgets
->>>>>>> d5c53f4 (.)
 
 ## ✅ Problema Risolto
 
 ### Errore Segnalato
 ```
 mancano queste traduzioni in inglese:
-saluteora::widgets.doctor_appointments.empty.title
-saluteora::widgets.doctor_appointments.empty.description
+<nome progetto>::widgets.doctor_appointments.empty.title
+<nome progetto>::widgets.doctor_appointments.empty.description
 ```
 
 ### Causa del Problema
 
-<<<<<<< HEAD
-Il file `laravel/Modules/SaluteOra/lang/en/widgets.php` era **incompleto** rispetto alla versione italiana:
-=======
 Il file `laravel/Modules//lang/en/widgets.php` era **incompleto** rispetto alla versione italiana:
->>>>>>> d5c53f4 (.)
 
 - **File italiano**: 239 righe con traduzioni complete per tutti i widgets
 - **File inglese**: 29 righe con solo traduzioni parziali per `find_doctor_widget`
@@ -102,11 +94,7 @@ Traduzioni per widget filtro studio con:
 
 ### Prima
 ```php
-<<<<<<< HEAD
-// File: laravel/Modules/SaluteOra/lang/en/widgets.php
-=======
 // File: laravel/Modules//lang/en/widgets.php
->>>>>>> d5c53f4 (.)
 return [
     'find_doctor_widget' => [
         // Solo traduzioni parziali...
@@ -117,11 +105,7 @@ return [
 
 ### Dopo  
 ```php
-<<<<<<< HEAD
-// File: laravel/Modules/SaluteOra/lang/en/widgets.php
-=======
 // File: laravel/Modules//lang/en/widgets.php
->>>>>>> d5c53f4 (.)
 return [
     'studio_overview' => [/* Traduzioni complete */],
     'find_doctor_and_appointment' => [/* Traduzioni complete */],
@@ -135,11 +119,7 @@ return [
 ## 🚀 Benefici
 
 1. **Internazionalizzazione Completa**: Il sistema ora supporta completamente l'inglese
-<<<<<<< HEAD
-2. **Widget Bilingui**: Tutti i widget SaluteOra funzionano in entrambe le lingue
-=======
 2. **Widget Bilingui**: Tutti i widget  funzionano in entrambe le lingue
->>>>>>> d5c53f4 (.)
 3. **Coerenza**: Pattern uniforme tra file italiano e inglese
 4. **Manutenibilità**: Struttura espansa standard per tutti i campi
 
@@ -149,10 +129,10 @@ Per testare le traduzioni aggiunte:
 
 ```php
 // Nel browser o in tinker
-__('saluteora::widgets.doctor_appointments.empty.title')
+__('<nome progetto>::widgets.doctor_appointments.empty.title')
 // Output: "No pending appointments"
 
-__('saluteora::widgets.doctor_appointments.empty.description') 
+__('<nome progetto>::widgets.doctor_appointments.empty.description') 
 // Output: "You have no appointments to confirm at this time."
 ```
 
@@ -165,14 +145,8 @@ __('saluteora::widgets.doctor_appointments.empty.description')
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [File italiano completo](../laravel/Modules/SaluteOra/lang/it/widgets.php)
-- [File inglese aggiornato](../laravel/Modules/SaluteOra/lang/en/widgets.php)
-- [Widget DoctorAppointments](../laravel/Modules/SaluteOra/app/Filament/Widgets/DoctorAppointmentsWidget.php)
-=======
 - [File italiano completo](../laravel/Modules//lang/it/widgets.php)
 - [File inglese aggiornato](../laravel/Modules//lang/en/widgets.php)
 - [Widget DoctorAppointments](../laravel/Modules/<nome modulo>/app/Filament/Widgets/DoctorAppointmentsWidget.php)
->>>>>>> d5c53f4 (.)
 
 *Risoluzione completata: 2025-01-21* 

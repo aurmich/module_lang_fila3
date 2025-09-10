@@ -21,7 +21,7 @@
 - Consulta anche:
   - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
-  - [docs SaluteOra](../../SaluteOra/project_docs/translations.md)
+  - [docs <nome progetto>](../../<nome progetto>/project_docs/translations.md)
 
 ## Struttura Corretta per le Traduzioni
 
@@ -101,7 +101,7 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 
 - Tutte le label sono gestite tramite i file di traduzione del modulo.
 - Consulta anche:
-  - [docs SaluteOra](../../SaluteOra/project_docs/README.md)
+  - [docs <nome progetto>](../../<nome progetto>/project_docs/README.md)
   - [docs Xot](../../Xot/project_docs/README.md)
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
