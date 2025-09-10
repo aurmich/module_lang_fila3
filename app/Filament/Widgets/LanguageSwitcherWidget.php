@@ -70,9 +70,9 @@ class LanguageSwitcherWidget extends XotBaseWidget
     /**
      * Ottiene le lingue disponibili nel sistema.
      *
-     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string}>
+     * @return Collection<int, array{code: string, name: string, native_name: string, flag: string|null}>
      */
-    protected function getAvailableLocales(): Collection
+    public function getAvailableLocales(): Collection
     {
         // Verifica se il modello Language esiste e ha dati
         if (class_exists(Language::class)) {

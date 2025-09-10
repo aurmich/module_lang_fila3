@@ -85,7 +85,7 @@ laravel/Themes/One/resources/views/filament/widgets/auth/
 
 ### Pattern Corretto
 ```php
-namespace Modules\SaluteOra\Filament\Widgets;
+namespace Modules\<nome modulo>\Filament\Widgets;
 
 class DoctorAppointmentsWidget extends XotBaseWidget
 {
