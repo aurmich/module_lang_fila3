@@ -44,6 +44,7 @@ Homestead.json
 *.old
 *.old1
 *.backup
+*.backup.*
 *.bak
 
 # PHPStan documentation
