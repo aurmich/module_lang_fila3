@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
@@ -517,6 +516,7 @@ describe('Lang Business Logic', function () {
             ->and($italianCount)->toBe(3)
             ->and($germanCount)->toBe(2);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1e3d805 (.)
 =======
 =======
@@ -969,5 +969,7 @@ describe('Lang Business Logic Integration', function () {
         });
 >>>>>>> 5f569bd (.)
 >>>>>>> b9bd552 (.)
+=======
+>>>>>>> 76523cd (.)
     });
 });

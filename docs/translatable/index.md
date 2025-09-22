@@ -25,10 +25,14 @@ Il pacchetto è già installato nel progetto. La configurazione principale si tr
 Il progetto utilizza il plugin ufficiale `filament/spatie-laravel-translatable-plugin` per l'integrazione con Filament, configurato in:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/<nome modulo>/app/Providers/Filament/AdminPanelProvider.php`
 =======
 - `Modules/SaluteOra/app/Providers/Filament/AdminPanelProvider.php`
 >>>>>>> 1e3d805 (.)
+=======
+- `Modules/SaluteOra/app/Providers/Filament/AdminPanelProvider.php`
+>>>>>>> 76523cd (.)
 - `Modules/UI/app/Providers/Filament/AdminPanelProvider.php`
 - `Modules/Lang/app/Providers/Filament/AdminPanelProvider.php`
 
@@ -87,12 +91,17 @@ Il sistema supporta anche la traduzione di contenuti JSON per pagine dinamiche. 
 {
     "title": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "it": "Area Dottore - ",
         "en": "Doctor Area - "
 =======
         "it": "Area Dottore - SaluteOra",
         "en": "Doctor Area - SaluteOra"
 >>>>>>> 1e3d805 (.)
+=======
+        "it": "Area Dottore - SaluteOra",
+        "en": "Doctor Area - SaluteOra"
+>>>>>>> 76523cd (.)
     },
     "content_blocks": {
         "it": [

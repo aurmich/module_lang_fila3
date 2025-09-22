@@ -1,10 +1,14 @@
 # Integrazione di mcamara/laravel-localization
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto .
 =======
 Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto SaluteOra.
 >>>>>>> 1e3d805 (.)
+=======
+Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto SaluteOra.
+>>>>>>> 76523cd (.)
 
 ## Panoramica
 

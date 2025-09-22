@@ -3,10 +3,14 @@
 ## Analisi dell'Implementazione Attuale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il `LangServiceProvider` è un componente fondamentale di <nome progetto> che gestisce automaticamente le traduzioni per i componenti Filament senza richiedere l'uso esplicito del metodo `->label()`. Questo approccio garantisce:
 =======
 Il `LangServiceProvider` è un componente fondamentale di SaluteOra che gestisce automaticamente le traduzioni per i componenti Filament senza richiedere l'uso esplicito del metodo `->label()`. Questo approccio garantisce:
 >>>>>>> 1e3d805 (.)
+=======
+Il `LangServiceProvider` è un componente fondamentale di SaluteOra che gestisce automaticamente le traduzioni per i componenti Filament senza richiedere l'uso esplicito del metodo `->label()`. Questo approccio garantisce:
+>>>>>>> 76523cd (.)
 
 1. **Coerenza**: Tutte le etichette seguono lo stesso pattern di traduzione
 2. **Manutenibilità**: Le traduzioni sono centralizzate nei file di lingua
@@ -55,16 +59,22 @@ graph TD
 
 Il file principale del provider si trova in:
 <<<<<<< HEAD
+<<<<<<< HEAD
 `/var/www/html/<nome progetto>/laravel/Modules/Lang/app/Providers/LangServiceProvider.php`
 
 L'azione principale che gestisce l'etichettatura automatica è:
 `/var/www/html/<nome progetto>/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php`
 =======
+=======
+>>>>>>> 76523cd (.)
 `/var/www/html/saluteora/laravel/Modules/Lang/app/Providers/LangServiceProvider.php`
 
 L'azione principale che gestisce l'etichettatura automatica è:
 `/var/www/html/saluteora/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php`
+<<<<<<< HEAD
 >>>>>>> 1e3d805 (.)
+=======
+>>>>>>> 76523cd (.)
 
 ### Esempio di Utilizzo Corretto
 

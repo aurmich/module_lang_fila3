@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # LangServiceProvider: Analisi e Proposte di Miglioramento
 
 ## Analisi dell'Implementazione Attuale
@@ -263,6 +264,8 @@ Per dettagli tecnici, vedi anche la documentazione di `XotBaseServiceProvider` e
 
 Il `
 =======
+=======
+>>>>>>> 76523cd (.)
 # LangServiceProvider
 
 ## Introduzione
@@ -312,4 +315,7 @@ __('patient.registration.title')  // "Registrazione Paziente"
 - Gestire fallback locale
 - Supportare namespace personalizzati
 - Ottimizzare performance
+<<<<<<< HEAD
 >>>>>>> 1e3d805 (.)
+=======
+>>>>>>> 76523cd (.)

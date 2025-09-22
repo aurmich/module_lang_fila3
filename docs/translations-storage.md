@@ -17,10 +17,14 @@ In Laravel puoi salvare le traduzioni in file PHP strutturati o in file JSON fla
 | **Uso consigliato**   | UI, errori, messaggi brevi       | Frasi lunghe, onboarding, email |
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Best Practice per 
 =======
 ## Best Practice per SaluteOra
 >>>>>>> 1e3d805 (.)
+=======
+## Best Practice per SaluteOra
+>>>>>>> 76523cd (.)
 - **Usa file PHP** per UI, errori, messaggi brevi, validazione, notifiche.
 - **Usa JSON** solo per frasi lunghe o onboarding, se serve collaborazione con traduttori non-dev.
 - **Non mischiare** chiavi tra PHP e JSON con lo stesso nome.
@@ -63,10 +67,14 @@ Uso:
 
 ## Raccomandazioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Per , **PHP è la scelta principale**. JSON solo per casi particolari.
 =======
 - Per SaluteOra, **PHP è la scelta principale**. JSON solo per casi particolari.
 >>>>>>> 1e3d805 (.)
+=======
+- Per SaluteOra, **PHP è la scelta principale**. JSON solo per casi particolari.
+>>>>>>> 76523cd (.)
 - Documenta sempre la scelta e spiega ai traduttori/dev come aggiungere nuove stringhe.
 - Per fallback, imposta sempre `fallback_locale` in `config/app.php`.
 - Per traduzioni lunghe, valuta se usare chiavi dedicate in PHP o, solo se necessario, JSON.
@@ -74,20 +82,28 @@ Uso:
 ## Fonti
 - [Laravel Daily: Store in PHP or JSON?](https://laraveldaily.com/lesson/multi-language-laravel/mcamara-laravel-localization)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel Docs](https://laravel.com/project_docs/11.x/localization)
 =======
 - [Laravel Docs](https://laravel.com/docs/11.x/localization)
 >>>>>>> 1e3d805 (.)
+=======
+- [Laravel Docs](https://laravel.com/docs/11.x/localization)
+>>>>>>> 76523cd (.)
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 
 ## Processo Dev → Traduttore: Checklist e Istruzioni
 
 1. **Preparazione**
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Esporta i file PHP/JSON di riferimento da `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/lang/en/` o `/lang/en.json`.
 =======
    - Esporta i file PHP/JSON di riferimento da `/var/www/html/saluteora/laravel/lang/en/` o `/lang/en.json`.
 >>>>>>> 1e3d805 (.)
+=======
+   - Esporta i file PHP/JSON di riferimento da `/var/www/html/saluteora/laravel/lang/en/` o `/lang/en.json`.
+>>>>>>> 76523cd (.)
    - Elimina tutte le stringhe non usate prima di inviare ai traduttori.
 2. **Istruzioni per i Traduttori**
    - Nei file PHP: traduci solo il testo a destra di `=>`, non cambiare chiavi o struttura.

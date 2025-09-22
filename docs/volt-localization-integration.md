@@ -160,10 +160,14 @@ $current = app()->getLocale();
 ## 7. Collegamenti utili
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Livewire Volt - Docs](https://livewire.laravel.com/project_docs/volt)
 =======
 - [Livewire Volt - Docs](https://livewire.laravel.com/docs/volt)
 >>>>>>> 1e3d805 (.)
+=======
+- [Livewire Volt - Docs](https://livewire.laravel.com/docs/volt)
+>>>>>>> 76523cd (.)
 - [mcamara/laravel-localization - GitHub](https://github.com/mcamara/laravel-localization)
 - [Traduzione route con mcamara](https://github.com/mcamara/laravel-localization#translated-routes)
 

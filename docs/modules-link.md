@@ -5,6 +5,7 @@ Questa pagina elenca, per ogni modulo, la presenza di un file di collegamento al
 ## Moduli con collegamento
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Activity](../../Activity/project_docs/lang-link.md)
 - [Chart](../../Chart/project_docs/lang-link.md)
 - [Cms](../../Cms/project_docs/lang-link.md)
@@ -20,6 +21,8 @@ Questa pagina elenca, per ogni modulo, la presenza di un file di collegamento al
 - [User](../../User/project_docs/lang-link.md)
 - [Xot](../../Xot/project_docs/lang-link.md)
 =======
+=======
+>>>>>>> 76523cd (.)
 - [Activity](../../Activity/docs/lang-link.md)
 - [Chart](../../Chart/docs/lang-link.md)
 - [Cms](../../Cms/docs/lang-link.md)
@@ -34,7 +37,10 @@ Questa pagina elenca, per ogni modulo, la presenza di un file di collegamento al
 - [UI](../../UI/docs/lang-link.md)
 - [User](../../User/docs/lang-link.md)
 - [Xot](../../Xot/docs/lang-link.md)
+<<<<<<< HEAD
 >>>>>>> 1e3d805 (.)
+=======
+>>>>>>> 76523cd (.)
 
 ---
 
