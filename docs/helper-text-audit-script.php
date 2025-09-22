@@ -11,39 +11,67 @@ function auditHelperTextFiles(string $basePath): array
 {
     $issues = [];
     $langFiles = glob($basePath . '/*/lang/*/*.php');
+<<<<<<< HEAD
 
     foreach ($langFiles as $file) {
         if (str_contains($file, '/it/') ) {
             continue; // Skip Italian files
         }
 
+=======
+    
+    foreach ($langFiles as $file) {
+        if (strpos($file, '/it/') !== false) {
+            continue; // Skip Italian files
+        }
+        
+>>>>>>> 1e3d805 (.)
         $content = file_get_contents($file);
         if (!$content) {
             continue;
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 1e3d805 (.)
         // Parse the PHP array
         $data = include $file;
         if (!is_array($data)) {
             continue;
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 1e3d805 (.)
         $fileIssues = findHelperTextIssues($data, $file);
         if (!empty($fileIssues)) {
             $issues[$file] = $fileIssues;
         }
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1e3d805 (.)
     return $issues;
 }
 
 function findHelperTextIssues(array $data, string $file, string $parentKey = ''): array
 {
     $issues = [];
+<<<<<<< HEAD
 
     foreach ($data as $key => $value) {
         $currentPath = $parentKey ? ($parentKey . '.' . $key) : $key;
 
+=======
+    
+    foreach ($data as $key => $value) {
+        $currentPath = $parentKey ? $parentKey . '.' . $key : $key;
+        
+>>>>>>> 1e3d805 (.)
         if (is_array($value)) {
             // Check if this is a field definition with helper_text
             if (isset($value['helper_text']) && is_string($value['helper_text'])) {
@@ -54,23 +82,36 @@ function findHelperTextIssues(array $data, string $file, string $parentKey = '')
                         'key' => $key,
                         'current_value' => $value['helper_text'],
                         'should_be' => '',
+<<<<<<< HEAD
                         'line_context' => "'{$key}' => ['helper_text' => '{$value['helper_text']}']",
                     ];
                 }
             }
 
+=======
+                        'line_context' => "'{$key}' => ['helper_text' => '{$value['helper_text']}']"
+                    ];
+                }
+            }
+            
+>>>>>>> 1e3d805 (.)
             // Recursively check nested arrays
             $nestedIssues = findHelperTextIssues($value, $file, $currentPath);
             $issues = array_merge($issues, $nestedIssues);
         }
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1e3d805 (.)
     return $issues;
 }
 
 function generateReport(array $issues): string
 {
     $report = "# Helper Text Audit Report\n\n";
+<<<<<<< HEAD
     $report .= '**Data**: ' . date('Y-m-d H:i:s') . "\n\n";
     $report .= "## Problemi Identificati\n\n";
 
@@ -80,6 +121,17 @@ function generateReport(array $issues): string
         $report .= '### File: `' . basename($file) . "`\n\n";
         $report .= "**Path completo**: `{$file}`\n\n";
 
+=======
+    $report .= "**Data**: " . date('Y-m-d H:i:s') . "\n\n";
+    $report .= "## Problemi Identificati\n\n";
+    
+    $totalIssues = 0;
+    foreach ($issues as $file => $fileIssues) {
+        $totalIssues += count($fileIssues);
+        $report .= "### File: `" . basename($file) . "`\n\n";
+        $report .= "**Path completo**: `{$file}`\n\n";
+        
+>>>>>>> 1e3d805 (.)
         foreach ($fileIssues as $issue) {
             $report .= "- **Campo**: `{$issue['path']}`\n";
             $report .= "  - **Problema**: `helper_text` = `'{$issue['current_value']}'` (uguale alla chiave padre)\n";
@@ -87,6 +139,7 @@ function generateReport(array $issues): string
             $report .= "  - **Contesto**: `{$issue['line_context']}`\n\n";
         }
     }
+<<<<<<< HEAD
 
     $report .= "## Riepilogo\n\n";
     $report .= '- **File con problemi**: ' . count($issues) . "\n";
@@ -95,11 +148,25 @@ function generateReport(array $issues): string
     $report .= "## Regola Applicata\n\n";
     $report .= "**Se il valore di `helper_text` è uguale alla chiave del campo padre, DEVE essere impostato a stringa vuota (`''`).**\n\n";
 
+=======
+    
+    $report .= "## Riepilogo\n\n";
+    $report .= "- **File con problemi**: " . count($issues) . "\n";
+    $report .= "- **Problemi totali**: {$totalIssues}\n\n";
+    
+    $report .= "## Regola Applicata\n\n";
+    $report .= "**Se il valore di `helper_text` è uguale alla chiave del campo padre, DEVE essere impostato a stringa vuota (`''`).**\n\n";
+    
+>>>>>>> 1e3d805 (.)
     return $report;
 }
 
 // Esegui audit
+<<<<<<< HEAD
 $basePath = '/var/www/html/_bases/base_TechPlanner/laravel';
+=======
+$basePath = '/var/www/html/_bases/base_saluteora/laravel';
+>>>>>>> 1e3d805 (.)
 $issues = auditHelperTextFiles($basePath);
 $report = generateReport($issues);
 
@@ -107,7 +174,11 @@ $report = generateReport($issues);
 file_put_contents($basePath . '/docs/helper-text-audit-report.md', $report);
 
 echo "Audit completato. Report salvato in: docs/helper-text-audit-report.md\n";
+<<<<<<< HEAD
 echo 'Problemi trovati in ' . count($issues) . " file(s)\n";
+=======
+echo "Problemi trovati in " . count($issues) . " file(s)\n";
+>>>>>>> 1e3d805 (.)
 
 // Output per debug
 foreach ($issues as $file => $fileIssues) {

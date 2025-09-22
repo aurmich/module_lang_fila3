@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Struttura Espansa per File di Traduzione - Progetto 
+=======
+# Struttura Espansa per File di Traduzione - Progetto SaluteOra
+>>>>>>> 1e3d805 (.)
 
 ## Scopo
 Definizione della struttura standard espansa per tutti i file di traduzione del progetto, seguendo i principi DRY/KISS per massima usabilità e manutenibilità.
@@ -152,7 +156,11 @@ Ogni campo deve avere la seguente struttura completa:
 - [x] Documentazione struttura espansa
 - [ ] Geo (location, address)
 - [ ] User (registration, profile)
+<<<<<<< HEAD
 - [ ]  (patient, doctor, studio)
+=======
+- [ ] SaluteOra (patient, doctor, studio)
+>>>>>>> 1e3d805 (.)
 
 ### Fase 2: Moduli Secondari
 - [ ] SaluteMo
@@ -186,7 +194,11 @@ Ogni campo deve avere la seguente struttura completa:
 ### Documentazione Correlata
 - **Modulo Geo**: `/Modules/Geo/docs/translation-structure.md`
 - **Modulo User**: `/Modules/User/docs/translation-guidelines.md`
+<<<<<<< HEAD
 - **Modulo **: `/Modules/<nome modulo>/docs/multilingual-support.md`
+=======
+- **Modulo SaluteOra**: `/Modules/SaluteOra/docs/multilingual-support.md`
+>>>>>>> 1e3d805 (.)
 - **Tema One**: `/Themes/One/docs/translations.md`
 
 ### File di Implementazione

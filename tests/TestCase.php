@@ -23,7 +23,11 @@ abstract class TestCase extends BaseTestCase
 
         // Load Lang module specific configurations
         $this->loadLaravelMigrations();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 1e3d805 (.)
         // Seed any required data for Lang tests
         $this->artisan('module:seed', ['module' => 'Lang']);
     }

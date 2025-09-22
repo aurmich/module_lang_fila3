@@ -48,6 +48,10 @@ return [
     'ge' => 'Georgiana',
     'am' => 'Armena',
     'az' => 'Azerbaigiana',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e3d805 (.)
     // Americhe
     'us' => 'Statunitense',
     'ca' => 'Canadese',
@@ -91,6 +95,10 @@ return [
     'kn' => 'Kittitiana',
     'dm' => 'Dominicana',
     'bs' => 'Bahamense',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e3d805 (.)
     // Asia
     'cn' => 'Cinese',
     'jp' => 'Giapponese',
@@ -136,6 +144,10 @@ return [
     'kg' => 'Kirghisa',
     'tj' => 'Tagika',
     'tm' => 'Turkmena',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e3d805 (.)
     // Africa
     'eg' => 'Egiziana',
     'ly' => 'Libica',
@@ -191,6 +203,10 @@ return [
     'ao' => 'Angolana',
     'aq' => 'Antartica',
     'zr' => 'Zairese',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e3d805 (.)
     // Oceania
     'au' => 'Australiana',
     'ax' => 'Alandese',
@@ -209,6 +225,10 @@ return [
     'pw' => 'Palau',
     'fm' => 'Micronesiana',
     'mh' => 'Marshallese',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e3d805 (.)
     // Altri
     'xk' => 'Kosovara',
     'va' => 'Vaticana',
@@ -262,4 +282,8 @@ return [
     'mp' => 'Isolano delle Marianne Settentrionali',
     'um' => 'Isole Minori degli Stati Uniti',
     'eh' => 'Saharawi',
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 1e3d805 (.)

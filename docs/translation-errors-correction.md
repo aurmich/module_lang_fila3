@@ -34,7 +34,11 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 - `txt.php`: `'title_required' => 'The title is required'`
 - `edit_section.php`: `'required' => 'This field is required'`
 
+<<<<<<< HEAD
 #### ✅ Modulo 
+=======
+#### ✅ Modulo SaluteOra
+>>>>>>> 1e3d805 (.)
 **File Tedeschi (DE):**
 - `doctor_availability_calendar.php`: `'required' => 'Dieses Feld ist erforderlich'`
 - `appointment.php`: `'required' => 'Das Feld :attribute ist erforderlich'`
@@ -180,12 +184,20 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
+<<<<<<< HEAD
 2. ** Module**: `laravel/Modules/<nome modulo>/docs/translation_refactor_summary_2025.md`
+=======
+2. **SaluteOra Module**: `laravel/Modules/SaluteOra/docs/translation_refactor_summary_2025.md`
+>>>>>>> 1e3d805 (.)
 
 ### Collegamenti Bidirezionali
 - [Root Docs: Translation Standards](../../docs/translation_standards.md)
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
+<<<<<<< HEAD
 - [ Module: Translation Guidelines](../<nome modulo>/docs/translation_guidelines.md)
+=======
+- [SaluteOra Module: Translation Guidelines](../SaluteOra/docs/translation_guidelines.md)
+>>>>>>> 1e3d805 (.)
 
 ## Riepilogo Statistiche
 
@@ -197,7 +209,11 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 ### Moduli Interessati
 1. Lang Module ✅
 2. DbForge Module ✅
+<<<<<<< HEAD
 3.  Module ✅
+=======
+3. SaluteOra Module ✅
+>>>>>>> 1e3d805 (.)
 4. Notify Module ✅
 5. FormBuilder Module ✅
 6. SaluteMo Module ✅

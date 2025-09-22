@@ -41,11 +41,19 @@ class TranslatorService extends LaravelTranslator
     }
 
     /*
+<<<<<<< HEAD
      * public function setTranslationManager(Manager $manager)
      * {
      * $this->manager = $manager;
      * }
      */
+=======
+    public function setTranslationManager(Manager $manager)
+    {
+        $this->manager = $manager;
+    }
+    */
+>>>>>>> 1e3d805 (.)
     /**
      * Undocumented function.
      *

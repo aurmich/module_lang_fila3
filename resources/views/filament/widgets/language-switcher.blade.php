@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> 1e3d805 (.)
 {{--
 /**
  * Language Switcher Widget
@@ -220,4 +223,8 @@ if (!function_exists('getLanguageUrl')) {
     }
 }
 @endphp
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> 1e3d805 (.)

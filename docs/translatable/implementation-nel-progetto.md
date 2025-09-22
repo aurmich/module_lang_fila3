@@ -9,7 +9,11 @@ Questo documento descrive come è implementato e configurato il pacchetto `spati
 Il progetto utilizza il plugin ufficiale `filament/spatie-laravel-translatable-plugin` per l'integrazione con Filament:
 
 ```php
+<<<<<<< HEAD
 // Modules/<nome modulo>/app/Providers/Filament/AdminPanelProvider.php
+=======
+// Modules/SaluteOra/app/Providers/Filament/AdminPanelProvider.php
+>>>>>>> 1e3d805 (.)
 use Filament\SpatieLaravelTranslatablePlugin;
 
 public function panel(Panel $panel): Panel
@@ -226,13 +230,22 @@ trait HasStrictTranslations
 
 ### File di Contenuto Traducibili
 
+<<<<<<< HEAD
 I contenuti JSON come quelli in `config/local/<nome progetto>/database/content/pages/` supportano traduzioni:
+=======
+I contenuti JSON come quelli in `config/local/saluteora/database/content/pages/` supportano traduzioni:
+>>>>>>> 1e3d805 (.)
 
 ```json
 {
     "title": {
+<<<<<<< HEAD
         "it": "Area Dottore - ",
         "en": "Doctor Area - "
+=======
+        "it": "Area Dottore - SaluteOra",
+        "en": "Doctor Area - SaluteOra"
+>>>>>>> 1e3d805 (.)
     },
     "content_blocks": {
         "it": [
