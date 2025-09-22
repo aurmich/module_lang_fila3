@@ -61,6 +61,7 @@ use Modules\Lang\Tests\TestCase;
 |
 */
 
+<<<<<<< HEAD
 uses(
     TestCase::class,
     DatabaseTransactions::class, // ✅ CORRETTO - Rollback automatico
@@ -68,6 +69,10 @@ uses(
 )->in('Feature', 'Unit');
 
 uses()->group('lang')->in('Feature', 'Unit');
+=======
+pest()->extend(TestCase::class)
+    ->in('Feature', 'Unit');
+>>>>>>> 5f569bd (.)
 
 /*
 |--------------------------------------------------------------------------
