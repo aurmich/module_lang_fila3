@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ==============================================
 # LARAXOT MODULE LANG - .GITIGNORE
 # ==============================================
@@ -53,6 +54,34 @@ lerna-debug.log*
 # LARAVEL SPECIFIC
 # ==============================================
 =======
+=======
+# Dependencies and packages
+/vendor/
+/node_modules/
+/docs/vendor/
+
+# Lock files and cache
+*.lock
+*.cache
+*.phar
+*.jar
+package-lock.json
+yarn-error.log
+npm-debug.log
+composer.lock
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# Log files
+*.log
+error_log
+
+# Build directories
+/build/
+/build
+build/
+
+>>>>>>> 6ff031d2 (.)
 # Dependencies
 vendor/
 node_modules/
@@ -85,6 +114,7 @@ public/hot
 public_html/storage
 public_html/hot
 storage/*.key
+<<<<<<< HEAD
 <<<<<<< HEAD
 .env
 .env.*
@@ -187,6 +217,16 @@ test_translations.sql
 laravel
 public_html
 =======
+=======
+.env
+
+# Database directories
+database/Factories_
+database/Factories_old
+database/Migrations_old
+
+# Local configurations
+>>>>>>> 6ff031d2 (.)
 
 # Environment and configuration
 .env
@@ -194,6 +234,23 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 
+# IDE specific
+/.idea
+.phpintel
+
+# Git specific
+.git-blame-ignore-revs
+.git-rewrite/
+.git-rewrite
+
+# Temporary and system files
+*.tmp
+*.swp
+*.swo
+*.stackdump
+*.exe
+*:Zone.Identifier
+.DS_Store
 # Git related
 .git-rewrite/
 .git-blame-ignore-revs
@@ -203,12 +260,39 @@ Homestead.json
 *.old1
 *.backup
 *.bak
+*.new
+
+# Documentation and cache
+docs/phpstan/
+docs/cache/
+cache/
+
+# Development tools
+.windsurf/
+.cursor/
 
 # PHPStan documentation
 docs/phpstan/
+
+# Old directories
+resources/views/Components_old
+database/Migrations_old
+database/Seeders_old
+database/Factories_old
+database_old
 
 # Other
 .windsurf/
 .cursor/
 
+<<<<<<< HEAD
 >>>>>>> 1e3d805 (.)
+=======
+# Old directories to ignore
+resources/views/Components_old
+database/Migrations_old
+database/Seeders_old
+database/Factories_old
+database_old
+
+>>>>>>> 6ff031d2 (.)
