@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Struttura Completa dei Campi di Traduzione - Standard Laraxot 
-=======
-# Struttura Completa dei Campi di Traduzione - Standard Laraxot SaluteOra
->>>>>>> 1e3d805 (.)
 
 ## Principi Fondamentali DRY + KISS
 
@@ -304,11 +300,7 @@ return [
 ## File da Aggiornare (Priorità)
 
 ### Alta Priorità - Tedeschi
-<<<<<<< HEAD
 1. `/laravel/Modules//lang/de/patient-resource.php`
-=======
-1. `/laravel/Modules/SaluteOra/lang/de/patient-resource.php`
->>>>>>> 1e3d805 (.)
 2. `/laravel/Modules/User/lang/de/registration.php`
 3. `/laravel/Modules/User/lang/de/register_tenant.php`
 
@@ -318,11 +310,7 @@ return [
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
 - [ Translation Audit](../Modules/<nome modulo>/docs/translation_audit_city_fields.md)
-=======
-- [SaluteOra Translation Audit](../Modules/SaluteOra/docs/translation_audit_city_fields.md)
->>>>>>> 1e3d805 (.)
 - [User Module Translation Rules](../Modules/User/docs/widget-translation-rules.md)
 - [Translation Syntax Fixes](translation_syntax_fixes.md)
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)

@@ -4,16 +4,6 @@ declare(strict_types=1);
 
 return [
     /*
-<<<<<<< HEAD
-     * |--------------------------------------------------------------------------
-     * | Configurazione Base Localizzazione
-     * |--------------------------------------------------------------------------
-     * |
-     * | Configurazione principale per il sistema di localizzazione
-     * | del modulo Lang. Segue i principi DRY + KISS + SOLID.
-     * |
-     */
-=======
     |--------------------------------------------------------------------------
     | Configurazione Base Localizzazione
     |--------------------------------------------------------------------------
@@ -22,21 +12,10 @@ return [
     | del modulo Lang. Segue i principi DRY + KISS + SOLID.
     |
     */
->>>>>>> 1e3d805 (.)
 
     'default_locale' => env('APP_LOCALE', 'it'),
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
     'available_locales' => ['it', 'en', 'de'],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Cache e Performance
-     * |--------------------------------------------------------------------------
-     * |
-     * | Ottimizzazioni per performance e scalabilità
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -46,7 +25,6 @@ return [
     | Ottimizzazioni per performance e scalabilità
     |
     */
->>>>>>> 1e3d805 (.)
 
     'cache' => [
         'enabled' => env('LANG_CACHE_ENABLED', true),
@@ -54,16 +32,6 @@ return [
         'prefix' => 'lang_translations',
         'compression' => env('LANG_CACHE_COMPRESSION', true),
     ],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Validazione
-     * |--------------------------------------------------------------------------
-     * |
-     * | Sistema di validazione e controllo qualità traduzioni
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -73,7 +41,6 @@ return [
     | Sistema di validazione e controllo qualità traduzioni
     |
     */
->>>>>>> 1e3d805 (.)
 
     'validation' => [
         'enabled' => env('LANG_VALIDATION_ENABLED', true),
@@ -82,16 +49,6 @@ return [
         'report_missing_keys' => env('LANG_REPORT_MISSING', true),
         'quality_threshold' => env('LANG_QUALITY_THRESHOLD', 95), // %
     ],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Auto-Translation
-     * |--------------------------------------------------------------------------
-     * |
-     * | Integrazione con servizi di traduzione automatica
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -101,7 +58,6 @@ return [
     | Integrazione con servizi di traduzione automatica
     |
     */
->>>>>>> 1e3d805 (.)
 
     'auto_translate' => [
         'enabled' => env('LANG_AUTO_TRANSLATE', false),
@@ -114,16 +70,6 @@ return [
         ],
         'quality_check' => env('LANG_AUTO_QUALITY_CHECK', true),
     ],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Filament Integration
-     * |--------------------------------------------------------------------------
-     * |
-     * | Integrazione specifica con Filament UI
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -133,7 +79,6 @@ return [
     | Integrazione specifica con Filament UI
     |
     */
->>>>>>> 1e3d805 (.)
 
     'filament' => [
         'auto_labels' => env('LANG_FILAMENT_AUTO_LABELS', true),
@@ -142,16 +87,6 @@ return [
         'component_prefix' => env('LANG_FILAMENT_PREFIX', ''),
         'fallback_to_key' => env('LANG_FILAMENT_FALLBACK_KEY', false),
     ],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Struttura File
-     * |--------------------------------------------------------------------------
-     * |
-     * | Standardizzazione struttura file traduzioni
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -161,7 +96,6 @@ return [
     | Standardizzazione struttura file traduzioni
     |
     */
->>>>>>> 1e3d805 (.)
 
     'structure' => [
         'required_files' => [
@@ -180,16 +114,6 @@ return [
         'array_syntax' => 'short', // [] invece di array()
         'strict_types' => true,
     ],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Debug e Logging
-     * |--------------------------------------------------------------------------
-     * |
-     * | Strumenti per sviluppo e troubleshooting
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -199,7 +123,6 @@ return [
     | Strumenti per sviluppo e troubleshooting
     |
     */
->>>>>>> 1e3d805 (.)
 
     'debug' => [
         'enabled' => env('LANG_DEBUG', false),
@@ -208,16 +131,6 @@ return [
         'log_channel' => env('LANG_LOG_CHANNEL', 'translations'),
         'show_keys_in_production' => env('LANG_SHOW_KEYS_PROD', false),
     ],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Performance
-     * |--------------------------------------------------------------------------
-     * |
-     * | Ottimizzazioni avanzate per performance
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -227,7 +140,6 @@ return [
     | Ottimizzazioni avanzate per performance
     |
     */
->>>>>>> 1e3d805 (.)
 
     'performance' => [
         'lazy_loading' => env('LANG_LAZY_LOADING', true),
@@ -236,16 +148,6 @@ return [
         'preload_common_keys' => env('LANG_PRELOAD_COMMON', true),
         'compression_level' => env('LANG_COMPRESSION_LEVEL', 6),
     ],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Sicurezza
-     * |--------------------------------------------------------------------------
-     * |
-     * | Protezioni e validazioni di sicurezza
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -255,7 +157,6 @@ return [
     | Protezioni e validazioni di sicurezza
     |
     */
->>>>>>> 1e3d805 (.)
 
     'security' => [
         'validate_file_integrity' => env('LANG_VALIDATE_INTEGRITY', true),
@@ -264,16 +165,6 @@ return [
         'scan_for_malicious_code' => env('LANG_SCAN_MALICIOUS', true),
         'rate_limiting' => env('LANG_RATE_LIMITING', true),
     ],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Business Logic
-     * |--------------------------------------------------------------------------
-     * |
-     * | Regole specifiche per logica di business
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -283,7 +174,6 @@ return [
     | Regole specifiche per logica di business
     |
     */
->>>>>>> 1e3d805 (.)
 
     'business' => [
         'enforce_naming_conventions' => true,
@@ -292,16 +182,6 @@ return [
         'consistency_check' => true,
         'domain_specific_validation' => true,
     ],
-<<<<<<< HEAD
-    /*
-     * |--------------------------------------------------------------------------
-     * | Configurazione Laraxot Integration
-     * |--------------------------------------------------------------------------
-     * |
-     * | Integrazione specifica con framework Laraxot
-     * |
-     */
-=======
 
     /*
     |--------------------------------------------------------------------------
@@ -311,7 +191,6 @@ return [
     | Integrazione specifica con framework Laraxot
     |
     */
->>>>>>> 1e3d805 (.)
 
     'laraxot' => [
         'module_auto_discovery' => true,
@@ -321,17 +200,3 @@ return [
         'framework_compliance' => true,
     ],
 ];
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 1e3d805 (.)
-=======
-
-=======
->>>>>>> 5f569bd (.)
->>>>>>> b9bd552 (.)
-=======
-
->>>>>>> 76523cd (.)

@@ -81,8 +81,4 @@ class ReadTranslationFileAction
 
         return $content;
     }
-<<<<<<< HEAD
-}
-=======
 } 
->>>>>>> 1e3d805 (.)

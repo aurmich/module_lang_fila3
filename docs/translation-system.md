@@ -65,8 +65,6 @@ return [
    - Facilita il supporto multilingua
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Form Components](../Patient/project_docs/filament-form-components.md)
 - [Wizard Structure](../Patient/project_docs/filament-wizard-structure.md)
 - [Best Practices](../Xot/project_docs/filament-best-practices.md)
@@ -74,18 +72,3 @@ return [
 ## Vedi Anche
 - [Laravel Translations](https://laravel.com/project_docs/localization)
 - [Filament i18n](https://filamentphp.com/project_docs/internationalization) 
-=======
-=======
->>>>>>> 76523cd (.)
-- [Form Components](../Patient/docs/filament-form-components.md)
-- [Wizard Structure](../Patient/docs/filament-wizard-structure.md)
-- [Best Practices](../Xot/docs/filament-best-practices.md)
-
-## Vedi Anche
-- [Laravel Translations](https://laravel.com/docs/localization)
-<<<<<<< HEAD
-- [Filament i18n](https://filamentphp.com/docs/internationalization) 
->>>>>>> 1e3d805 (.)
-=======
-- [Filament i18n](https://filamentphp.com/docs/internationalization) 
->>>>>>> 76523cd (.)

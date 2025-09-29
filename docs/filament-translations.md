@@ -21,15 +21,7 @@
 - Consulta anche:
   - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
   - [docs Modulo Generico](../../<nome modulo>/docs/translations.md)
-=======
-  - [docs SaluteOra](../../SaluteOra/docs/translations.md)
->>>>>>> 1e3d805 (.)
-=======
-  - [docs SaluteOra](../../SaluteOra/docs/translations.md)
->>>>>>> 76523cd (.)
 
 ## Struttura Corretta per le Traduzioni
 
@@ -97,18 +89,8 @@ TextInput::make('title')
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
-=======
-- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
-- [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
->>>>>>> 1e3d805 (.)
-=======
-- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
-- [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
->>>>>>> 76523cd (.)
 
 ---
 
@@ -119,15 +101,7 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 
 - Tutte le label sono gestite tramite i file di traduzione del modulo.
 - Consulta anche:
-<<<<<<< HEAD
-<<<<<<< HEAD
   - [docs Modulo Generico](../../<nome modulo>/docs/README.md)
-=======
-  - [docs SaluteOra](../../SaluteOra/docs/README.md)
->>>>>>> 1e3d805 (.)
-=======
-  - [docs SaluteOra](../../SaluteOra/docs/README.md)
->>>>>>> 76523cd (.)
   - [docs Xot](../../Xot/docs/README.md)
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti

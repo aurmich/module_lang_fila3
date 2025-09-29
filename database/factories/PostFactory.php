@@ -9,11 +9,7 @@ use Modules\Lang\Models\Post;
 
 /**
  * Post Factory
-<<<<<<< HEAD
- *
-=======
  * 
->>>>>>> 1e3d805 (.)
  * @extends Factory<Post>
  */
 class PostFactory extends Factory
@@ -35,11 +31,7 @@ class PostFactory extends Factory
 
     public function published(): static
     {
-<<<<<<< HEAD
-        return $this->state(fn(array $_attributes): array => [
-=======
         return $this->state(fn (array $attributes): array => [
->>>>>>> 1e3d805 (.)
             'status' => 'published',
             'published_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
         ]);
@@ -47,11 +39,7 @@ class PostFactory extends Factory
 
     public function draft(): static
     {
-<<<<<<< HEAD
-        return $this->state(fn(array $_attributes): array => [
-=======
         return $this->state(fn (array $attributes): array => [
->>>>>>> 1e3d805 (.)
             'status' => 'draft',
             'published_at' => null,
         ]);
@@ -59,11 +47,7 @@ class PostFactory extends Factory
 
     public function italian(): static
     {
-<<<<<<< HEAD
-        return $this->state(fn(array $_attributes): array => [
-=======
         return $this->state(fn (array $attributes): array => [
->>>>>>> 1e3d805 (.)
             'locale' => 'it',
         ]);
     }

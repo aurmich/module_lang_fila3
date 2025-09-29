@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> 1e3d805 (.)
 <!DOCTYPE html>
 <html lang="en">
 

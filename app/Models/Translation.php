@@ -100,18 +100,6 @@ class Translation extends BaseModel
      * Get the current connection name for the model.
      *
      * @return string|null
-<<<<<<< HEAD
-     *
-     * public function getConnectionName()
-     * {
-     * if ($connection = config('translation-manager.db_connection')) {
-     * return $connection;
-     * }
-     *
-     * return parent::getConnectionName();
-     * }
-     */
-=======
 
     public function getConnectionName()
     {
@@ -122,5 +110,4 @@ class Translation extends BaseModel
         return parent::getConnectionName();
     }
     */
->>>>>>> 1e3d805 (.)
 }

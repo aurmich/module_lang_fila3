@@ -6,16 +6,9 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
 use Spatie\QueueableAction\QueueableAction;
-<<<<<<< HEAD
-
-use function Safe\exec;
-use function Safe\file_put_contents;
-use function Safe\tempnam;
-=======
 use function Safe\tempnam;
 use function Safe\file_put_contents;
 use function Safe\exec;
->>>>>>> 1e3d805 (.)
 use function Safe\unlink;
 
 class WriteTranslationFileAction
@@ -72,11 +65,7 @@ class WriteTranslationFileAction
 
         // Crea la directory di backup se non esiste
         if (!File::exists($backupDir)) {
-<<<<<<< HEAD
-            File::makeDirectory($backupDir, 0o755, true);
-=======
             File::makeDirectory($backupDir, 0755, true);
->>>>>>> 1e3d805 (.)
         }
 
         // Copia il file
@@ -105,11 +94,7 @@ class WriteTranslationFileAction
         unlink($tempFile);
 
         if ($returnCode !== 0) {
-<<<<<<< HEAD
             $error = implode("\n", $output ?? []);
-=======
-            $error = implode("\n", $output);
->>>>>>> 1e3d805 (.)
             throw new \Exception("Sintassi PHP non valida: {$error}");
         }
     }
@@ -132,8 +117,4 @@ class WriteTranslationFileAction
             app('translation.loader')->flush();
         }
     }
-<<<<<<< HEAD
-}
-=======
 } 
->>>>>>> 1e3d805 (.)

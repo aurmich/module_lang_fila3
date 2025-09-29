@@ -1,17 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-
-return [
-    'actions' => [
-        'edit' => [
-            'label' => 'edit',
-        ],
-    ],
-];
-=======
 return array (
   'actions' => 
   array (
@@ -21,4 +9,3 @@ return array (
     ),
   ),
 );
->>>>>>> 1e3d805 (.)

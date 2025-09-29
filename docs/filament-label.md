@@ -19,17 +19,7 @@
 - Test che verifica la presenza di tutte le chiavi di traduzione.
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [docs root](../../../../project_docs/actions.md)
 - [docs Xot](../../../Xot/project_docs/MODULE_NAMESPACE_RULES.md)
-=======
-- [docs root](../../../../docs/actions.md)
-- [docs Xot](../../../Xot/docs/MODULE_NAMESPACE_RULES.md)
->>>>>>> 1e3d805 (.)
-=======
-- [docs root](../../../../docs/actions.md)
-- [docs Xot](../../../Xot/docs/MODULE_NAMESPACE_RULES.md)
->>>>>>> 76523cd (.)
 
 Ultimo aggiornamento: maggio 2025.

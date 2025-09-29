@@ -12,16 +12,9 @@ class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Lang';
 
-<<<<<<< HEAD
-    #[\Override]
-    public function panel(Panel $panel): Panel
-    {
-        $panel = parent::panel($panel);
-=======
     public function panel(Panel $panel): Panel
     {
         $panel= parent::panel($panel);
->>>>>>> 1e3d805 (.)
         // FilamentAsset::register(
         //     [
         //         Css::make('filament-navigation-styles', __DIR__.'/../../resources/dist/plugin.css'),
@@ -30,12 +23,8 @@ class AdminPanelProvider extends XotBasePanelProvider
         //     'filament-navigation'
         // );
 
-<<<<<<< HEAD
-        $spatieLaravelTranslatablePlugin = SpatieLaravelTranslatablePlugin::make()->defaultLocales(['en', 'it']);
-=======
         $spatieLaravelTranslatablePlugin=SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'it']);
->>>>>>> 1e3d805 (.)
         $panel->plugins([
             $spatieLaravelTranslatablePlugin,
         ]);

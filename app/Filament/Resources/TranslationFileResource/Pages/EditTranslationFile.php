@@ -1,11 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-
-=======
->>>>>>> 1e3d805 (.)
 namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 
 use Filament\Actions;
@@ -15,13 +9,8 @@ use Filament\Notifications\Notification;
 use Filament\Resources\Pages\EditRecord;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
-<<<<<<< HEAD
-use Modules\Lang\Filament\Resources\TranslationFileResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
-=======
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use Modules\Lang\Filament\Resources\TranslationFileResource;
->>>>>>> 1e3d805 (.)
 
 class EditTranslationFile extends XotBaseEditRecord
 {
@@ -39,38 +28,6 @@ class EditTranslationFile extends XotBaseEditRecord
     /**
      * @return array<string>
      */
-<<<<<<< HEAD
-    public function getTranslatableLocales()
-    {
-        return ['it', 'en'];
-    }
-
-    protected function mutateFormDataBeforeSave(array $data): array
-    {
-        /*
-         * // Salva le traduzioni nel file
-         * try {
-         * $this->record->saveTranslations($data['content']);
-         *
-         * Notification::make()
-         * ->title('Traduzioni salvate con successo')
-         * ->success()
-         * ->send();
-         *
-         * } catch (\Exception $e) {
-         * Notification::make()
-         * ->title('Errore durante il salvataggio')
-         * ->body($e->getMessage())
-         * ->danger()
-         * ->send();
-         *
-         * // Previeni il salvataggio se c'è un errore
-         * $this->halt();
-         * }
-         */
-        /** @phpstan-ignore argument.type, property.nonObject */
-        app(SaveTransAction::class)->execute($this->record->key, $data['content']);
-=======
     public function getTranslatableLocales(){
         return ['it', 'en'];
     }
@@ -100,7 +57,6 @@ class EditTranslationFile extends XotBaseEditRecord
         */
         /** @phpstan-ignore argument.type, property.nonObject */
         app(SaveTransAction::class)->execute($this->record->key,$data['content']);
->>>>>>> 1e3d805 (.)
         //dddx(['record'=>$this->record,'data'=>$data]);
         return $data;
     }
@@ -112,20 +68,12 @@ class EditTranslationFile extends XotBaseEditRecord
         $this->record->refresh();
     }
 
-<<<<<<< HEAD
-    #[\Override]
-    public function getFormSchema(): array
-    {
-        return [
-            Section::make('content')->schema(fn($record) => $this->makeFromArray($record->content, 'content')),
-=======
 
     public function getFormSchema(): array
     {
         return [
             Section::make('content')
                 ->schema(fn($record)=>$this->makeFromArray($record->content,'content'))
->>>>>>> 1e3d805 (.)
         ];
     }
 
@@ -134,11 +82,7 @@ class EditTranslationFile extends XotBaseEditRecord
         $fields = [];
 
         foreach ($array as $key => $value) {
-<<<<<<< HEAD
-            $fullKey = $prefix === '' ? $key : ($prefix . '.' . $key);
-=======
             $fullKey = $prefix === '' ? $key : $prefix . '.' . $key;
->>>>>>> 1e3d805 (.)
 
             if (is_array($value)) {
                 $fields[] = Section::make($key)
@@ -149,12 +93,8 @@ class EditTranslationFile extends XotBaseEditRecord
                 $fields[] = TextInput::make($fullKey)
                     //->label($fullKey)
                     ->label($key)
-<<<<<<< HEAD
-                    ->default($value);
-=======
                     ->default($value)
                     ;
->>>>>>> 1e3d805 (.)
             }
         }
 

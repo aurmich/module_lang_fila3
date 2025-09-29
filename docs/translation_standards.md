@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Standard per le Traduzioni nel Progetto <nome progetto>
-=======
-# Standard per le Traduzioni nel Progetto SaluteOra
->>>>>>> 1e3d805 (.)
 
 ## Struttura delle Cartelle
 
@@ -168,11 +164,7 @@ return [
 - Serenità zen: codice e traduzioni sempre coerenti
 
 ### Collegamenti
-<<<<<<< HEAD
 - [<nome progetto>/project_docs/appointment-management.md](../../<nome progetto>/project_docs/appointment-management.md)
-=======
-- [SaluteOra/project_docs/appointment-management.md](../../SaluteOra/project_docs/appointment-management.md)
->>>>>>> 1e3d805 (.)
 - [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
 
 ### Checklist aggiornata

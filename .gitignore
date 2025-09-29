@@ -1,60 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# ==============================================
-# LARAXOT MODULE LANG - .GITIGNORE
-# ==============================================
-# Modulo Lang Laraxot - Template standardizzato
-# Ultimo aggiornamento: 2025-01-06
-# ==============================================
-
-# ==============================================
-# DEPENDENCIES & PACKAGES
-# ==============================================
-vendor/
-node_modules/
-package-lock.json
-yarn.lock
-composer.lock
-
-# ==============================================
-# BUILD & COMPILED FILES
-# ==============================================
-/build
-build/
-dist/
-docs/cache/
-cache/
-
-# ==============================================
-# CACHE & TEMPORARY FILES
-# ==============================================
-*.cache
-*.lock
-*.phar
-*.jar
-*.tmp
-*.swp
-*.swo
-*.stackdump
-*:Zone.Identifier
-v8-compile-cache-*
-.php-cs-fixer.cache
-.phpunit.result.cache
-
-# ==============================================
-# LOG FILES
-# ==============================================
-*.log
-error_log
-npm-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# ==============================================
-# LARAVEL SPECIFIC
-# ==============================================
-=======
-=======
 # Dependencies and packages
 /vendor/
 /node_modules/
@@ -81,7 +24,6 @@ error_log
 /build
 build/
 
->>>>>>> 6ff031d2 (.)
 # Dependencies
 vendor/
 node_modules/
@@ -106,7 +48,6 @@ cache/
 .php-cs-fixer.cache
 
 # Laravel specific
->>>>>>> 1e3d805 (.)
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -114,110 +55,6 @@ public/hot
 public_html/storage
 public_html/hot
 storage/*.key
-<<<<<<< HEAD
-<<<<<<< HEAD
-.env
-.env.*
-!.env.example
-
-# ==============================================
-# ENVIRONMENT & CONFIGURATION
-# ==============================================
-Homestead.yaml
-Homestead.json
-/.vagrant
-/.idea
-.phpintel
-
-# ==============================================
-# GIT SPECIFIC
-# ==============================================
-.git-rewrite/
-.git-rewrite
-.git-blame-ignore-revs
-
-# ==============================================
-# SYSTEM FILES
-# ==============================================
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# ==============================================
-# BACKUP FILES
-# ==============================================
-*.old
-*.old1
-*.old2
-*.backup
-*.backup.*
-*.bak
-*.bakcup
-*.new
-
-# ==============================================
-# DEVELOPMENT TOOLS
-# ==============================================
-.windsurf/
-.cursor/
-.phpstorm.meta.php
-
-# ==============================================
-# DOCUMENTATION CACHE
-# ==============================================
-docs/phpstan/
-docs/cache/
-
-# ==============================================
-# OLD DIRECTORIES (LEGACY CLEANUP)
-# ==============================================
-resources/views/Components_old/
-resources/views/Components_old
-database/Migrations_old/
-database/Migrations_old
-database/Seeders_old/
-database/Seeders_old
-database/Factories_old/
-database/Factories_old
-database/Factories_
-database_old/
-database_old
-
-# ==============================================
-# MODULE SPECIFIC - LANG
-# ==============================================
-# File di configurazione locale
-config/local.php
-config/development.php
-
-# Cache traduzioni
-storage/lang/
-storage/translations/
-
-# File temporanei di traduzione
-lang/temp/
-lang/drafts/
-lang/exports/
-
-# File di test traduzioni
-lang_test_data.json
-test_translations.sql
-
-# ==============================================
-# END OF LANG .GITIGNORE
-# ==============================================
-
-
-# 🚫 File specifici del progetto
-*.fila2
-laravel
-public_html
-=======
-=======
 .env
 
 # Database directories
@@ -226,7 +63,6 @@ database/Factories_old
 database/Migrations_old
 
 # Local configurations
->>>>>>> 6ff031d2 (.)
 
 # Environment and configuration
 .env
@@ -259,6 +95,7 @@ Homestead.json
 *.old
 *.old1
 *.backup
+*.backup.*
 *.bak
 *.new
 
@@ -285,9 +122,6 @@ database_old
 .windsurf/
 .cursor/
 
-<<<<<<< HEAD
->>>>>>> 1e3d805 (.)
-=======
 # Old directories to ignore
 resources/views/Components_old
 database/Migrations_old
@@ -295,4 +129,3 @@ database/Seeders_old
 database/Factories_old
 database_old
 
->>>>>>> 6ff031d2 (.)

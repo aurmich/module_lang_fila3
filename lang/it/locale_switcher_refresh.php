@@ -1,20 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-
-return [
-    'fields' => [
-        'locale' => [
-            'label' => 'locale',
-            'placeholder' => 'locale',
-            'helper_text' => 'locale',
-            'description' => 'locale',
-        ],
-    ],
-];
-=======
 return array (
   'fields' => 
   array (
@@ -27,4 +12,3 @@ return array (
     ),
   ),
 );
->>>>>>> 1e3d805 (.)

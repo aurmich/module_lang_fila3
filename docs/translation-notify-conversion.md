@@ -2,15 +2,7 @@
 
 ## Panoramica delle Problematiche
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Durante l'analisi del codice è emerso che numerosi file di traduzione nel modulo Notify non rispettano gli standard definiti per . Questo documento riassume i problemi identificati e le strategie di correzione implementate.
-=======
-Durante l'analisi del codice è emerso che numerosi file di traduzione nel modulo Notify non rispettano gli standard definiti per SaluteOra. Questo documento riassume i problemi identificati e le strategie di correzione implementate.
->>>>>>> 1e3d805 (.)
-=======
-Durante l'analisi del codice è emerso che numerosi file di traduzione nel modulo Notify non rispettano gli standard definiti per SaluteOra. Questo documento riassume i problemi identificati e le strategie di correzione implementate.
->>>>>>> 76523cd (.)
 
 ## Standard Violati
 
@@ -104,15 +96,7 @@ La corretta implementazione degli standard di traduzione garantisce:
 - Coerenza nell'interfaccia utente
 - Facilità di manutenzione
 - Miglior supporto per la localizzazione
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Conformità alle best practice di Laravel e 
-=======
-- Conformità alle best practice di Laravel e SaluteOra
->>>>>>> 1e3d805 (.)
-=======
-- Conformità alle best practice di Laravel e SaluteOra
->>>>>>> 76523cd (.)
 
 ## Collegamenti alla Documentazione
 
